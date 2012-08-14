@@ -31,6 +31,7 @@ namespace PocketCampus
             {
                 int AID = Convert.ToInt32(Request["aid"]);
                 int SID = Convert.ToInt32(Request["sid"]);
+                int NID = Convert.ToInt32(Request["nid"]);
                 string CID = Request["cid"];
 
                 string IncludeStr = "";
@@ -93,9 +94,14 @@ namespace PocketCampus
 
                         ClassReadQuery RQ0 = new ClassReadQuery(NoticeConn);
 
-                        //RQ0.RunQuery("SELECT " + Top5 + " Notice_Title, Notice_Notice FROM Notices WHERE Notice_Deleted = 0 AND Notice_Valid = 1 AND Notice_DisplayFrom <= '" + DateTime.Now.ToShortDateString() + "' AND Notice_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' " + FinalInc + FinalExc + " ORDER BY Notice_Urgent DESC, Notice_DisplayFrom;");
-
-                        RQ0.RunQuery("SELECT " + Top5 + " * FROM Notices WHERE Notice_Deleted = 0 AND Notice_Valid = 1 AND Notice_DisplayFrom <= '" + DateTime.Now.ToShortDateString() + "' AND Notice_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' " + FinalInc + FinalExc + " ORDER BY Notice_Urgent DESC, Notice_DisplayFrom;");
+                        if (NID == 0)
+                        {
+                            RQ0.RunQuery("SELECT " + Top5 + " * FROM Notices WHERE Notice_Deleted = 0 AND Notice_Valid = 1 AND Notice_DisplayFrom <= '" + DateTime.Now.ToShortDateString() + "' AND Notice_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' " + FinalInc + FinalExc + " ORDER BY Notice_Urgent DESC, Notice_DisplayFrom;");
+                        }
+                        else
+                        {
+                            RQ0.RunQuery("SELECT " + Top5 + " * FROM Notices WHERE Notice_Deleted = 0 AND Notice_Valid = 1 AND Notice_ID_LNK = " + NID + ";");
+                        }
 
                         if (RQ0.dataset.Tables.Count > 0)
                         {

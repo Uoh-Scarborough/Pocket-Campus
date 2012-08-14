@@ -34,17 +34,17 @@
   <publishProfile publishUrl="\\ERIC\wwwroot\Default" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Eric" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="Flash/PCScreenFlash/PocketCampus.swf" publishTime="08/21/2009 11:05:58" />
     <file relUrl="Questionnaire.aspx" publishTime="09/05/2011 14:30:23" />
-    <file relUrl="bin/PocketCampusClasses.dll" publishTime="04/18/2012 15:22:31" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="08/13/2012 11:40:14" />
     <file relUrl="Flash/KioskFlash/index.html" publishTime="08/04/2009 14:51:50" />
-    <file relUrl="bin/PocketCampus.pdb" publishTime="04/18/2012 15:22:32" />
+    <file relUrl="bin/PocketCampus.pdb" publishTime="08/14/2012 16:04:18" />
     <file relUrl="Flash/ReceptionScreenFlash/PocketCampus.swf" publishTime="10/12/2009 11:58:44" />
-    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="04/18/2012 15:22:31" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="08/13/2012 11:40:13" />
     <file relUrl="Flash/PCScreenFlash/index.html" publishTime="08/04/2009 14:51:50" />
     <file relUrl="Flash/ReceptionScreenFlash/index.html" publishTime="10/12/2009 12:00:26" />
     <file relUrl="Flash/KioskFlash/PocketCampus.html" publishTime="08/21/2009 11:05:04" />
     <file relUrl="Events.aspx" publishTime="04/12/2012 14:21:57" />
-    <file relUrl="bin/StandardClasses.dll" publishTime="02/13/2012 16:46:44" />
-    <file relUrl="bin/PocketCampus.dll" publishTime="04/18/2012 15:22:32" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="08/13/2012 11:29:51" />
+    <file relUrl="bin/PocketCampus.dll" publishTime="08/14/2012 16:04:18" />
     <file relUrl="UnderConstruction.aspx" publishTime="08/25/2011 16:24:41" />
     <file relUrl="Flash/KioskFlash/PocketCampus.swf" publishTime="08/21/2009 11:05:04" />
     <file relUrl="Flash/KioskFlash/AC_RunActiveContent.js" publishTime="03/06/2007 11:31:52" />
@@ -57,7 +57,7 @@
     <file relUrl="StudioBooking.aspx" publishTime="09/05/2011 11:13:01" />
     <file relUrl="Flash/ReceptionScreenFlash/PocketCampus.html" publishTime="10/12/2009 11:58:44" />
     <file relUrl="pocketcampusstyle.css" publishTime="09/02/2010 10:52:15" />
-    <file relUrl="bin/StandardClasses.pdb" publishTime="02/13/2012 16:46:44" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="08/13/2012 11:29:51" />
     <file relUrl="Feed.aspx" publishTime="09/23/2009 09:29:26" />
     <file relUrl="Notices.aspx" publishTime="04/12/2012 14:22:05" />
     <file relUrl="Flash/ReceptionScreenFlash/AC_RunActiveContent.js" publishTime="03/06/2007 11:31:52" />
