@@ -1,0 +1,166 @@
+﻿#maincontent td a img
+{
+    border:none;
+}
+
+#maincontent td#notices
+{
+    width:333px;
+    height:302px;
+    background: url("http://pocketcampusimages.scar.hull.ac.uk/NoticesSmall.png") no-repeat;
+}
+
+#maincontent td#events
+{
+    
+    width:333px;
+    height:302px;
+    background: url("http://pocketcampusimages.scar.hull.ac.uk/EventsVerySmall.png") no-repeat;
+}
+
+#noticesarea
+{
+    margin:0px;
+    padding:0px;
+    padding:12px;
+    text-align:left;
+    width:300px;
+}
+
+#noticesarea ul
+{
+    padding:10px 5px 5px 40px;
+    margin:0px;
+    border:0px;
+}
+
+#noticesarea ul li
+{
+    list-style-image: url(http://pocketcampusimages.scar.hull.ac.uk/Images/NoticeButton.png);
+    padding: 0px 0px 0px 0px;
+}
+
+#noticesarea ul li a
+{
+    position:relative;
+    top:-10px
+}
+
+#eventsarea
+{
+    padding:15px 10px 10px 10px;
+}
+
+#eventsarea table
+{
+    width:300px;
+    vertical-align:top;
+}
+
+#eventsarea table td
+{
+    vertical-align:top;
+}
+
+
+
+#eventsarea dl
+{
+    padding:10px 5px 5px 20px;
+    margin:0px;
+    border:0px;
+    position:relative;
+}
+
+#eventsarea dl dt
+{
+    background: url(http://pocketcampus.scar.hull.ac.uk/Images/NoticeButton.png) no-repeat;
+    padding: 0px 0px 0px 20px;
+    height: 30px;
+}
+
+#eventsarea dl dt a
+{
+    position:relative;
+}
+
+#eventsarea dl dd
+{
+    position: relative;
+    top:-10px;
+}
+
+#fullnotices
+{
+    padding: 5px 5px 5px 20px;
+}
+
+#fullnotices dt
+{
+    font-weight:bold;
+    font-size:12px;
+    color:#ae2b30;
+    height:20px;
+}
+
+#fullnotices dd
+{
+    padding: 5px 5px 20px 0px;
+    position:relative;
+    left:-20px;
+}
+
+#fullnotices dd a
+{
+    text-decoration:none;
+}
+
+#fullnotices dd a img
+{
+    padding:10px 0px 0px 0px;
+    border:none;
+}
+
+#fullevents
+{
+    padding: 5px 5px 5px 20px;
+}
+
+#fullevents dt
+{
+    font-weight:bold;
+    font-size:12px;
+    color:#ae2b30;
+    height:20px;
+}
+
+#fullevents dd
+{
+    padding: 5px 5px 20px 0px;
+    position:relative;
+    left:-20px;
+}
+
+#fullevents dd a
+{
+    text-decoration:none;
+}
+
+#fullevents dd a img
+{
+    padding:10px 0px 0px 0px;
+    border:none;
+}
+
+
+/* Heading */
+.h1         {font-family: Arial; font-size:20px; color:#000000;	padding:5px 5px 5px 5px; margin:0px; border:0px; font-weight: bold;}
+
+/* Sub Heading */
+.h2         {font-family: Arial; font-size:18px; color:#000000;	padding:5px 5px 5px 5px; margin:0px; border:0px; font-weight: bold;}
+
+/* Paragraph */
+.p			{font-family: Arial; border-style: none; border-color: inherit; border-width: 0; padding: 5px; margin: 0; font-size:12px; font-family: Arial; text-align:left; line-height:14px;}
+
+
+

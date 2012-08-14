@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Red.Master.cs" Inherits="Communications.Red"  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head runat="server">
+        <title>Pocket Campus</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="University of Hull Scarborough Campus Pocket Campus"/>
+        <meta name="author" content="University of Hull @ Scarborough 2009 (WJProctor)" />
+        <link rel="stylesheet" type="text/css" href="http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/basestyle.css" />
+        <link rel="stylesheet" type="text/css" href="http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/redstyle.css" />
+        <link rel="stylesheet" type="text/css" href="http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/loginstyle.css" />
+        <link rel="stylesheet" type="text/css" href="timetablesstyle.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <div id="hullmenu">
+                
+            </div>
+
+            <div id="hullheader">
+                <img alt="Scarborough Campus" src="http://pocketcampusimages.scar.hull.ac.uk/ScarboroughHeader.png"/></div>
+            
+            <div id="headerpadder">
+                
+                <div id="scarboroughheader">
+                    
+                        <a href="http://pocketcampus.scar.hull.ac.uk"><img alt="Pocket Campus Header Logo" src="http://pocketcampusimages.scar.hull.ac.uk/PocketCampusHeaderRed.png"/></a>
+
+                </div>
+
+                   <div id="headerhomebutton">
+                    <asp:ContentPlaceHolder ID="HomeButtonCPH" runat="server">
+                    
+                    </asp:ContentPlaceHolder>
+                </div>
+               
+
+            </div>
+
+            <div id="mainbodyarea" style="clear:both">
+
+                    <asp:ContentPlaceHolder ID="MainArea" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+
+                    <asp:ContentPlaceHolder ID="BottomText" runat="server">
+                    
+                    </asp:ContentPlaceHolder>
+ 
+            </div>
+
+            <div id="footer">
+                
+                <p class="copyright"><a href="http://www.hull.ac.uk/legal/accessibility.html">Web Standards</a><a href="http://www.hull.ac.uk/legal/foi.html">Freedom of information</a> | <a href="http://www.hull.ac.uk/legal/index.html">Legal</a> | <a href="http://www.hull.ac.uk/contact/webfeedback.html">Website Feedback</a> | <span class="address">Scarborough Campus, The University of Hull, Filey Road, Scarborough YO11 3AZ, 01723 362392</span></p>
+
+            </div>
+            
+        </div>
+          
+        <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-3108410-4");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
+    </body>
+</html>

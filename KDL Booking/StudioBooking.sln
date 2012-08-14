@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioBooking", "StudioBooking.csproj", "{5EB9C2CD-5D19-4BEB-B3DE-E7A949F1CCC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioBookingMobile", "..\StudioBookingMobile\StudioBookingMobile.csproj", "{816C5FB8-E1F4-42CB-A889-6FBFC7219D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardClasses", "..\StandardClasses\StandardClasses.csproj", "{5C0AB1B0-D894-4107-88F4-3AD2407D6D3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EB9C2CD-5D19-4BEB-B3DE-E7A949F1CCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB9C2CD-5D19-4BEB-B3DE-E7A949F1CCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB9C2CD-5D19-4BEB-B3DE-E7A949F1CCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB9C2CD-5D19-4BEB-B3DE-E7A949F1CCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816C5FB8-E1F4-42CB-A889-6FBFC7219D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816C5FB8-E1F4-42CB-A889-6FBFC7219D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816C5FB8-E1F4-42CB-A889-6FBFC7219D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816C5FB8-E1F4-42CB-A889-6FBFC7219D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0AB1B0-D894-4107-88F4-3AD2407D6D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0AB1B0-D894-4107-88F4-3AD2407D6D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0AB1B0-D894-4107-88F4-3AD2407D6D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0AB1B0-D894-4107-88F4-3AD2407D6D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

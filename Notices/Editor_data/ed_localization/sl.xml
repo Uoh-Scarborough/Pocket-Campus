@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization xmlns="obout:editor:localization-schema">
+
+   <!-- Settings for top and bottom toolbars -->
+
+   <toolbar
+      design-mode  = "Oblikovni način"
+      html-text    = "HTML tekst"
+      preview      = "Predogled"
+      submit       = "Izvedi/shrani"
+      cancel       = "Prekliči"
+      toggle-on    = ""
+      toggle-off   = "Izklopi"
+      font         = "Pisava"
+      size         = "Velikost"
+      font-not-set = "Pisava ni nastavljena"
+      size-not-set = "Velikost ni nastavljena"
+   />
+
+   <!-- Settings for Quick Formatting panel -->
+
+   <quick-formatting
+      header  = "Hitro oblikovanje"
+      nostyle = "Brez sloga"
+   />
+
+   <!-- Tooltips for buttons of top and bottom toolbars -->
+
+   <tooltips>
+     <button name="Bold"                tooltip="Krepko" />
+     <button name="Italic"              tooltip="Ležeče" />
+     <button name="Underline"           tooltip="Podrčrtaj" />
+     <button name="StrikeThrough"       tooltip="Prečrtano" />
+     <button name="SubScript"           tooltip="Podpisano" />
+     <button name="SuperScript"         tooltip="Nadpisano" />
+
+     <button name="ForeColor"           tooltip="Barva ospredja" />
+     <button name="BackColor"           tooltip="Barva ozadja" />
+     <button name="ClearStyles"         tooltip="Odstrani obliko" />
+     <button name="Undo"                tooltip="Razveljavi (Ctrl-z)" />
+     <button name="Redo"                tooltip="Obnovi (Ctrl-y)" />
+     <button name="Cut"                 tooltip="Izreži" />
+     <button name="Copy"                tooltip="Kopiraj" />
+     <button name="Paste"               tooltip="Prilepi" />
+     <button name="PasteText"           tooltip="Prilepi preprosto besedilo" />
+     <button name="JustifyLeft"         tooltip="Poravnaj Levo" />
+     <button name="JustifyCenter"       tooltip="Poravnaj v sredino" />
+     <button name="JustifyRight"        tooltip="Poravna Desno" />
+     <button name="JustifyFull"         tooltip="Poravnaj" />
+     <button name="OrderedList"         tooltip="Številčen seznam" />
+     <button name="BulletedList"        tooltip="Označen seznam" />
+     <button name="DecreaseIndent"      tooltip="Zmanjšaj zamik" />
+     <button name="IncreaseIndent"      tooltip="Povečaj zamik" />
+     <button name="CreateLink"          tooltip="Ustvari povezavo" />
+     <button name="InsertTable"         tooltip="Vstavi tabelo" />
+     <button name="InsertHR"            tooltip="Vodoravno ravnilo" />
+     <button name="InsertIMG"           tooltip="Vstavi sliko" />
+     <button name="InsertIcon"          tooltip="Vstavi ikono" />
+     <button name="GetFormat"           tooltip="Kopiraj obliko" />
+     <button name="ApplyFormat"         tooltip="Uporabi obliko" />
+     <button name="ToUpperCase"         tooltip="Pretvori v velike črke" />
+     <button name="ToLowerCase"         tooltip="Pretvori v male črke" />
+     <button name="RemoveAlignment"     tooltip="Odstrani poravnavo" />
+     <button name="InsertSpec"          tooltip="Vstavi posebno pisavo" />
+     <button name="InsertAnchor"        tooltip="Vstavi sidro" />
+     <button name="Rtl"                 tooltip="Smer desna proti levi" />
+     <button name="Ltr"                 tooltip="Smer leva proti desni" />
+     <button name="SelectAll"           tooltip="Izberi vse" />
+     <button name="SelectNone"          tooltip="Ne izberi nič" />
+     <button name="Print"               tooltip="Natisni" />
+     <button name="AnchorsOn"           tooltip="Navedba sidra" />
+     <button name="SpellCheck"          tooltip="Črkovanje" />
+     <button name="myImageUpload"       tooltip="Naloži sliko na stran" />
+     <button name="myFlashUpload"       tooltip="Upload flash to site" />
+     <button name="myDocumentUpload"    tooltip="Upload document to site" />
+     <button name="myFieldsetInsert"    tooltip="Vstavi zbirko polj" />
+     <button name="increaseHeight"      tooltip="Povečaj urejevalnik" />
+     <button name="decreaseHeight"      tooltip="Zmanjšaj urejevalnik" />
+     <button name="preview"             tooltip="Predogled dokumenta" />
+     <button name="insertForm"          tooltip="Vstavi obliko" />
+     <button name="insertCheckBox"      tooltip="Vstavi/ Uredi potrditveno polje" />
+     <button name="insertRadio"         tooltip="Vstavi/ Uredi označeno besedilo" />
+     <button name="insertTextBox"       tooltip="Vstavi/ Uredi polje besedila" />
+     <button name="insertPassword"      tooltip="Vstavi/ Uredi polje za geslo" />
+     <button name="insertHidden"        tooltip="Vstavi/ Uredi skrito polje" />
+     <button name="insertButton"        tooltip="Vstavi/ Uredi gumb" />
+     <button name="insertSubmit"        tooltip="Vstavi/ Uredi gumb za pošiljanje" />
+     <button name="insertReset"         tooltip="Vstavi/ Uredi gumb za vzpostavljanje prvotnega stanja" />
+     <button name="insertDiv"           tooltip="Vstavi DIV" />
+     <button name="PasteWord"           tooltip="Prilepi iz MS Worda (prečiščeno besedilo)" />
+     <button name="ContextMenu"         tooltip="Kontekstualni meni za trenutni položaj" />
+     <button name="InsertFlash"         tooltip="Vstavi Flash" />
+     <button name="InsertMedia"         tooltip="Vstavi Media" />
+     <button name="InsertPlaceHolder"   tooltip="Vstavi zavzemalnik mesta" />
+     <button name="PlaceHoldersOn"      tooltip="Nvedba zavzemalnika mesta" />
+     <button name="MakeNotEditable"     tooltip="Mark selection as not editable" />
+     <button name="Paragraph"           tooltip="Make paragraph" />
+     <button name="ForeColorClear"      tooltip="Clear Foreground Color" />
+     <button name="BackColorClear"      tooltip="Clear Background Color" />
+     <button name="myTextareaInsert"    tooltip="Insert textarea" />
+
+     <button name="_chmode"             tooltip="Spremeni način urejanja" />
+     <button name="__submit"            tooltip="Sprejmi spremembe" />
+     <button name="__cancel"            tooltip="Prekliči spremembe" />
+   </tooltips>
+
+   <!-- Main Alerts of Editor's JavaScript core -->
+
+   <main-alerts>
+     <alert name="safari-v"             message="Uporabi Jabolko-V" />
+     <alert name="moz-v"                message="Uporabi Ctrl-V" />
+     <alert name="safari-c"             message="Uporabi Jabolko-C" />
+     <alert name="moz-c"                message="Uporabi Ctrl-C" />
+     <alert name="safari-no-support"    message="Nima podpore v Safari" />
+     <alert name="mozilla-no-support"   message="Nima podpore v Mozilli" />
+     <alert name="click-to-editor"      message="Klikni za urejanje panela." />
+     <alert name="mac-using"            message="Uporabi Safari ali FireFox..." />
+     <alert name="your-browser"         message="Tvoj brskalnik" />
+     <alert name="copy-format"          message="Klikni oblikovano besedilo in Kopiraj obliko." />
+     <alert name="select-text"          message="Izberi besedilo" />
+     <alert name="paste-fail"           message="Ne popravi oznečenega besedila za vstavljanje." />
+     <alert name="empty-img-url"        message="Povezava do slike mora biti izbrana." />
+     <alert name="bad-bg-img"           message="Napačna mapa slike za ozadje" />
+     <alert name="img-hor-spacing"      message="Vodoravni razmik mora imeti vrednost med 0 in 999." />
+     <alert name="img-vert-spacing"     message="Navpični razmik mora imeti vrednost med 0 in 999." />
+     <alert name="img-border-width"     message="Širina obrobe mora imeti vrdnost med 0 in 999." />
+     <alert name="invalid-color"        message="Neveljavna barva" />
+     <alert name="empty-link-url"       message="Povezava mora biti izbrana." />
+     <alert name="wait"                 message="Prosim počakajte..." />
+     <alert name="empty-anchor-name"    message="Ime sidra mora biti izbrano." />
+     <alert name="editor-toolbar"       message="Uporabi gumbe v urejevalniku." />
+     <alert name="spell-check-done"     message="Črkovanje je končano." />
+     <alert name="msword-switched"      message="Prilepljanje besedila iz MS Worda je vzpostavljeno.\nJust now:" />
+     <alert name="empty-flash-url"      message="Flash povezava mora biti izbrana." />
+     <alert name="empty-media-url"      message="Media povezava mora biti izbrana." />
+     <alert name="empty-placeholder-name" message="Ime zavzemalnika mesta mora biti izbrano." />
+   </main-alerts>
+
+   <!-- Popup Windows -->
+
+   <popup-windows>
+
+         <!-- Cell properties popup -->
+
+         <popup name="cell" create-title="" edit-title="Urejanje lastnosti celice">
+              <field name="legend"              value="Lastnosti celice" />
+              <field name="alignment"           value="Poravnava" />
+              <field name="v-alignment"         value="Vertikalna Poravnava" />
+              <field name="align-not-set"       value="Brez vrednosti" />
+              <field name="align-left"          value="Poravnaj levo" />
+              <field name="align-right"         value="Poravnaj desno" />
+              <field name="align-center"        value="Na sredino" />
+              <field name="valign-top"          value="Na vrh" />
+              <field name="valign-middle"       value="Na sredino" />
+              <field name="valign-bottom"       value="Na dno" />
+              <field name="valign-baseline"     value="Na osnovno linijo" />
+              <field name="valign-not-set"      value="Brez vrednosti" />
+              <field name="background-color"    value="Barva ozadja" />
+              <field name="remove-bg-color"     value="Odstrani barvo ozadja" />
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="background-image"    value="Slika Ozadja" />
+              <field name="remove-bg-image"     value="Odstrani sliko ozadja" />
+              <field name="bg-color-not-set"    value="Brez barve ozadja" />
+              <field name="bg-image-not-set"    value="Brez slike v ozadju" />
+              <field name="bg-color-popup"      value="Barva celice" />
+              <field name="bg-image-popup"      value="Slika v ozadju celice" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="color" create-title="Background Color" edit-title="Barva pisave">
+              <field name="set"                 value="Ponastavi" />
+              <field name="selected"            value="Izbrano" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="image" create-title="Insert Image" edit-title="Urejanje slike">
+              <field name="url"                 value="Povezava do slike" />
+              <field name="browse"              value="Išči" />
+              <field name="browse-title"        value="Išči sliko v galeriji" />
+              <field name="alt-text"            value="Nadomestni tekst" />
+              <field name="show-shadow"         value="Senčenje" />
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="shadow-title"        value="Nastavi/prekliči senčenje" />
+              <field name="layout"              value="Urejanje" />
+              <field name="alignment"           value="Poravnava" />
+              <field name="align-not-set"       value="Brez poravnave" />
+              <field name="align-left"          value="Levo" />
+              <field name="align-right"         value="Desno" />
+              <field name="align-texttop"       value="Besedilo na vrh" />
+              <field name="align-absmiddle"     value="Poravnava na absolutno sredino" />
+              <field name="align-baseline"      value="Poravnava na osnovno linijo" />
+              <field name="align-absbottom"     value="Poravnava na dno" />
+              <field name="align-bottom"        value="Na dno" />
+              <field name="align-middle"        value="Sredina" />
+              <field name="align-top"           value="Na vrh" />
+              <field name="border-width"        value="širina obrobe" />
+              <field name="spacing"             value="Razmik" />
+              <field name="horizontal"          value="Vodoravno" />
+              <field name="vertical"            value="Navpično" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="background-image" create-title="" edit-title="">
+              <field name="url"                    value="Povezava do slike" />
+              <field name="browse"                 value="Išči" />
+              <field name="browse-title"           value="Išči sliko v galeriji" />
+              <field name="repeat"                 value="Ponovi" />
+              <field name="repeat-all"             value="PONOVI" />
+              <field name="repeat-x"               value="PONOVI-X" />
+              <field name="repeat-y"               value="PONOVI-Y" />
+              <field name="repeat-no"              value="NE-PONOVI" />
+              <field name="attachment"             value="Priponka" />
+              <field name="attachment-fixed"       value="Statična priponka" />
+              <field name="attachment-scroll"      value="Premikajoča priponka" />
+              <field name="position-hor"           value="Vodoravni položaj" />
+              <field name="position-hor-left"      value="LEVO" />
+              <field name="position-hor-center"    value="CENTER" />
+              <field name="position-hor-right"     value="DESNO" />
+              <field name="position-vert"          value="Navpični položaj" />
+              <field name="position-vert-top"      value="NA VRH" />
+              <field name="position-vert-center"   value="CENTER" />
+              <field name="position-vert-bottom"   value="NA DNO" />
+              <field name="ok"                     value="Vredu" />
+              <field name="cancel"                 value="Prekliči" />
+         </popup>
+
+         <popup name="icons" create-title="Insert an Icon" edit-title="">
+         </popup>
+
+         <popup name="special-characters" create-title="Insert a special character" edit-title="">
+         </popup>
+
+         <popup name="image-browse" create-title="" edit-title="">
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="link" create-title="Create URL Link" edit-title="Urejanje povezav">
+              <field name="protocol"            value="Protokol" />
+              <field name="url"                 value="Povezava" />
+              <field name="browse"              value="Išči" />
+              <field name="browse-title"        value="Išči med nastavljenimi povezavami" />
+              <field name="tooltip"             value="Nasvet" />
+              <field name="target"              value="Cilj" />
+              <field name="target-new-win"      value="Novo okno" />
+              <field name="target-cur-win"      value="Trenutno okno" />
+              <field name="target-par-win"      value="Nadrejeno okno" />
+              <field name="target-top-win"      value="Vrhnje okno" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="link-browse" create-title="" edit-title="">
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="table" create-title="Insert a Table" edit-title="Urejanje tabele">
+              <field name="insert-remove"       value="vstavi-odstrani" />
+                                                <!-- character "/" is used as separator here -->
+              <field name="after-before"        value="po/pred" />
+              <field name="current-cell"        value="trenutna celica" />
+              <field name="columns"             value="Stolpec" />
+              <field name="span"                value="Združevanje" />
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="cell-padding"        value="Zamik celice" />
+              <field name="cell-spacing"        value="Razmik Celic" />
+              <field name="border-width"        value="širina obrobe" />
+              <field name="border-color"        value="Barva obrobe" />
+              <field name="border-color-popup"  value="Barva obrobe" />
+              <field name="border-style"        value="Slog obrobe" />
+              <field name="border-style-none"   value="Brez obrobe" />
+              <field name="border-style-dotted" value="Obroba - Pikčasta črta" />
+              <field name="border-style-dashed" value="Obroba - Črtkana črta" />
+              <field name="border-style-solid"  value="Obroba - Črta" />
+              <field name="background-color"    value="Barva Ozadja" />
+              <field name="remove-bg-color"     value="Odstrani barvo ozadja" />
+              <field name="background-image"    value="Slika ozadja" />
+              <field name="remove-bg-image"     value="Odstrani sliko ozadja" />
+              <field name="bg-color-not-set"    value="Brez vrednosti" />
+              <field name="bg-image-not-set"    value="Brez vrednosti" />
+              <field name="bg-color-popup"      value="Tabela-barva ozadja" />
+              <field name="bg-image-popup"      value="Tabela-slika ozadja" />
+              <field name="show-shadow"         value="Senčenje" />
+              <field name="shadow-title"        value="Nastavi/prekliči senčenje" />
+              <field name="rows"                value="Vrstica" />
+              <field name="remove-border-color" value="Remove border color" />
+              <field name="apply"               value="Apply" />
+              <field name="apply-column"        value="Column" />
+              <field name="apply-row"           value="Row" />
+              <field name="apply-table"         value="Table" />
+              <field name="apply-properties"    value="checked properties to" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="paste-plain" create-title="Paste Plain Text" edit-title="">
+              <field name="text"                value="Prilepi besedilo - uporabi tipke CTRL + V" />
+              <field name="cancel"              value="Prekliči" />
+              <field name="insert"              value="Vstavi" />
+              <field name="clear"               value="Zbriši" />
+         </popup>
+
+         <popup name="anchor" create-title="Insert Anchor" edit-title="Urejanje sidra">
+              <field name="name"                value="Ime sidra" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="spell-checker" create-title="Spell checker" edit-title="">
+              <field name="not-in-dictionary"   value="Ne v slovarju" />
+              <field name="replace-with"        value="Zamenjaj z" />
+              <field name="suggestions"         value="Predlogi" />
+              <field name="ignore"              value="Ne upoštevaj" />
+              <field name="ignore-all"          value="Ne upoštevaj ničesar" />
+              <field name="change"              value="Spremeni" />
+              <field name="change-all"          value="Spremeni vse" />
+              <field name="add-custom"          value="Add Custom" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="image-upload" create-title="Upload Image to site" edit-title="">
+              <field name="url"                 value="Slika" />
+              <field name="description"         value="Opis slike" />
+              <field name="saved"               value="Slika je uspešno shranjena" />
+              <field name="not-saved"           value="Ni shranjenih slik" />
+              <field name="ok"                  value="Naloži" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="flash-upload" create-title="Upload Flash to site" edit-title="">
+              <field name="url"                 value="Flash" />
+              <field name="description"         value="Description" />
+              <field name="saved"               value="Flash saved successfully" />
+              <field name="not-saved"           value="No Image saved" />
+              <field name="ok"                  value="Upload" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="document-upload" create-title="Upload Document to site" edit-title="">
+              <field name="url"                 value="Document" />
+              <field name="description"         value="Description" />
+              <field name="saved"               value="Document saved successfully" />
+              <field name="not-saved"           value="No document saved" />
+              <field name="instruction"         value="Select folder for uploading" />
+              <field name="current-folder"      value="Current folder" />
+              <field name="ok"                  value="Upload" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="fieldset" create-title="Insert Fieldset" edit-title="Urejanje zbirke polj">
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="padding"             value="Zamik" />
+              <field name="margin"              value="Robovi" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="form" create-title="Insert Form" edit-title="Urejanje oblike">
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Ime" />
+              <field name="method"              value="Postopek" />
+              <field name="action"              value="Akcija" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="input" create-title="Insert INPUT" edit-title="Urejanje vnosa">
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Ime" />
+              <field name="value"               value="Vrednost" />
+              <field name="tooltip"             value="Nasvet" />
+              <field name="text"                value="Okvir besedila" />
+              <field name="checkbox"            value="Potrditveno polje" />
+              <field name="radio"               value="Označeno besedilo" />
+              <field name="hidden"              value="Skrito polje" />
+              <field name="button"              value="Gumb" />
+              <field name="submit"              value="Gumb za pošiljanje" />
+              <field name="reset"               value="Gumb za vzpostavljanje prvotnega stanja" />
+              <field name="password"            value="Polje za geslo" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="div" create-title="Insert DIV" edit-title="Urejanje DIV">
+              <field name="id"                  value="ID" />
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="border-width"        value="širina obrobe" />
+              <field name="border-color"        value="Barva obrobe" />
+              <field name="border-color-popup"  value="Barva obrobe" />
+              <field name="border-style"        value="Slog obrobe" />
+              <field name="border-style-none"   value="Brez obrobe" />
+              <field name="border-style-dotted" value="Obroba - Pikčasta črta" />
+              <field name="border-style-dashed" value="Obroba - Črtkana črta" />
+              <field name="border-style-solid"  value="Obroba - Črta" />
+              <field name="remove-border-color"     value="Odstrani barvo obrobe" />
+              <field name="border-color-not-set"    value="Brez barve obrobe" />
+              <field name="background-color"    value="Barva ozadja" />
+              <field name="remove-bg-color"     value="Odstrani barvo ozadja" />
+              <field name="bg-color-popup"      value="DIV barva ozadja" />
+              <field name="background-image"    value="Slika ozadja" />
+              <field name="remove-bg-image"     value="Odstrani sliko ozadja" />
+              <field name="bg-color-not-set"    value="Brez barve ozadja" />
+              <field name="bg-image-not-set"    value="Brez slike ozadja" />
+              <field name="bg-image-popup"      value="DIV slika ozadja" />
+              <field name="overflow"            value="Ob presežku" />
+              <field name="overflow-none"       value="Brez vrednosti" />
+              <field name="overflow-visible"    value="Vidno" />
+              <field name="overflow-hidden"     value="Skrito" />
+              <field name="overflow-scroll"     value="Premikajoče" />
+              <field name="overflow-auto"       value="Avtomatska nastavitev" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+              <field name="css-class"           value="CSS Class" />
+         </popup>
+
+         <popup name="flash" create-title="Insert Flash" edit-title="Urejanje Flash datotek">
+              <field name="url"                 value="Povezava do flasha" />
+              <field name="browse"              value="Išči" />
+              <field name="browse-title"        value="Išči v galeriji" />
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="layout"              value="Urejanje" />
+              <field name="alignment"           value="Poravnava" />
+              <field name="align-not-set"       value="Brez vrednosti" />
+              <field name="align-left"          value="Levo" />
+              <field name="align-right"         value="Desno" />
+              <field name="align-texttop"       value="Tekst na vrh" />
+              <field name="align-absmiddle"     value="Poravnava na absolutno sredino" />
+              <field name="align-baseline"      value="Poravnava na osnovno linijo" />
+              <field name="align-absbottom"     value="Poravnava na dno" />
+              <field name="align-bottom"        value="Na dno" />
+              <field name="align-middle"        value="Na sredino" />
+              <field name="align-top"           value="Na vrh" />
+              <field name="spacing"             value="Razmik" />
+              <field name="horizontal"          value="Vodoravno" />
+              <field name="vertical"            value="Navpično" />
+              <field name="background-color"    value="Barva Ozadja" />
+              <field name="remove-bg-color"     value="Odstrani barvo ozadja" />
+              <field name="bg-color-popup"      value="Flash-barva ozadja" />
+              <field name="bg-color-not-set"    value="Brez barve ozadja" />
+              <field name="loop"                value="Ponavljaj" />
+              <field name="autoplay"            value="Samodejno predvajanje" />
+              <field name="transparency"        value="Prosojnost" />
+              <field name="properties"          value="Glavne lastnosti" />
+              <field name="quality"             value="Kakovost" />
+              <field name="quality-high"        value="Višina" />
+              <field name="quality-medium"      value="Srednja" />
+              <field name="quality-low"         value="Nizka" />
+              <field name="scale"               value="Obseg" />
+              <field name="scale-default"       value="Privzeto" />
+              <field name="scale-noborder"      value="Brez obrobe" />
+              <field name="scale-exactfit"      value="Natancna širina" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="flash-browse" create-title="" edit-title="">
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="media" create-title="Insert Media" edit-title="Urejanje Media">
+              <field name="url"                 value="Povezava do predmeta" />
+              <field name="browse"              value="Išči" />
+              <field name="browse-title"        value="Išči v galeriji" />
+              <field name="width"               value="širina" />
+              <field name="height"              value="Višina" />
+              <field name="alignment"           value="Poravnava" />
+              <field name="align-not-set"       value="Brez vrednosti" />
+              <field name="align-left"          value="Levo" />
+              <field name="align-right"         value="Desno" />
+              <field name="align-texttop"       value="Tekst na vrh" />
+              <field name="align-absmiddle"     value="Poravnava na absolutno sredino" />
+              <field name="align-baseline"      value="Poravnava na osnovno linijo" />
+              <field name="align-absbottom"     value="Poravnava na dno" />
+              <field name="align-bottom"        value="Na dno" />
+              <field name="align-middle"        value="Na sredino" />
+              <field name="align-top"           value="Na vrh" />
+              <field name="autostart"           value="Autostart" />
+              <field name="showcontrols"        value="Prikaži orodja" />
+              <field name="showtracker"         value="Prikaži sledilnik" />
+              <field name="showstatusbar"       value="Prikaži statusno vrstico" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="media-browse" create-title="" edit-title="">
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="placeholder" create-title="Insert PlaceHolder" edit-title="Urejanje zavzemalnika mesta">
+              <field name="name"                value="Ime zavzemalnika mesta" />
+              <field name="ok"                  value="Vredu" />
+              <field name="cancel"              value="Prekliči" />
+         </popup>
+
+         <popup name="textarea" create-title="Insert Textarea" edit-title="Edit Textarea">
+              <field name="id"                  value="ID" />
+              <field name="columns"             value="Columns" />
+              <field name="disabled"            value="Disabled" />
+              <field name="name"                value="Name" />
+              <field name="rows"                value="Rows" />
+              <field name="readonly"            value="Readonly" />
+              <field name="value"               value="Value" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+   </popup-windows>
+
+   <!-- Context Menu -->
+
+   <context-menu>
+         <field name="image-properties"         value="Lastnosti slike" />
+         <field name="copy-image"               value="Kopiraj sliko" />
+         <field name="cut-image"                value="Izreži sliko" />
+         <field name="delete-image"             value="Zbriši sliko" />
+         <field name="url-link-properties"      value="Lastnosti URL povezave" />
+         <field name="remove-url-link"          value="Odstrani URL Povezavo" />
+         <field name="cell-properties"          value="Lastnosti celice" />
+         <field name="table-properties"         value="Lastnosti tabele" />
+         <field name="copy-table"               value="Kopiraj tabelo" />
+         <field name="cut-table"                value="Izreži tabelo" />
+         <field name="delete-table"             value="Zbriši tabelo" />
+         <field name="anchor-properties"        value="Lastnosti sidra" />
+         <field name="delete-anchor"            value="Zbriši sidro" />
+         <field name="cut"                      value="Izreži" />
+         <field name="copy"                     value="Kopiraj" />
+         <field name="paste"                    value="Prilepi" />
+         <field name="paste-plain-text"         value="Prilepi prazno besedilo" />
+         <field name="delete"                   value="Zbriši" />
+         <field name="select-all"               value="Izberi vse" />
+         <field name="fieldset-properties"      value="Lastnosti zbirke polj" />
+         <field name="remove-fieldset"          value="Zbriši zbirko polj" />
+         <field name="div-properties"           value="DIV lastnosti" />
+         <field name="remove-div"               value="Zbriši DIV (z vsebino)" />
+         <field name="remove-div-tag"           value="Zbriši DIV tag (brez vsebine)" />
+         <field name="form-properties"          value="Lastnosti obrazca" />
+         <field name="remove-form"              value="Zbriši obrazec (z vsebino)" />
+         <field name="remove-form-tag"          value="Odstrani oznako obrazca (brez vsebine)" />
+         <field name="input-properties"         value="Lastnosti vnosa" />
+         <field name="delete-input"             value="Zbriši vnos" />
+         <field name="flash-properties"         value="Flash lastnosti" />
+         <field name="copy-flash"               value="Kopiraj Flash" />
+         <field name="cut-flash"                value="Izreži Flash" />
+         <field name="delete-flash"             value="Zbriši Flash" />
+         <field name="media-properties"         value="Media lastnosti" />
+         <field name="copy-media"               value="Kopiraj Media" />
+         <field name="cut-media"                value="Izreži Media" />
+         <field name="delete-media"             value="Zbriši Media" />
+         <field name="placeholder-properties"   value="Lastnosti zavzemalnika mesta" />
+         <field name="delete-placeholder"       value="Zbriši zavzemalnik mesta" />
+         <field name="make-editable"            value="Make editable" />
+         <field name="textarea-properties"      value="Textarea properties" />
+         <field name="remove-textarea"          value="Delete Textarea" />
+   </context-menu>
+
+</localization>

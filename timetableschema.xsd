@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Root">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element minOccurs="0" maxOccurs="1" name="Timetables">
+          <xsd:complexType>
+            <xsd:all>
+              <xsd:element minOccurs="0" maxOccurs="1" name="CourseName" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="DescriptionofModule" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="ScheduledStartDay" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="ScheduledStartTime" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="ScheduledEndTime" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="Locations" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="Staff" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="Weeks" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="POSCode" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="POS" />
+            </xsd:all>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element minOccurs="0" maxOccurs="unbounded" name="Activities">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="CourseName" type="xsd:string"/>
+              <xsd:element name="DescriptionofModule" type="xsd:string"/>
+              <xsd:element name="ScheduledStartDay" type="xsd:string" />
+              <xsd:element name="ScheduledStartTime" type="xsd:string" />
+              <xsd:element name="ScheduledEndTime" type="xsd:string" />
+              <xsd:element name="Locations" type="xsd:string" />
+              <xsd:element name="Staff" type="xsd:string" />
+              <xsd:element name="Weeks" type="xsd:string" />
+              <xsd:element name="POSCode" type="xsd:string" />
+              <xsd:element name="POS" type="xsd:string" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

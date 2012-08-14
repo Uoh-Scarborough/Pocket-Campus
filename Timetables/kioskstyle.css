@@ -1,0 +1,35 @@
+﻿.courselist
+{
+    font-size:large;
+    width:800px;
+    margin-left: 0px;
+    margin-top: 7px;
+    font-family: Georgia;
+}
+
+.coursebutton
+{
+    font-size:large;
+    margin-left: 16px;
+    Width:140px;
+    font-family: Georgia;
+    position:relative;
+    top:-27px;
+    left:810px;
+}
+
+.weeklist
+{
+   font-size:large;
+   width:auto;
+   margin-left: 0px;
+   margin-top: 7px;
+   font-family: Georgia;
+}
+
+.weekbutton
+{
+    font-size:large;
+    margin-left: 16px;
+    font-family: Georgia;
+}

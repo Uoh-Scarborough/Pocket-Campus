@@ -1,0 +1,36 @@
+<publishData>
+  <publishTarget publishUrl="\\hardy\$Data\Websites\Notices\">
+    <file relUrl="bin/NoticesandEvents.dll" publishTime="08/12/2009 11:41:22" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="08/07/2009 15:24:59" />
+    <file relUrl="Events.aspx" publishTime="08/12/2009 11:05:05" />
+    <file relUrl="Images/NoticesMenu.png" publishTime="08/04/2009 13:12:56" />
+    <file relUrl="bin/BasicFrame.WebControls.BasicDatePicker.dll" publishTime="04/24/2009 00:03:24" />
+    <file relUrl="Notices.aspx" publishTime="08/12/2009 11:33:20" />
+    <file relUrl="Web.config" publishTime="08/12/2009 09:27:05" />
+    <file relUrl="Images/NoticesMenuNoText.png" publishTime="08/05/2009 11:25:33" />
+    <file relUrl="Images/RedPortal.png" publishTime="08/04/2009 11:25:45" />
+    <file relUrl="bin/Notices.pdb" publishTime="08/07/2009 13:37:12" />
+    <file relUrl="Feed.aspx" publishTime="08/07/2009 15:03:10" />
+    <file relUrl="bin/BasicFrame.WebControls.BasicDatePicker.xml" publishTime="04/24/2009 00:05:34" />
+    <file relUrl="login.aspx" publishTime="08/12/2009 11:49:58" />
+    <file relUrl="Images/RedPBLogo.png" publishTime="08/04/2009 09:35:17" />
+    <file relUrl="bin/RichTextEditor.pdb" publishTime="07/31/2009 11:36:54" />
+    <file relUrl="bin/Refresh.Web.FreeTextBox.dll" publishTime="09/27/2007 21:06:16" />
+    <file relUrl="Images/RedMap.png" publishTime="08/04/2009 09:35:17" />
+    <file relUrl="Images/RedPocketIcon.png" publishTime="08/04/2009 09:35:17" />
+    <file relUrl="Images/PocketCampusRed.png" publishTime="08/04/2009 09:35:15" />
+    <file relUrl="Images/ScarboroughHeader.png" publishTime="08/04/2009 09:23:57" />
+    <file relUrl="RedMenu.Master" publishTime="08/12/2009 11:08:57" />
+    <file relUrl="Images/RedLibrary.png" publishTime="08/04/2009 09:35:17" />
+    <file relUrl="bin/NoticesandEvents.pdb" publishTime="08/12/2009 11:41:22" />
+    <file relUrl="Images/RedEmail.png" publishTime="08/04/2009 09:35:17" />
+    <file relUrl="Images/PocketCampusRedMenuBg.png" publishTime="08/04/2009 13:00:43" />
+    <file relUrl="Default.aspx" publishTime="08/12/2009 11:08:10" />
+    <file relUrl="Images/RedInfo.png" publishTime="08/04/2009 09:35:17" />
+    <file relUrl="bin/RichTextEditor.dll" publishTime="07/31/2009 11:36:54" />
+    <file relUrl="style.css" publishTime="08/12/2009 11:48:05" />
+    <file relUrl="Images/PocketCampusRedNoMenu.png" publishTime="08/04/2009 09:35:17" />
+    <file relUrl="Images/RedeBridge.png" publishTime="08/04/2009 09:35:17" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="08/07/2009 15:24:59" />
+  </publishTarget>
+</publishData>

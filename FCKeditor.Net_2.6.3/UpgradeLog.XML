@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FredCK.FCKeditorV2.vs2005">
+</Property><Property Name="Solution File" Value="C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\FredCK.FCKeditorV2.vs2005.sln">
+</Property><Property Name="Date" Value="14 June 2010">
+</Property><Property Name="Time" Value="09:12:22">
+</Property></Properties><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FredCK.FCKeditorV2.vs2005.csproj" Description="Project file successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FredCK.FCKeditorV2.vs2005.csproj">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FCKeditor.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FCKeditor.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FCKeditorConfigurations.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FCKeditorConfigurations.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FCKeditorDesigner.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FCKeditorDesigner.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FileBrowser\Config.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FileBrowser\Config.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FileBrowser\Connector.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FileBrowser\Connector.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FileBrowser\TypeConfig.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FileBrowser\TypeConfig.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FileBrowser\TypeConfigList.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FileBrowser\TypeConfigList.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FileBrowser\FileWorkerBase.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FileBrowser\FileWorkerBase.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FileBrowser\Uploader.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FileBrowser\Uploader.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="Util.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\Util.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FileBrowser\XmlResponseHandler.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\FileBrowser\XmlResponseHandler.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="XmlUtil.cs" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\XmlUtil.cs">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="_assemblykey.snk" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\_assemblykey.snk">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="license.txt" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\license.txt">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="_documentation.html" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\_documentation.html">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="_whatsnew.html" Description="File successfully backed up as C:\Users\346388\Desktop\FCKeditor.Net_2.6.3\Backup\_whatsnew.html">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FredCK.FCKeditorV2.vs2005.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FredCK.FCKeditorV2.vs2005" Source="FredCK.FCKeditorV2.vs2005.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FredCK.FCKeditorV2.vs2005" Source="FredCK.FCKeditorV2.vs2005.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

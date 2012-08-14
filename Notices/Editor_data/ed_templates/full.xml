@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<template xmlns="obout:editor:template-schema">
+  <property name="Appearance" value="custom" />
+  <property name="FlashBrowse" value="myFlashBrowse.aspx" />
+  <property name="MediaBrowse" value="myMediaBrowse.aspx" />
+  <property name="ImageBrowse" value="myImageBrowse.aspx" />
+  <property name="UrlBrowse" value="myUrlBrowse.aspx" />
+   
+  <collection name="Buttons">
+      <item name="Toggle"><property name="name" value="Bold" /></item>
+      <item name="Toggle"><property name="name" value="Italic" /></item>
+      <item name="Toggle"><property name="name" value="Underline" /></item>
+      <item name="Toggle"><property name="name" value="StrikeThrough" /></item>
+      <item name="Toggle"><property name="name" value="SubScript" /></item>
+      <item name="Toggle"><property name="name" value="SuperScript" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="ForeColor" /></item>
+      <item name="Method"><property name="name" value="ForeColorClear" /></item>
+      <item name="Method"><property name="name" value="BackColor" /></item>
+      <item name="Method"><property name="name" value="BackColorClear" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="ClearStyles" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Select"><property name="name" value="FontName" /></item>
+      <item name="Select"><property name="name" value="FontSize" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="VerticalSeparator" />
+      <item name="Method"><property name="name" value="Undo" /></item>
+      <item name="Method"><property name="name" value="Redo" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="Cut" /></item>
+      <item name="Method"><property name="name" value="Copy" /></item>
+      <item name="Method"><property name="name" value="Paste" /></item>
+      <item name="Method"><property name="name" value="PasteText" /></item>
+      <item name="Method"><property name="name" value="PasteWord" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="Paragraph" /></item>
+      <item name="Method"><property name="name" value="JustifyLeft" /></item>
+      <item name="Method"><property name="name" value="JustifyCenter" /></item>
+      <item name="Method"><property name="name" value="JustifyRight" /></item>
+      <item name="Method"><property name="name" value="JustifyFull" /></item>
+      <item name="Method"><property name="name" value="RemoveAlignment" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="OrderedList" /></item>
+      <item name="Method"><property name="name" value="BulletedList" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="DecreaseIndent" /></item>
+      <item name="Method"><property name="name" value="IncreaseIndent" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="MakeNotEditable" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="VerticalSeparator" />
+      <item name="Method"><property name="name" value="CreateLink" /></item>
+      <item name="Method"><property name="name" value="InsertTable" /></item>
+      <item name="Method"><property name="name" value="InsertDiv" /></item>
+      <item name="Method"><property name="name" value="InsertHR" /></item>
+      <item name="Method"><property name="name" value="InsertIMG" /></item>
+      <item name="Method"><property name="name" value="InsertIcon" /></item>
+      <item name="Method"><property name="name" value="InsertSpec" /></item>
+      <item name="Method"><property name="name" value="InsertFlash" /></item>
+      <item name="Method"><property name="name" value="InsertMedia" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="InsertForm" /></item>
+      <item name="Method"><property name="name" value="InsertCheckBox" /></item>
+      <item name="Method"><property name="name" value="InsertRadio" /></item>
+      <item name="Method"><property name="name" value="InsertTextBox" /></item>
+      <item name="Method"><property name="name" value="InsertPassword" /></item>
+      <item name="Method"><property name="name" value="InsertHidden" /></item>
+      <item name="Method"><property name="name" value="InsertButton" /></item>
+      <item name="Method"><property name="name" value="InsertSubmit" /></item>
+      <item name="Method"><property name="name" value="InsertReset" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="ToLowerCase" /></item>
+      <item name="Method"><property name="name" value="ToUpperCase" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="VerticalSeparator" />
+      <item name="Method"><property name="name" value="GetFormat" /></item>
+      <item name="Method"><property name="name" value="ApplyFormat" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="InsertAnchor" /></item>
+      <item name="Toggle"><property name="name" value="AnchorsOn" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="InsertPlaceHolder" /></item>
+      <item name="Toggle"><property name="name" value="PlaceHoldersOn" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Toggle"><property name="name" value="Ltr" /></item>
+      <item name="Toggle"><property name="name" value="Rtl" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="SelectAll" /></item>
+      <item name="Method"><property name="name" value="SelectNone" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="Print" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="SpellCheck" /></item>
+      <item name="HorizontalSeparator" />
+      <item name="Method"><property name="name" value="IncreaseHeight" /></item>
+      <item name="Method"><property name="name" value="DecreaseHeight" /></item>
+      <item name="Method"><property name="name" value="Preview" /></item>
+      <item name="Method"><property name="name" value="ContextMenu" /></item>
+      <item name="TextIndicator" />
+  </collection>
+</template>

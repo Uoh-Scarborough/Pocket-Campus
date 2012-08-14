@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<template xmlns="obout:editor:template-schema">
+  <property name="Submit" value="false" />
+  <property name="ModeSwitch" value="false" />
+  <property name="ShowQuickFormat" value="false" />
+  <property name="Height" value="600" />
+  <property name="Appearance" value="custom" />
+  <property name="FlashBrowse" value="myFlashBrowse.aspx" />
+  <property name="MediaBrowse" value="myMediaBrowse.aspx" />
+  <property name="ImageBrowse" value="myImageBrowse.aspx" />
+  <property name="UrlBrowse" value="myUrlBrowse.aspx" />
+   
+  <collection name="Buttons">
+     <item name="Toggle">
+        <property name="name" value="bold" />
+     </item>
+     <item name="Toggle">
+        <property name="name" value="italic" />
+     </item>
+     <item name="HorizontalSeparator" />
+     <item name="Method">
+        <property name="name" value="undo" />
+     </item>
+     <item name="Method">
+        <property name="name" value="redo" />
+     </item>
+     <item name="HorizontalSeparator" />
+     <item name="Method">
+        <property name="name" value="SpellCheck" />
+     </item>
+     <item name="HorizontalSeparator" />
+     <item name="Select">
+        <property name="name" value="FontName" />
+     </item>
+     <item name="TextIndicator" />
+  </collection>
+
+  <collection name="FontNames">
+     <item name="FontNamesItem" >
+       <property name="Name" value="Verdana" />
+       <property name="Family" value="verdana,arial,helvetica,sans-serif" />
+     </item>
+     <item name="FontNamesItem" >
+       <property name="Name" value="MS Sans Serif" />
+       <property name="Family" value="MS Sans Serif,sans-serif,tahoma" />
+     </item>
+     <item name="FontNamesItem" >
+       <property name="Name" value="Tahoma" />
+       <property name="Family" value="tahoma,arial,helvetica,sans-serif" />
+    </item>
+  </collection>
+</template>

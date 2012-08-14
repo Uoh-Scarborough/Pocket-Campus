@@ -1,0 +1,573 @@
+<?xml version="1.0" ?>
+<localization xmlns="obout:editor:localization-schema">
+
+   <!-- Settings for top and bottom toolbars -->
+
+   <toolbar
+      design-mode  = "Entwurfsmodus"
+      html-text    = "HTML Text"
+      preview      = "Vorschau"
+      submit       = "Absenden"
+      cancel       = "CANCEL"
+      toggle-on    = "Aktiviere"
+      toggle-off   = "Deaktivierte"
+      font         = "Schrift"
+      size         = "Groesse"
+      font-not-set = "Nicht festgelegt"
+      size-not-set = "Nicht festgelegt"
+   />
+
+   <!-- Settings for Quick Formatting panel -->
+
+   <quick-formatting
+      header  = "Schnell-Format."
+      nostyle = "keine Format."
+   />
+
+   <!-- Tooltips for buttons of top and bottom toolbars -->
+
+   <tooltips>
+     <button name="Bold"                tooltip="Fett" />
+     <button name="Italic"              tooltip="Kursiv" />
+     <button name="Underline"           tooltip="Unterstrichen" />
+     <button name="StrikeThrough"       tooltip="Durchgestrichen" />
+     <button name="SubScript"           tooltip="Tiefgestellt" />
+     <button name="SuperScript"         tooltip="Hochgestellt" />
+
+     <button name="ForeColor"           tooltip="Schriftfarbe" />
+     <button name="BackColor"           tooltip="Hintergrundfarbe" />
+     <button name="ClearStyles"         tooltip="Formatierung entfernen" />
+     <button name="Undo"                tooltip="Rueckgaengig (Ctrl-z)" />
+     <button name="Redo"                tooltip="Wiederherstellen (Ctrl-y)" />
+     <button name="Cut"                 tooltip="Ausschneiden" />
+     <button name="Copy"                tooltip="Kopieren" />
+     <button name="Paste"               tooltip="Einfuegen" />
+     <button name="PasteText"           tooltip="Einfuegen (ohne Formatierung)" />
+     <button name="JustifyLeft"         tooltip="Linksbuendig" />
+     <button name="JustifyCenter"       tooltip="Zentriert" />
+     <button name="JustifyRight"        tooltip="Rechtsbuendig" />
+     <button name="JustifyFull"         tooltip="Ausrichtung" />
+     <button name="OrderedList"         tooltip="Nummerierte Liste" />
+     <button name="BulletedList"        tooltip="Aufzaehlungsliste" />
+     <button name="DecreaseIndent"      tooltip="Einzug verkleinern" />
+     <button name="IncreaseIndent"      tooltip="Einzug vergroessern" />
+     <button name="CreateLink"          tooltip="Hyperlink hinzufuegen" />
+     <button name="InsertTable"         tooltip="Tabelle einfuegen" />
+     <button name="InsertHR"            tooltip="Horizontale Linie" />
+     <button name="InsertIMG"           tooltip="Bild einfuegen" />
+     <button name="InsertIcon"          tooltip="Icon einfuegen" />
+     <button name="GetFormat"           tooltip="Formatierung kopieren" />
+     <button name="ApplyFormat"         tooltip="Formatierung uebernehmen" />
+     <button name="ToUpperCase"         tooltip="In Grossbuchstaben" />
+     <button name="ToLowerCase"         tooltip="In Kleinbuchstaben" />
+     <button name="RemoveAlignment"     tooltip="Ausrichtung entfernen" />
+     <button name="InsertSpec"          tooltip="Sonderzeichen einfuegen" />
+     <button name="InsertAnchor"        tooltip="Anker einfuegen" />
+     <button name="Rtl"                 tooltip="Von rechts nach links" />
+     <button name="Ltr"                 tooltip="Von links nach rechts" />
+     <button name="SelectAll"           tooltip="Alles markieren" />
+     <button name="SelectNone"          tooltip="Markierung aufheben" />
+     <button name="Print"               tooltip="Drucken" />
+     <button name="AnchorsOn"           tooltip="Anker anzeigen" />
+     <button name="SpellCheck"          tooltip="Rechtschreibpruefung" />
+     <button name="myImageUpload"       tooltip="Bild hochladen" />
+     <button name="myFlashUpload"       tooltip="Upload flash to site" />
+     <button name="myDocumentUpload"    tooltip="Upload document to site" />
+     <button name="myFieldsetInsert"    tooltip="Feldsatz einfuegen" />
+     <button name="increaseHeight"      tooltip="Editorbereich verkleinern" />
+     <button name="decreaseHeight"      tooltip="Editorbereich vergroessern" />
+     <button name="preview"             tooltip="Vorschau anpassen" />
+     <button name="insertForm"          tooltip="Formular einfuegen" />
+     <button name="insertCheckBox"      tooltip="Auswahlfeld einfuegen / aendern" />
+     <button name="insertRadio"         tooltip="Optionsfeld einfuegen / aendern" />
+     <button name="insertTextBox"       tooltip="Textfeld einfuegen / aendern" />
+     <button name="insertPassword"      tooltip="Passwortfeld einfuegen / aendern" />
+     <button name="insertHidden"        tooltip="Verstecktes Feld einfuegen / aendern" />
+     <button name="insertButton"        tooltip="Schaltflaeche einfuegen / aendern" />
+     <button name="insertSubmit"        tooltip="Absenden-Schaltflaeche einfuegen / aendern" />
+     <button name="insertReset"         tooltip="Abbrechen-Schaltflaeche einfuegen / aendern" />
+     <button name="insertDiv"           tooltip="DIV einfuegen" />
+     <button name="PasteWord"           tooltip="AUs MS Word einfuegen (mit Bereinigung)" />
+     <button name="ContextMenu"         tooltip="Context menu for current position" />
+     <button name="InsertFlash"         tooltip="Insert Flash" />
+     <button name="InsertMedia"         tooltip="Insert Media" />
+     <button name="InsertPlaceHolder"   tooltip="Insert PlaceHolder" />
+     <button name="PlaceHoldersOn"      tooltip="PlaceHolders indication" />
+     <button name="MakeNotEditable"     tooltip="Mark selection as not editable" />
+     <button name="Paragraph"           tooltip="Make paragraph" />
+     <button name="ForeColorClear"      tooltip="Clear Foreground Color" />
+     <button name="BackColorClear"      tooltip="Clear Background Color" />
+     <button name="myTextareaInsert"    tooltip="Insert textarea" />
+
+     <button name="_chmode"             tooltip="Bearbeitungsmodus wechseln" />
+     <button name="__submit"            tooltip="aenderungen uebernehmen" />
+     <button name="__cancel"            tooltip="Cancel changes" />
+   </tooltips>
+
+   <!-- Main Alerts of Editor's JavaScript core -->
+
+   <main-alerts>
+     <alert name="safari-v"             message="Benutze Apple-V" />
+     <alert name="moz-v"                message="Benutze Strg-V" />
+     <alert name="safari-c"             message="Benutze Apple-C" />
+     <alert name="moz-c"                message="Benutze Strg-C" />
+     <alert name="safari-no-support"    message="Im SAFARI nicht unterstuetzt" />
+     <alert name="mozilla-no-support"   message="Im MOZILLA nicht unterstuetzt" />
+     <alert name="click-to-editor"      message="Klicken um Bereich zu bearbeiten." />
+     <alert name="mac-using"            message="Benutzen sie bitte Safari oder FireFox..." />
+     <alert name="your-browser"         message="Ihr Browser" />
+     <alert name="copy-format"          message="Klicken sie auf einen formatierten Text um die Formatierung zu kopieren." />
+     <alert name="select-text"          message="Text auswaehlen." />
+     <alert name="paste-fail"           message="Einfuegen hier nicht moeglich." />
+     <alert name="empty-img-url"        message="Bild-URL muss angegeben werden." />
+     <alert name="bad-bg-img"           message="Bilddatei fuer Hintergrund ungueltig." />
+     <alert name="img-hor-spacing"      message="Horizontaler Abstand muss eine Zahl zwischen 0 und 999 sein." />
+     <alert name="img-vert-spacing"     message="Vertikaler  Abstand muss eine Zahl zwischen 0 und 999 sein." />
+     <alert name="img-border-width"     message="Rahmendicke muss eine Zahl zwischen 0 und 999 sein.." />
+     <alert name="invalid-color"        message="Ungueltige Farbe" />
+     <alert name="empty-link-url"       message="Link-URL muss angegeben werden." />
+     <alert name="wait"                 message="Bitte warten..." />
+     <alert name="empty-anchor-name"    message="Ankername muss angegeben werden." />
+     <alert name="editor-toolbar"       message="Bitte Editor-Schaltflaechen verwenden." />
+     <alert name="spell-check-done"     message="Rechtschreibpruefung abgeschlossen." />
+     <alert name="msword-switched"      message="Einfuegen von MS Word angeschaltet.\nAktuell:" />
+     <alert name="empty-flash-url"      message="Flash URL must be specified." />
+     <alert name="empty-media-url"      message="Media URL must be specified." />
+     <alert name="empty-placeholder-name" message="PlaceHolder's name must be specified." />
+   </main-alerts>
+
+   <!-- Popup Windows -->
+
+   <popup-windows>
+
+         <!-- Cell properties popup -->
+
+         <popup name="cell" create-title="" edit-title="Zelleneigenschaften">
+              <field name="legend"              value="Zelleneigenschaften" />
+              <field name="alignment"           value="Ausrichtung" />
+              <field name="v-alignment"         value="Vertikale Ausrichtung" />
+              <field name="align-not-set"       value="Nicht definiert" />
+              <field name="align-left"          value="Linksbuendig" />
+              <field name="align-right"         value="Rightsbuendig" />
+              <field name="align-center"        value="Zentriert" />
+              <field name="valign-top"          value="Oben" />
+              <field name="valign-middle"       value="Mitte" />
+              <field name="valign-bottom"       value="Unten" />
+              <field name="valign-baseline"     value="Basislinie" />
+              <field name="valign-not-set"      value="Nicht definiert" />
+              <field name="background-color"    value="Hintergrundfarbe" />
+              <field name="remove-bg-color"     value="Hintergrundfarbe entfernen" />
+              <field name="width"               value="Breite" />
+              <field name="height"              value="Hoehe" />
+              <field name="background-image"    value="Hintergrundbild" />
+              <field name="remove-bg-image"     value="Hintergrundbild entfernen" />
+              <field name="bg-color-not-set"    value="Nicht definiert" />
+              <field name="bg-image-not-set"    value="Nicht definiert" />
+              <field name="bg-color-popup"      value="Hintergrundfarbe der Zelle" />
+              <field name="bg-image-popup"      value="Hintergrundbild der Zelle" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbruch" />
+         </popup>
+
+         <popup name="color" create-title="Farbe setzen" edit-title="Farbe aendern">
+              <field name="set"                 value="Setzen" />
+              <field name="selected"            value="Ausgewaehlt" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbruch" />
+         </popup>
+
+         <popup name="image" create-title="Bild einfuegen" edit-title="Bild bearbeiten">
+              <field name="url"                 value="Bild-URL" />
+              <field name="browse"              value="Durchsuchen" />
+              <field name="browse-title"        value="Gallerie durchsuchen" />
+              <field name="alt-text"            value="Alternativtext" />
+              <field name="show-shadow"         value="Schatten anzeigen" />
+              <field name="width"               value="Breite" />
+              <field name="height"              value="Hoehe" />
+              <field name="shadow-title"        value="Schatteneffekt Setzen / Zuruecksetzen" />
+              <field name="layout"              value="Layout" />
+              <field name="alignment"           value="Ausrichtung" />
+              <field name="align-not-set"       value="Nicht definiert" />
+              <field name="align-left"          value="Linksbuendig" />
+              <field name="align-right"         value="Rechtsbuendig" />
+              <field name="align-texttop"       value="Text oben" />
+              <field name="align-absmiddle"     value="Absolut mittig" />
+              <field name="align-baseline"      value="Basislinie" />
+              <field name="align-absbottom"     value="Absolut unten" />
+              <field name="align-bottom"        value="Unten" />
+              <field name="align-middle"        value="Mitte" />
+              <field name="align-top"           value="Oben" />
+              <field name="border-width"        value="Rahmendicke" />
+              <field name="spacing"             value="Abstand" />
+              <field name="horizontal"          value="Horizontal" />
+              <field name="vertical"            value="Vertikal" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbruch" />
+         </popup>
+
+         <popup name="background-image" create-title="" edit-title="">
+              <field name="url"                    value="Image URL" />
+              <field name="browse"                 value="Durchsuchen" />
+              <field name="browse-title"           value="Gallerie durchsuchen" />
+              <field name="repeat"                 value="Wiederholungen" />
+              <field name="repeat-all"             value="Alle Richtungen" />
+              <field name="repeat-x"               value="Horizontal" />
+              <field name="repeat-y"               value="Vertikal" />
+              <field name="repeat-no"              value="Keine Wiederholung" />
+              <field name="attachment"             value="Hintergrundbild" />
+              <field name="attachment-fixed"       value="Fixiert" />
+              <field name="attachment-scroll"      value="Rollen" />
+              <field name="position-hor"           value="Horizontale Position" />
+              <field name="position-hor-left"      value="Links" />
+              <field name="position-hor-center"    value="Zentriert" />
+              <field name="position-hor-right"     value="Rechts" />
+              <field name="position-vert"          value="Vertikale Position" />
+              <field name="position-vert-top"      value="Oben" />
+              <field name="position-vert-center"   value="Mitte" />
+              <field name="position-vert-bottom"   value="Unten" />
+              <field name="ok"                     value="OK" />
+              <field name="Cancel"                 value="Abbruch" />
+         </popup>
+
+         <popup name="icons" create-title="Icon einfuegen" edit-title="">
+         </popup>
+
+         <popup name="special-characters" create-title="Sonderzeichen einfuegen" edit-title="">
+         </popup>
+
+         <popup name="image-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbruch" />
+         </popup>
+
+         <popup name="link" create-title="Link erstellen" edit-title="Link bearbeiten">
+              <field name="protocol"            value="Protokoll" />
+              <field name="url"                 value="URL" />
+              <field name="browse"              value="Durchsuchen" />
+              <field name="browse-title"        value="Vordefinierte Links durchsuchen" />
+              <field name="tooltip"             value="ToolTip" />
+              <field name="target"              value="Ziel" />
+              <field name="target-new-win"      value="Neues Fenster" />
+              <field name="target-cur-win"      value="Aktuelles Fenster" />
+              <field name="target-par-win"      value="uebergeordnetes Fenster" />
+              <field name="target-top-win"      value="Oberstes Fenster" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbruch" />
+         </popup>
+
+         <popup name="link-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbruch" />
+         </popup>
+
+         <popup name="table" create-title="Tabelle einfuegen" edit-title="Tabelle bearbeiten">
+              <field name="insert-remove"       value="Einfuegen / Entfernen" />
+                                                <!-- character "/" is used as separator here -->
+              <field name="after-before"        value="vor / nach" />
+              <field name="current-cell"        value="aktueller Zelle" />
+              <field name="columns"             value="Spalten" />
+              <field name="span"                value="Verbinden" />
+              <field name="width"               value="Breite" />
+              <field name="height"              value="Hoehe" />
+              <field name="cell-padding"        value="Innenabstand" />
+              <field name="cell-spacing"        value="Aussenabstand" />
+              <field name="border-width"        value="Rahmenstaerke" />
+              <field name="border-color"        value="Rahmenfarbe" />
+              <field name="border-color-popup"  value="Rahmenfarbe" />
+              <field name="border-style"        value="Rahmentyp" />
+              <field name="border-style-none"   value="Kein Rahmen" />
+              <field name="border-style-dotted" value="Gepunktet" />
+              <field name="border-style-dashed" value="Gestrichelt" />
+              <field name="border-style-solid"  value="Linie" />
+              <field name="background-color"    value="Hintergrundfarbe" />
+              <field name="remove-bg-color"     value="Hintergrundfarbe entfernen" />
+              <field name="background-image"    value="Hitnergrundbild" />
+              <field name="remove-bg-image"     value="Hintergrundbild entfernen" />
+              <field name="bg-color-not-set"    value="Nicht definiert" />
+              <field name="bg-image-not-set"    value="Nicht definiert" />
+              <field name="bg-color-popup"      value="Hintergrundfarbe der Tabelle" />
+              <field name="bg-image-popup"      value="Hintergrundbild der Tabelle" />
+              <field name="show-shadow"         value="Schatten" />
+              <field name="shadow-title"        value="Schatten setzen / zuruecksetzen" />
+              <field name="rows"                value="Reihen" />
+              <field name="remove-border-color" value="Remove border color" />
+              <field name="apply"               value="Apply" />
+              <field name="apply-column"        value="Column" />
+              <field name="apply-row"           value="Row" />
+              <field name="apply-table"         value="Table" />
+              <field name="apply-properties"    value="checked properties to" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbrechen" />
+         </popup>
+
+         <popup name="paste-plain" create-title="Text einfuegen" edit-title="">
+              <field name="text"                value="Nutzen sie STRG+V zum einfuegen von Text" />
+              <field name="Cancel"              value="Abbruch" />
+              <field name="insert"              value="Einfuegen" />
+              <field name="clear"               value="Zuruecksetzen" />
+         </popup>
+
+         <popup name="anchor" create-title="Anker einfuegen" edit-title="Anker bearbeiten">
+              <field name="name"                value="Ankername" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbrechen" />
+         </popup>
+
+         <popup name="spell-checker" create-title="Rechtschreibpruefung" edit-title="">
+              <field name="not-in-dictionary"   value="Nicht im Woerterbuch" />
+              <field name="replace-with"        value="Ersetzen mit" />
+              <field name="suggestions"         value="Vorschlaege" />
+              <field name="ignore"              value="Ignorieren" />
+              <field name="ignore-all"          value="Alle ignorieren" />
+              <field name="change"              value="aendern" />
+              <field name="change-all"          value="Alles aendern" />
+              <field name="add-custom"          value="Add Custom" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbrechen" />
+         </popup>
+
+         <popup name="image-upload" create-title="Bild hochladen" edit-title="">
+              <field name="url"                 value="Bild" />
+              <field name="description"         value="Beschreibung" />
+              <field name="saved"               value="Bild erfolgreich gespeichert" />
+              <field name="not-saved"           value="Bild nicht gespeichert" />
+              <field name="ok"                  value="Upload" />
+              <field name="Cancel"              value="Abbrechen" />
+         </popup>
+
+         <popup name="flash-upload" create-title="Upload Flash to site" edit-title="">
+              <field name="url"                 value="Flash" />
+              <field name="description"         value="Description" />
+              <field name="saved"               value="Flash saved successfully" />
+              <field name="not-saved"           value="No Image saved" />
+              <field name="ok"                  value="Upload" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="document-upload" create-title="Upload Document to site" edit-title="">
+              <field name="url"                 value="Document" />
+              <field name="description"         value="Description" />
+              <field name="saved"               value="Document saved successfully" />
+              <field name="not-saved"           value="No document saved" />
+              <field name="instruction"         value="Select folder for uploading" />
+              <field name="current-folder"      value="Current folder" />
+              <field name="ok"                  value="Upload" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="fieldset" create-title="Feldsatz einfuegen" edit-title="Feldsatz bearbeiten">
+              <field name="width"               value="Breite" />
+              <field name="height"              value="Hoehe" />
+              <field name="padding"             value="Innenabstand" />
+              <field name="margin"              value="Aussenabstand" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbrechen" />
+         </popup>
+
+         <popup name="form" create-title="Formular einfuegen" edit-title="Formular bearbeiten">
+              <field name="width"               value="Breite" />
+              <field name="height"              value="Hoehe" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Name" />
+              <field name="method"              value="Methode" />
+              <field name="action"              value="Ziel" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbrechen" />
+         </popup>
+
+         <popup name="input" create-title="Eingabefeld einfuegen" edit-title="Eingabefeld bearbeiten">
+              <field name="width"               value="Breite" />
+              <field name="height"              value="Hoehe" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Name" />
+              <field name="value"               value="Wert" />
+              <field name="tooltip"             value="ToolTip" />
+              <field name="text"                value="Textfeld" />
+              <field name="checkbox"            value="Auswahlfeld" />
+              <field name="radio"               value="Optionsfeld" />
+              <field name="hidden"              value="Verstecktes Feld" />
+              <field name="button"              value="Schaltflaeche" />
+              <field name="submit"              value="Absenden Schaltflaeche" />
+              <field name="reset"               value="Abbrechen Schaltflaeche" />
+              <field name="password"            value="Passwortfeld" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbrechen" />
+         </popup>
+
+         <popup name="div" create-title="DIV einfuegen" edit-title="DIV bearbeiten">
+              <field name="id"                  value="ID" />
+              <field name="width"               value="Breite" />
+              <field name="height"              value="Hoehe" />
+              <field name="border-width"        value="Rahmenstaerke" />
+              <field name="border-color"        value="Rahmenfarbe" />
+              <field name="border-color-popup"  value="Rahmenfarbe" />
+              <field name="border-style"        value="Rahmenart" />
+              <field name="border-style-none"   value="Kein Rahmen" />
+              <field name="border-style-dotted" value="Gepunktet" />
+              <field name="border-style-dashed" value="Gestrichelt" />
+              <field name="remove-border-color"     value="Rahmenfarbe entfernen" />
+              <field name="border-color-not-set"    value="Nicht definiert" />
+              <field name="border-style-solid"  value="Linie" />
+              <field name="background-color"    value="Hintergrundfarbe" />
+              <field name="remove-bg-color"     value="Hintergrundfarbe entfernen" />
+              <field name="bg-color-popup"      value="Hintergrundfarbe des DIVs" />
+              <field name="background-image"    value="Hintergrundbild" />
+              <field name="remove-bg-image"     value="Hintergrundbild entfernen" />
+              <field name="bg-color-not-set"    value="Nicht definiert" />
+              <field name="bg-image-not-set"    value="Nicht definiert" />
+              <field name="bg-image-popup"      value="Hintergrundbild des DIVs" />
+              <field name="overflow"            value="ueberlauf" />
+              <field name="overflow-none"       value="Nicht definiert" />
+              <field name="overflow-visible"    value="Sichtbar" />
+              <field name="overflow-hidden"     value="Versteckt" />
+              <field name="overflow-scroll"     value="Rollen" />
+              <field name="overflow-auto"       value="Automatisch" />
+              <field name="ok"                  value="OK" />
+              <field name="Cancel"              value="Abbrechen" />
+              <field name="css-class"           value="CSS Class" />
+         </popup>
+
+         <popup name="flash" create-title="Insert Flash" edit-title="Edit a Flash">
+              <field name="url"                 value="Image URL" />
+              <field name="browse"              value="Browse" />
+              <field name="browse-title"        value="Browse Flashes from Gallery" />
+              <field name="width"               value="Width" />
+              <field name="height"              value="Height" />
+              <field name="layout"              value="Layout" />
+              <field name="alignment"           value="Alignment" />
+              <field name="align-not-set"       value="Not set" />
+              <field name="align-left"          value="Left" />
+              <field name="align-right"         value="Right" />
+              <field name="align-texttop"       value="Texttop" />
+              <field name="align-absmiddle"     value="Absmiddle" />
+              <field name="align-baseline"      value="Baseline" />
+              <field name="align-absbottom"     value="Absbottom" />
+              <field name="align-bottom"        value="Bottom" />
+              <field name="align-middle"        value="Middle" />
+              <field name="align-top"           value="Top" />
+              <field name="spacing"             value="Spacing" />
+              <field name="horizontal"          value="Horizontal" />
+              <field name="vertical"            value="Vertical" />
+              <field name="background-color"    value="Background Color" />
+              <field name="remove-bg-color"     value="Remove background color" />
+              <field name="bg-color-popup"      value="Flash background color" />
+              <field name="bg-color-not-set"    value="Not set" />
+              <field name="loop"                value="Loop" />
+              <field name="autoplay"            value="Autoplay" />
+              <field name="transparency"        value="Transparency" />
+              <field name="properties"          value="Main properties" />
+              <field name="quality"             value="Quality" />
+              <field name="quality-high"        value="High" />
+              <field name="quality-medium"      value="Medium" />
+              <field name="quality-low"         value="Low" />
+              <field name="scale"               value="Scale" />
+              <field name="scale-default"       value="Default" />
+              <field name="scale-noborder"      value="No border" />
+              <field name="scale-exactfit"      value="Exact fit" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="flash-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="media" create-title="Insert Media" edit-title="Edit Media">
+              <field name="url"                 value="Media URL" />
+              <field name="browse"              value="Browse" />
+              <field name="browse-title"        value="Browse Media from Gallery" />
+              <field name="width"               value="Width" />
+              <field name="height"              value="Height" />
+              <field name="alignment"           value="Alignment" />
+              <field name="align-not-set"       value="Not set" />
+              <field name="align-left"          value="Left" />
+              <field name="align-right"         value="Right" />
+              <field name="align-texttop"       value="Texttop" />
+              <field name="align-absmiddle"     value="Absmiddle" />
+              <field name="align-baseline"      value="Baseline" />
+              <field name="align-absbottom"     value="Absbottom" />
+              <field name="align-bottom"        value="Bottom" />
+              <field name="align-middle"        value="Middle" />
+              <field name="align-top"           value="Top" />
+              <field name="autostart"           value="Autostart" />
+              <field name="showcontrols"        value="Show controls" />
+              <field name="showtracker"         value="Show tracker" />
+              <field name="showstatusbar"       value="Show status bar" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="media-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="placeholder" create-title="Insert PlaceHolder" edit-title="Edit PlaceHolder">
+              <field name="name"                value="PlaceHolder name" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="textarea" create-title="Insert Textarea" edit-title="Edit Textarea">
+              <field name="id"                  value="ID" />
+              <field name="columns"             value="Columns" />
+              <field name="disabled"            value="Disabled" />
+              <field name="name"                value="Name" />
+              <field name="rows"                value="Rows" />
+              <field name="readonly"            value="Readonly" />
+              <field name="value"               value="Value" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+   </popup-windows>
+
+   <!-- Context Menu -->
+
+   <context-menu>
+         <field name="image-properties"         value="Bildeigenschaften" />
+         <field name="copy-image"               value="Bild kopieren" />
+         <field name="cut-image"                value="Bild ausschneiden" />
+         <field name="delete-image"             value="Bild loeschen" />
+         <field name="url-link-properties"      value="Linkeigenschaften" />
+         <field name="remove-url-link"          value="Link entfernen" />
+         <field name="cell-properties"          value="Zelleneigenschaften" />
+         <field name="table-properties"         value="Tabelleneigenschaften" />
+         <field name="copy-table"               value="Tabelle kopieren" />
+         <field name="cut-table"                value="Tabelle ausschneiden" />
+         <field name="delete-table"             value="Tabelle loeschen" />
+         <field name="anchor-properties"        value="Ankereigenschaften" />
+         <field name="delete-anchor"            value="Anker loeschen" />
+         <field name="cut"                      value="Ausschneiden" />
+         <field name="copy"                     value="Kopieren" />
+         <field name="paste"                    value="Einfuegen" />
+         <field name="paste-plain-text"         value="Einfuegen (ohne Formatierung)" />
+         <field name="delete"                   value="Loeschen" />
+         <field name="select-all"               value="Alles markieren" />
+         <field name="fieldset-properties"      value="Feldsatzeigenschaften" />
+         <field name="remove-fieldset"          value="Feldsatz loeschen" />
+         <field name="div-properties"           value="DIV-Eigenschaften" />
+         <field name="remove-div"               value="DIV loeschen (samt Inhalt)" />
+         <field name="remove-div-tag"           value="DIV loeschen (ohne Inhalt)" />
+         <field name="form-properties"          value="Formulareigenschaften" />
+         <field name="remove-form"              value="Formular loeschen (samt Inhalt)" />
+         <field name="remove-form-tag"          value="Formular loeschen (ohne Inhalt)" />
+         <field name="input-properties"         value="Eingabeeigenschaften" />
+         <field name="delete-input"             value="Eingabefeld loeschen" />
+         <field name="flash-properties"         value="Flash properties" />
+         <field name="copy-flash"               value="Copy Flash" />
+         <field name="cut-flash"                value="Cut Flash" />
+         <field name="delete-flash"             value="Delete Flash" />
+         <field name="media-properties"         value="Media properties" />
+         <field name="copy-media"               value="Copy Media" />
+         <field name="cut-media"                value="Cut Media" />
+         <field name="delete-media"             value="Delete Media" />
+         <field name="placeholder-properties"   value="PlaceHolder properties" />
+         <field name="delete-placeholder"       value="Delete PlaceHolder" />
+         <field name="make-editable"            value="Make editable" />
+         <field name="textarea-properties"      value="Textarea properties" />
+         <field name="remove-textarea"          value="Delete Textarea" />
+   </context-menu>
+
+</localization>

@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Red.master.cs" Inherits="Management.Red" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head id="Head1" runat="server">
+        <title>Pocket Campus</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="University of Hull Scarborough Campus Pocket Campus"/>
+        <meta name="author" content="University of Hull @ Scarborough 2009 (WJProctor)" />
+        <link rel="stylesheet" type="text/css" href="http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/basestyle.css" />
+        <link rel="stylesheet" type="text/css" href="http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/redstyle.css" />
+        <link rel="stylesheet" type="text/css" href="pocketcampusstyle.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <div id="hullmenu">
+                
+            </div>
+
+            <div id="hullheader">
+                <img alt="Scarborough Campus" src="http://pocketcampusimages.scar.hull.ac.uk/ScarboroughHeader.png" 
+                    style="width: 1000px; height: 66px" /></div>
+            
+            <div id="headerpadder">
+                
+                <div id="scarboroughheader">
+                    <asp:ContentPlaceHolder ID="CPH2" runat="server">
+                        <img alt="Notices" src="http://pocketcampusimages.scar.hull.ac.uk/PocketCampusRed.png" style="width: 1000px; height: 86px" />
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+
+            <div id="mainbodyarea">
+                
+                 <div id="menu">
+                 
+                    <ul>
+                    
+                        <li id="pocketcampus"><a href="http://pocketcampus.scar.hull.ac.uk"><img src="http://pocketcampusimages.scar.hull.ac.uk/RedPocketIcon.png" alt="pocket  campus" /><br />pocket campus</a></li>
+                        
+                        <li id="kioskmanagement"><a href="http://kioskmanagement.scar.hull.ac.uk/login.aspx"><img src="http://pocketcampusimages.scar.hull.ac.uk/RedProductionBooking.png" alt="campusinfo"/><span class="menutext"><br />kiosk management</span></a></li>
+                    
+                    </ul>
+                    
+                </div>
+                
+                 <div id="maincontent" >
+                    <asp:ContentPlaceHolder ID="MainArea" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+            
+            <div id="footer">
+                
+                <p class="copyright"><a href="http://www.hull.ac.uk/legal/accessibility.html">Web Standards</a><a href="http://www.hull.ac.uk/legal/foi.html">Freedom of information</a> | <a href="http://www.hull.ac.uk/legal/index.html">Legal</a> | <a href="http://www.hull.ac.uk/contact/webfeedback.html">Website Feedback</a> | <span class="address">Scarborough Campus, The University of Hull, Filey Road, Scarborough YO11 3AZ, 01723 362392</span></p>
+
+            </div>
+            
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="StudioBooking">
+</Property><Property Name="Solution File" Value="C:\Users\346388\Desktop\PocketCampus\StudioBooking\StudioBooking.sln">
+</Property><Property Name="User Options File" Value="C:\Users\346388\Desktop\PocketCampus\StudioBooking\StudioBooking.suo">
+</Property><Property Name="Date" Value="07 June 2010">
+</Property><Property Name="Time" Value="14:37">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="StudioBooking.sln" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\StudioBooking.sln">
+</Event><Event ErrorLevel="0" Project="" Source="StudioBooking.suo" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\StudioBooking.suo">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="StudioBooking.csproj" Description="Project file successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\StudioBooking.csproj">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="StudioBooking.csproj.user" Description="Project user file successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\StudioBooking.csproj.user">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Booking.aspx.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Booking.aspx.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Booking.aspx.designer.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Booking.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="ClassActivities.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\ClassActivities.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="ClassAppDetails.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\ClassAppDetails.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="ClassCourse.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\ClassCourse.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="ClassUserInfo.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\ClassUserInfo.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="ClassBookings.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\ClassBookings.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Forms.aspx.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Forms.aspx.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Forms.aspx.designer.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Forms.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="GoldNoMenu.Master.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\GoldNoMenu.Master.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="GoldNoMenu.Master.designer.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\GoldNoMenu.Master.designer.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="GoldMenu.Master.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\GoldMenu.Master.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="GoldMenu.Master.designer.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\GoldMenu.Master.designer.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Default.aspx.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Default.aspx.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Default.aspx.designer.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Default.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="login.aspx.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\login.aspx.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="login.aspx.designer.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\login.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Documents\PS1 Plan view.pdf" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Documents\PS1 Plan view.pdf">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Documents\PS2 Plan view.pdf" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Documents\PS2 Plan view.pdf">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Documents\PS3 Plan view.pdf" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Documents\PS3 Plan view.pdf">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Documents\SANM Event-Use of Space Guidelines V4.0.pdf" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Documents\SANM Event-Use of Space Guidelines V4.0.pdf">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Documents\SANM Pre-Show H &amp; S checklist.pdf" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Documents\SANM Pre-Show H &amp; S checklist.pdf">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Documents\SANM Risk Assessment Template.doc" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Documents\SANM Risk Assessment Template.doc">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Documents\UHSC PS1 PS2 Technical Specifications 091009.pdf" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Documents\UHSC PS1 PS2 Technical Specifications 091009.pdf">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Default.aspx" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Default.aspx">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Web.config" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Web.config">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Booking.aspx" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Booking.aspx">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="kioskstyle.css" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\kioskstyle.css">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="login.aspx" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\login.aspx">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="GoldMenu.Master" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\GoldMenu.Master">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Emails\BookingConfirmation.html" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Emails\BookingConfirmation.html">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Emails\AdminEditBookingConfirmation.html" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Emails\AdminEditBookingConfirmation.html">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Emails\BookingDeleted.html" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Emails\BookingDeleted.html">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Emails\AdminBookingDeleted.html" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Emails\AdminBookingDeleted.html">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Emails\EditBookingConfirmation.html" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Emails\EditBookingConfirmation.html">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="Forms.aspx" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\Forms.aspx">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="GoldNoMenu.Master" Description="File successfully backed up as C:\Users\346388\Desktop\PocketCampus\StudioBooking\Backup\GoldNoMenu.Master">
+</Event><Event ErrorLevel="0" Project="StudioBooking" Source="StudioBooking.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="StudioBooking" Source="StudioBooking.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="StudioBooking" Source="StudioBooking.csproj" Description="The Web Application Project StudioBooking is configured to use IIS. To access local IIS Web sites, you must run Visual Studio in the context of an administrator account. &#xA;&#xA;For more information, press F1.">
+</Event><Event ErrorLevel="0" Project="" Source="StudioBooking.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="StudioBooking.sln" Description="Converted">
+</Event></UpgradeLog>

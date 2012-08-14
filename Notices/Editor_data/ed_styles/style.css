@@ -1,0 +1,582 @@
+/*
+
+     Common styles
+*/
+
+
+/* HTMLEditor & ClassListBox DIV style */
+
+.HC_div               {
+                       width:99%;background-color:#DFDFDF;
+                       background-image:url(ed_frame_bg.gif);
+                       border:1px solid #ADADAD;
+                      } 
+
+/* HTMLEditor & ClassListBox TABLE style */
+
+.HC_grid              {
+                       width:100%;border:1px solid #FBFBFB;padding:0px;margin:0px;
+                       background-image:url(ed_frame_light_bg.gif);
+                       background-repeat:repeat-y;background-position:20% -1px;
+                      }
+
+/* For Editor panel */                      
+.HC_grid th           {
+                       width:expression("99%");vertical-align:top;margin:0px;border-width:0px;
+                       padding:8px;  /* spacing between cells inside main Table */
+                      }
+
+/* For Quick Formatting panel */                      
+.HC_grid td           {
+                       width:110px;vertical-align:top;border-width:0px;
+                       margin:0px;padding:0px;
+                       padding-top:8px;padding-bottom:8px;padding-right:8px; /* spacing between cells inside main Table */
+                      }
+
+/*
+     Styles for HTMLEditor Component
+*/
+
+/* HTMLEditor's top toolbar styles */
+
+.HE_top_bar           { /* (document.compatMode != "BackCompat" && navigator.userAgent.toLowerCase().indexOf("msie 7") != -1)?"auto":"5px" */
+                       padding:0 8px 8px 8px;overflow:hidden;_height:5px;
+                       border-top:1px solid #FFF;border-left:1px solid #AEAEAE;border-right:1px solid #AEAEAE;
+                       background-color:#FFF;background-image:url(ed_bar_bg.gif);background-repeat:repeat-x;
+                      }
+                      
+.HE_top_bar .HE_group
+                      {
+                       float:left;margin:0;padding:8px 0 0 0;
+                       white-space: nowrap; height: 25px;
+                      }
+.HE_top_bar .HE_group img
+                      {
+                       cursor:hand;background-color:#C2C2C2; margin:0; padding:0px; border-width: 0px;
+                      }
+.HE_top_bar .HE_group img:hover
+                      {
+                       background-color:#3C8AFF;
+                      }
+.HE_top_bar .HE_group label
+                      {
+                       vertical-align:middle;
+                       padding:0 2px;font-weight:bold;vertical-align:text-middle;
+                       font-family:Arial;font-size:12px;
+                      }
+.HE_top_bar .HE_group select
+                      {
+                       vertical-align:middle;padding:0px;margin:0px;
+                       font-size:12px; font-family:arial; height: 20px; width:120px;
+                      }
+.HE_top_bar .HE_group option
+                      {
+                       vertical-align:middle;
+                       font-size:12px;
+                      }
+.HE_top_bar div
+                      {
+                       margin:0px;padding:0px;
+                      }
+.HE_top_bar .HE_hs
+                      {
+                       float:left;margin:0;padding:8px 0 0 0;
+                       height: 25px;
+                      }
+.HE_top_bar .HE_hs img
+                      {
+                       margin:0; padding:0px; border-width: 0px;
+                      }
+
+/* HTMLEditor's bottom toolbar styles */
+
+.HE_bottom_bar        {
+                      }
+.HE_bottom_bar .HE_group
+                      {
+                       float:left;margin-left:9px;
+                      }
+.HE_bottom_bar img    {
+                       cursor:hand; margin:0; padding:0px; border-width: 0px;
+                      }
+.HE_bottom_bar .HE_group label
+                      {
+                       padding:0 8px;font-weight:bold;vertical-align:text-top;
+                      }
+.HE_bottom_bar .HE_group select
+                      {
+                       vertical-align:middle;
+                      }
+.HE_bottom_bar div
+                      {
+                       margin:0px;padding:0px;
+                      }
+.HE_bottom_bar .HE_hs
+                      {
+                       float:left;margin:0;padding:8px 0 0 0;
+                      }
+.HE_bottom_bar .HE_hs img
+                      {
+                       margin:0; padding:0px; border-width: 0px;
+                      }
+
+/* Common HTMLEditor's styles */
+
+.HE_space             { 
+                        margin: 0px; width: 27px;
+                        padding: 0px;
+                      }
+.HE_button
+                      {
+                       cursor:hand;float:right;margin:8px 0 0 0;
+                      }
+.HE_left_button
+                      {
+                       cursor:hand;float:left;margin:0px;
+                      }
+.HE_textind
+                      {
+                       float:right;margin:8px 0 0 2px;
+                       height:18px;height:expression("20px");
+                       width:30px;overflow:hidden;
+                       padding:0;border:1px solid #C2C2C2;vertical-align:middle;text-align:center;
+                      }
+.HE_vs                
+                      {
+                       clear:both;width:0px;
+                      }
+
+/* Edit Panel style */
+
+.HE_editPanel         {
+                       border:1px solid #AEAEAE;margin:0px;padding:0px;
+                       background-color:#FFFFFF;
+                      }
+.HE_editPanel textarea
+                      {
+                       width:100%;height:304px;margin:0px;
+                      }
+
+/*
+     Styles for ClassListBox Component
+*/
+
+.ST_div               {
+                       border-top:1px solid #FFF;border-left:1px solid #AEAEAE;
+                       border-right:1px solid #AEAEAE;border-bottom:1px solid #AEAEAE;
+                       margin:0px;padding:0px;
+                      }
+
+.ST_header            {
+                       padding-top:10px;padding-bottom:10px;padding-left:4px;padding-right:4px;
+                       font-weight:bold;border-bottom:1px solid #AEAEAE;
+                       background-color:#FFF;background-image:url(ed_bar_bg.gif);
+                       background-repeat:repeat-x;
+                       font-weight:bold;
+                       font-family:Arial;font-size:12px;overflow:visible;
+                      }
+.ST_styles            {
+                       padding:4px 0 4px 0;height:328px;
+                       overflow:auto;background-color:#FFF;
+                      }
+.ST_styles div        {
+                       margin:0 4px;padding:4px 8px;
+                       border:1px solid #FFF;overflow:hidden;font-family:Verdana;font-size:12px;
+                      }
+.ST_styles div:hover  {
+                       border:1px solid #006CFF;
+                      }
+.ST_styles span       {
+                       display:block;height:1px;margin:4px 0;background-color:#808080;
+                       background-image:url(ed_dot.gif);background-repeat:repeat-x;
+                      }
+.ST_styles span hr    {
+                       display:none;
+                      }
+.ST_styles .ST_current
+                      {
+                       margin:0 4px;padding:4px 8px;
+                       border:1px solid #FFF;
+                       background-color:#F0F0FF;
+                      }
+.ST_noName            { 
+                        font-weight:bold;
+                      }
+
+/*
+   Styles for Context Menu
+*/
+
+.CNTXT_div            {
+                        border-width: 1px; background-color: #D6D6CE;
+                        border-style: solid;
+                        width: 250px; border-color: white black black white; overflow: visible;
+                      }
+.CNTXT_menu           {
+                        border-width: 0px;
+                        width: 250px; overflow: visible;
+                      }
+.CNTXT_item           {
+                        background-color:#D6D6CE; color:Black;
+                        font-family:"MS Sans Serif", Geneva, sans-serif;
+                        font-size:10px; border:0px; text-align: left;
+                        border-top-width: 0px; border-bottom-width: 0px;
+                        cursor: hand; cursor: pointer;
+                      }
+.CNTXT_item_over      {
+                        background-color:navy; color:white;
+                        font-family:"MS Sans Serif", Geneva, sans-serif;
+                        font-size:10px; border:0px; text-align: left;
+                        border-top-width: 0px; border-bottom-width: 0px;
+                        cursor: hand; cursor: pointer;
+                      }
+.CNTXT_item_disable   {
+                        background-color:#D6D6CE; color:Gray;
+                        font-family:"MS Sans Serif", Geneva, sans-serif;
+                        overflow:visible; font-size:10px; border:0px;
+                        text-align: left;
+                      }
+
+/*
+ Styles for popup windows
+*/
+
+.popup_table         {
+                        width: 493px;
+                        height:472px;
+                     }
+.popup_table_ie      {
+                        height:484px;
+                     }
+.popup_table_safari        
+                     {
+                        width: 493px;
+                        height:525px;
+                     }
+.popup_insertIcon    {
+                        width: 495px;
+                        height:320px;
+                     }
+.popup_insertIcon_safari    
+                     {
+                        width: 495px;
+                        height:330px;
+                     }
+.popup_insertSpec    {
+                        width: 200px;
+                        height:170px;
+                     }
+.popup_insertSpec_safari
+                     {
+                        width: 200px;
+                        height:170px;
+                     }
+.popup_cell          {
+                        width: 350px;
+                        height:134px;
+                     }
+.popup_cell_ie       {
+                        width: 335px;
+                        height:142px;
+                     }
+.popup_cell_safari   {
+                        width: 350px;
+                        height:150px;
+                     }
+.popup_image         
+                     {
+                        width: 365px;
+                        height:197px;
+                     }
+.popup_image_ie         
+                     {
+                        width: 367px;
+                        height:203px;
+                     }
+.popup_image_safari, .popup_image_safari_safari
+                     {
+                        width: 401px;
+                        height:210px;
+                     }
+.popup_flash         
+                     {
+                        width: 395px;
+                        height:243px;
+                     }
+.popup_flash_ie         
+                     {
+                        width: 397px;
+                     }
+.popup_flash_safari, .popup_flash_safari_safari
+                     {
+                        width: 431px;
+                        height:247px;
+                     }
+.popup_media         
+                     {
+                        width: 395px;
+                        height:180px;
+                     }
+.popup_media_ie
+                     {
+                        width: 397px;
+                        height:190px;
+                     }
+.popup_media_safari, .popup_flash_safari_safari
+                     {
+                        width: 431px;
+                        height:194px;
+                     }
+.popup_bgImage         
+                     {
+                        width: 365px;
+                        height:145px;
+                     }
+.popup_bgImage_ie
+                     {
+                        width: 367px;
+                     }
+.popup_bgImage_safari
+                     {
+                        width: 401px;
+                        height:165px;
+                     }
+.popup_color         {
+                        width: 290px;
+                        height:320px;
+                     }
+.popup_color_safari  {
+                        width: 290px;
+                        height:325px;
+                     }
+.popup_url_link      {
+                        width: 420px;
+                        height:160px;
+                     }
+.popup_url_link_safari
+                     {
+                        width: 420px;
+                        height:170px;
+                     }
+.popup_imageBrows
+                     {
+                        width: 417px;
+                        height:470px;
+                     }
+.popup_imageBrows_ie
+                     {
+                        width: 412px;
+                        height:467px;
+                     }
+.popup_imageBrows_safari
+                     {
+                        width: 415px;
+                        height:470px;
+                     }
+.popup_flashBrows
+                     {
+                        width: 417px;
+                        height:470px;
+                     }
+.popup_flashBrows_ie
+                     {
+                        width: 412px;
+                        height:467px;
+                     }
+.popup_flashBrows_safari
+                     {
+                        width: 415px;
+                        height:470px;
+                     }
+.popup_mediaBrows
+                     {
+                        width: 417px;
+                        height:470px;
+                     }
+.popup_mediaBrows_ie
+                     {
+                        width: 412px;
+                        height:467px;
+                     }
+.popup_mediaBrows_safari
+                     {
+                        width: 415px;
+                        height:475px;
+                     }
+.popup_urlBrows
+                     {
+                        width: 417px;
+                        height:470px;
+                     }
+.popup_urlBrows_ie
+                     {
+                        width: 412px;
+                        height:467px;
+                     }
+.popup_urlBrows_safari
+                     {
+                        width: 415px;
+                        height:475px;
+                     }
+.popup_insertAnchor
+                     {
+                        width: 300px;
+                        height:90px;
+                     }
+.popup_insertAnchor_safari
+                     {
+                        width: 300px;
+                        height:90px;
+                     }
+.popup_insertPlaceHolder
+                     {
+                        width: 300px;
+                        height:90px;
+                     }
+.popup_insertPlaceHolder_safari
+                     {
+                        width: 300px;
+                        height:90px;
+                     }
+.popup_wait
+                     {
+                        background-color: #F0F0F0;
+                        color: #666666;
+                        border-color: #666666;
+                        border-width: 1px;
+                        border-style: solid;
+                        z-index: 20000;
+                        position: absolute;
+                        margin: 0px;
+                        padding: 10px;
+                     }
+.popup_spellchecker 
+                     {
+                        width: 490px;
+                        height:245px;
+                     }
+.popup_spellchecker_ie
+                     {
+                        height:245px;
+                     }
+.popup_spellchecker_safari 
+                     {
+                        width: 490px;
+                        height:245px;
+                     }
+.popup_fieldset
+                     {
+                        width: 300px;
+                        height:115px;
+                     }
+.popup_image_upload
+                     {
+                        width: 400px;
+                        height:115px;
+                     }
+.popup_image_upload_safari
+                     {
+                        width: 400px;
+                        height:130px;
+                     }
+.popup_flash_upload
+                     {
+                        width: 400px;
+                        height:115px;
+                     }
+.popup_flash_upload_safari
+                     {
+                        width: 400px;
+                        height:120px;
+                     }
+.popup_image_upload_progress
+                     {
+                        width: 530px;
+                        height:230px;
+                     }
+.popup_image_upload_progress_safari
+                     {
+                        width: 530px;
+                        height:230px;
+                     }
+.popup_document_upload
+                     {
+                        width: 400px;
+                        height:455px;
+                     }
+.popup_document_upload_safari
+                     {
+                        width: 400px;
+                        height:460px;
+                     }
+
+/* Mozilla Insert Plain Text Window*/
+.popup_mozPastePlain {
+                        width: 500px;
+                        height:330px;
+                     }
+.popup_mozPastePlain_safari
+                     {
+                        width: 500px;
+                        height:330px;
+                     }
+.popup_form
+                     {
+                        width: 300px;
+                        height:140px;
+                     }
+.popup_form_safari
+                     {
+                        width: 300px;
+                        height:160px;
+                     }
+.popup_input
+                     {
+                        width: 300px;
+                        height:155px;
+                     }
+.popup_input_safari
+                     {
+                        width: 300px;
+                        height:170px;
+                     }
+.popup_div
+                     {
+                        width: 400px;
+                        height:180px;
+                     }
+.popup_div_safari
+                     {
+                        width: 410px;
+                        height:205px;
+                     }
+.popup_textarea
+                     {
+                        width: 300px;
+                        height:250px;
+                     }
+.popup_textarea_safari
+                     {
+                        width: 300px;
+                        height:260px;
+                     }
+
+/* Container for Popup-windows moving */
+.MoveSpan            {
+                        border-width:4px;
+                        border-style:solid;
+                        border-color:#A0A0FF;
+                        filter: alpha(opacity=50);
+                        background-color:#E0E0FF;
+                        -moz-opacity:0.5;
+                        -khtml-opacity:0.5;
+                        opacity:0.5;
+                     }
+
+.DisableSpan            {
+                        filter: alpha(opacity=30);
+                        background-color:#FFFFFF;
+                        -moz-opacity:0.3;
+                        -khtml-opacity:0.3;
+                        opacity:0.3;
+                     }

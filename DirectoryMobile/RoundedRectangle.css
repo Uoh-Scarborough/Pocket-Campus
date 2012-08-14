@@ -1,0 +1,323 @@
+/*
+ 
+ File:RoundRectangle.css
+ 
+ Abstract: CSS code for the RoundRectangle sample 
+ 
+ Version: <1.0>
+ 
+ Disclaimer: IMPORTANT:	 This Apple software is supplied to you by 
+ Apple Inc. ("Apple") in consideration of your agreement to the
+ following terms, and your use, installation, modification or
+ redistribution of this Apple software constitutes acceptance of these
+ terms.	 If you do not agree with these terms, please do not use,
+ install, modify or redistribute this Apple software.
+ 
+ In consideration of your agreement to abide by the following terms, and
+ subject to these terms, Apple grants you a personal, non-exclusive
+ license, under Apple's copyrights in this original Apple software (the
+ "Apple Software"), to use, reproduce, modify and redistribute the Apple
+ Software, with or without modifications, in source and/or binary forms;
+ provided that if you redistribute the Apple Software in its entirety and
+ without modifications, you must retain this notice and the following
+ text and disclaimers in all such redistributions of the Apple Software. 
+ Neither the name, trademarks, service marks or logos of Apple Inc. 
+ may be used to endorse or promote products derived from the Apple
+ Software without specific prior written permission from Apple.	 Except
+ as expressly stated in this notice, no other rights or licenses, express
+ or implied, are granted by Apple herein, including but not limited to
+ any patent rights that may be infringed by your derivative works or by
+ other works in which the Apple Software may be incorporated.
+ 
+ The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
+ MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
+ OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+ 
+ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
+ OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
+ MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
+ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+ STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ 
+ Copyright (C) 2007 Apple Inc. All Rights Reserved.
+ 
+ */ 
+ 
+
+body
+{
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust:none;		  /* Turn off font resizing */
+	background-color: rgb(197,204,211);	 /* Set the page color to light blue */
+}
+
+#banner
+{
+	margin: 0;
+	background: url(Images/MenuBackground.png);
+	text-align: left;
+	height: 48px;
+	width:100%;
+}
+
+#banner img.first
+{
+    float:left;
+	z-index:2;   
+}
+
+#banner img.second
+{
+    position:relative;
+    top:-48px;
+    left:50px;
+	z-index:1;
+}
+
+#banner h1
+{
+    color: White;
+    position:relative;
+    top: -40px;
+    text-align:center;
+    padding-left:50px;
+}
+
+#banner h1.secondheader
+{
+    top:-90px;
+}
+
+#banner_logo
+{
+	padding: 8px 1em 8px 0;
+}
+
+#content
+{
+	background-color: rgb(197,204,211);	 /* Set the page color to light blue */
+	margin-left:10px;
+}
+
+h1 
+{
+	margin:0;
+	padding-top:10px;		  
+	padding-right:10px;		 
+	padding-bottom:10px;	
+	padding-left:10px;
+	
+	font-size:17px;
+	font-family: Helvetica;
+	font-weight:bold;
+	color: rgb(76,86,108);	 /* Set each label color */		
+}
+
+h2
+{
+	margin:0;
+	padding-top:10px;		  
+	padding-right:10px;		 
+	padding-bottom:10px;	
+	padding-left:10px;
+	
+	font-size:14px;
+	font-family: Helvetica;
+	font-weight:bold;
+	color: rgb(76,86,108);	 /* Set each label color */		
+}
+
+ul 
+{	   
+	padding: 0;	   
+	margin-top:10px;
+	margin-right:10px;
+	margin-bottom:17px;		  /* Set each list 17 pixels from the top of the button bar(or the top of the next list) */
+	
+	font-size:17px;
+	font-family: Helvetica;
+	font-weight:bold;
+	color:black;
+	
+	width: 300px;
+	background-color: white;       /* Each list has a white background fill */
+	
+	border-width: 1px;		       /* Draw a rectangle around each list */
+	border-style:solid ;
+	border-color:rgb(217,217,217);
+	
+	-webkit-border-radius: 8px;		 /* Round each corner of the created rectangle */
+	-moz-border-radius: 8px;
+}
+
+
+li
+{	
+	list-style-type: none;	
+	
+	border-top-width:1px;	/* Create lines between cells. Each line is placed above each item */
+	border-top-style:solid;
+	border-top-color:rgb(217,217,217);
+
+	padding-top:12px;		  
+	padding-right:10px;		 
+	padding-bottom:14px;	 /* Indent the cell content 14 pixels from the bottom edge of a cell */
+	padding-left:10px;
+	vertical-align:	middle;	
+}
+
+li h1
+{
+    padding:0px;
+}
+
+
+.icon
+{
+	position: relative;
+	top:	-4px;
+	float:	left;
+	padding: 0 0.5em 0 0;
+	/*border: solid 1px red;*/
+}
+
+li:first-child 
+{
+	border-top:0;    /* Remove border above the first item of the list */
+}
+
+
+a  /* Handle the click/tap highlight. Highlight an entire cell with the iPhone grey background when tapped */ 
+{
+	display: block;   /* Sets the href to be a block rather than inline */
+	
+	/* The padding properties adjust the text content within the href block */
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 12px;
+	padding-left: 8px;
+	
+	/* The margin properties adjust the size of the href block	*/
+	margin-top: -8px;
+	margin-right: -8px;
+	margin-bottom: -12px;
+	margin-left: -8px;	 
+	
+	text-decoration: none;
+	color:black;
+}
+
+a.normal
+{
+	display:inline;
+}
+
+
+img { border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	margin-left: 0px;
+}
+
+.showArrow /*	Add an arrow button to a link */
+{  
+	margin-right:10px;		
+	padding-right:16px;	   /* Distance between the arrow button and a text */
+	
+	background-image: url(images/chevron.png); 
+	background-repeat: no-repeat;
+	background-position: right; 
+}
+
+
+.secondary	/* Used for secondary text (text that is less important) */
+{
+	font-weight:normal;		/* Regular font is used for secondary text */
+	float:right;		     /* Align secondary text to the right of its parent cell */
+	margin-right:10px;	  
+}
+
+
+
+.secondaryWArrow /* Used for secondary content that contains a link and a button */
+{
+	display:block;		 /* Set the secondary content to be a block	 */
+	font-weight:normal; 
+	float:right;
+	color: #324F85;		 /* sets the color of the link */
+}
+
+
+.secondaryWLink /* Used for secondary text that is a link */
+{
+	font-weight:normal;		
+	float:right;		  
+	margin-right:10px;	  
+	color: #324F85;		 /* sets the color of the link */
+}
+
+.available { color: rgb(51,153,0); }
+.onloan { color: rgb(153,0,0); }
+
+a img.arrow  
+{
+    float:right;
+    position:relative;
+   top:-5px; 
+    padding-left:10px; 
+}
+
+span.contact
+{
+    color: rgb(76,86,108);
+    padding-right:10px;
+}
+           
+span.copy{
+   font-size:12px;
+   font-family: Helvetica; 
+}   
+
+span.url
+{
+    padding:0px 10px 0px 50px;
+}  
+
+ul.inner
+{
+    width:100%;
+    padding:0px;
+    margin:0px;
+    border: 0px;
+}
+
+ul.inner li a
+{
+}
+
+a.fullheight
+{
+}
+
+span.errorposition
+{
+	color:Red;
+	position:absolute;
+	left:295px;
+}
+
+.alignbutton
+{
+	position:relative;
+	left:15px;
+	top: 0px;
+}
+
+
+

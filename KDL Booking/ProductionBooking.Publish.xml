@@ -1,0 +1,22 @@
+<publishData>
+  <publishTarget publishUrl="\\Hardy\$Data\WebSites\ProductionBooking\">
+    <file relUrl="GoldMenu.Master" publishTime="10/12/2009 14:45:10" />
+    <file relUrl="login.aspx" publishTime="08/24/2009 14:51:08" />
+    <file relUrl="Forms.aspx" publishTime="10/12/2009 15:46:04" />
+    <file relUrl="Emails/AdminBookingDeleted.html" publishTime="08/18/2009 11:45:04" />
+    <file relUrl="bin/DayPilot.dll" publishTime="12/19/2008 08:54:10" />
+    <file relUrl="Web.config" publishTime="02/15/2010 15:06:15" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="02/02/2010 13:19:16" />
+    <file relUrl="kioskstyle.css" publishTime="09/17/2009 16:24:26" />
+    <file relUrl="Emails/EditBookingConfirmation.html" publishTime="08/18/2009 11:40:48" />
+    <file relUrl="Emails/AdminEditBookingConfirmation.html" publishTime="03/04/2010 11:18:56" />
+    <file relUrl="Booking.aspx" publishTime="03/04/2010 11:18:30" />
+    <file relUrl="Emails/BookingConfirmation.html" publishTime="10/06/2009 16:58:06" />
+    <file relUrl="Emails/BookingDeleted.html" publishTime="08/18/2009 11:44:06" />
+    <file relUrl="GoldNoMenu.Master" publishTime="09/22/2009 14:55:20" />
+    <file relUrl="Default.aspx" publishTime="10/12/2009 15:43:26" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="02/02/2010 13:19:16" />
+    <file relUrl="bin/ProductionBooking.dll" publishTime="05/25/2010 11:54:02" />
+    <file relUrl="bin/ProductionBooking.pdb" publishTime="05/25/2010 11:54:02" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\hardy\$Data\Websites\ProductionBooking" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="Web.config" publishTime="08/10/2010 14:21:29" />
+    <file relUrl="GoldNoMenu.Master" publishTime="09/22/2009 14:55:20" />
+    <file relUrl="Emails/BookingDeleted.html" publishTime="08/18/2009 11:44:06" />
+    <file relUrl="login.aspx" publishTime="08/24/2009 14:51:08" />
+    <file relUrl="GoldMenu.Master" publishTime="10/12/2009 14:45:10" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="09/24/2010 08:28:07" />
+    <file relUrl="Emails/BookingConfirmation.html" publishTime="10/06/2009 16:58:06" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="09/24/2010 08:28:07" />
+    <file relUrl="bin/ProductionBooking.pdb" publishTime="09/27/2010 16:37:19" />
+    <file relUrl="bin/ProductionBooking.dll" publishTime="09/27/2010 16:37:19" />
+    <file relUrl="bin/DayPilot.dll" publishTime="12/19/2008 08:54:10" />
+    <file relUrl="Forms.aspx" publishTime="10/12/2009 15:46:04" />
+    <file relUrl="Emails/AdminEditBookingConfirmation.html" publishTime="03/04/2010 11:18:56" />
+    <file relUrl="kioskstyle.css" publishTime="09/17/2009 16:24:26" />
+    <file relUrl="Emails/EditBookingConfirmation.html" publishTime="08/18/2009 11:40:48" />
+    <file relUrl="Default.aspx" publishTime="10/12/2009 15:43:26" />
+    <file relUrl="Emails/AdminBookingDeleted.html" publishTime="08/18/2009 11:45:04" />
+    <file relUrl="Booking.aspx" publishTime="08/11/2010 15:36:44" />
+  </publishProfile>
+  <publishProfile publishUrl="\\ERIC\wwwroot\ProductionBooking" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Eric" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="02/01/2012 08:48:58" />
+    <file relUrl="bin/ProductionBooking.pdb" publishTime="02/13/2012 16:49:34" />
+    <file relUrl="Red.Master" publishTime="01/03/2012 11:53:40" />
+    <file relUrl="Emails/BookingDeleted.html" publishTime="10/11/2010 16:14:38" />
+    <file relUrl="Emails/AdminBookingDeleted.html" publishTime="10/11/2010 16:14:31" />
+    <file relUrl="SearchUsers.ascx" publishTime="01/03/2012 11:44:54" />
+    <file relUrl="Properties/script_add.png" publishTime="02/23/2011 11:32:40" />
+    <file relUrl="ControlAdminMenu.ascx" publishTime="02/08/2012 10:58:33" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="02/13/2012 16:46:44" />
+    <file relUrl="Constraints.aspx" publishTime="01/03/2012 16:36:23" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="02/13/2012 16:49:33" />
+    <file relUrl="Emails/BookingConfirmation.html" publishTime="10/11/2010 16:14:20" />
+    <file relUrl="Groups.aspx" publishTime="02/08/2012 10:58:09" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="02/13/2012 16:46:44" />
+    <file relUrl="Signs.aspx" publishTime="01/03/2012 16:37:18" />
+    <file relUrl="bin/ProductionBooking.dll" publishTime="02/13/2012 16:49:34" />
+    <file relUrl="login.aspx" publishTime="08/30/2011 11:22:16" />
+    <file relUrl="Emails/AdminEditBookingConfirmation.html" publishTime="10/11/2010 16:14:35" />
+    <file relUrl="bin/BasicFrame.WebControls.BasicDatePicker.dll" publishTime="04/24/2009 00:03:24" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="02/13/2012 16:49:33" />
+    <file relUrl="Properties/script_edit.png" publishTime="02/23/2011 11:32:40" />
+    <file relUrl="Emails/EditBookingConfirmation.html" publishTime="10/11/2010 16:21:10" />
+    <file relUrl="Feeds.aspx" publishTime="01/10/2011 10:41:40" />
+    <file relUrl="kioskstyle.css" publishTime="09/17/2009 16:24:26" />
+    <file relUrl="Default.aspx" publishTime="01/03/2012 13:37:39" />
+    <file relUrl="Booking.aspx" publishTime="08/25/2011 08:56:03" />
+  </publishProfile>
+  <publishProfile publishUrl="\\ERIC\wwwroot\ProductionBookingNew" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="EricTemp" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="Web.config" publishTime="02/01/2012 08:48:58" />
+    <file relUrl="bin/ProductionBooking.pdb" publishTime="02/08/2012 11:15:18" />
+    <file relUrl="Red.Master" publishTime="01/03/2012 11:53:40" />
+    <file relUrl="Emails/BookingDeleted.html" publishTime="10/11/2010 16:14:38" />
+    <file relUrl="Emails/AdminBookingDeleted.html" publishTime="10/11/2010 16:14:31" />
+    <file relUrl="SearchUsers.ascx" publishTime="01/03/2012 11:44:54" />
+    <file relUrl="Properties/script_add.png" publishTime="02/23/2011 11:32:40" />
+    <file relUrl="ControlAdminMenu.ascx" publishTime="02/08/2012 10:58:33" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="02/02/2012 14:22:40" />
+    <file relUrl="Constraints.aspx" publishTime="01/03/2012 16:36:23" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="02/08/2012 11:14:51" />
+    <file relUrl="Emails/BookingConfirmation.html" publishTime="10/11/2010 16:14:20" />
+    <file relUrl="Groups.aspx" publishTime="02/08/2012 10:58:09" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="02/02/2012 14:22:40" />
+    <file relUrl="Signs.aspx" publishTime="01/03/2012 16:37:18" />
+    <file relUrl="bin/ProductionBooking.dll" publishTime="02/08/2012 11:15:18" />
+    <file relUrl="login.aspx" publishTime="08/30/2011 11:22:16" />
+    <file relUrl="Emails/AdminEditBookingConfirmation.html" publishTime="10/11/2010 16:14:35" />
+    <file relUrl="bin/BasicFrame.WebControls.BasicDatePicker.dll" publishTime="04/24/2009 00:03:24" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="02/08/2012 11:14:50" />
+    <file relUrl="kioskstyle.css" publishTime="09/17/2009 16:24:26" />
+    <file relUrl="Emails/EditBookingConfirmation.html" publishTime="10/11/2010 16:21:10" />
+    <file relUrl="Properties/script_edit.png" publishTime="02/23/2011 11:32:40" />
+    <file relUrl="Feeds.aspx" publishTime="01/10/2011 10:41:40" />
+    <file relUrl="Default.aspx" publishTime="01/03/2012 13:37:39" />
+    <file relUrl="Booking.aspx" publishTime="08/25/2011 08:56:03" />
+  </publishProfile>
+</publishData>

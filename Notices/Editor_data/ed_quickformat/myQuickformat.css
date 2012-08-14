@@ -1,0 +1,8 @@
+.boldItalic    { color: #c60; font-weight: bold; font-style:italic;}
+
+/* Bold & Red */
+.alert         { color: #FF0000; font-weight: bold; }
+/* Blue&nbsp;verdana */
+.style2        { font-family: verdana,arial,helvetica,sans-serif; color: #003399; }
+.style3        { font-family: verdana,arial,helvetica,sans-serif; color: #996633; }
+.style4        { font-family: verdana,arial,helvetica,sans-serif; color: #FF9933; }

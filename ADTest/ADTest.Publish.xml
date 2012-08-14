@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\346388\Desktop\LDAPTest" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/ADTest.pdb" publishTime="07/28/2011 09:09:54" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="07/27/2011 13:59:40" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="07/27/2011 13:59:40" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="07/27/2011 14:15:45" />
+    <file relUrl="Web.config" publishTime="07/27/2011 16:48:36" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="07/27/2011 14:15:45" />
+    <file relUrl="Default.aspx" publishTime="07/27/2011 14:24:34" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="07/27/2011 13:59:40" />
+    <file relUrl="bin/ADTest.dll" publishTime="07/28/2011 09:09:54" />
+  </publishProfile>
+</publishData>

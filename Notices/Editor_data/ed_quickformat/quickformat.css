@@ -1,0 +1,14 @@
+
+
+/* Heading */
+.h1         {font-family: Arial; font-size:20px; color:#000000;	padding:5px 5px 5px 5px; margin:0px; border:0px;}
+
+/* Sub Heading */
+.h2         {font-family: Arial; font-size:18px; color:#000000;	padding:5px 5px 5px 5px; margin:0px; border:0px;}
+
+/* Paragraph */
+.p			{font-family: Arial; border-style: none; border-color: inherit; border-width: 0; padding: 5px; margin: 0; font-size:12px; font-family: Arial; text-align:left; line-height:14px;}
+
+/* Contact */
+.contact {font-family: Arial; border-style: none; border-color: inherit; border-width: 0; padding: 5px; margin: 0; font-size:12px; font-family: Arial; text-align:left; line-height:14px; font-weight:bold;}
+

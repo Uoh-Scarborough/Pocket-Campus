@@ -1,0 +1,66 @@
+﻿body
+{
+	color: Black;
+	font-family: Georgia;	
+}
+
+.courselist
+{
+    font-size:small;
+    width:600px;
+    margin-left: 27px;
+    margin-top: 9px;
+    font-family: Georgia;
+}
+
+.weeklist
+{
+	font-family: Georgia;
+}
+
+.coursebutton
+{
+    font-size:small;
+    margin-left: 16px;
+    Width:140px;
+    font-family: Georgia;
+    position:relative;
+    left:780px;
+    top:-25px
+}
+
+.weekbutton
+{
+    font-size:small;
+    margin-left: 16px;
+    font-family: Georgia;
+    position:relative;
+}
+
+table
+{
+	color: Black;
+	font-family: Georgia;
+}
+.tabletitle
+{
+    width:300px;
+}
+
+.tabledate
+{
+    width:100px;
+}
+
+.tablevalid
+{
+    width:90px;
+}
+
+.tablecontrols
+{
+    width:50px;
+}
+
+
+a.fullcell {color:Red; text-decoration:None; width:100%; height: 50px; display: block;}

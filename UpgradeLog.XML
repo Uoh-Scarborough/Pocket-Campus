@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PocketCampus">
+</Property><Property Name="Solution File" Value="C:\Users\346388\Desktop\PocketCampus\PocketCampus.sln">
+</Property><Property Name="Date" Value="Friday, July 02, 2010">
+</Property><Property Name="Time" Value="9:24 AM">
+</Property></Properties><Event ErrorLevel="0" Project="PocketCampus" Source="PocketCampus\PocketCampus.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PocketCampus" Source="PocketCampus\PocketCampus.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="StudentServices" Source="StudentServices\StudentServices.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="StudentServices" Source="StudentServices\StudentServices.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ProductionBooking" Source="ProductionBooking\ProductionBooking.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ProductionBooking" Source="ProductionBooking\ProductionBooking.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="StandardClasses" Source="StandardClasses\StandardClasses.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="StandardClasses" Source="StandardClasses\StandardClasses.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="Timetables" Source="Timetables\Timetables.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Timetables" Source="Timetables\Timetables.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Comms" Source="Notices\Comms.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Comms" Source="Notices\Comms.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CampusInfo" Source="CampusInfo\CampusInfo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CampusInfo" Source="CampusInfo\CampusInfo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WeekTest" Source="WeekTest\WeekTest.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WeekTest" Source="WeekTest\WeekTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Management" Source="Management\Management.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Management" Source="Management\Management.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Mobile" Source="Mobile\Mobile.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Mobile" Source="Mobile\Mobile.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Directory" Source="Directory\Directory.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Directory" Source="Directory\Directory.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PocketCampus.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="PocketCampus.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PocketCampus" Source="PocketCampus\PocketCampus.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="StudentServices" Source="StudentServices\StudentServices.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ProductionBooking" Source="ProductionBooking\ProductionBooking.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Timetables" Source="Timetables\Timetables.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Comms" Source="Notices\Comms.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CampusInfo" Source="CampusInfo\CampusInfo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="" Source="LocalTestRun.testrunconfig" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LocalTestRun.testrunconfig" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="3" Project="" Source="PocketCampus.vsmdi" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PocketCampus.vsmdi" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="3" Project="" Source="PocketCampus1.vsmdi" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PocketCampus1.vsmdi" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="0" Project="WeekTest" Source="WeekTest\WeekTest.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Management" Source="Management\Management.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Mobile" Source="Mobile\Mobile.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Directory" Source="Directory\Directory.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

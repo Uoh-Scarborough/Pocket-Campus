@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\hardy\$Data\WebSites\DirectoryMobile" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Images/CampusInfoMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/TimetableMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/blueButton.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/EventsMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="bin/Directory.pdb" publishTime="08/13/2010 15:11:07" />
+    <file relUrl="Images/LinkHome.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="08/12/2010 13:43:17" />
+    <file relUrl="Images/TimetableHome.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/StudentsUnionMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/StudentServicesMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="08/12/2010 13:43:17" />
+    <file relUrl="Images/UsefulDatesMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/MenuBackground.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/EventsHome.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="08/12/2010 13:43:17" />
+    <file relUrl="Images/DeleteBookingButton.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/PocketCampusHome.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="bin/DirectoryMobile.dll" publishTime="08/16/2010 10:07:17" />
+    <file relUrl="Images/whiteButton.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/DiningRoomMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/chevron.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/CareersMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/OnTheEdgeMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/PocketCampus.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/StudyAdviceMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Default.aspx" publishTime="08/16/2010 08:48:51" />
+    <file relUrl="Images/NoticesHome.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/EmailMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/LinksMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/hull.mobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/MakeBookingButton.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/NoticesMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/StudioBookingHome.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="bin/DirectoryMobile.pdb" publishTime="08/16/2010 10:07:17" />
+    <file relUrl="bin/Directory.dll" publishTime="08/13/2010 15:11:07" />
+    <file relUrl="Images/EditBookingButton.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="08/11/2010 16:03:15" />
+    <file relUrl="Images/ArrowButton.jpg" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/PortalMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/eBridgeMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Web.config" publishTime="08/16/2010 10:07:17" />
+    <file relUrl="RoundedRectangle.css" publishTime="08/16/2010 08:40:20" />
+    <file relUrl="Images/LibraryMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="08/11/2010 16:03:15" />
+    <file relUrl="Images/CampusInfoHome.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="iPhoneHeader.css" publishTime="08/12/2010 13:59:35" />
+    <file relUrl="Images/ITServicesMobile.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/LoginButton.png" publishTime="08/12/2010 13:49:57" />
+    <file relUrl="Images/CalvinosMobile.png" publishTime="08/12/2010 13:49:57" />
+  </publishProfile>
+</publishData>

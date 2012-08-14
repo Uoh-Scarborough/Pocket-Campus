@@ -1,0 +1,573 @@
+<?xml version="1.0" ?>
+<localization xmlns="obout:editor:localization-schema">
+
+   <!-- Settings for top and bottom toolbars -->
+
+   <toolbar
+      design-mode  = "Textový editor"
+      html-text    = "HTML editor"
+      preview      = "Náhled"
+      submit       = "ODESLAT"
+      cancel       = "ZRUŠIT"
+      toggle-on    = ""
+      toggle-off   = "Zrušit"
+      font         = "Font"
+      size         = "Velikost"
+      font-not-set = "Nenastaveno"
+      size-not-set = "Nenastaveno"
+   />
+
+   <!-- Settings for Quick Formatting panel -->
+
+   <quick-formatting
+      header  = "Rychlý formát"
+      nostyle = "žádný"
+   />
+
+   <!-- Tooltips for buttons of top and bottom toolbars -->
+
+   <tooltips>
+     <button name="Bold"                tooltip="Tučné" />
+     <button name="Italic"              tooltip="Kurzíva" />
+     <button name="Underline"           tooltip="Podtržení" />
+     <button name="StrikeThrough"       tooltip="Přeškrtnuté" />
+     <button name="SubScript"           tooltip="Dolní index" />
+     <button name="SuperScript"         tooltip="Horní index" />
+
+     <button name="ForeColor"           tooltip="Barva" />
+     <button name="BackColor"           tooltip="Barva pozadí" />
+     <button name="ClearStyles"         tooltip="Odstranit formátování" />
+     <button name="Undo"                tooltip="Zpět (Ctrl-Z)" />
+     <button name="Redo"                tooltip="Znovu (Ctrl-Y)" />
+     <button name="Cut"                 tooltip="Vyjmout" />
+     <button name="Copy"                tooltip="Kopírovat" />
+     <button name="Paste"               tooltip="Vložit" />
+     <button name="PasteText"           tooltip="Vložit jako prostý text" />
+     <button name="JustifyLeft"         tooltip="Zarovnat doleva" />
+     <button name="JustifyCenter"       tooltip="Zarovnat na střed" />
+     <button name="JustifyRight"        tooltip="Zarovnat doprava" />
+     <button name="JustifyFull"         tooltip="Zarovnat do bloku" />
+     <button name="OrderedList"         tooltip="Číslování" />
+     <button name="BulletedList"        tooltip="Odrážky" />
+     <button name="DecreaseIndent"      tooltip="Zmenšit odsazení" />
+     <button name="IncreaseIndent"      tooltip="Zvětšit odsazení" />
+     <button name="CreateLink"          tooltip="Vytvořit odkaz" />
+     <button name="InsertTable"         tooltip="Vložit tabulku" />
+     <button name="InsertHR"            tooltip="Vložit dělící čáru" />
+     <button name="InsertIMG"           tooltip="Vložit obrázek" />
+     <button name="InsertIcon"          tooltip="Vložit emotikon" />
+     <button name="GetFormat"           tooltip="Kopírovat formát" />
+     <button name="ApplyFormat"         tooltip="Použít formát" />
+     <button name="ToUpperCase"         tooltip="Převést na velká písmena" />
+     <button name="ToLowerCase"         tooltip="Převést na malá písmena" />
+     <button name="RemoveAlignment"     tooltip="Zrušit zarovnání" />
+     <button name="InsertSpec"          tooltip="Vložit speciální znak" />
+     <button name="InsertAnchor"        tooltip="Vložit kotvu" />
+     <button name="Rtl"                 tooltip="Směr textu zprava doleva" />
+     <button name="Ltr"                 tooltip="Směr textu zleva doprava" />
+     <button name="SelectAll"           tooltip="Vybrat vše" />
+     <button name="SelectNone"          tooltip="Zrušit výběr" />
+     <button name="Print"               tooltip="Tisk" />
+     <button name="AnchorsOn"           tooltip="Zobrazit kotvy" />
+     <button name="SpellCheck"          tooltip="Kontrola pravopisu" />
+     <button name="myImageUpload"       tooltip="Nahrát obrázek na server" />
+     <button name="myFlashUpload"       tooltip="Upload flash to site" />
+     <button name="myDocumentUpload"    tooltip="Nahrát dokument na server" />
+     <button name="myFieldsetInsert"    tooltip="Vložit fieldset" />
+     <button name="increaseHeight"      tooltip="Zvětšit editační pole" />
+     <button name="decreaseHeight"      tooltip="Zmenšit editační pole" />
+     <button name="preview"             tooltip="Náhled dokumentu" />
+     <button name="insertForm"          tooltip="Vložit formulář" />
+     <button name="insertCheckBox"      tooltip="Vložit/upravit zaškrtávací políčko" />
+     <button name="insertRadio"         tooltip="Vložit/upravit políčko pro výběr" />
+     <button name="insertTextBox"       tooltip="Vložit/upravit textové pole" />
+     <button name="insertPassword"      tooltip="Vložit/uprivat pole pro zadání hesla" />
+     <button name="insertHidden"        tooltip="Vložit/upravit skryté pole" />
+     <button name="insertButton"        tooltip="Vložit/upravit tlačítko" />
+     <button name="insertSubmit"        tooltip="Vložit/upravit odesílací tlačítko" />
+     <button name="insertReset"         tooltip="Vložit/upravit tlačítko pro zrušení akce" />
+     <button name="insertDiv"           tooltip="Vložit tag DIV" />
+     <button name="PasteWord"           tooltip="Vložit text z MS Word (bez formátování)" />
+     <button name="ContextMenu"         tooltip="Kontextová nabídka pro současnou pozici kurzoru" />
+     <button name="InsertFlash"         tooltip="Vložit Flash" />
+     <button name="InsertMedia"         tooltip="Vložit Multimediální obsah" />
+     <button name="InsertPlaceHolder"   tooltip="Vložit pracovní prostor (PlaceHolder)" />
+     <button name="PlaceHoldersOn"      tooltip="Označení pracovních prostorů (PlaceHolder)" />
+     <button name="MakeNotEditable"     tooltip="Označit výběr jako needitovatelný" />
+     <button name="Paragraph"           tooltip="Vytvořit odstavec" />
+     <button name="ForeColorClear"      tooltip="Výchozí barva" />
+     <button name="BackColorClear"      tooltip="Výchozí barva pozadí" />
+     <button name="myTextareaInsert"    tooltip="Vložit textové pole" />
+
+     <button name="_chmode"             tooltip="Změnit editační mód" />
+     <button name="__submit"            tooltip="Odeslat změny" />
+     <button name="__cancel"            tooltip="Zrušit změny" />
+   </tooltips>
+
+   <!-- Main Alerts of Editor's JavaScript core -->
+
+   <main-alerts>
+     <alert name="safari-v"             message="Použijte Jablko-V" />
+     <alert name="moz-v"                message="Použijte Ctrl-V" />
+     <alert name="safari-c"             message="Použijte Jablko-C" />
+     <alert name="moz-c"                message="Použijte Ctrl-C" />
+     <alert name="safari-no-support"    message="Není podporováno v Safari" />
+     <alert name="mozilla-no-support"   message="Není podporováné v Mozille" />
+     <alert name="click-to-editor"      message="Klikněte na editační panel." />
+     <alert name="mac-using"            message="Použijte Safari nebo FireFox..." />
+     <alert name="your-browser"         message="Váš prohlížeč" />
+     <alert name="copy-format"          message="Klikněte na nějaký formátovaný text a poté na Kopírovat formát." />
+     <alert name="select-text"          message="Vyberte nějaký text." />
+     <alert name="paste-fail"           message="Žádný výběr vyhovující vložení." />
+     <alert name="empty-img-url"        message="Je třeba specifikovat URL obrázku." />
+     <alert name="bad-bg-img"           message="Chybný formát obrázku pro pozadí." />
+     <alert name="img-hor-spacing"      message="Horizontální odstup musí být číslo mezi 0 a 999." />
+     <alert name="img-vert-spacing"     message="Vertikální odstup musít být číslo mezi 0 a 999." />
+     <alert name="img-border-width"     message="Šířka okraje musí být číslo mezi 0 a 999." />
+     <alert name="invalid-color"        message="Chybná barva" />
+     <alert name="empty-link-url"       message="URL odkazu musí být specifikováno." />
+     <alert name="wait"                 message="Prosím čekejte..." />
+     <alert name="empty-anchor-name"    message="Název kotvy musí být specifikován." />
+     <alert name="editor-toolbar"       message="Použijte prosím tlačítka editoru." />
+     <alert name="spell-check-done"     message="Kontrola pravopisu je dokončena." />
+     <alert name="msword-switched"      message="Vkládání z MS Wordu je zapnuto.\nNyní použijte:" />
+     <alert name="empty-flash-url"      message="URL flashového souboru musí být specifikováno." />
+     <alert name="empty-media-url"      message="URL multimediálního souboru musí být specifikováno." />
+     <alert name="empty-placeholder-name" message="Název pracovního prostoru (PlaceHolder) musí být specifikováno." />
+   </main-alerts>
+
+   <!-- Popup Windows -->
+
+   <popup-windows>
+
+         <!-- Cell properties popup -->
+
+         <popup name="cell" create-title="" edit-title="Úprava vlastností buňky">
+              <field name="legend"              value="Vlastnosti buňky" />
+              <field name="alignment"           value="Zarovnání" />
+              <field name="v-alignment"         value="Vertikální zarovnání" />
+              <field name="align-not-set"       value="Nenastaveno" />
+              <field name="align-left"          value="Doleva" />
+              <field name="align-right"         value="Doprava" />
+              <field name="align-center"        value="Na střed" />
+              <field name="valign-top"          value="Nahoru" />
+              <field name="valign-middle"       value="Na střed" />
+              <field name="valign-bottom"       value="Dolů" />
+              <field name="valign-baseline"     value="Účaří" />
+              <field name="valign-not-set"      value="Nenastaveno" />
+              <field name="background-color"    value="Barva pozadí" />
+              <field name="remove-bg-color"     value="Výchozí barva pozadí" />
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="background-image"    value="Obrázek na pozadí" />
+              <field name="remove-bg-image"     value="Odstranit obrázek na pozadí" />
+              <field name="bg-color-not-set"    value="Nenastaveno" />
+              <field name="bg-image-not-set"    value="Nenastaveno" />
+              <field name="bg-color-popup"      value="Barva pozadí buňky" />
+              <field name="bg-image-popup"      value="Obrázek na pozadí buňky" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="color" create-title="Barva pozadí" edit-title="Barva písma">
+              <field name="set"                 value="OK" />
+              <field name="selected"            value="Vybráno" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="image" create-title="Vložit obrázek" edit-title="Upravit obrázek">
+              <field name="url"                 value="URL obrázku" />
+              <field name="browse"              value="Procházet" />
+              <field name="browse-title"        value="Procházet obrázky v Galerii" />
+              <field name="alt-text"            value="Alternativní text" />
+              <field name="show-shadow"         value="Zobrazit stín" />
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="shadow-title"        value="Nastavit/zrušit stínový efekt" />
+              <field name="layout"              value="Rozvržení" />
+              <field name="alignment"           value="Zarovnání" />
+              <field name="align-not-set"       value="Výchozí" />
+              <field name="align-left"          value="Doleva" />
+              <field name="align-right"         value="Doprava" />
+              <field name="align-texttop"       value="Horní okraj textu" />
+              <field name="align-absmiddle"     value="Vystředit" />
+              <field name="align-baseline"      value="Účaří" />
+              <field name="align-absbottom"     value="Dolní okraj textu" />
+              <field name="align-bottom"        value="Dolů" />
+              <field name="align-middle"        value="Na střed" />
+              <field name="align-top"           value="Nahoru" />
+              <field name="border-width"        value="Šířka okraje" />
+              <field name="spacing"             value="Odstup" />
+              <field name="horizontal"          value="Horizontálně" />
+              <field name="vertical"            value="Vertikálně" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="background-image" create-title="" edit-title="">
+              <field name="url"                    value="URL obrázku" />
+              <field name="browse"                 value="Vybrat" />
+              <field name="browse-title"           value="Procházet obrázky v Galerii" />
+              <field name="repeat"                 value="Opakovat" />
+              <field name="repeat-all"             value="Opakovat" />
+              <field name="repeat-x"               value="Opakovat vedle sebe" />
+              <field name="repeat-y"               value="Opakovat pod sebou" />
+              <field name="repeat-no"              value="Neopakovat" />
+              <field name="attachment"             value="Upevnění" />
+              <field name="attachment-fixed"       value="Na místě" />
+              <field name="attachment-scroll"      value="Rolovat" />
+              <field name="position-hor"           value="Horizontálně" />
+              <field name="position-hor-left"      value="Doleva" />
+              <field name="position-hor-center"    value="Na střed" />
+              <field name="position-hor-right"     value="Doprava" />
+              <field name="position-vert"          value="Vertikálně" />
+              <field name="position-vert-top"      value="Nahoru" />
+              <field name="position-vert-center"   value="Na střed" />
+              <field name="position-vert-bottom"   value="Dolů" />
+              <field name="ok"                     value="OK" />
+              <field name="cancel"                 value="Zrušit" />
+         </popup>
+
+         <popup name="icons" create-title="Vložit emotikon" edit-title="">
+         </popup>
+
+         <popup name="special-characters" create-title="Vložit speciální znak" edit-title="">
+         </popup>
+
+         <popup name="image-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="link" create-title="Vytvořit odkaz" edit-title="Upravit odkaz">
+              <field name="protocol"            value="Protokol" />
+              <field name="url"                 value="URL" />
+              <field name="browse"              value="Vybrat" />
+              <field name="browse-title"        value="Procházet předdefinované odkazy" />
+              <field name="tooltip"             value="Nápověda" />
+              <field name="target"              value="Cíl" />
+              <field name="target-new-win"      value="Nové okno" />
+              <field name="target-cur-win"      value="Současné okno" />
+              <field name="target-par-win"      value="Rodičovské okno" />
+              <field name="target-top-win"      value="Nejvyšší okno" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="link-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="table" create-title="Vložit tabulku" edit-title="Upravit tabulku">
+              <field name="insert-remove"       value="vložit, odstranit" />
+                                                <!-- character "/" is used as separator here -->
+              <field name="after-before"        value="za/před" />
+              <field name="current-cell"        value="aktuální buňku" />
+              <field name="columns"             value="Sloupce" />
+              <field name="span"                value="Sloučení" />
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="cell-padding"        value="Odsazení buňky" />
+              <field name="cell-spacing"        value="Mezery buněk" />
+              <field name="border-width"        value="Šířka okraje" />
+              <field name="border-color"        value="Barva okraje" />
+              <field name="border-color-popup"  value="Barva okraje" />
+              <field name="border-style"        value="Styl okraje" />
+              <field name="border-style-none"   value="Žádný" />
+              <field name="border-style-dotted" value="Tečkovaný" />
+              <field name="border-style-dashed" value="Přerušovaný" />
+              <field name="border-style-solid"  value="Čára" />
+              <field name="background-color"    value="Barva pozadí" />
+              <field name="remove-bg-color"     value="Výchozí barva pozadí" />
+              <field name="background-image"    value="Obrázek na pozadí" />
+              <field name="remove-bg-image"     value="Odstranit obrázek na pozadí" />
+              <field name="bg-color-not-set"    value="Nenastaveno" />
+              <field name="bg-image-not-set"    value="Nenastaveno" />
+              <field name="bg-color-popup"      value="Barva pozadí tabulky" />
+              <field name="bg-image-popup"      value="Obrázek na pozadí tabulky" />
+              <field name="show-shadow"         value="Zobrazit stín" />
+              <field name="shadow-title"        value="Nastavit/zrušit efekt stínu" />
+              <field name="rows"                value="Řádky" />
+              <field name="remove-border-color" value="Zrušit barvu okraje" />
+              <field name="apply"               value="Použít" />
+              <field name="apply-column"        value="Sloupec" />
+              <field name="apply-row"           value="Řádek" />
+              <field name="apply-table"         value="Tabulka" />
+              <field name="apply-properties"    value="zvolené vlastnosti k" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="paste-plain" create-title="Vložit jako prostý text" edit-title="">
+              <field name="text"                value="K vložení textu použijte CTRL+V na své klávesnici" />
+              <field name="cancel"              value="Zrušit" />
+              <field name="insert"              value="Vložit" />
+              <field name="clear"               value="Vymazat" />
+         </popup>
+
+         <popup name="anchor" create-title="Vložit kotvu" edit-title="Upravit kotvu">
+              <field name="name"                value="Název kotvy" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="spell-checker" create-title="Kontrola pravopisu" edit-title="">
+              <field name="not-in-dictionary"   value="Není ve slovníku" />
+              <field name="replace-with"        value="Nahradit" />
+              <field name="suggestions"         value="Návrhy" />
+              <field name="ignore"              value="Ignorovat" />
+              <field name="ignore-all"          value="Ignorovat vše" />
+              <field name="change"              value="Zaměnit" />
+              <field name="change-all"          value="Zaměnit vše" />
+              <field name="add-custom"          value="Add Custom" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="image-upload" create-title="Nahrát obrázek na server" edit-title="">
+              <field name="url"                 value="Obrázek" />
+              <field name="description"         value="Popisek" />
+              <field name="saved"               value="Obrázek byl úspěšně uložen" />
+              <field name="not-saved"           value="Obrázek nebyl uložen" />
+              <field name="ok"                  value="Nahrát" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="flash-upload" create-title="Upload Flash to site" edit-title="">
+              <field name="url"                 value="Flash" />
+              <field name="description"         value="Description" />
+              <field name="saved"               value="Flash saved successfully" />
+              <field name="not-saved"           value="No Image saved" />
+              <field name="ok"                  value="Upload" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="document-upload" create-title="Nahrát dokument na server" edit-title="">
+              <field name="url"                 value="Dokument" />
+              <field name="description"         value="Popis" />
+              <field name="saved"               value="Dokument byl úspěšně uložen" />
+              <field name="not-saved"           value="Dokument nebyl uložen" />
+              <field name="instruction"         value="Vyberte adresář pro uložení" />
+              <field name="current-folder"      value="Současný adresář" />
+              <field name="ok"                  value="Nahrát" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="fieldset" create-title="Vložit Fieldset" edit-title="Upravit Fieldset">
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="padding"             value="Odstup od okraje" />
+              <field name="margin"              value="Okraj" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="form" create-title="Vložit formulář" edit-title="Upravit formulář">
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Název" />
+              <field name="method"              value="Metoda" />
+              <field name="action"              value="Akce" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="input" create-title="Vložit VSTUP" edit-title="Upravit VSTUP">
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Název" />
+              <field name="value"               value="Hodnota" />
+              <field name="tooltip"             value="Nápověda" />
+              <field name="text"                value="Textové pole" />
+              <field name="checkbox"            value="Zaškrtávací políčko" />
+              <field name="radio"               value="Políčko pro výběr" />
+              <field name="hidden"              value="Skrytý element" />
+              <field name="button"              value="Tlačítko" />
+              <field name="submit"              value="Odesílací tlačítko" />
+              <field name="reset"               value="Tlačítko pro zrušení" />
+              <field name="password"            value="Pole pro zadání hesla" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="div" create-title="Vložit tag DIV" edit-title="Upravit tag DIV">
+              <field name="id"                  value="ID" />
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="border-width"        value="Šířka okraje" />
+              <field name="border-color"        value="Barva okraje" />
+              <field name="border-color-popup"  value="Barva okraje" />
+              <field name="border-style"        value="Styl okraje" />
+              <field name="border-style-none"   value="Žádný" />
+              <field name="border-style-dotted" value="Tečkovaný" />
+              <field name="border-style-dashed" value="Přerušovaný" />
+              <field name="border-style-solid"  value="Čára" />
+              <field name="remove-border-color"     value="Výchozí barva okraje" />
+              <field name="border-color-not-set"    value="Nenastaveno" />
+              <field name="background-color"    value="Barva pozadí" />
+              <field name="remove-bg-color"     value="Výchozí barva pozadí" />
+              <field name="bg-color-popup"      value="Barva pozadí elementu DIV" />
+              <field name="background-image"    value="Obrázek na pozadí" />
+              <field name="remove-bg-image"     value="Odstranit obrázek na pozadí" />
+              <field name="bg-color-not-set"    value="Nenastaveno" />
+              <field name="bg-image-not-set"    value="Nenastaveno" />
+              <field name="bg-image-popup"      value="Obrázek na pozadí elementu DIV" />
+              <field name="overflow"            value="Při posunu" />
+              <field name="overflow-none"       value="Nenastaveno" />
+              <field name="overflow-visible"    value="Viditelný" />
+              <field name="overflow-hidden"     value="Skrytý" />
+              <field name="overflow-scroll"     value="Rolovat" />
+              <field name="overflow-auto"       value="Auto" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+              <field name="css-class"           value="CSS Class" />
+         </popup>
+
+         <popup name="flash" create-title="Vložit Flash" edit-title="Upravit Flash">
+              <field name="url"                 value="URL flash souboru" />
+              <field name="browse"              value="Vybrat" />
+              <field name="browse-title"        value="Procházet Galerii flashových souborů" />
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="layout"              value="Rozvržení" />
+              <field name="alignment"           value="Zarovnání" />
+              <field name="align-not-set"       value="Nenastaveno" />
+              <field name="align-left"          value="Vlavo" />
+              <field name="align-right"         value="Vpravo" />
+              <field name="align-texttop"       value="Zarovnat s textem nahoře" />
+              <field name="align-absmiddle"     value="Vystředit" />
+              <field name="align-baseline"      value="Účaří" />
+              <field name="align-absbottom"     value="Zarovnat s textem dole" />
+              <field name="align-bottom"        value="Dole" />
+              <field name="align-middle"        value="Uprostřed" />
+              <field name="align-top"           value="Nahoře" />
+              <field name="spacing"             value="Odstup" />
+              <field name="horizontal"          value="Horizontálně" />
+              <field name="vertical"            value="Vertikálně" />
+              <field name="background-color"    value="Barva pozadí" />
+              <field name="remove-bg-color"     value="Výchozí barva pozadí" />
+              <field name="bg-color-popup"      value="Barva pozadí flashové animace" />
+              <field name="bg-color-not-set"    value="Nenastaveno" />
+              <field name="loop"                value="Smyčka" />
+              <field name="autoplay"            value="Automaticky spustit" />
+              <field name="transparency"        value="Průhlednost" />
+              <field name="properties"          value="Základní vlastnosti" />
+              <field name="quality"             value="Kvalita" />
+              <field name="quality-high"        value="Vysoká" />
+              <field name="quality-medium"      value="Střední" />
+              <field name="quality-low"         value="Nízká" />
+              <field name="scale"               value="Deformace" />
+              <field name="scale-default"       value="Výchozí" />
+              <field name="scale-noborder"      value="Bez okraje" />
+              <field name="scale-exactfit"      value="Plně vyplnit" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="flash-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="media" create-title="Vložit multimediální soubor" edit-title="Upravit multimediální soubor">
+              <field name="url"                 value="Adresa URL souboru" />
+              <field name="browse"              value="Vybrat" />
+              <field name="browse-title"        value="Procházet Galerii multimediálních souborů" />
+              <field name="width"               value="Šířka" />
+              <field name="height"              value="Výška" />
+              <field name="alignment"           value="Zarovnání" />
+              <field name="align-not-set"       value="Nenastaveno" />
+              <field name="align-left"          value="Vlevo" />
+              <field name="align-right"         value="Vpravo" />
+              <field name="align-texttop"       value="Zarovnat s textem nahoře" />
+              <field name="align-absmiddle"     value="Vystředit" />
+              <field name="align-baseline"      value="Účaří" />
+              <field name="align-absbottom"     value="Zarovnat s textem dole" />
+              <field name="align-bottom"        value="Dole" />
+              <field name="align-middle"        value="Uprostřed" />
+              <field name="align-top"           value="Nahoře" />
+              <field name="autostart"           value="Automatické spuštění" />
+              <field name="showcontrols"        value="Zobrazit ovládací prvky" />
+              <field name="showtracker"         value="Zobrazit stopu" />
+              <field name="showstatusbar"       value="Zobrazit stavový řádek" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="media-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="placeholder" create-title="Vložit pracovní prostor (PlaceHolder)" edit-title="Upravit pracovní prostor (PlaceHolder)">
+              <field name="name"                value="Název pracovního prostoru" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+         <popup name="textarea" create-title="Vložit textové pole" edit-title="Upravit textové pole">
+              <field name="id"                  value="ID" />
+              <field name="columns"             value="Sloupce" />
+              <field name="disabled"            value="Zakázáno" />
+              <field name="name"                value="Název" />
+              <field name="rows"                value="Řádky" />
+              <field name="readonly"            value="Pouze pro čtení" />
+              <field name="value"               value="Hodnota" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Zrušit" />
+         </popup>
+
+   </popup-windows>
+
+   <!-- Context Menu -->
+
+   <context-menu>
+         <field name="image-properties"         value="Vlastnosti obrázku" />
+         <field name="copy-image"               value="Kopírovat obrázek" />
+         <field name="cut-image"                value="Vystřihnout obrázek" />
+         <field name="delete-image"             value="Smazat obrázek" />
+         <field name="url-link-properties"      value="Vlastnosti odkazu" />
+         <field name="remove-url-link"          value="Odstranit odkaz" />
+         <field name="cell-properties"          value="Vlastnosti buňky" />
+         <field name="table-properties"         value="Vlastnosti tabulky" />
+         <field name="copy-table"               value="Kopírovat tabulku" />
+         <field name="cut-table"                value="Vystřihnout tabulku" />
+         <field name="delete-table"             value="Smazat tabulku" />
+         <field name="anchor-properties"        value="Vlastnoti kotvy" />
+         <field name="delete-anchor"            value="Smazat kotvu" />
+         <field name="cut"                      value="Vystřihnout" />
+         <field name="copy"                     value="Kopírovat" />
+         <field name="paste"                    value="Vložit" />
+         <field name="paste-plain-text"         value="Vložit jako prostý text" />
+         <field name="delete"                   value="Vymazat" />
+         <field name="select-all"               value="Vybrat vše" />
+         <field name="fieldset-properties"      value="Vlastnosti fieldsetu" />
+         <field name="remove-fieldset"          value="Smazat fieldset" />
+         <field name="div-properties"           value="Vlastnosti elementu DIV" />
+         <field name="remove-div"               value="Smazat element DIV (včetně obsahu)" />
+         <field name="remove-div-tag"           value="Odstranit element DIV (bez obsahu)" />
+         <field name="form-properties"          value="Vlastnosti formuláře" />
+         <field name="remove-form"              value="Smazat formulář (včetně obsahu)" />
+         <field name="remove-form-tag"          value="Odstranit formulář (bez obsahu)" />
+         <field name="input-properties"         value="Vlastnosti VSTUPU" />
+         <field name="delete-input"             value="Smazat VSTUP" />
+         <field name="flash-properties"         value="Vlastnosti flashe" />
+         <field name="copy-flash"               value="Kopírovat flash" />
+         <field name="cut-flash"                value="Vystřihnout flash" />
+         <field name="delete-flash"             value="Smazat flash" />
+         <field name="media-properties"         value="Vlastnosti multimediálního obsahu" />
+         <field name="copy-media"               value="Kopírovat multimediální obsah" />
+         <field name="cut-media"                value="Vystřihnout multimediální obsah" />
+         <field name="delete-media"             value="Smazat multimediální obsah" />
+         <field name="placeholder-properties"   value="Vlastnosti pracovního prostoru" />
+         <field name="delete-placeholder"       value="Smazat pracovní prostor" />
+         <field name="make-editable"            value="Označit jako editovatelný" />
+         <field name="textarea-properties"      value="Vlastnosti textového pole" />
+         <field name="remove-textarea"          value="Smazat textové pole" />
+   </context-menu>
+
+</localization>

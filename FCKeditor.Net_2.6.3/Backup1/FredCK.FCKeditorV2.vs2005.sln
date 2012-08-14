@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FredCK.FCKeditorV2.vs2005", "FredCK.FCKeditorV2.vs2005.csproj", "{F6F32704-97E0-4006-A474-5A9729C6B1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "..\WebApplication1\WebApplication1.csproj", "{76F70B9D-5113-4F95-9354-A8B32C44D9AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6F32704-97E0-4006-A474-5A9729C6B1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F32704-97E0-4006-A474-5A9729C6B1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F32704-97E0-4006-A474-5A9729C6B1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F32704-97E0-4006-A474-5A9729C6B1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F70B9D-5113-4F95-9354-A8B32C44D9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F70B9D-5113-4F95-9354-A8B32C44D9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F70B9D-5113-4F95-9354-A8B32C44D9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F70B9D-5113-4F95-9354-A8B32C44D9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

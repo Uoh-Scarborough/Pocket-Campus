@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD794DA8-1DB1-486D-9097-ED91817B97EE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DirectoryMobile</RootNamespace>
+    <AssemblyName>DirectoryMobile</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Images\ArrowButton.jpg" />
+    <Content Include="Images\blueButton.png" />
+    <Content Include="Images\CalvinosMobile.png" />
+    <Content Include="Images\CampusInfoHome.png" />
+    <Content Include="Images\CampusInfoMobile.png" />
+    <Content Include="Images\CareersMobile.png" />
+    <Content Include="Images\chevron.png" />
+    <Content Include="Images\DeleteBookingButton.png" />
+    <Content Include="Images\DiningRoomMobile.png" />
+    <Content Include="Images\eBridgeMobile.png" />
+    <Content Include="Images\EditBookingButton.png" />
+    <Content Include="Images\EmailMobile.png" />
+    <Content Include="Images\EventsHome.png" />
+    <Content Include="Images\EventsMobile.png" />
+    <Content Include="Images\hull.mobile.png" />
+    <Content Include="Images\ITServicesMobile.png" />
+    <Content Include="Images\LibraryMobile.png" />
+    <Content Include="Images\LinkHome.png" />
+    <Content Include="Images\LinksMobile.png" />
+    <Content Include="Images\LoginButton.png" />
+    <Content Include="Images\MakeBookingButton.png" />
+    <Content Include="Images\MenuBackground.png" />
+    <Content Include="Images\NoticesHome.png" />
+    <Content Include="Images\NoticesMobile.png" />
+    <Content Include="Images\OnTheEdgeMobile.png" />
+    <Content Include="Images\PocketCampus.png" />
+    <Content Include="Images\PocketCampusHome.png" />
+    <Content Include="Images\PortalMobile.png" />
+    <Content Include="Images\StudentServicesMobile.png" />
+    <Content Include="Images\StudentsUnionMobile.png" />
+    <Content Include="Images\StudioBookingHome.png" />
+    <Content Include="Images\StudyAdviceMobile.png" />
+    <Content Include="Images\TimetableHome.png" />
+    <Content Include="Images\TimetableMobile.png" />
+    <Content Include="Images\UsefulDatesMobile.png" />
+    <Content Include="Images\whiteButton.png" />
+    <Content Include="iPhoneHeader.css" />
+    <Content Include="RoundedRectangle.css" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassAppDetails.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StandardClasses\StandardClasses.csproj">
+      <Project>{5C0AB1B0-D894-4107-88F4-3AD2407D6D3C}</Project>
+      <Name>StandardClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65010</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DirectoryMobile</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

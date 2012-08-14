@@ -1,0 +1,215 @@
+﻿#dropdownarea
+{
+    float:left;
+    position:relative;
+    top:-30px;
+}
+
+
+#maincontent td a img
+{
+    border:none;
+}
+
+#maincontent td#notices
+{
+    width:333px;
+    height:302px;
+    background: url("http://pocketcampusimages.scar.hull.ac.uk/NoticesSmall.png") no-repeat;
+}
+
+#maincontent td#events
+{
+    width:760px;
+    height:233px;
+    background: url("http://pocketcampusimages.scar.hull.ac.uk/EventsSmall.png") no-repeat;
+}
+
+#maincontent td#eventssmall
+{
+    width:333px;
+    height:302px;
+    background: url("http://pocketcampusimages.scar.hull.ac.uk/EventsVerySmall.png") no-repeat;
+}
+
+#noticesarea
+{
+    margin:0px;
+    padding:0px;
+    padding:0px;
+    text-align:left;
+}
+
+#noticesarea ul
+{
+    padding:10px 5px 5px 10px;
+    margin:0px;
+    border:0px;
+    list-style-type:none;
+}
+
+#noticesarea ul li
+{
+    background-image: url(http://pocketcampusimages.scar.hull.ac.uk/Bullet.png);
+    background-repeat: no-repeat;
+	background-position: 0 0em;
+		
+    padding-left:20px;
+    padding-top:5px;
+}
+
+#noticesarea ul li a
+{
+    position:relative;
+    top:-5px;
+    height:20px;
+    color:#ae2b30;
+}
+
+#noticesarea a
+{
+	color:#ae2b30;
+}
+
+#noticesareasmall
+{
+    margin:0px;
+    padding:0px;
+    padding:12px;
+    text-align:left;
+    width:300px;
+}
+
+#noticesareasmall ul
+{
+    padding:10px 5px 5px 40px;
+    margin:0px;
+    border:0px;
+}
+
+#noticesareasmall ul li
+{
+    list-style-image: url(http://pocketcampusimages.scar.hull.ac.uk/Bullet.png);
+    padding: 0px 0px 0px 0px;
+}
+
+#noticesareasmall ul li a
+{
+    position:relative;
+    top:-5px
+}
+
+#eventsarea
+{
+    padding:15px 10px 10px 10px;
+}
+
+#eventsarea table
+{
+    vertical-align:top;
+}
+
+#eventsarea table td
+{
+    vertical-align:top;
+}
+
+.events dl
+{
+    padding:0px 0px 0px 0px;
+    margin:0px;
+    border:0px;
+    position:relative;
+    top:-10px;
+}
+
+.events dl dt
+{
+	background-image: url(http://pocketcampusimages.scar.hull.ac.uk/Bullet.png);
+    background-repeat: no-repeat;
+	background-position: 1em 0em;
+		
+    padding-left:0px;
+    padding-top:0px;
+}
+
+.events dl dt a
+{
+    position:relative;
+    left:35px;
+    color:#ae2b30;
+}
+
+.events dl dd
+{
+    position: relative;
+    top:5px;
+    padding-bottom:5px;
+}
+
+.events a
+{
+	color:#ae2b30;
+}
+
+#fullnotices
+{
+    padding: 5px 5px 5px 20px;
+}
+
+#fullnotices dt
+{
+    font-weight:bold;
+    font-size:12px;
+    color:#ae2b30;
+    height:20px;
+}
+
+#fullnotices dd
+{
+    padding: 5px 5px 20px 0px;
+    position:relative;
+    left:-20px;
+}
+
+#fullnotices dd a
+{
+    text-decoration:none;
+}
+
+#fullnotices dd a img
+{
+    padding:10px 0px 0px 0px;
+    border:none;
+}
+
+#fullevents
+{
+    padding: 5px 5px 5px 20px;
+}
+
+#fullevents dt
+{
+    font-weight:bold;
+    font-size:12px;
+    color:#ae2b30;
+    height:20px;
+}
+
+#fullevents dd
+{
+    padding: 5px 5px 20px 0px;
+    position:relative;
+    left:-20px;
+}
+
+#fullevents dd a
+{
+    text-decoration:none;
+}
+
+#fullevents dd a img
+{
+    padding:10px 0px 0px 0px;
+    border:none;
+}

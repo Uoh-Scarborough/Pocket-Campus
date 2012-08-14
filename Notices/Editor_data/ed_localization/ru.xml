@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="Windows-1251" ?>
+<localization xmlns="obout:editor:localization-schema">
+
+   <!-- Settings for top and bottom toolbars -->
+
+   <toolbar
+      design-mode  = "Дизайнер"
+      html-text    = "HTML текст"
+      preview      = "Просмотр"
+      submit       = "СОХРАНИТЬ"
+      cancel       = "ОТМЕНА"
+      toggle-on    = "Сделать"
+      toggle-off   = "Убрать"
+      font         = "Шрифт"
+      size         = "Размер"
+      font-not-set = "не задан"
+      size-not-set = "не уст."
+   />
+
+   <!-- Settings for Quick Formatting panel -->
+
+   <quick-formatting
+      header  = "Стили текста"
+      nostyle = "нет стиля"
+   />
+
+   <!-- Tooltips for buttons of top and bottom toolbars -->
+
+   <tooltips>
+     <button name="Bold"                tooltip="жирный" />
+     <button name="Italic"              tooltip="наклонный" />
+     <button name="Underline"           tooltip="подчёркнутый" />
+     <button name="StrikeThrough"       tooltip="перечёркнутый" />
+     <button name="SubScript"           tooltip="подстрочный индекс" />
+     <button name="SuperScript"         tooltip="надстрочный индекс" />
+
+     <button name="ForeColor"           tooltip="Выбрать цвет текста" />
+     <button name="BackColor"           tooltip="Выбрать цвет фона" />
+     <button name="ClearStyles"         tooltip="Убрать любое форматирование" />
+     <button name="Undo"                tooltip="Отменить последнее изменение (Ctrl-z)" />
+     <button name="Redo"                tooltip="Вернуть последнее изменение (Ctrl-y)" />
+     <button name="Cut"                 tooltip="Вырезать" />
+     <button name="Copy"                tooltip="Копировать" />
+     <button name="Paste"               tooltip="Вставить" />
+     <button name="PasteText"           tooltip="Вставить неформатированный текст" />
+     <button name="JustifyLeft"         tooltip="Выравнять влево" />
+     <button name="JustifyCenter"       tooltip="Выравнять по центру" />
+     <button name="JustifyRight"        tooltip="Выравнять вправо" />
+     <button name="JustifyFull"         tooltip="Выравнять по ширине" />
+     <button name="OrderedList"         tooltip="Сделать нумерованный список" />
+     <button name="BulletedList"        tooltip="Сделать ненумерованный список" />
+     <button name="DecreaseIndent"      tooltip="Уменьшить отступ" />
+     <button name="IncreaseIndent"      tooltip="Увеличить отступ" />
+     <button name="CreateLink"          tooltip="Создать ссылку" />
+     <button name="InsertTable"         tooltip="Вставить таблицу" />
+     <button name="InsertHR"            tooltip="Вставить горизонтальную линию" />
+     <button name="InsertIMG"           tooltip="Вставить изображение" />
+     <button name="InsertIcon"          tooltip="Вставить иконку" />
+     <button name="GetFormat"           tooltip="Копировать формат" />
+     <button name="ApplyFormat"         tooltip="Применить скопированный формат" />
+     <button name="ToUpperCase"         tooltip="Перевести в прописной текст" />
+     <button name="ToLowerCase"         tooltip="Перевести в строчный текст" />
+     <button name="RemoveAlignment"     tooltip="Убрать выравнивание" />
+     <button name="InsertSpec"          tooltip="Вставить специальный символ" />
+     <button name="InsertAnchor"        tooltip="Вставить якорь" />
+     <button name="Rtl"                 tooltip="направление справа налево" />
+     <button name="Ltr"                 tooltip="направление слева направо" />
+     <button name="SelectAll"           tooltip="Выделить всё" />
+     <button name="SelectNone"          tooltip="Сбросить выделение" />
+     <button name="Print"               tooltip="Печать" />
+     <button name="AnchorsOn"           tooltip="подсветку якорей" />
+     <button name="SpellCheck"          tooltip="Проверка орфографии" />
+     <button name="myImageUpload"       tooltip="Выгрузка изображения на сайт" />
+     <button name="myFlashUpload"       tooltip="Upload flash to site" />
+     <button name="myDocumentUpload"    tooltip="Выгрузка документа на сайт" />
+     <button name="myFieldsetInsert"    tooltip="Вставка группы" />
+     <button name="increaseHeight"      tooltip="Увеличить окно редактирования" />
+     <button name="decreaseHeight"      tooltip="Уменьшить окно редактирования" />
+     <button name="preview"             tooltip="Показать внешний вид документа" />
+     <button name="insertForm"          tooltip="Вставить Форму" />
+     <button name="insertCheckBox"      tooltip="Вставить/редактировать Флажок" />
+     <button name="insertRadio"         tooltip="Вставить/редактировать Переключатель" />
+     <button name="insertTextBox"       tooltip="Вставить/редактировать Однострочное поле ввода текста " />
+     <button name="insertPassword"      tooltip="Вставить/редактировать Поле ввода пароля" />
+     <button name="insertHidden"        tooltip="Вставить/редактировать Скрытый элемент" />
+     <button name="insertButton"        tooltip="Вставить/редактировать Кнопку общего вида" />
+     <button name="insertSubmit"        tooltip="Вставить/редактировать Кнопку пересылки формы" />
+     <button name="insertReset"         tooltip="Вставить/редактировать Кнопку сброса формы" />
+     <button name="insertDiv"           tooltip="Вставить DIV" />
+     <button name="PasteWord"           tooltip="Вставить из MS Word (с очисткой)" />
+     <button name="ContextMenu"         tooltip="Контекстное меню для текущей позиции" />
+     <button name="InsertFlash"         tooltip="Вставить флэш" />
+     <button name="InsertMedia"         tooltip="Вставить Медиа" />
+     <button name="InsertPlaceHolder"   tooltip="Вставить заполнитель" />
+     <button name="PlaceHoldersOn"      tooltip="подсветку заполнителей" />
+     <button name="MakeNotEditable"     tooltip="Сделать выделенное не редактируемым" />
+     <button name="Paragraph"           tooltip="Сделать параграф" />
+     <button name="ForeColorColor"      tooltip="Убрать цвет текста" />
+     <button name="BackColorColor"      tooltip="Убрать цвет фона" />
+     <button name="myTextareaInsert"    tooltip="Вставить Textarea" />
+
+     <button name="_chmode"             tooltip="Изменить режим редактирования" />
+     <button name="__submit"            tooltip="Сохранить изменения документа" />
+     <button name="__cancel"            tooltip="Отменить изменения документа" />
+   </tooltips>
+
+   <!-- Main Alerts of Editor's JavaScript core -->
+
+   <main-alerts>
+     <alert name="safari-v"             message="Испоьзуйте Apple-V" />
+     <alert name="moz-v"                message="Испоьзуйте Ctrl-V" />
+     <alert name="safari-c"             message="Испоьзуйте Apple-C" />
+     <alert name="moz-c"                message="Испоьзуйте Ctrl-C" />
+     <alert name="safari-no-support"    message="Не поддерживается в Safari" />
+     <alert name="mozilla-no-support"   message="Не поддерживается в Mozilla" />
+     <alert name="click-to-editor"      message="Кликните мышкой в панель редактирования." />
+     <alert name="mac-using"            message="Используйте Safari или FireFox..." />
+     <alert name="your-browser"         message="Ваш обозреватель" />
+     <alert name="copy-format"          message="Кликните в форматированный текст и скопируйте формат." />
+     <alert name="select-text"          message="Выделите какой-нибудь текст." />
+     <alert name="paste-fail"           message="Некорректное выделение для вставки." />
+     <alert name="empty-img-url"        message="URL изображения должен быть задан." />
+     <alert name="bad-bg-img"           message="Данное изображение не подходит для задания фона." />
+     <alert name="img-hor-spacing"      message="Горизонтальный отступ должен быть числом от 0 до 999." />
+     <alert name="img-vert-spacing"     message="Вертикальный отступ должен быть числом от 0 до 999." />
+     <alert name="img-border-width"     message="Толщина границы должна быть числом от 0 до 999." />
+     <alert name="invalid-color"        message="Неверно задан цвет" />
+     <alert name="empty-link-url"       message="URL ссылки должен быть задан." />
+     <alert name="wait"                 message="Подождите, пожалуйста..." />
+     <alert name="empty-anchor-name"    message="Имя якоря должно быть задано." />
+     <alert name="editor-toolbar"       message="Используйте кнопки панели редактора." />
+     <alert name="spell-check-done"     message="Проверка орфографии завершена." />
+     <alert name="msword-switched"      message="Режим вставки из MS Word включен.\nПрямо сейчас:" />
+     <alert name="empty-flash-url"      message="URL флэш должен быть задан." />
+     <alert name="empty-media-url"      message="URL медиа должен быть задан." />
+     <alert name="empty-placeholder-name" message="Имя заполнителя должно быть задано." />
+   </main-alerts>
+
+   <!-- Popup Windows -->
+
+   <popup-windows>
+
+         <!-- Cell properties popup -->
+
+         <popup name="cell" create-title="" edit-title="Редактирование свойств ячейки">
+              <field name="legend"              value="Свойства ячейки" />
+              <field name="alignment"           value="Выравнивание" />
+              <field name="v-alignment"         value="Верт. выр-ние" />
+              <field name="align-not-set"       value="Нет" />
+              <field name="align-left"          value="Влево" />
+              <field name="align-right"         value="Вправо" />
+              <field name="align-center"        value="Центр" />
+              <field name="valign-top"          value="Верх" />
+              <field name="valign-middle"       value="Центр" />
+              <field name="valign-bottom"       value="Низ" />
+              <field name="valign-baseline"     value="Основание" />
+              <field name="valign-not-set"      value="Нет" />
+              <field name="background-color"    value="Цвет фона" />
+              <field name="remove-bg-color"     value="Убрать цвет фона" />
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="background-image"    value="Изображение фона" />
+              <field name="remove-bg-image"     value="Убрать изображение фона" />
+              <field name="bg-color-not-set"    value="Нет" />
+              <field name="bg-image-not-set"    value="Нет" />
+              <field name="bg-color-popup"      value="Цвет фона ячейки" />
+              <field name="bg-image-popup"      value="Изображение фона ячейки" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="color" create-title="Выберите цвет фона" edit-title="Выберите цвет теста">
+              <field name="set"                 value="Уст" />
+              <field name="selected"            value="Выбрано" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="image" create-title="Вставить изображение" edit-title="Редактирование свойств изображения">
+              <field name="url"                 value="URL изобр-ния" />
+              <field name="browse"              value="Обзор" />
+              <field name="browse-title"        value="Обзор изображений из Галереи" />
+              <field name="alt-text"            value="Подсказки" />
+              <field name="show-shadow"         value="Эффект тени" />
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="shadow-title"        value="Установить/снять эффект тени" />
+              <field name="layout"              value="Разметка" />
+              <field name="alignment"           value="Выравнивание" />
+              <field name="align-not-set"       value="Нет" />
+              <field name="align-left"          value="Слева" />
+              <field name="align-right"         value="Справа" />
+              <field name="align-texttop"       value="Верх текста" />
+              <field name="align-absmiddle"     value="Абс. центр" />
+              <field name="align-baseline"      value="Основание" />
+              <field name="align-absbottom"     value="Абс. низ" />
+              <field name="align-bottom"        value="Низ" />
+              <field name="align-middle"        value="Центр" />
+              <field name="align-top"           value="Верх" />
+              <field name="border-width"        value="Толщина границы" />
+              <field name="spacing"             value="Отступ" />
+              <field name="horizontal"          value="Горизонт." />
+              <field name="vertical"            value="Вертик." />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="background-image" create-title="" edit-title="">
+              <field name="url"                    value="URL изобр." />
+              <field name="browse"                 value="Обзор" />
+              <field name="browse-title"           value="Обзор изображений из Галереи" />
+              <field name="repeat"                 value="Повтор" />
+              <field name="repeat-all"             value="Верт. и Гор." />
+              <field name="repeat-x"               value="Гор. только" />
+              <field name="repeat-y"               value="Верт. только" />
+              <field name="repeat-no"              value="Нет повтора" />
+              <field name="attachment"             value="Привязка" />
+              <field name="attachment-fixed"       value="Фиксиров." />
+              <field name="attachment-scroll"      value="Прокрутка" />
+              <field name="position-hor"           value="Гориз. позиция" />
+              <field name="position-hor-left"      value="Слева" />
+              <field name="position-hor-center"    value="По центру" />
+              <field name="position-hor-right"     value="Справа" />
+              <field name="position-vert"          value="Верт. позиция" />
+              <field name="position-vert-top"      value="Сверху" />
+              <field name="position-vert-center"   value="По центру" />
+              <field name="position-vert-bottom"   value="Снизу" />
+              <field name="ok"                     value="Применить" />
+              <field name="cancel"                 value="Отмена" />
+         </popup>
+
+         <popup name="icons" create-title="Вставить иконку" edit-title="">
+         </popup>
+
+         <popup name="special-characters" create-title="Вставить спец. символ" edit-title="">
+         </popup>
+
+         <popup name="image-browse" create-title="" edit-title="">
+              <field name="ok"                  value="Выбрать" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="link" create-title="Создание ссылки" edit-title="Редактирование ссылки">
+              <field name="protocol"            value="Протокол" />
+              <field name="url"                 value="URL" />
+              <field name="browse"              value="Обзор" />
+              <field name="browse-title"        value="Обзор предопределённых ссылок" />
+              <field name="tooltip"             value="Подсказка" />
+              <field name="target"              value="Цель" />
+              <field name="target-new-win"      value="Новое окно" />
+              <field name="target-cur-win"      value="Текущее окно" />
+              <field name="target-par-win"      value="Родит. окно" />
+              <field name="target-top-win"      value="Верхнее окно" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="link-browse" create-title="" edit-title="">
+              <field name="ok"                  value="Выбрать" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="table" create-title="Создание таблицы" edit-title="Редактирование таблицы">
+              <field name="insert-remove"       value="вставка,удаление" />
+                                                <!-- character "/" is used as separator here -->
+              <field name="after-before"        value="после/перед" />
+              <field name="current-cell"        value="тек. ячейк." />
+              <field name="columns"             value="Колонки" />
+              <field name="span"                value="Слияние" />
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="cell-padding"        value="Отступ в ячейке" />
+              <field name="cell-spacing"        value="Между ячейками" />
+              <field name="border-width"        value="Ширина рамки" />
+              <field name="border-color"        value="Цвет рамки" />
+              <field name="border-color-popup"  value="Цвет рамки" />
+              <field name="border-style"        value="Стиль рамки" />
+              <field name="border-style-none"   value="Нет" />
+              <field name="border-style-dotted" value="Пункт." />
+              <field name="border-style-dashed" value="Штрих" />
+              <field name="border-style-solid"  value="Сплош." />
+              <field name="background-color"    value="Цвет фона" />
+              <field name="remove-bg-color"     value="Убрать цвет фона" />
+              <field name="background-image"    value="Изображение фона" />
+              <field name="remove-bg-image"     value="Убрать изображение фона" />
+              <field name="bg-color-not-set"    value="Нет" />
+              <field name="bg-image-not-set"    value="Нет" />
+              <field name="bg-color-popup"      value="Цвет фона таблицы" />
+              <field name="bg-image-popup"      value="Изображение фона таблицы" />
+              <field name="show-shadow"         value="Эффект тени" />
+              <field name="shadow-title"        value="Установить/снять эффект тени" />
+              <field name="rows"                value="Строки" />
+              <field name="remove-border-color" value="Убрать цвет рамки" />
+              <field name="apply"               value="Применить" />
+              <field name="apply-column"        value="столбцу" />
+              <field name="apply-row"           value="строке" />
+              <field name="apply-table"         value="таблице" />
+              <field name="apply-properties"    value="отмеченные свойства к" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="paste-plain" create-title="Вставить чистый текст" edit-title="">
+              <field name="text"                value="Используйте CTRL+V для вставки текста в окно" />
+              <field name="cancel"              value="Отмена" />
+              <field name="insert"              value="Вставить" />
+              <field name="clear"               value="Очистить" />
+         </popup>
+
+         <popup name="anchor" create-title="Вставить якорь" edit-title="Редактирование якоря">
+              <field name="name"                value="Имя якоря" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="spell-checker" create-title="Проверка орфографии" edit-title="">
+              <field name="not-in-dictionary"   value="Нет в словаре" />
+              <field name="replace-with"        value="Заменить на" />
+              <field name="suggestions"         value="Варианты" />
+              <field name="ignore"              value="Пропустить" />
+              <field name="ignore-all"          value="Пропустить все" />
+              <field name="change"              value="Заменить" />
+              <field name="change-all"          value="Заменить все" />
+              <field name="add-custom"          value="Добавить в словарь" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="image-upload" create-title="Выгрузка изображения на сайт" edit-title="">
+              <field name="url"                 value="Изображение" />
+              <field name="description"         value="Описание" />
+              <field name="saved"               value="Изображение успешно сохранено" />
+              <field name="not-saved"           value="Изображение не сохранено" />
+              <field name="ok"                  value="Выгрузить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="flash-upload" create-title="Выгрузка флэш на сайт" edit-title="">
+              <field name="url"                 value="Флэш" />
+              <field name="description"         value="Описание" />
+              <field name="saved"               value="Флэш успешно сохранен" />
+              <field name="not-saved"           value="Флэш не сохранен" />
+              <field name="ok"                  value="Выгрузить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="document-upload" create-title="Выгрузка документа на сайт" edit-title="">
+              <field name="url"                 value="Документ" />
+              <field name="description"         value="Описание" />
+              <field name="saved"               value="Документ успешно сохранено" />
+              <field name="not-saved"           value="Документ не сохранён" />
+              <field name="instruction"         value="Выберите каталог для выгрузки" />
+              <field name="current-folder"      value="Текущий каталог" />
+              <field name="ok"                  value="Выгрузить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="fieldset" create-title="Вставка группы" edit-title="Редактирование группы">
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="padding"             value="Запонение" />
+              <field name="margin"              value="Граница" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="form" create-title="Вставка Формы" edit-title="Редактирование Формы">
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Имя" />
+              <field name="method"              value="Метод" />
+              <field name="action"              value="Действие" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="input" create-title="Вставка поля INPUT" edit-title="Редактирование поля INPUT">
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Имя" />
+              <field name="value"               value="Значение" />
+              <field name="tooltip"             value="Подсказка" />
+              <field name="text"                value="Однострочное поле ввода текста" />
+              <field name="checkbox"            value="Флажок" />
+              <field name="radio"               value="Переключатель" />
+              <field name="hidden"              value="Скрытый элемент" />
+              <field name="button"              value="Кнопка общего вида" />
+              <field name="submit"              value="Кнопка пересылки формы" />
+              <field name="reset"               value="Кнопка сброса формы" />
+              <field name="password"            value="Поле ввода пароля" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="div" create-title="Вставка DIV" edit-title="Редактирование DIV">
+              <field name="id"                  value="ID" />
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="border-width"        value="Ширина рамки" />
+              <field name="border-color"        value="Цвет рамки" />
+              <field name="border-color-popup"  value="Цвет рамки" />
+              <field name="border-style"        value="Стиль рамки" />
+              <field name="border-style-none"   value="Нет" />
+              <field name="border-style-dotted" value="Пункт." />
+              <field name="border-style-dashed" value="Штрих" />
+              <field name="border-style-solid"  value="Сплош." />
+              <field name="remove-border-color"     value="Убрать цвет рамки" />
+              <field name="border-color-not-set"    value="Нет" />
+              <field name="background-color"    value="Цвет фона" />
+              <field name="remove-bg-color"     value="Убрать цвет фона" />
+              <field name="bg-color-popup"      value="Цвет фона DIV" />
+              <field name="background-image"    value="Изображение фона" />
+              <field name="remove-bg-image"     value="Убрать изображение фона" />
+              <field name="bg-color-not-set"    value="Нет" />
+              <field name="bg-image-not-set"    value="Нет" />
+              <field name="bg-image-popup"      value="Изображение фона DIV" />
+              <field name="overflow"            value="По переполнению" />
+              <field name="overflow-none"       value="Не задано" />
+              <field name="overflow-visible"    value="Показать" />
+              <field name="overflow-hidden"     value="Спрятать" />
+              <field name="overflow-scroll"     value="Прокрутка" />
+              <field name="overflow-auto"       value="Автоматически" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+              <field name="css-class"           value="CSS Класс" />
+         </popup>
+
+         <popup name="flash" create-title="Вставить флэш" edit-title="Редактирование свойств флэш">
+              <field name="url"                 value="URL флэш" />
+              <field name="browse"              value="Обзор" />
+              <field name="browse-title"        value="Обзор флэш из Галереи" />
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="layout"              value="Разметка" />
+              <field name="alignment"           value="Выравнивание" />
+              <field name="align-not-set"       value="Нет" />
+              <field name="align-left"          value="Слева" />
+              <field name="align-right"         value="Справа" />
+              <field name="align-texttop"       value="Верх текста" />
+              <field name="align-absmiddle"     value="Абс. центр" />
+              <field name="align-baseline"      value="Основание" />
+              <field name="align-absbottom"     value="Абс. низ" />
+              <field name="align-bottom"        value="Низ" />
+              <field name="align-middle"        value="Центр" />
+              <field name="align-top"           value="Верх" />
+              <field name="spacing"             value="Отступ" />
+              <field name="horizontal"          value="Горизонт." />
+              <field name="vertical"            value="Вертик." />
+              <field name="background-color"    value="Цвет фона" />
+              <field name="remove-bg-color"     value="Убрать цвет фона" />
+              <field name="bg-color-popup"      value="Цвет фона флэш" />
+              <field name="bg-color-not-set"    value="Нет" />
+              <field name="loop"                value="Цикл" />
+              <field name="autoplay"            value="Автопроигрывание" />
+              <field name="transparency"        value="Прозрачность" />
+              <field name="properties"          value="Основные свойства" />
+              <field name="quality"             value="Качество" />
+              <field name="quality-high"        value="Высокое" />
+              <field name="quality-medium"      value="Среднее" />
+              <field name="quality-low"         value="Низкое" />
+              <field name="scale"               value="Масштаб" />
+              <field name="scale-default"       value="По умолчанию" />
+              <field name="scale-noborder"      value="Взять центр" />
+              <field name="scale-exactfit"      value="Заполнить" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="flash-browse" create-title="" edit-title="">
+              <field name="ok"                  value="Выбрать" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="media" create-title="Вставить Медиа" edit-title="Редактирование свойств Медиа">
+              <field name="url"                 value="URL медиа" />
+              <field name="browse"              value="Обзор" />
+              <field name="browse-title"        value="Обзор медиа из Галереи" />
+              <field name="width"               value="Ширина" />
+              <field name="height"              value="Высота" />
+              <field name="layout"              value="Разметка" />
+              <field name="alignment"           value="Выравнивание" />
+              <field name="align-not-set"       value="Нет" />
+              <field name="align-left"          value="Слева" />
+              <field name="align-right"         value="Справа" />
+              <field name="align-texttop"       value="Верх текста" />
+              <field name="align-absmiddle"     value="Абс. центр" />
+              <field name="align-baseline"      value="Основание" />
+              <field name="align-absbottom"     value="Абс. низ" />
+              <field name="align-bottom"        value="Низ" />
+              <field name="align-middle"        value="Центр" />
+              <field name="align-top"           value="Верх" />
+              <field name="autostart"           value="Автостарт" />
+              <field name="showcontrols"        value="Показывать управление" />
+              <field name="showtracker"         value="Показывать ползунок" />
+              <field name="showstatusbar"       value="Показывать панель состояния" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="media-browse" create-title="" edit-title="">
+              <field name="ok"                  value="Выбрать" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="placeholder" create-title="Вставить заполнитель" edit-title="Редактирование свойств заполнителя">
+              <field name="name"                value="Имя заполнителя" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+         <popup name="textarea" create-title="Вставить Textarea" edit-title="Редактирование свойств Textarea">
+              <field name="id"                  value="ID" />
+              <field name="columns"             value="Колонок" />
+              <field name="disabled"            value="Не активен" />
+              <field name="name"                value="Имя" />
+              <field name="rows"                value="Строк" />
+              <field name="readonly"            value="Только чтение" />
+              <field name="value"               value="Содержимое" />
+              <field name="ok"                  value="Применить" />
+              <field name="cancel"              value="Отмена" />
+         </popup>
+
+   </popup-windows>
+
+   <!-- Context Menu -->
+
+   <context-menu>
+         <field name="image-properties"         value="Свойства Изображения" />
+         <field name="copy-image"               value="Скопировать Изображение" />
+         <field name="cut-image"                value="Вырезать Изображение" />
+         <field name="delete-image"             value="Удалить Изображение" />
+         <field name="url-link-properties"      value="Свойства Ссылки" />
+         <field name="remove-url-link"          value="Убрать Ссылку" />
+         <field name="cell-properties"          value="Свойства Ячейки" />
+         <field name="table-properties"         value="Свойства Таблицы" />
+         <field name="copy-table"               value="Скопировать Таблицу" />
+         <field name="cut-table"                value="Вырезать Таблицу" />
+         <field name="delete-table"             value="Удалить Таблицу" />
+         <field name="anchor-properties"        value="Свойства Якоря" />
+         <field name="delete-anchor"            value="Удалить Якорь" />
+         <field name="cut"                      value="Вырезать" />
+         <field name="copy"                     value="Копировать" />
+         <field name="paste"                    value="Вставить" />
+         <field name="paste-plain-text"         value="Вставить тект" />
+         <field name="delete"                   value="Удалить" />
+         <field name="select-all"               value="Выделить всё" />
+         <field name="fieldset-properties"      value="Свойства группы" />
+         <field name="remove-fieldset"          value="Удалить группу" />
+         <field name="div-properties"           value="Свойства DIV" />
+         <field name="remove-div"               value="Удалить DIV (с содержимым)" />
+         <field name="remove-div-tag"           value="Убрать тэг DIV (без содержимого)" />
+         <field name="form-properties"          value="Свойства Формы" />
+         <field name="remove-form"              value="Удалить FORM (с содержимым)" />
+         <field name="remove-form-tag"          value="Убрать тэг FORM (без содержимого)" />
+         <field name="input-properties"         value="Сойства поля INPUT" />
+         <field name="delete-input"             value="Удалить поле INPUT" />
+         <field name="flash-properties"         value="Свойства Флэш" />
+         <field name="copy-flash"               value="Скопировать Флэш" />
+         <field name="cut-flash"                value="Вырезать Флэш" />
+         <field name="delete-flash"             value="Удалить Флэш" />
+         <field name="media-properties"         value="Свойства медиа" />
+         <field name="copy-media"               value="Скопировать медиа" />
+         <field name="cut-media"                value="Вырезать медиа" />
+         <field name="delete-media"             value="Удалить медиа" />
+         <field name="placeholder-properties"   value="Свойства заполнителя" />
+         <field name="delete-placeholder"       value="Удалить заполнитель" />
+         <field name="make-editable"            value="Сделать редактируемым" />
+         <field name="textarea-properties"      value="Свойства Textarea" />
+         <field name="remove-textarea"          value="Удалить Textarea" />
+   </context-menu>
+
+</localization>

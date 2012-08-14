@@ -1,0 +1,573 @@
+<?xml version="1.0" ?>
+<localization xmlns="obout:editor:localization-schema">
+
+   <!-- Settings for top and bottom toolbars -->
+
+   <toolbar
+      design-mode  = "Modul Design"
+      html-text    = "HTML text"
+      preview      = "Preview"
+      submit       = "TRIMITE"
+      cancel       = "CANCEL"
+      toggle-on    = ""
+      toggle-off   = "Dezactiveaza"
+      font         = "Font"
+      size         = "Marime"
+      font-not-set = "Nesetat"
+      size-not-set = "Nesetata"
+   />
+
+   <!-- Settings for Quick Formatting panel -->
+
+   <quick-formatting
+      header  = "Formatare Rapida"
+      nostyle = "fara stil"
+   />
+
+   <!-- Tooltips for buttons of top and bottom toolbars -->
+
+   <tooltips>
+     <button name="Bold"                tooltip="Bold" />
+     <button name="Italic"              tooltip="Italic" />
+     <button name="Underline"           tooltip="Subliniat" />
+     <button name="StrikeThrough"       tooltip="Taiat" />
+     <button name="SubScript"           tooltip="Index Inferior" />
+     <button name="SuperScript"         tooltip="Index Superior" />
+
+     <button name="ForeColor"           tooltip="Culoare Text" />
+     <button name="BackColor"           tooltip="Culoare Fundal" />
+     <button name="ClearStyles"         tooltip="Anuleaza Formatare" />
+     <button name="Undo"                tooltip="Anuleaza Actiune (Ctrl-z)" />
+     <button name="Redo"                tooltip="Reexecuta Actiune (Ctrl-y)" />
+     <button name="Cut"                 tooltip="Decupeaza" />
+     <button name="Copy"                tooltip="Copiaza" />
+     <button name="Paste"               tooltip="Lipeste" />
+     <button name="PasteText"           tooltip="Lipeste Text" />
+     <button name="JustifyLeft"         tooltip="Aliniere Stanga" />
+     <button name="JustifyCenter"       tooltip="Centrat" />
+     <button name="JustifyRight"        tooltip="Aliniere Dreapta" />
+     <button name="JustifyFull"         tooltip="Aliniere" />
+     <button name="OrderedList"         tooltip="Lista Ordonata" />
+     <button name="BulletedList"        tooltip="Lista" />
+     <button name="DecreaseIndent"      tooltip="Decrementeaza Indentare" />
+     <button name="IncreaseIndent"      tooltip="Incrementeaza Indentare" />
+     <button name="CreateLink"          tooltip="Creeaza Link" />
+     <button name="InsertTable"         tooltip="Insereaza Tabel" />
+     <button name="InsertHR"            tooltip="Bara Orizontala" />
+     <button name="InsertIMG"           tooltip="Insereaza Imagine" />
+     <button name="InsertIcon"          tooltip="Insereaza Iconita" />
+     <button name="GetFormat"           tooltip="Copiaza Formatare" />
+     <button name="ApplyFormat"         tooltip="Aplica Formatare" />
+     <button name="ToUpperCase"         tooltip="Transforma Litere Mari" />
+     <button name="ToLowerCase"         tooltip="Transforma Litere Mici" />
+     <button name="RemoveAlignment"     tooltip="Fara Aliniere" />
+     <button name="InsertSpec"          tooltip="Insereaza Caracter Special" />
+     <button name="InsertAnchor"        tooltip="Inserează ancoră" />
+     <button name="Rtl"                 tooltip="Direcţie de la dreapta la stânga" />
+     <button name="Ltr"                 tooltip="Direcţie de la stânga la dreapta" />
+     <button name="SelectAll"           tooltip="Selectează tot" />
+     <button name="SelectNone"          tooltip="Nu selecta nimic" />
+     <button name="Print"               tooltip="Tipăreşte" />
+     <button name="AnchorsOn"           tooltip="Indicatii ancore" />
+     <button name="SpellCheck"          tooltip="Verifică ortografia" />
+     <button name="myImageUpload"       tooltip="Încarca imagine pe site" />
+     <button name="myFlashUpload"       tooltip="Upload flash to site" />
+     <button name="myDocumentUpload"    tooltip="Upload document to site" />
+     <button name="myFieldsetInsert"    tooltip="Adaugă grup de câmpuri" />
+     <button name="increaseHeight"      tooltip="Măreşte panoul de editare" />
+     <button name="decreaseHeight"      tooltip="Micşorează panoul de editare" />
+     <button name="preview"             tooltip="Previzualizează aspectul documentului" />
+     <button name="insertForm"          tooltip="Inserează formular" />
+     <button name="insertCheckBox"      tooltip="Inserează/editează CheckBox" />
+     <button name="insertRadio"         tooltip="Inserează/editează buton Radio" />
+     <button name="insertTextBox"       tooltip="Inserează/editează căsuţa de text" />
+     <button name="insertPassword"      tooltip="Inserează/editează câmp pentru parolă" />
+     <button name="insertHidden"        tooltip="Inserează/editează element Ascuns" />
+     <button name="insertButton"        tooltip="Inserează/editează Buton" />
+     <button name="insertSubmit"        tooltip="Inserează/editează buton de Submit" />
+     <button name="insertReset"         tooltip="Inserează/editează buton de Reset" />
+     <button name="insertDiv"           tooltip="Inserează DIV" />
+     <button name="PasteWord"           tooltip="Paste from MS Word (with cleanup)" />
+     <button name="ContextMenu"         tooltip="Context menu for current position" />
+     <button name="InsertFlash"         tooltip="Insert Flash" />
+     <button name="InsertMedia"         tooltip="Insert Media" />
+     <button name="InsertPlaceHolder"   tooltip="Insert PlaceHolder" />
+     <button name="PlaceHoldersOn"      tooltip="PlaceHolders indication" />
+     <button name="MakeNotEditable"     tooltip="Mark selection as not editable" />
+     <button name="Paragraph"           tooltip="Make paragraph" />
+     <button name="ForeColorClear"      tooltip="Clear Foreground Color" />
+     <button name="BackColorClear"      tooltip="Clear Background Color" />
+     <button name="myTextareaInsert"    tooltip="Insert textarea" />
+
+     <button name="_chmode"             tooltip="Schimba Mod Editare" />
+     <button name="__submit"            tooltip="Trimite" />
+     <button name="__cancel"            tooltip="Cancel changes" />
+   </tooltips>
+
+   <!-- Main Alerts of Editor's JavaScript core -->
+
+   <main-alerts>
+     <alert name="safari-v"             message="Foloseste Apple-V" />
+     <alert name="moz-v"                message="Foloseste Ctrl-V" />
+     <alert name="safari-c"             message="Foloseste Apple-C" />
+     <alert name="moz-c"                message="Foloseste Ctrl-C" />
+     <alert name="safari-no-support"    message="Nesuportat in Safari" />
+     <alert name="mozilla-no-support"   message="Nesuportat in Mozilla" />
+     <alert name="click-to-editor"      message="Click Pagina Editare." />
+     <alert name="mac-using"            message="Folositi Safari sau FireFox..." />
+     <alert name="your-browser"         message="Browser-ul tau" />
+     <alert name="copy-format"          message="Click pe text formatat si apoi Copiaza Formatare." />
+     <alert name="select-text"          message="Selecteaza text." />
+     <alert name="paste-fail"           message="Selectie incorecta pentru inserare." />
+     <alert name="empty-img-url"        message="URL-ul imaginii trebuie specificat." />
+     <alert name="bad-bg-img"           message="Fisier imagine incorect pentru fundal." />
+     <alert name="img-hor-spacing"      message="Spatierea orizontala trebuie sa fie un numar intre 0 si 999." />
+     <alert name="img-vert-spacing"     message="Spatierea verticala trebuie sa fie un numar intre 0 si 999." />
+     <alert name="img-border-width"     message="Grosimea marginii trebuie sa fie un numar intre 0 si 999." />
+     <alert name="invalid-color"        message="Culoare invalida" />
+     <alert name="empty-link-url"       message="URL link trebuie specificat." />
+     <alert name="wait"                 message="Va rugam asteptati..." />
+     <alert name="empty-anchor-name"    message="Numele ancorei trebuie specificat." />
+     <alert name="editor-toolbar"       message="Va rugăm să folosiţi butoanele din bara cu instrumente a Editorului." />
+     <alert name="spell-check-done"     message="Verificarea ortografiei a fost încheiată." />
+     <alert name="msword-switched"      message="Pasting from MS Word is switched on.\nJust now:" />
+     <alert name="empty-flash-url"      message="Flash URL must be specified." />
+     <alert name="empty-media-url"      message="Media URL must be specified." />
+     <alert name="empty-placeholder-name" message="PlaceHolder's name must be specified." />
+   </main-alerts>
+
+   <!-- Popup Windows -->
+
+   <popup-windows>
+
+         <!-- Cell properties popup -->
+
+         <popup name="cell" create-title="" edit-title="Editeaza Proprietati Celula">
+              <field name="legend"              value="Proprietati Celula" />
+              <field name="alignment"           value="Aliniere" />
+              <field name="v-alignment"         value="Aliniere Verticala" />
+              <field name="align-not-set"       value="Nesetata" />
+              <field name="align-left"          value="Stanga" />
+              <field name="align-right"         value="Dreapta" />
+              <field name="align-center"        value="Centrat" />
+              <field name="valign-top"          value="Sus" />
+              <field name="valign-middle"       value="Mijloc" />
+              <field name="valign-bottom"       value="Jos" />
+              <field name="valign-baseline"     value="Linie baza" />
+              <field name="valign-not-set"      value="Nesetata" />
+              <field name="background-color"    value="Culoare fundal" />
+              <field name="remove-bg-color"     value="Fara culoare fundal" />
+              <field name="width"               value="Latime" />
+              <field name="height"              value="Inaltime" />
+              <field name="background-image"    value="Imagine fundal" />
+              <field name="remove-bg-image"     value="Fara imagine fundal" />
+              <field name="bg-color-not-set"    value="Nesetata" />
+              <field name="bg-image-not-set"    value="Nesetata" />
+              <field name="bg-color-popup"      value="Culoare fundal Celula" />
+              <field name="bg-image-popup"      value="Imagine fundal Celula" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunta" />
+         </popup>
+
+         <popup name="color" create-title="Culoare Fundal" edit-title="Culoare Font">
+              <field name="set"                 value="Seteaza" />
+              <field name="selected"            value="selecteaza" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunta" />
+         </popup>
+
+         <popup name="image" create-title="Insereaza Imagine" edit-title="Editeaza Imagine">
+              <field name="url"                 value="URL Imagine" />
+              <field name="browse"              value="Cauta" />
+              <field name="browse-title"        value="Cauta Imagini in Galerie" />
+              <field name="alt-text"            value="Text Alternativ" />
+              <field name="show-shadow"         value="Arata Umbra" />
+              <field name="width"               value="Latime" />
+              <field name="height"              value="Inaltime" />
+              <field name="shadow-title"        value="Aplica/reaplica Efect Umbra" />
+              <field name="layout"              value="Asezare" />
+              <field name="alignment"           value="Aliniere" />
+              <field name="align-not-set"       value="Nesetata" />
+              <field name="align-left"          value="Stanga" />
+              <field name="align-right"         value="Dreapta" />
+              <field name="align-texttop"       value="Text Sus" />
+              <field name="align-absmiddle"     value="Mijloc Absolut" />
+              <field name="align-baseline"      value="Linia de Baza" />
+              <field name="align-absbottom"     value="Jos Absolut" />
+              <field name="align-bottom"        value="Jos" />
+              <field name="align-middle"        value="Mijloc" />
+              <field name="align-top"           value="Sus" />
+              <field name="border-width"        value="Grosime Margine" />
+              <field name="spacing"             value="Spatiere" />
+              <field name="horizontal"          value="Orizontal" />
+              <field name="vertical"            value="Vertical" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunta" />
+         </popup>
+
+         <popup name="background-image" create-title="" edit-title="">
+              <field name="url"                    value="URL Imagine" />
+              <field name="browse"                 value="Cauta" />
+              <field name="browse-title"           value="Cauta Imagini in Galerie" />
+              <field name="repeat"                 value="Repeta" />
+              <field name="repeat-all"             value="REPETA" />
+              <field name="repeat-x"               value="REPETA-X" />
+              <field name="repeat-y"               value="REPETA-Y" />
+              <field name="repeat-no"              value="FARA REPETARE" />
+              <field name="attachment"             value="Atasare" />
+              <field name="attachment-fixed"       value="FIXA" />
+              <field name="attachment-scroll"      value="DERULANTA" />
+              <field name="position-hor"           value="Poz. Orizontala" />
+              <field name="position-hor-left"      value="STANGA" />
+              <field name="position-hor-center"    value="CENTRU" />
+              <field name="position-hor-right"     value="DREAPTA" />
+              <field name="position-vert"          value="Poz. Verticala" />
+              <field name="position-vert-top"      value="SUS" />
+              <field name="position-vert-center"   value="CENTRU" />
+              <field name="position-vert-bottom"   value="JOS" />
+              <field name="ok"                     value="OK" />
+              <field name="cancel"                 value="Renunta" />
+         </popup>
+
+         <popup name="icons" create-title="Insereaza Iconita" edit-title="">
+         </popup>
+
+         <popup name="special-characters" create-title="Insereaza Caracter Special" edit-title="">
+         </popup>
+
+         <popup name="image-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunta" />
+         </popup>
+
+         <popup name="link" create-title="Creeaza Link URL" edit-title="Editeza Link URL">
+              <field name="protocol"            value="Protocol" />
+              <field name="url"                 value="URL" />
+              <field name="browse"              value="Cauta" />
+              <field name="browse-title"        value="Cauta link-uri predefinite" />
+              <field name="tooltip"             value="Indiciu" />
+              <field name="target"              value="Tinta" />
+              <field name="target-new-win"      value="Fereastra noua" />
+              <field name="target-cur-win"      value="Fereastra curenta" />
+              <field name="target-par-win"      value="Fereastra parinte" />
+              <field name="target-top-win"      value="Fereatra top" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunta" />
+         </popup>
+
+         <popup name="link-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunta" />
+         </popup>
+
+         <popup name="table" create-title="Insereaza Tabel" edit-title="Editeaza tabel">
+              <field name="insert-remove"       value="insereza, inlatura" />
+                                                <!-- character "/" is used as separator here -->
+              <field name="after-before"        value="inainte/dupa" />
+              <field name="current-cell"        value="celula curenta" />
+              <field name="columns"             value="Coloane" />
+              <field name="span"                value="Span" />
+              <field name="width"               value="Latime" />
+              <field name="height"              value="Inaltime" />
+              <field name="cell-padding"        value="Umplutura celula" />
+              <field name="cell-spacing"        value="Spatiere intre celule" />
+              <field name="border-width"        value="Latime margine" />
+              <field name="border-color"        value="Culoare margine" />
+              <field name="border-color-popup"  value="Culoare margine" />
+              <field name="border-style"        value="Stil margine" />
+              <field name="border-style-none"   value="Fara stil" />
+              <field name="border-style-dotted" value="Punctat" />
+              <field name="border-style-dashed" value="Liniute" />
+              <field name="border-style-solid"  value="Continuu" />
+              <field name="background-color"    value="Culoare fundal" />
+              <field name="remove-bg-color"     value="Fara culoare fundal" />
+              <field name="background-image"    value="Imagine fundal" />
+              <field name="remove-bg-image"     value="Fara imagine fundal" />
+              <field name="bg-color-not-set"    value="Fara" />
+              <field name="bg-image-not-set"    value="Fara" />
+              <field name="bg-color-popup"      value="Culoare fundal tabel" />
+              <field name="bg-image-popup"      value="Imagine fundal tabel" />
+              <field name="show-shadow"         value="Arata umbra" />
+              <field name="shadow-title"        value="Activeaza/reactiveaza efect umbra" />
+              <field name="rows"                value="Linii" />
+              <field name="remove-border-color" value="Remove border color" />
+              <field name="apply"               value="Apply" />
+              <field name="apply-column"        value="Column" />
+              <field name="apply-row"           value="Row" />
+              <field name="apply-table"         value="Table" />
+              <field name="apply-properties"    value="checked properties to" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunta" />
+         </popup>
+
+         <popup name="paste-plain" create-title="Lipeşte text simplu" edit-title="">
+              <field name="text"                value="Foloseşte CTRL+V de pe tastatură pentru a copia textul in fereastra nouă" />
+              <field name="cancel"              value="Renunţă" />
+              <field name="insert"              value="Adaugă" />
+              <field name="clear"               value="Şterge" />
+         </popup>
+
+         <popup name="anchor" create-title="Adaugă Ancoră" edit-title="Modifică Ancoră">
+              <field name="name"                value="Numele ancorei" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunţa" />
+         </popup>
+
+         <popup name="spell-checker" create-title="Verifică ortografia" edit-title="">
+              <field name="not-in-dictionary"   value="Nu există in Dicţionar." />
+              <field name="replace-with"        value="Înlocuieşte cu" />
+              <field name="suggestions"         value="Sugestii" />
+              <field name="ignore"              value="Ignoră" />
+              <field name="ignore-all"          value="Ignoră Tot" />
+              <field name="change"              value="Modifică" />
+              <field name="change-all"          value="Modifică Tot" />
+              <field name="add-custom"          value="Add Custom" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunţă" />
+         </popup>
+
+         <popup name="image-upload" create-title="Încarcă imagine pe site" edit-title="">
+              <field name="url"                 value="Imagine" />
+              <field name="description"         value="Descriere" />
+              <field name="saved"               value="Imaginea a fost salvată cu succes." />
+              <field name="not-saved"           value="Nu există imagini salvate" />
+              <field name="ok"                  value="Încarcă" />
+              <field name="cancel"              value="Renunţă" />
+         </popup>
+
+         <popup name="flash-upload" create-title="Upload Flash to site" edit-title="">
+              <field name="url"                 value="Flash" />
+              <field name="description"         value="Description" />
+              <field name="saved"               value="Flash saved successfully" />
+              <field name="not-saved"           value="No Image saved" />
+              <field name="ok"                  value="Upload" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="document-upload" create-title="Upload Document to site" edit-title="">
+              <field name="url"                 value="Document" />
+              <field name="description"         value="Description" />
+              <field name="saved"               value="Document saved successfully" />
+              <field name="not-saved"           value="No document saved" />
+              <field name="instruction"         value="Select folder for uploading" />
+              <field name="current-folder"      value="Current folder" />
+              <field name="ok"                  value="Upload" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="fieldset" create-title="Adaugă grup de câmpuri" edit-title="Modifică grup de câmpuri">
+              <field name="width"               value="Lăţime" />
+              <field name="height"              value="Înălţime" />
+              <field name="padding"             value="Spaţiere" />
+              <field name="margin"              value="Margine" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunţă" />
+         </popup>
+
+         <popup name="form" create-title="Inserează Formular" edit-title="Editează Formular">
+              <field name="width"               value="Lăţime" />
+              <field name="height"              value="Înălţime" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Nume" />
+              <field name="method"              value="Metodă" />
+              <field name="action"              value="Acţiune" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunţă" />
+         </popup>
+
+         <popup name="input" create-title="Inserează Control" edit-title="Editează Control">
+              <field name="width"               value="Lăţime" />
+              <field name="height"              value="Înălţime" />
+              <field name="id"                  value="ID" />
+              <field name="name"                value="Nume" />
+              <field name="value"               value="Valoare" />
+              <field name="tooltip"             value="Sugestie" />
+              <field name="text"                value="Căsuţă de text" />
+              <field name="checkbox"            value="CheckBox" />
+              <field name="radio"               value="Buton radio" />
+              <field name="hidden"              value="Element ascuns" />
+              <field name="button"              value="Buton" />
+              <field name="submit"              value="Buton de Submit" />
+              <field name="reset"               value="Buton de Reset" />
+              <field name="password"            value="Câmp pentru Parolă" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunţă" />
+         </popup>
+
+         <popup name="div" create-title="Inserează DIV" edit-title="Editează DIV">
+              <field name="id"                  value="ID" />
+              <field name="width"               value="Lăţime" />
+              <field name="height"              value="Înălţime" />
+              <field name="border-width"        value="Lăţime margine" />
+              <field name="border-color"        value="Culoare margine" />
+              <field name="border-color-popup"  value="Culoare margine" />
+              <field name="border-style"        value="Stil margine" />
+              <field name="border-style-none"   value="Nimic" />
+              <field name="border-style-dotted" value="Punctat" />
+              <field name="border-style-dashed" value="Cu linii" />
+              <field name="border-style-solid"  value="Solid" />
+              <field name="remove-border-color"     value="Şterge culoarea margine" />
+              <field name="border-color-not-set"    value="Nesetat" />
+              <field name="background-color"    value="Culoare de fundal" />
+              <field name="remove-bg-color"     value="Şterge culoarea de fundal" />
+              <field name="bg-color-popup"      value="Culoarea de fundal a DIV-ului" />
+              <field name="background-image"    value="Imagine de fundal" />
+              <field name="remove-bg-image"     value="Şterge imaginea de fundal" />
+              <field name="bg-color-not-set"    value="Nesetat" />
+              <field name="bg-image-not-set"    value="Nesetat" />
+              <field name="bg-image-popup"      value="Imaginea de fundal a DIV-ului" />
+              <field name="overflow"            value="La overflow" />
+              <field name="overflow-none"       value="Nesetat" />
+              <field name="overflow-visible"    value="Vizibil" />
+              <field name="overflow-hidden"     value="Ascuns" />
+              <field name="overflow-scroll"     value="Cu scroll" />
+              <field name="overflow-auto"       value="Auto" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Renunţă" />
+              <field name="css-class"           value="CSS Class" />
+         </popup>
+
+         <popup name="flash" create-title="Insert Flash" edit-title="Edit a Flash">
+              <field name="url"                 value="Image URL" />
+              <field name="browse"              value="Browse" />
+              <field name="browse-title"        value="Browse Flashes from Gallery" />
+              <field name="width"               value="Width" />
+              <field name="height"              value="Height" />
+              <field name="layout"              value="Layout" />
+              <field name="alignment"           value="Alignment" />
+              <field name="align-not-set"       value="Not set" />
+              <field name="align-left"          value="Left" />
+              <field name="align-right"         value="Right" />
+              <field name="align-texttop"       value="Texttop" />
+              <field name="align-absmiddle"     value="Absmiddle" />
+              <field name="align-baseline"      value="Baseline" />
+              <field name="align-absbottom"     value="Absbottom" />
+              <field name="align-bottom"        value="Bottom" />
+              <field name="align-middle"        value="Middle" />
+              <field name="align-top"           value="Top" />
+              <field name="spacing"             value="Spacing" />
+              <field name="horizontal"          value="Horizontal" />
+              <field name="vertical"            value="Vertical" />
+              <field name="background-color"    value="Background Color" />
+              <field name="remove-bg-color"     value="Remove background color" />
+              <field name="bg-color-popup"      value="Flash background color" />
+              <field name="bg-color-not-set"    value="Not set" />
+              <field name="loop"                value="Loop" />
+              <field name="autoplay"            value="Autoplay" />
+              <field name="transparency"        value="Transparency" />
+              <field name="properties"          value="Main properties" />
+              <field name="quality"             value="Quality" />
+              <field name="quality-high"        value="High" />
+              <field name="quality-medium"      value="Medium" />
+              <field name="quality-low"         value="Low" />
+              <field name="scale"               value="Scale" />
+              <field name="scale-default"       value="Default" />
+              <field name="scale-noborder"      value="No border" />
+              <field name="scale-exactfit"      value="Exact fit" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="flash-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="media" create-title="Insert Media" edit-title="Edit Media">
+              <field name="url"                 value="Media URL" />
+              <field name="browse"              value="Browse" />
+              <field name="browse-title"        value="Browse Media from Gallery" />
+              <field name="width"               value="Width" />
+              <field name="height"              value="Height" />
+              <field name="alignment"           value="Alignment" />
+              <field name="align-not-set"       value="Not set" />
+              <field name="align-left"          value="Left" />
+              <field name="align-right"         value="Right" />
+              <field name="align-texttop"       value="Texttop" />
+              <field name="align-absmiddle"     value="Absmiddle" />
+              <field name="align-baseline"      value="Baseline" />
+              <field name="align-absbottom"     value="Absbottom" />
+              <field name="align-bottom"        value="Bottom" />
+              <field name="align-middle"        value="Middle" />
+              <field name="align-top"           value="Top" />
+              <field name="autostart"           value="Autostart" />
+              <field name="showcontrols"        value="Show controls" />
+              <field name="showtracker"         value="Show tracker" />
+              <field name="showstatusbar"       value="Show status bar" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="media-browse" create-title="" edit-title="">
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="placeholder" create-title="Insert PlaceHolder" edit-title="Edit PlaceHolder">
+              <field name="name"                value="PlaceHolder name" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+         <popup name="textarea" create-title="Insert Textarea" edit-title="Edit Textarea">
+              <field name="id"                  value="ID" />
+              <field name="columns"             value="Columns" />
+              <field name="disabled"            value="Disabled" />
+              <field name="name"                value="Name" />
+              <field name="rows"                value="Rows" />
+              <field name="readonly"            value="Readonly" />
+              <field name="value"               value="Value" />
+              <field name="ok"                  value="OK" />
+              <field name="cancel"              value="Cancel" />
+         </popup>
+
+   </popup-windows>
+
+   <!-- Context Menu -->
+
+   <context-menu>
+         <field name="image-properties"         value="Proprietati Imagine" />
+         <field name="copy-image"               value="Copiaza Imagine" />
+         <field name="cut-image"                value="Decupeaza Imagine" />
+         <field name="delete-image"             value="Sterge Imagine" />
+         <field name="url-link-properties"      value="Proprietati Link URL" />
+         <field name="remove-url-link"          value="Inlatura Link URL" />
+         <field name="cell-properties"          value="Proprietati Celula" />
+         <field name="table-properties"         value="Proprietati Tabel" />
+         <field name="copy-table"               value="Copiază Tabel" />
+         <field name="cut-table"                value="Decupează Tabel" />
+         <field name="delete-table"             value="Şterge Tabel" />
+         <field name="anchor-properties"        value="Proprietăţile Ancorei" />
+         <field name="delete-anchor"            value="Şterge Ancoră" />
+         <field name="cut"                      value="Decupează" />
+         <field name="copy"                     value="Copiază" />
+         <field name="paste"                    value="Lipeşte" />
+         <field name="paste-plain-text"         value="Lipeşte text simplu" />
+         <field name="delete"                   value="Şterge" />
+         <field name="select-all"               value="Selectează tot" />
+         <field name="fieldset-properties"      value="Proprietăţile grupului de câmpuri" />
+         <field name="remove-fieldset"          value="Şterge grupul de câmpuri" />
+         <field name="div-properties"           value="Proprietaţi DIV" />
+         <field name="remove-div"               value="Şterge DIV (cu conţinut)" />
+         <field name="remove-div-tag"           value="Şterge element DIV(fara conţinut)" />
+         <field name="form-properties"          value="Proprietăţi Formular" />
+         <field name="remove-form"              value="Şterge Formular (cu conţinut)" />
+         <field name="remove-form-tag"          value="Şterge element Formular (fara conţinut)" />
+         <field name="input-properties"         value="Proprietăţi câmp" />
+         <field name="delete-input"             value="Şterge câmp" />
+         <field name="flash-properties"         value="Flash properties" />
+         <field name="copy-flash"               value="Copy Flash" />
+         <field name="cut-flash"                value="Cut Flash" />
+         <field name="delete-flash"             value="Delete Flash" />
+         <field name="media-properties"         value="Media properties" />
+         <field name="copy-media"               value="Copy Media" />
+         <field name="cut-media"                value="Cut Media" />
+         <field name="delete-media"             value="Delete Media" />
+         <field name="placeholder-properties"   value="PlaceHolder properties" />
+         <field name="delete-placeholder"       value="Delete PlaceHolder" />
+         <field name="make-editable"            value="Make editable" />
+         <field name="textarea-properties"      value="Textarea properties" />
+         <field name="remove-textarea"          value="Delete Textarea" />
+   </context-menu>
+
+</localization>

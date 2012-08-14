@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\hardy\$Data\Websites\Timetables" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="Web.config" publishTime="07/02/2010 09:24:34" />
+    <file relUrl="login.aspx" publishTime="08/13/2009 16:20:22" />
+    <file relUrl="bin/Microsoft.Office.Interop.Excel.xml" publishTime="01/10/2010 21:10:04" />
+    <file relUrl="bin/Microsoft.Office.Interop.Excel.dll" publishTime="08/31/2009 02:00:20" />
+    <file relUrl="Images/PocketCampusYellowNoMenu.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Admin/Default.aspx" publishTime="09/04/2009 10:12:56" />
+    <file relUrl="bin/DayPilot.dll" publishTime="06/09/2009 00:00:00" />
+    <file relUrl="Images/PocketCampusYellowMenuBg.png" publishTime="08/13/2009 09:22:12" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="09/10/2010 08:37:18" />
+    <file relUrl="Images/ScarboroughHeader.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="YellowNoMenu.Master" publishTime="09/22/2009 16:26:26" />
+    <file relUrl="bin/Timetables.pdb" publishTime="09/10/2010 08:56:47" />
+    <file relUrl="Images/YellowPocketIcon.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="timetablesstyle.css" publishTime="08/14/2009 08:56:02" />
+    <file relUrl="Images/PocketCampusYellow.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Images/TimetableYellow.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="kioskstyle.css" publishTime="11/18/2009 11:50:28" />
+    <file relUrl="Default.aspx" publishTime="01/12/2010 14:08:27" />
+    <file relUrl="bin/Timetables.dll" publishTime="09/10/2010 08:56:47" />
+    <file relUrl="YellowMenu.Master" publishTime="09/22/2009 15:01:08" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="09/10/2010 08:37:18" />
+  </publishProfile>
+  <publishProfile publishUrl="\\ERIC\wwwroot\Timetables" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Eric" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="08/24/2011 12:49:05" />
+    <file relUrl="timetablesstyle.css" publishTime="08/24/2011 11:27:46" />
+    <file relUrl="login.aspx" publishTime="08/30/2011 11:35:13" />
+    <file relUrl="bin/Microsoft.Office.Interop.Excel.xml" publishTime="01/10/2010 21:10:04" />
+    <file relUrl="bin/Microsoft.Office.Interop.Excel.dll" publishTime="08/31/2009 02:00:20" />
+    <file relUrl="Images/PocketCampusYellowNoMenu.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Admin/Default.aspx" publishTime="08/24/2011 11:11:08" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="04/03/2012 09:54:30" />
+    <file relUrl="Images/PocketCampusYellowMenuBg.png" publishTime="08/13/2009 09:22:12" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="02/13/2012 16:46:44" />
+    <file relUrl="Images/ScarboroughHeader.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Yellow.Master" publishTime="08/30/2011 11:39:02" />
+    <file relUrl="bin/Timetables.pdb" publishTime="04/03/2012 11:34:55" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="04/03/2012 09:54:29" />
+    <file relUrl="Images/PocketCampusYellow.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Images/YellowPocketIcon.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Images/TimetableYellow.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="kioskstyle.css" publishTime="11/18/2009 11:50:28" />
+    <file relUrl="Default.aspx" publishTime="08/25/2011 15:20:28" />
+    <file relUrl="bin/Timetables.dll" publishTime="04/03/2012 11:34:55" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="02/13/2012 16:46:44" />
+  </publishProfile>
+  <publishProfile publishUrl="\\ERIC\wwwroot\TimetablesNew" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="EricTest" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="Images/PocketCampusYellowNoMenu.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="timetablesstyle.css" publishTime="08/24/2011 11:27:46" />
+    <file relUrl="login.aspx" publishTime="08/24/2011 11:11:15" />
+    <file relUrl="bin/Microsoft.Office.Interop.Excel.xml" publishTime="01/10/2010 21:10:04" />
+    <file relUrl="bin/Microsoft.Office.Interop.Excel.dll" publishTime="08/31/2009 02:00:20" />
+    <file relUrl="Admin/Default.aspx" publishTime="08/24/2011 11:11:08" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="08/24/2011 10:24:07" />
+    <file relUrl="Images/PocketCampusYellowMenuBg.png" publishTime="08/13/2009 09:22:12" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="08/24/2011 10:24:05" />
+    <file relUrl="Images/ScarboroughHeader.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Web.config" publishTime="08/24/2011 12:49:05" />
+    <file relUrl="Yellow.Master" publishTime="08/24/2011 10:19:46" />
+    <file relUrl="bin/Timetables.pdb" publishTime="08/24/2011 11:19:59" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="08/24/2011 10:24:06" />
+    <file relUrl="Images/PocketCampusYellow.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Images/YellowPocketIcon.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="Images/TimetableYellow.png" publishTime="08/13/2009 09:20:26" />
+    <file relUrl="kioskstyle.css" publishTime="11/18/2009 11:50:28" />
+    <file relUrl="Default.aspx" publishTime="08/24/2011 11:23:35" />
+    <file relUrl="bin/Timetables.dll" publishTime="08/24/2011 11:19:59" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="08/24/2011 10:24:05" />
+  </publishProfile>
+</publishData>

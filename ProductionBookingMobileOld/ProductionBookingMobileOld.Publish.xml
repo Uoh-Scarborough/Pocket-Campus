@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\hardy\$Data\Websites\StudioBookingMobile" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Live" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Images/DeleteBookingButton.png" publishTime="06/29/2010 10:56:47" />
+    <file relUrl="bin/StudioBookingMobile.pdb" publishTime="07/29/2010 14:39:29" />
+    <file relUrl="Images/TimetableMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/blueButton.png" publishTime="06/29/2010 10:14:05" />
+    <file relUrl="Images/PortalMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/TimetableHome.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/LinkHome.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/StudentsUnionMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/StudentServicesMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/UsefulDatesMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/EventsHome.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="bin/StudioBookingMobile.dll" publishTime="07/29/2010 14:39:29" />
+    <file relUrl="Images/CampusInfoMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Booking.aspx" publishTime="06/30/2010 16:33:15" />
+    <file relUrl="Images/PocketCampus.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/ITServicesMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="App_LocalResources/login.aspx.resx" publishTime="06/30/2010 13:44:28" />
+    <file relUrl="bin/obout_Grid_NET.dll" publishTime="06/15/2010 08:31:27" />
+    <file relUrl="Images/whiteButton.png" publishTime="06/29/2010 10:14:05" />
+    <file relUrl="Images/DiningRoomMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/chevron.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/MakeBookingButton.png" publishTime="06/29/2010 10:47:40" />
+    <file relUrl="Images/OnTheEdgeMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/StudyAdviceMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Default.aspx" publishTime="06/30/2010 16:23:18" />
+    <file relUrl="bin/StudioBooking.pdb" publishTime="07/29/2010 14:38:43" />
+    <file relUrl="ExistingBookings.aspx" publishTime="06/30/2010 16:23:35" />
+    <file relUrl="Images/NoticesHome.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/EmailMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/LinksMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/PocketCampusHome.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="bin/StudioBooking.dll" publishTime="07/29/2010 14:38:43" />
+    <file relUrl="Images/NoticesMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/LoginButton.png" publishTime="06/29/2010 11:44:11" />
+    <file relUrl="Images/MenuBackground.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/EditBookingButton.png" publishTime="06/29/2010 10:55:58" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="07/29/2010 13:49:26" />
+    <file relUrl="Images/ArrowButton.jpg" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/StudioBookingHome.png" publishTime="06/30/2010 13:30:14" />
+    <file relUrl="Images/eBridgeMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Web.config" publishTime="06/30/2010 16:07:55" />
+    <file relUrl="Images/CareersMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="RoundedRectangle.css" publishTime="06/29/2010 13:37:53" />
+    <file relUrl="Images/LibraryMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="07/29/2010 13:49:26" />
+    <file relUrl="Images/CampusInfoHome.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="iPhoneHeader.css" publishTime="06/11/2010 09:25:33" />
+    <file relUrl="Images/EventsMobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="login.aspx" publishTime="06/30/2010 13:49:54" />
+    <file relUrl="Images/hull.mobile.png" publishTime="06/11/2010 09:24:46" />
+    <file relUrl="Images/CalvinosMobile.png" publishTime="06/11/2010 09:24:46" />
+  </publishProfile>
+</publishData>

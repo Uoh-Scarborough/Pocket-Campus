@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" ?>
+<localization xmlns="obout:editor:localization-schema">
+        <!-- Settings for top and bottom toolbars -->
+        <toolbar
+                design-mode = "Design"
+                html-text = "HTML"
+                preview = "Granska"
+                submit = "Spara"
+                cancel = "Avbryt"
+                toggle-on = ""
+                toggle-off = "Stäng av"
+                font = "Font"
+                size = "Strl"
+                font-not-set = "Används ej"
+                size-not-set = "Används ej"/>
+
+        <!-- Settings for Quick Formatting panel -->
+        <quick-formatting header = "Snabbformat" nostyle = "ingen" />
+
+        <!-- Tooltips for buttons of top and bottom toolbars -->
+        <tooltips>
+                <button name="Bold"                     tooltip="Fet (Ctrl+B)" />
+                <button name="Italic"                   tooltip="Kursiv (Ctrl+I)" />
+                <button name="Underline"                tooltip="Understruket (Ctrl+U)" />
+                <button name="StrikeThrough"            tooltip="Genomstruken" />
+                <button name="SubScript"                tooltip="Nedsänkt" />
+                <button name="SuperScript"              tooltip="Upphöjd" />
+
+                <button name="ForeColor"                tooltip="Teckenfärg" />
+                <button name="BackColor"                tooltip="Bakgrundsfärg" />
+                <button name="ClearStyles"              tooltip="Radera formattering" />
+                <button name="Undo"                     tooltip="Ångra (Ctrl+Z)" />
+                <button name="Redo"                     tooltip="Upprepa (Ctrl+Y)" />
+                <button name="Cut"                      tooltip="Klipp ut (Ctrl+X)" />
+                <button name="Copy"                     tooltip="Kopiera (Ctrl+C)" />
+                <button name="Paste"                    tooltip="Klistra in (Ctrl+V)" />
+                <button name="PasteText"                tooltip="Klistra in som ren text" />
+                <button name="JustifyLeft"              tooltip="Justera till vänster" />
+                <button name="JustifyCenter"            tooltip="Justera till mitten" />
+                <button name="JustifyRight"             tooltip="Justera till höger" />
+                <button name="JustifyFull"              tooltip="Fördela" />
+                <button name="OrderedList"              tooltip="Lista" />
+                <button name="BulletedList"             tooltip="Lista med punkter" />
+                <button name="DecreaseIndent"           tooltip="Minska indrag" />
+                <button name="IncreaseIndent"           tooltip="Öka indrag" />
+                <button name="CreateLink"               tooltip="Skapa länk" />
+                <button name="InsertTable"              tooltip="Infoga tabell" />
+                <button name="InsertHR"                 tooltip="Horisontell linje" />
+                <button name="InsertIMG"                tooltip="Infoga bild" />
+                <button name="InsertIcon"               tooltip="Infoga ikon" />
+                <button name="GetFormat"                tooltip="Kopiera formatering" />
+                <button name="ApplyFormat"              tooltip="Använd formatering" />
+                <button name="ToUpperCase"              tooltip="Ändra till stora bokstäver" />
+                <button name="ToLowerCase"              tooltip="Ändra till små bokstäver" />
+                <button name="RemoveAlignment"          tooltip="Radera justering" />
+                <button name="InsertSpec"               tooltip="Infoga specialtecken" />
+                <button name="InsertAnchor"             tooltip="Infoga ankare" />
+                <button name="Rtl"                      tooltip="Text höger->vänster" />
+                <button name="Ltr"                      tooltip="Text vänster->höger" />
+                <button name="SelectAll"                tooltip="Markera allt" />
+                <button name="SelectNone"               tooltip="Radera markering" />
+                <button name="Print"                    tooltip="Utskrift" />
+                <button name="AnchorsOn"                tooltip="Visa ankare" />
+                <button name="SpellCheck"               tooltip="Stavningskontroll" />
+                <button name="myImageUpload"            tooltip="Ladda upp bild" />
+                <button name="myFlashUpload"            tooltip="Upload flash to site" />
+                <button name="myDocumentUpload"         tooltip="Upload document to site" />
+                <button name="myFieldsetInsert"         tooltip="Infoga fält" />
+                <button name="increaseHeight"           tooltip="Öka höjd" />
+                <button name="decreaseHeight"           tooltip="Minska höjd" />
+                <button name="preview"                  tooltip="Förhandsgranska" />
+                <button name="insertForm"               tooltip="Infoga formulär" />
+                <button name="insertCheckBox"           tooltip="Infoga/redigera checkruta" />
+                <button name="insertRadio"              tooltip="Infoga/redigera radioknapp" />
+                <button name="insertTextBox"            tooltip="Infoga/redigera textbox" />
+                <button name="insertPassword"           tooltip="Infoga/redigera lösenordsfält" />
+                <button name="insertHidden"             tooltip="Infoga/redigera dolt element" />
+                <button name="insertButton"             tooltip="Infoga/redigera knapp" />
+                <button name="insertSubmit"             tooltip="Infoga/redigera Skicka-knapp" />
+                <button name="insertReset"              tooltip="Infoga/redigera återställ-knapp" />
+                <button name="insertDiv"                tooltip="Infoga DIV" />
+                <button name="PasteWord"                tooltip="Klistra in från MS Word (rensar skräpkod)" />
+                <button name="ContextMenu"              tooltip="Innehållsmeny för nuvarande position" />
+                <button name="InsertFlash"              tooltip="Infoga Flash" />
+                <button name="InsertMedia"              tooltip="Infoga Media" />
+                <button name="InsertPlaceHolder"        tooltip="Infoga platshållare" />
+                <button name="PlaceHoldersOn"           tooltip="Visa platshållare" />
+                <button name="MakeNotEditable"          tooltip="Mark selection as not editable" />
+                <button name="Paragraph"                tooltip="Skapa paragraph" />
+                <button name="ForeColorClear"           tooltip="Radera Teckenfärg" />
+                <button name="BackColorClear"           tooltip="Radera Bakgrundsfärg" />
+                <button name="myTextareaInsert"         tooltip="Insert textarea" />
+
+                <button name="_chmode"                  tooltip="Bytt redigeramodus" />
+                <button name="__submit"                 tooltip="Spara ändringar" />
+                <button name="__cancel"                 tooltip="Ångra ändringar" />
+        </tooltips>
+
+        <!-- Main Alerts of Editor's JavaScript core -->
+        <main-alerts>
+                <alert name="safari-v"                  message="Använd Apple-V" />
+                <alert name="moz-v"                     message="Använd Ctrl-V" />
+                <alert name="safari-c"                  message="Använd Apple-C" />
+                <alert name="moz-c"                     message="Använd Ctrl-C" />
+                <alert name="safari-no-support"         message="Stöds inte i Safari" />
+                <alert name="mozilla-no-support"        message="Stöds inte i Mozilla" />
+                <alert name="click-to-editor"           message="Klicka för att ändra." />
+                <alert name="mac-using"                 message="Använd Safari eller FireFox..." />
+                <alert name="your-browser"              message="Din webbläsare" />
+                <alert name="copy-format"               message="Välj först litet text och klicka sedan Använd formatering." />
+                <alert name="select-text"               message="Välj först text." />
+                <alert name="paste-fail"                message="Ej giltig markering för att klistra in." />
+                <alert name="empty-img-url"             message="URL til bild är ogiltig." />
+                <alert name="bad-bg-img"                message="Ej giltigt format för bakgrund." />
+                <alert name="img-hor-spacing"           message="Horisontiellt mellanrum måste vara mellan 0 och 999." />
+                <alert name="img-vert-spacing"          message="Vertikalt mellanrum måste vara mellan 0 och 999." />
+                <alert name="img-border-width"          message="Rambredd måste vara mellan 0 och 999." />
+                <alert name="invalid-color"             message="Ej giltig färg" />
+                <alert name="empty-link-url"            message="Du måste ange en adress." />
+                <alert name="wait"                      message="Vänligen vänta..." />
+                <alert name="empty-anchor-name"         message="Ankarets namn måste uppges." />
+                <alert name="editor-toolbar"            message="Vänligen använd knapparna i verktygsfältet." />
+                <alert name="spell-check-done"          message="Stavningskontroll utförd." />
+                <alert name="msword-switched"           message="Klistra in från MS Word är aktivt.\nJust nu:" />
+                <alert name="empty-flash-url"           message="Adress (URL) till Flash-film måste anges." />
+                <alert name="empty-media-url"           message="Adress (URL) till media måste anges." />
+                <alert name="empty-placeholder-name"    message="Platshållarens namn måste anges." />
+        </main-alerts>
+
+        <!-- Popup Windows -->
+        <popup-windows>
+                <!-- Cell properties popup -->
+                <popup name="cell" create-title="" edit-title="Redigera egenskaper for cell">
+                        <field name="legend"            value="Egenskaper for cell" />
+                        <field name="alignment"         value="Justering" />
+                        <field name="v-alignment"       value="Vertikal justering" />
+                        <field name="align-not-set"     value="Ingen" />
+                        <field name="align-left"        value="Vänster" />
+                        <field name="align-right"       value="Höger" />
+                        <field name="align-center"      value="Center" />
+                        <field name="valign-top"        value="Topp" />
+                        <field name="valign-middle"     value="Mittenställt" />
+                        <field name="valign-bottom"     value="Botten" />
+                        <field name="valign-baseline"   value="Textlinje" />
+                        <field name="valign-not-set"    value="Ingen" />
+                        <field name="background-color"  value="Bakgrundsfärg" />
+                        <field name="remove-bg-color"   value="Radera bakgrundsfärg" />
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="background-image"  value="Bakgrundsbild" />
+                        <field name="remove-bg-image"   value="Radera bakgrundsbild" />
+                        <field name="bg-color-not-set"  value="Ingen" />
+                        <field name="bg-image-not-set"  value="Ingen" />
+                        <field name="bg-color-popup"    value="Bakgrundsfärg for cell" />
+                        <field name="bg-image-popup"    value="Bakgrundsbild for cell" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+                <popup name="color" create-title="Bakgrundsfärg" edit-title="Textfärg">
+                        <field name="set"               value="Använd" />
+                        <field name="selected"          value="Vald" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+                        <popup name="image" create-title="Infoga bild" edit-title="Redigera bild">
+                        <field name="url"               value="Adress (URL)" />
+                        <field name="browse"            value="Bläddra" />
+                        <field name="browse-title"      value="Öppna album" />
+                        <field name="alt-text"          value="Alternativ text" />
+                        <field name="show-shadow"       value="Skugga" />
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="shadow-title"      value="Sätt/återställ skugga" />
+                        <field name="layout"            value="Layout" />
+                        <field name="alignment"         value="Justering" />
+                        <field name="align-not-set"     value="Ingen" />
+                        <field name="align-left"        value="Vänster" />
+                        <field name="align-right"       value="Höger" />
+                        <field name="align-textop"      value="Text-top" />
+                        <field name="align-absmiddle"   value="Absolut mitten" />
+                        <field name="align-baseline"    value="Textlinje" />
+                        <field name="align-absbottom"   value="Absolut botten" />
+                        <field name="align-bottom"      value="Botten" />
+                        <field name="align-middle"      value="Mitten" />
+                        <field name="align-top"         value="Topp" />
+                        <field name="border-width"      value="Rambredd" />
+                        <field name="spacing"           value="Mellanrum" />
+                        <field name="horizontal"        value="Horisontiell" />
+                        <field name="vertical"          value="Vertikal" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="background-image" create-title="" edit-title="">
+                        <field name="url"               value="Adress/URL" />
+                        <field name="browse"            value="Bläddra" />
+                        <field name="browse-title"      value="öppna album" />
+                        <field name="repeat"            value="Repetera" />
+                        <field name="repeat-all"        value="Maximalt" />
+                        <field name="repeat-x"          value="Horisontiellt" />
+                        <field name="repeat-y"          value="Vertikalt" />
+                        <field name="repeat-no"         value="Inget" />
+                        <field name="attachment"        value="Fäst" />
+                        <field name="attachment-fixed"  value="Fixerad" />
+                        <field name="attachment-scroll" value="Vid rullning" />
+                        <field name="position-hor"      value="Horis. position" />
+                        <field name="position-hor-left" value="Vänster" />
+                        <field name="position-hor-center" value="Center" />
+                        <field name="position-hor-right" value="Höger" />
+                        <field name="position-vert"      value="Vert. position" />
+                        <field name="position-vert-top" value="Topp" />
+                        <field name="position-vert-center" value="Center" />
+                        <field name="position-vert-bottom" value="Botten" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="icons" create-title="Infoga ikon" edit-title="">
+                </popup>
+
+                <popup name="special-characters" create-title="Specialtecken" edit-title="">
+                </popup>
+
+                <popup name="image-browse" create-title="" edit-title="">
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="link" create-title="Skapa Internet-länk" edit-title="ändra Internet-länk">
+                        <field name="protocol"          value="Protokoll" />
+                        <field name="url"               value="URL" />
+                        <field name="browse"            value="Bläddra" />
+                        <field name="browse-title"      value="Titel" />
+                        <field name="tooltip"           value="Beskrivning" />
+                        <field name="target"            value="Öppna i" />
+                        <field name="target-new-win"    value="Nytt fönster" />
+                        <field name="target-cur-win"    value="Samma fönster" />
+                        <field name="target-par-win"    value="Ägande fönster" />
+                        <field name="target-top-win"    value="Översta fönstret" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="link-browse" create-title="" edit-title="">
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="table" create-title="Infoga tabell" edit-title="Redigera tabell">
+                        <field name="insert-remove"     value="infoga, radera" />
+                        <!-- character "/" is used as separator here -->
+                        <field name="after-before"      value="före eller efter" />
+                        <field name="current-cell"      value="denna cell" />
+                        <field name="columns"           value="Kolumner" />
+                        <field name="span"              value="Omfattning" />
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="cell-padding"      value="Avstånd till cellinnehåll" />
+                        <field name="cell-spacing"      value="Avstånd mellan celler" />
+                        <field name="border-width"      value="Rambredd" />
+                        <field name="border-color"      value="Ramfärg" />
+                        <field name="border-color-popup" value="Ramfärg" />
+                        <field name="border-style"      value="Ramstil" />
+                        <field name="border-style-none" value="Ingen" />
+                        <field name="border-style-dotted" value="Punkter" />
+                        <field name="border-style-dashed" value="Streckad" />
+                        <field name="border-style-solid" value="Helstruken" />
+                        <field name="background-color"  value="Bakgrundsfärg" />
+                        <field name="remove-bg-color"   value="Radera bakgrundsfärg" />
+                        <field name="background-image"  value="Bakgrundsbild" />
+                        <field name="remove-bg-image"   value="Radera bakgrundsbild" />
+                        <field name="bg-color-not-set"  value="Ingen" />
+                        <field name="bg-image-not-set"  value="Ingen" />
+                        <field name="bg-color-popup"    value="Tabellens bakgrundsfärg" />
+                        <field name="bg-image-popup"    value="Tabellens bakgrundsbild" />
+                        <field name="show-shadow"       value="Skugga" />
+                        <field name="shadow-title"      value="Använd/radera skugga" />
+                        <field name="rows"              value="Rader" />
+                        <field name="remove-border-color" value="Radera kantfärg" />
+                        <field name="apply"             value="Genomför" />
+                        <field name="apply-column"      value="Kolumn" />
+                        <field name="apply-row"         value="Rad" />
+                        <field name="apply-table"       value="Tabell" />
+                        <field name="apply-properties"  value="checked properties to" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="paste-plain" create-title="Klistra in ren text" edit-title="">
+                        <field name="text"              value="Använd CTRL+V for att klistra in texten i fönstret" />
+                        <field name="cancel"            value="Avbryt" />
+                        <field name="insert"            value="Infoga" />
+                        <field name="clear"             value="Radera" />
+                </popup>
+
+                <popup name="anchor" create-title="Infoga ankare" edit-title="Redigera ankare">
+                        <field name="name"              value="Ankarnamn" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="spell-checker" create-title="Stavningskontroll" edit-title="">
+                        <field name="not-in-dictionary" value="Finns ej i ordboken" />
+                        <field name="replace-with"      value="Ersätt" />
+                        <field name="suggestions"       value="Förslag" />
+                        <field name="ignore"            value="Ignorera" />
+                        <field name="ignore-all"        value="Ignorera alla" />
+                        <field name="change"            value="Ändra" />
+                        <field name="change-all"        value="Ändra alla" />
+              <field name="add-custom"          value="Add Custom" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="image-upload" create-title="Ladda upp bild" edit-title="Redigera bild">
+                        <field name="url"               value="Adress" />
+                        <field name="description"       value="Beskrivning" />
+                        <field name="saved"             value="Bild sparad" />
+                        <field name="not-saved"         value="Ej sparad" />
+                        <field name="ok"                value="Ladda upp" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="flash-upload" create-title="Upload Flash to site" edit-title="">
+                     <field name="url"                  value="Flash" />
+                     <field name="description"          value="Beskrivning" />
+                     <field name="saved"                value="Flash sparad!" />
+                     <field name="not-saved"            value="Ej sparad" />
+                     <field name="ok"                   value="Ladda upp" />
+                     <field name="cancel"               value="Avbryt" />
+                </popup>
+
+                <popup name="document-upload" create-title="Upload Document to site" edit-title="">
+                     <field name="url"                  value="Dokument" />
+                     <field name="description"          value="Beskrivning" />
+                     <field name="saved"                value="Dokumentet sparat" />
+                     <field name="not-saved"            value="Ej sparat" />
+                     <field name="instruction"          value="Välj mapp för uppladdningen" />
+                     <field name="current-folder"       value="Denna mapp" />
+                     <field name="ok"                   value="Ladda upp" />
+                     <field name="cancel"               value="Avbryt" />
+                </popup>
+
+                <popup name="fieldset" create-title="Infoga fält" edit-title="Redigera fält">
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="padding"           value="Avstånd på insidan" />
+                        <field name="margin"            value="Marginal" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="form" create-title="Infoga formulär" edit-title="Redigera formulär">
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="id"                value="ID" />
+                        <field name="name"              value="Namn" />
+                        <field name="method"            value="Metod" />
+                        <field name="action"            value="Mål" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="input" create-title="Infoga INPUT" edit-title="Redigera INPUT">
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="id"                value="ID" />
+                        <field name="name"              value="Namn" />
+                        <field name="value"             value="Värde" />
+                        <field name="tooltip"           value="Hjälptext" />
+                        <field name="text"              value="Textbox" />
+                        <field name="checkbox"          value="Checkbox" />
+                        <field name="radio"             value="Radioknapp" />
+                        <field name="hidden"            value="Dolt element" />
+                        <field name="button"            value="Knapp" />
+                        <field name="submit"            value="Skickaknapp" />
+                        <field name="reset"             value="Återställknapp" />
+                        <field name="password"          value="Lösenordsfält" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="div" create-title="Infoga DIV-lager" edit-title="Redigera DIV-lager">
+                        <field name="id"                value="ID" />
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="border-width"      value="Kantlinjens bredd" />
+                        <field name="border-color"      value="Kantlinjens färg" />
+                        <field name="border-color-popup" value="Kantlinjens färg (popup)" />
+                        <field name="border-style"      value="Kantlinjens stil" />
+                        <field name="border-style-none" value="Ingen" />
+                        <field name="border-style-dotted" value="Punkter" />
+                        <field name="border-style-dashed" value="Streckad" />
+                        <field name="border-style-solid" value="Fast" />
+                        <field name="remove-border-color"     value="Radera kantlinjens färg" />
+                        <field name="border-color-not-set"    value="Ej satt" />
+                        <field name="background-color"  value="Bakgrundsfärg" />
+                        <field name="remove-bg-color"   value="Radera bakgrundsfärg" />
+                        <field name="bg-color-popup"    value="Lagrets backgrundsfärg" />
+                        <field name="background-image"  value="Bakgrundsbild" />
+                        <field name="remove-bg-image"   value="Radera bakgrundsbild" />
+                        <field name="bg-color-not-set"  value="Ej satt" />
+                        <field name="bg-image-not-set"  value="Ej satt" />
+                        <field name="bg-image-popup"    value="Lagrets bakgrundsbild" />
+                        <field name="overflow"          value="Överflöd" />
+                        <field name="overflow-none"     value="Ej satt" />
+                        <field name="overflow-visible"  value="Visa" />
+                        <field name="overflow-hidden"   value="Dölj" />
+                        <field name="overflow-scroll"   value="Scrolla" />
+                        <field name="overflow-auto"     value="Auto" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                        <field name="css-class"           value="CSS Class" />
+                </popup>
+
+                <popup name="flash" create-title="Infoga Flash" edit-title="Redigera Flash">
+                        <field name="url"               value="Bild-URL" />
+                        <field name="browse"            value="Bläddra" />
+                        <field name="browse-title"      value="Bläddra efter Flash-filmer" />
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="layout"            value="Layout" />
+                        <field name="alignment"         value="Position" />
+                        <field name="align-not-set"     value="Ej satt" />
+                        <field name="align-left"        value="Vänster" />
+                        <field name="align-right"       value="Höger" />
+                        <field name="align-textop"      value="Texttop" />
+                        <field name="align-absmiddle"   value="Abs.mitten" />
+                        <field name="align-baseline"    value="Baslinje" />
+                        <field name="align-absbottom"   value="Abs.botten" />
+                        <field name="align-bottom"      value="Botten" />
+                        <field name="align-middle"      value="Mitten" />
+                        <field name="align-top"         value="Topp" />
+                        <field name="spacing"           value="Mellanrum" />
+                        <field name="horizontal"        value="Horisontiell" />
+                        <field name="vertical"          value="Vertikal" />
+                        <field name="background-color"  value="Bakgrundsfärg" />
+                        <field name="remove-bg-color"   value="Radera bakgrundsfärg" />
+                        <field name="bg-color-popup"    value="Bakgrundsfärg för Flash" />
+                        <field name="bg-color-not-set"  value="Ej satt" />
+                        <field name="loop"              value="Upprepa" />
+                        <field name="autoplay"          value="Spela upp automatiskt" />
+                        <field name="transparency"      value="Transparens" />
+                        <field name="properties"        value="Huvudegenskaper" />
+                        <field name="quality"           value="Kvalité" />
+                        <field name="quality-high"      value="Hög" />
+                        <field name="quality-medium"    value="Medium" />
+                        <field name="quality-low"       value="Låg" />
+                        <field name="scale"             value="Skala" />
+                        <field name="scale-default"     value="Standard" />
+                        <field name="scale-noborder"    value="Ingen kantlinje" />
+                        <field name="scale-exactfit"    value="Exakt" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="flash-browse" create-title="" edit-title="">
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="media" create-title="Infoga media" edit-title="Redigera media">
+                        <field name="url"               value="Adress (URL)" />
+                        <field name="browse"            value="Bläddra" />
+                        <field name="browse-title"      value="Bläddra efter media i galleri" />
+                        <field name="width"             value="Bredd" />
+                        <field name="height"            value="Höjd" />
+                        <field name="alignment"         value="Position" />
+                        <field name="align-not-set"     value="Ej satt" />
+                        <field name="align-left"        value="Vänster" />
+                        <field name="align-right"       value="Höger" />
+                        <field name="align-texttop"     value="Texttop" />
+                        <field name="align-absmiddle"   value="Abs.mitten" />
+                        <field name="align-baseline"    value="Baslinje" />
+                        <field name="align-absbottom"   value="Abs.botten" />
+                        <field name="align-bottom"      value="Botten" />
+                        <field name="align-middle"      value="Mitten" />
+                        <field name="align-top"         value="Topp" />
+                        <field name="autostart"         value="Autostart" />
+                        <field name="showcontrols"      value="Visa kontroller" />
+                        <field name="showtracker"       value="Visa sökare" />
+                        <field name="showstatusbar"     value="Visa statusfält" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="media-browse" create-title="" edit-title="">
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="placeholder" create-title="Infoga platshållare" edit-title="Redigera platshållare">
+                        <field name="name"              value="Platshållarens namn" />
+                        <field name="ok"                value="OK" />
+                        <field name="cancel"            value="Avbryt" />
+                </popup>
+
+                <popup name="textarea" create-title="Insert Textarea" edit-title="Edit Textarea">
+                     <field name="id"                  value="ID" />
+                     <field name="columns"             value="Kolumner" />
+                     <field name="disabled"            value="Disabled" />
+                     <field name="name"                value="Namn" />
+                     <field name="rows"                value="Rader" />
+                     <field name="readonly"            value="Readonly" />
+                     <field name="value"               value="Value" />
+                     <field name="ok"                  value="OK" />
+                     <field name="cancel"              value="Avbryt" />
+                </popup>
+
+        </popup-windows>
+
+        <!-- Context Menu -->
+        <context-menu>
+                <field name="image-properties"          value="Bildegenskaper" />
+                <field name="copy-image"                value="Kopiera bild" />
+                <field name="cut-image"                 value="Klipp ut bild" />
+                <field name="delete-image"              value="Radera bild" />
+                <field name="url-link-properties"       value="Egenskaper for länk" />
+                <field name="remove-url-link"           value="Radera länk" />
+                <field name="cell-properties"           value="Egenskaper för cell" />
+                <field name="table-properties"          value="Egenskaper för tabell" />
+                <field name="copy-table"                value="Kopiera tabell" />
+                <field name="cut-table"                 value="Klipp ut tabell" />
+                <field name="delete-table"              value="Radera tabell" />
+                <field name="anchor-properties"         value="Egenskaper for ankare" />
+                <field name="delete-anchor"             value="Radera ankare" />
+                <field name="cut"                       value="Klipp ut" />
+                <field name="copy"                      value="Kopiera" />
+                <field name="paste"                     value="Klistra in" />
+                <field name="paste-plain-text"          value="Klistra in oformatterat" />
+                <field name="delete"                    value="Radera" />
+                <field name="select-all"                value="Välj allt" />
+                <field name="fieldset-properties"       value="Fieldset-egenskaper" />
+                <field name="remove-fieldset"           value="Radera Fieldset" />
+                <field name="div-properties"            value="DIV-egenskaper" />
+                <field name="remove-div"                value="Radera DIV-tagg (med innehåll)" />
+                <field name="remove-div-tag"            value="Radera DIV-tagg (utan innehåll)" />
+                <field name="form-properties"           value="FORM-egenskaper" />
+                <field name="remove-form"               value="Radera FORM-tagg (och innehåll)" />
+                <field name="remove-form-tag"           value="Radera FORM-tagg (utan innehåll)" />
+                <field name="input-properties"          value="INPUT egenskaper" />
+                <field name="delete-input"              value="Radera INPUT" />
+                <field name="flash-properties"          value="Flash egenskaper" />
+                <field name="copy-flash"                value="Kopiera Flash" />
+                <field name="cut-flash"                 value="Klipp ut Flash" />
+                <field name="delete-flash"              value="Radera Flash" />
+                <field name="media-properties"          value="Media-egenskaper" />
+                <field name="copy-media"                value="Kopiera media" />
+                <field name="cut-media"                 value="Klipp ut media" />
+                <field name="delete-media"              value="Radera media" />
+                <field name="placeholder-properties"    value="Platshållarens egenskaper" />
+                <field name="delete-placeholder"        value="Radera platshållare" />
+                <field name="make-editable"             value="Gör redigerbar" />
+                <field name="textarea-properties"       value="Textarea egenskaper" />
+                <field name="remove-textarea"           value="Radera Textarea" />
+        </context-menu>
+
+</localization>
