@@ -108,6 +108,7 @@ namespace PocketCampus
 
                                 writer.WriteStartElement("notice");
                                 writer.WriteAttributeString("title", ClassUseful.FormatString(Notice.Title));
+                                writer.WriteAttributeString("noticeid", ClassUseful.FormatString(Notice.ID.ToString()));
                                 writer.WriteElementString("cont", ClassUseful.FormatString(Notice.Notice));
                                 writer.WriteEndElement();
                             }
@@ -162,6 +163,7 @@ namespace PocketCampus
 
                                 writer.WriteStartElement("eventa");
                                 writer.WriteAttributeString("title", ClassUseful.FormatString(Event.Title));
+                                writer.WriteAttributeString("eventid", ClassUseful.FormatString(Event.ID.ToString()));
                                 DateTime DF = Convert.ToDateTime(DR1["Event_DateTime"].ToString());
                                 writer.WriteAttributeString("datetime", DF.ToShortDateString() + " " + DF.ToShortTimeString());
                                 writer.WriteAttributeString("location", ClassUseful.FormatString(Event.Location));
