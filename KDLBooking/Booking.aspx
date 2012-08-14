@@ -80,10 +80,6 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2"><i>* Required if you intend to use a vehicle to transport and unload / load on university premises. <u>No Parking on Site</u>. Parking permitted on main campus after 6pm.</i></td>
-                        </tr>
-
-                        <tr>
                             <td>
                                 <asp:HiddenField ID="WeekHidden" runat="server" />
                                 <asp:HiddenField ID="DayHidden" runat="server" />
