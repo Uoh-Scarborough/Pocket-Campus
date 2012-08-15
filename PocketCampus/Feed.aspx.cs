@@ -32,6 +32,7 @@ namespace PocketCampus
                 int AID = Convert.ToInt32(Request["aid"]);
                 int SID = Convert.ToInt32(Request["sid"]);
                 int NID = Convert.ToInt32(Request["nid"]);
+                int EID = Convert.ToInt32(Request["eid"]);
                 string CID = Request["cid"];
 
                 string IncludeStr = "";
@@ -100,7 +101,7 @@ namespace PocketCampus
                         }
                         else
                         {
-                            RQ0.RunQuery("SELECT " + Top5 + " * FROM Notices WHERE Notice_Deleted = 0 AND Notice_Valid = 1 AND Notice_ID_LNK = " + NID + ";");
+                            RQ0.RunQuery("SELECT * FROM Notices WHERE Notice_Deleted = 0 AND Notice_Valid = 1 AND Notice_ID_LNK = " + NID + ";");
                         }
 
                         if (RQ0.dataset.Tables.Count > 0)
@@ -153,9 +154,14 @@ namespace PocketCampus
 
                         ClassReadQuery RQ1 = new ClassReadQuery(EventsConn);
 
-                        //RQ1.RunQuery("SELECT " + Top5 + " Event_Event, Event_Title, Event_Location, Event_DateTime, Event_Duration FROM Events WHERE Event_Deleted = 0 AND Event_Valid = 1 AND Event_DateTime >= '" + DateTime.Now.ToShortDateString() + "' " + FinalInc + FinalExc + " ORDER BY Event_DateTime");
-
-                        RQ1.RunQuery("SELECT " + Top5 + " * FROM Events WHERE Event_Deleted = 0 AND Event_Valid = 1 AND Event_DateTime >= '" + DateTime.Now.ToShortDateString() + "' " + FinalInc + FinalExc + " ORDER BY Event_DateTime");
+                        if (EID == 0)
+                        {
+                            RQ1.RunQuery("SELECT " + Top5 + " * FROM Events WHERE Event_Deleted = 0 AND Event_Valid = 1 AND Event_DateTime >= '" + DateTime.Now.ToShortDateString() + "' " + FinalInc + FinalExc + " ORDER BY Event_DateTime");
+                        }
+                        else
+                        {
+                            RQ1.RunQuery("SELECT * FROM Events WHERE Event_Deleted = 0 AND Event_Valid = 1 AND Event_ID_LNK = " + EID + ";");
+                        }
 
                         if (RQ1.dataset.Tables.Count > 0)
                         {
