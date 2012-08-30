@@ -23,27 +23,27 @@
   </publishProfile>
   <publishProfile publishUrl="\\ERIC\wwwroot\StudioBooking" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Eric" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="Web.config" publishTime="04/30/2012 13:14:31" />
-    <file relUrl="Emails/BookingDeleted.html" publishTime="06/30/2010 09:30:24" />
-    <file relUrl="Emails/AdminBookingDeleted.html" publishTime="06/30/2010 09:28:04" />
+    <file relUrl="Constraints.aspx" publishTime="01/03/2012 09:35:57" />
     <file relUrl="Restrict.aspx" publishTime="08/30/2011 13:44:16" />
+    <file relUrl="Emails/AdminBookingDeleted.html" publishTime="06/30/2010 09:28:04" />
     <file relUrl="SearchUsers.ascx" publishTime="11/14/2011 14:08:17" />
-    <file relUrl="ControlAdminMenu.ascx" publishTime="02/20/2012 10:53:16" />
-    <file relUrl="bin/StandardClasses.pdb" publishTime="02/13/2012 16:46:44" />
-    <file relUrl="bin/StudioBooking.dll" publishTime="06/14/2012 16:41:13" />
-    <file relUrl="bin/PocketCampusClasses.dll" publishTime="04/18/2012 15:22:31" />
+    <file relUrl="ControlAdminMenu.ascx" publishTime="07/25/2012 16:23:24" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="08/13/2012 11:29:51" />
+    <file relUrl="bin/StudioBooking.dll" publishTime="08/14/2012 10:15:15" />
+    <file relUrl="Emails/BookingDeleted.html" publishTime="06/30/2010 09:30:24" />
     <file relUrl="Emails/BookingConfirmation.html" publishTime="06/30/2010 09:06:50" />
-    <file relUrl="bin/StandardClasses.dll" publishTime="02/13/2012 16:46:44" />
-    <file relUrl="bin/BasicFrame.WebControls.BasicDatePicker.dll" publishTime="04/24/2009 00:03:24" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="08/13/2012 11:29:51" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="08/13/2012 11:40:14" />
     <file relUrl="Blue.Master" publishTime="11/30/2011 15:41:34" />
     <file relUrl="login.aspx" publishTime="08/30/2011 11:11:02" />
     <file relUrl="Emails/AdminEditBookingConfirmation.html" publishTime="06/30/2010 09:30:47" />
-    <file relUrl="Constraints.aspx" publishTime="01/03/2012 09:35:57" />
-    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="04/18/2012 15:22:31" />
+    <file relUrl="bin/BasicFrame.WebControls.BasicDatePicker.dll" publishTime="04/24/2009 00:03:24" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="08/13/2012 11:40:13" />
     <file relUrl="kioskstyle.css" publishTime="10/19/2011 15:34:27" />
     <file relUrl="Emails/EditBookingConfirmation.html" publishTime="06/30/2010 09:32:14" />
     <file relUrl="Groups.aspx" publishTime="02/08/2012 10:50:12" />
     <file relUrl="Default.aspx" publishTime="01/03/2012 13:23:46" />
-    <file relUrl="bin/StudioBooking.pdb" publishTime="06/14/2012 16:41:13" />
+    <file relUrl="bin/StudioBooking.pdb" publishTime="08/14/2012 10:15:15" />
     <file relUrl="Booking.aspx" publishTime="06/14/2012 16:41:07" />
   </publishProfile>
 </publishData>
