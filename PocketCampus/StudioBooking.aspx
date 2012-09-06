@@ -1,8 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudioBooking.aspx.cs" Inherits="PocketCampus.StudioBooking" MasterPageFile="~/Red.Master"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudioBooking.aspx.cs" Inherits="PocketCampus.StudioBooking" MasterPageFile="~/Responsive.Master"%>
 
 <asp:Content ID="first" ContentPlaceHolderID="MainArea" Runat="Server">
 
-    <form id="form" runat="server">
 
                  <table cellpadding="4px" id="studiobookingtable">
                     <tr>
@@ -14,6 +13,5 @@
                         <td><h2>84 Filey Road Studio Booking</h2><h3>Welcome to 84 Filey Road Booking. To view or book a studio you must first log into the 84 Filey Road Studio Booking Ststem using your campus username and password. Click the button to the left to continue to the Studio Booking System.</h3></td>
                     </tr>
                 </table> 
-      
-    </form>
+
 </asp:Content>

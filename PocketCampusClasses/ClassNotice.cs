@@ -292,7 +292,7 @@ namespace PocketCampusClasses
         {
             string ReturnStr = "";
 
-            ReturnStr += "<div id=\"noticesarea\">";
+            //ReturnStr += "<div id=\"noticesarea\">";
 
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
@@ -322,7 +322,7 @@ namespace PocketCampusClasses
 
             ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fNotices.aspx%3faid%3d1%26nid%3d-1&aid=1&nid=-1\">Add New Notice</a></p>";
 
-            ReturnStr += "</div>";
+            //ReturnStr += "</div>";
 
             return ReturnStr;
         }
@@ -333,7 +333,7 @@ namespace PocketCampusClasses
 
             int Counter = 0;
 
-            ReturnStr += "<div id=\"noticesarea\">";
+            //ReturnStr += "<div id=\"noticesarea\">";
 
             ReturnStr += "<h2>Notices</h2>";
 
@@ -362,7 +362,7 @@ namespace PocketCampusClasses
 
             ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fnotices.aspx?aid=1&amp;nid=-1\">Add New Notice</a></p>";
 
-            ReturnStr += "</div>";
+            //ReturnStr += "</div>";
 
             return ReturnStr;
         }

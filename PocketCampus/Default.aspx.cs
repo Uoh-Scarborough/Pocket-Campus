@@ -21,17 +21,10 @@ namespace PocketCampus
         {
             ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
 
-            if (Request.Browser["IsMobileDevice"] == "true")
-            {
-                Response.Redirect("http://m.pocketcampus.scar.hull.ac.uk");
-            }
-
             loadMaps();
 
             loadNoticesandEvents();
         }
-
-
 
         public void loadNoticesandEvents()
         {
@@ -47,23 +40,23 @@ namespace PocketCampus
 
             if (IPAddr == ClassAppDetails.kioskip1)
             {
-                Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk?kioskid=worsley\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
+                //Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk?kioskid=worsley\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
             }
             else if (IPAddr == ClassAppDetails.kioskip2)
             {
-                Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk?kioskid=quad3\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
+                //Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk?kioskid=quad3\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
             }
             else if (IPAddr == ClassAppDetails.kioskip3)
             {
-                Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk?kioskid=library\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
+                //Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk?kioskid=library\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
             }
             else if (IPAddr == ClassAppDetails.kioskip4)
             {
-                Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
+                //Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
             }
             else
             {
-                Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
+                //Mapslbl.Text = "<a href=\"http://maps.scar.hull.ac.uk\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/MapsButton.png\" alt=\"Campus Maps\" /></a>";
             }
 
 
