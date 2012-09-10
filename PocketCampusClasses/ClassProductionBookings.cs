@@ -148,6 +148,24 @@ namespace PocketCampusClasses
             return Result;
         }
 
+        public static string GenerateBookingsList(string UserID)
+        {
+            DataSet DS = GenerateBookingsDS(UserID);
+
+            string returnStr = "<ul>";
+
+            foreach (DataRow DR in DS.Tables[0].Rows)
+            {
+                ClassProductionBookings Booking = new ClassProductionBookings(DR);
+
+                returnStr += "<li>" + Booking.Location + "<a href=\"?bid=" + Booking.ID + "\"><img class=\"arrow\" src=\"Images/ArrowButton.jpg\"/></a><br/>" + ClassGeneral.getAcademicDate(Convert.ToInt16(Booking.Week), Booking.Day) + " - " + Booking.StartTimeOut + "</li>";
+            }
+
+            returnStr += "</ul>";
+
+            return returnStr;
+        }
+
         public void SendEmail(int Type)
         {
             StreamReader streamReader = new StreamReader(ClassAppDetails.emaildir + "/BookingConfirmation.html");

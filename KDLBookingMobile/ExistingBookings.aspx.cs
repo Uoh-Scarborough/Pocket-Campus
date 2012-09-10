@@ -8,7 +8,7 @@ using StandardClasses;
 using PocketCampusClasses;
 
 
-namespace StudioBookingMobile
+namespace KDLBookingMobile
 {
     public partial class ExistingBookings : System.Web.UI.Page
     {
@@ -29,7 +29,7 @@ namespace StudioBookingMobile
 
             if (BID>0)
             {
-                ClassStudioBookings Booking = new ClassStudioBookings(BID);
+                ClassKDLBookings Booking = new ClassKDLBookings(BID);
 
 
 
@@ -58,7 +58,7 @@ namespace StudioBookingMobile
 
                 MultiView.SetActiveView(ListView);
 
-                Bookingslbl.Text = ClassStudioBookings.GenerateBookingsList(UI.Username);
+                Bookingslbl.Text = ClassKDLBookings.GenerateBookingsList(UI.Username);
 
                 
             }

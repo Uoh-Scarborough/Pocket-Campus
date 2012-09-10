@@ -9,7 +9,7 @@ using PocketCampusClasses;
 using StandardClasses;
 
 
-namespace StudioBookingMobile
+namespace KDLBookingMobile
 {
     public partial class Login : System.Web.UI.Page
     {

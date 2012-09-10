@@ -8,7 +8,7 @@ using System.Collections;
 using StandardClasses;
 using PocketCampusClasses;
 
-namespace StudioBookingMobile
+namespace KDLBookingMobile
 {
     public partial class Default : System.Web.UI.Page
     {
@@ -124,7 +124,7 @@ namespace StudioBookingMobile
             Roomlbl.Text = RID;
 
             //ArrayList ActivityList = ClassProductionBookings.GenerateDaySet(Day, Week, RID);
-            ArrayList ActivityList = ClassStudioBookings.GenerateDaySet(Day, Week, RID, Context.User.Identity.Name,ClassBooking.BookingType.StudioBooking);
+            ArrayList ActivityList = ClassKDLBookings.GenerateDaySet(Day, Week, RID, Context.User.Identity.Name,ClassBooking.BookingType.KDLBooking);
 
             string[] CellsTexts = new string[18];
 
@@ -215,10 +215,10 @@ namespace StudioBookingMobile
 
                     if (ActivityList.Count > 0 && activitycounter <= ActivityList.Count - 1)
 
-                        if (ActivityList[activitycounter].GetType().ToString() == "PocketCampusClasses.ClassStudioBookings")
+                        if (ActivityList[activitycounter].GetType().ToString() == "PocketCampusClasses.ClassKDLBookings")
                         {
                             //Booking
-                            ClassStudioBookings Booking = (ClassStudioBookings)ActivityList[activitycounter];
+                            ClassKDLBookings Booking = (ClassKDLBookings)ActivityList[activitycounter];
 
                             //33 - 6 = 27
 
@@ -350,10 +350,10 @@ namespace StudioBookingMobile
 
             TableCell Cell = new TableCell();
 
-            if (Item.GetType().ToString() == "PocketCampusClasses.ClassStudioBookings")
+            if (Item.GetType().ToString() == "PocketCampusClasses.ClassKDLBookings")
             {
                 //Studio Booking
-                ClassStudioBookings Booking = (ClassStudioBookings)Item;
+                ClassKDLBookings Booking = (ClassKDLBookings)Item;
 
                 Cell.RowSpan = Booking.EndTime - Booking.StartTime;
                 int Height = (Cell.RowSpan * 20) - 18;
@@ -368,6 +368,20 @@ namespace StudioBookingMobile
             } else if (Item.GetType().ToString() == "PocketCampusClasses.ClassProductionBookings"){
                 //Production Booking
                 ClassProductionBookings Booking = (ClassProductionBookings)Item;
+
+                Cell.RowSpan = Booking.EndTime - Booking.StartTime;
+                int Height = (Cell.RowSpan * 20) - 18;
+                Cell.Text = "<table width='220px' style='border-collapse:collapse'><tr><td style='background:url(http://pocketcampusimages.scar.hull.ac.uk/CalendarBandTop.png) no-repeat;height:9px; cell-padding:0px; cell-spacing:0px;'><td></tr><tr><td height='" + Height + "px' style='background:url(http://pocketcampusimages.scar.hull.ac.uk/CalendarBandMiddle.png) repeat-y; cellpadding:0px; cellspacing:0px'>" + Booking.Name + " (" + Booking.StartTimeOut + "-" + Booking.EndTimeOut + ")</td></tr><tr><td style='background:url(http://pocketcampusimages.scar.hull.ac.uk/CalendarBandBottom.png) no-repeat; height:9px'></td></tr></table>";
+                Cell.BorderStyle = BorderStyle.None;
+
+                ReturnList.Add(Booking.StartTime);
+                ReturnList.Add(Booking.EndTime);
+                ReturnList.Add(Cell);
+            }
+            else if (Item.GetType().ToString() == "PocketCampusClasses.ClassKDLBookings")
+            {
+                //KDLn Booking
+                ClassKDLBookings Booking = (ClassKDLBookings)Item;
 
                 Cell.RowSpan = Booking.EndTime - Booking.StartTime;
                 int Height = (Cell.RowSpan * 20) - 18;
@@ -396,7 +410,7 @@ namespace StudioBookingMobile
             {
                 //Closure
                 ClassConstraint Constraint = (ClassConstraint)Item;
-                
+
                 Cell.RowSpan = Constraint.BookableEnd - Constraint.BookableStart;
                 int Height = (Cell.RowSpan * 20) - 18;
                 Cell.Text = "<table width='220px' style='border-collapse:collase'><tr><td style='background:url(http://pocketcampusimages.scar.hull.ac.uk/CalendarBandTop.png) no-repeat; height: 9px; cell-padding:0px; cell-spacing:0px;'><td></tr><tr><td height='" + Height + "px' style='background:url(http://pocketcampusimages.scar.hull.ac.uk/CalendarBandMiddle.png) repeat-y; cell-padding:0px cell-spacing:0px'>" + Constraint.Title + " (" + ClassGeneral.getTime(Constraint.BookableStart) + "-" + ClassGeneral.getTime(Constraint.BookableEnd) + ")</td></tr><tr><td style='background:url(http://pocketcampusimages.scar.hull.ac.uk/CalendarBandBottom.png) no-repeat;  height:9px'></td></tr></table>";

@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCWS", "PCWS\PCWS.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDLBooking", "KDLBooking\KDLBooking.csproj", "{592C70DA-77E8-4A19-91E7-8817276E6CD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDLBookingMobile", "KDLBookingMobile\KDLBookingMobile.csproj", "{BB0A6390-0A84-44C4-8307-E169F290B4EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|.NET = Debug|.NET
@@ -252,6 +254,18 @@ Global
 		{592C70DA-77E8-4A19-91E7-8817276E6CD7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{592C70DA-77E8-4A19-91E7-8817276E6CD7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{592C70DA-77E8-4A19-91E7-8817276E6CD7}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Release|.NET.ActiveCfg = Release|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BB0A6390-0A84-44C4-8307-E169F290B4EA}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

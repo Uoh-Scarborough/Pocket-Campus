@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 using StandardClasses;
 using PocketCampusClasses;
 
-namespace StudioBookingMobile
+namespace KDLBookingMobile
 {
     public partial class Booking : System.Web.UI.Page
     {
@@ -39,7 +39,7 @@ namespace StudioBookingMobile
             {
                 MultiView.ActiveViewIndex = 2;
 
-                ClassStudioBookings Booking = new ClassStudioBookings(Convert.ToInt16(BID));
+                ClassKDLBookings Booking = new ClassKDLBookings(Convert.ToInt16(BID));
 
                 BIDHidden.Value = BID;
 
@@ -73,7 +73,7 @@ namespace StudioBookingMobile
 
                 Bookinglbl.Text = "Edit";
 
-                ClassStudioBookings Booking = new ClassStudioBookings(BID);
+                ClassKDLBookings Booking = new ClassKDLBookings(BID);
 
                 Nametxt.Text = Booking.Name;
 
@@ -85,49 +85,7 @@ namespace StudioBookingMobile
                 Datetxt.Text = ClassGeneral.getAcademicDate(Convert.ToInt16(Booking.Week), Booking.Day);
 
                 StartHidden.Value = (Booking.StartTime).ToString();
-                StartTimetxt.Text = ClassGeneral.getTime(Booking.StartTime);
-
-                PhoneNumber.Text = Booking.Telephone;
-
-                ArrayList Controls = ControlstoArray();
-
-                Array Names = Booking.GroupMembers.Split(',');
-
-                try
-                {
-
-                    for (int i = 0; i <= Names.Length - 1; i++)
-                    {
-
-                        ArrayList Control = (ArrayList)Controls[i];
-
-                        TextBox Name = (TextBox)Control[0];
-                        DropDownList Type = (DropDownList)Control[1];
-
-                        String nameString = Names.GetValue(i).ToString().Trim();
-
-                        Name.Text = nameString.Substring(0, nameString.LastIndexOf('('));
-
-                        String tmp = nameString.Substring(nameString.LastIndexOf('(') + 1, nameString.LastIndexOf(')') - nameString.LastIndexOf('(') - 1);
-
-                        if (nameString.Substring(nameString.LastIndexOf('(') + 1, nameString.LastIndexOf(')') - nameString.LastIndexOf('(') - 1) == "Student")
-                        {
-                            Type.SelectedIndex = 0;
-                        }
-                        else
-                        {
-                            Type.SelectedIndex = 1;
-                        }
-
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    //Do Nothing
-                }
-
-                VehicleRegtxt.Text = Booking.RegNo;
+                StartTimetxt.Text = ClassGeneral.getTime(Booking.StartTime);               
 
                 //Find Next Event
 
@@ -138,48 +96,6 @@ namespace StudioBookingMobile
                 int EndTime = ClassBooking.CalculateEndTime(Convert.ToInt32(StartHidden.Value), WeekBookings, NextStart);
 
                 ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.ttcurrentconnection);
-
-                //int EndTime;
-
-                /*string sWID;
-
-                if (Convert.ToInt16(Booking.Week) <= 9)
-                {
-                    sWID = "0" + Booking.Week;
-                }
-                else
-                {
-                    sWID = Booking.Week;
-                }
-
-                RQ.RunQuery("SELECT Activity_StartTime FROM Activities WHERE Activity_Day = " + Booking.Day + " AND Activity_Location LIKE '%" + Booking.Location + "%' AND Activity_Weeks LIKE '%" + sWID + "%' AND Activity_StartTime >= " + Booking.StartTime + " AND Activity_Deleted = 0 ORDER BY Activity_StartTime;");
-
-                if (RQ.numberofresults > 0)
-                {
-                    EndTime = Convert.ToInt16(RQ.dataset.Tables[0].Rows[0].ItemArray[0]);
-                }
-                else
-                {
-                    EndTime = 93;
-                }
-
-                //Modify End Time
-
-                Boolean Admin = false;
-
-                if (UI.InGroup("ProductionBooking")) { Admin = true; }
-                if (UI.InGroup("StudentServicesAdmin")) { Admin = true; }
-                if (UI.InGroup("ProductionBookingAdmin")) { Admin = true; }
-
-
-                if (!Admin)
-                {
-                    if ((EndTime - Convert.ToInt16(StartHidden.Value)) > 8)
-                    {
-                        EndTime = Convert.ToInt16(StartHidden.Value) + 8;
-                    }
-                    MaxBookings = 8;
-                }*/
 
                 EndTimecmb.Items.Clear();
 
@@ -213,8 +129,6 @@ namespace StudioBookingMobile
                 if (WeekBookings > 0)
                 {
 
-
-
                     Nametxt.Text = UI.DisplayName;
 
                     Roomtxt.Text = RID;
@@ -245,57 +159,34 @@ namespace StudioBookingMobile
                 else
                 {
 
-                            //More than allowed
+                    //More than allowed
 
-                            Errorlbl.Text = "you have already made your full allowance of bookings for this room for the chossen week. Please try another room.";
+                    Errorlbl.Text = "you have already made your full allowance of bookings for this room for the chossen week. Please try another room.";
 
-                            MultiView.SetActiveView(ErrorView);
+                    MultiView.SetActiveView(ErrorView);
 
-                        }
+                }
 
-                   }
+            }
 
-                            ReturnLinklbl.Text = "<a href='default.aspx?rid=" + Roomtxt.Text + "&amp;week=" + WeekHidden.Value + "'>Calendar</a>";
+            ReturnLinklbl.Text = "<a href='default.aspx?rid=" + Roomtxt.Text + "&amp;week=" + WeekHidden.Value + "'>Calendar</a>";
 
-
-            /*           Errorlbl.Text = "you have already made you full allowance of bookings for this room for the chossen date. Please try another room.";
-
-                       MultiView.SetActiveView(ErrorView);
-
-                   }
-
-               }
-               else
-               {
-
-                   //Restricted booking
-
-                   Errorlbl.Text = "your access to this room is restricted. Please try another room.";
-
-                   MultiView.SetActiveView(ErrorView);
-               }
-           } 
-       }
-
-       ReturnLinklbl.Text = "<a href='default.aspx?rid=" + Roomtxt.Text + "&amp;week=" + WeekHidden.Value + "'>Return to Calendar</a>";
-             * 
-             * */
         }
 
         protected void Savecmd_Click(object sender, EventArgs e)
         {
 
-            ClassStudioBookings Booking;
+            ClassKDLBookings Booking;
 
             //Check Slot Free
 
             if (EditHidden.Value != "0")
             {
-                Booking = new ClassStudioBookings(Convert.ToInt16(EditHidden.Value));
+                Booking = new ClassKDLBookings(Convert.ToInt16(EditHidden.Value));
             }
             else
             {
-                Booking = new ClassStudioBookings();
+                Booking = new ClassKDLBookings();
             }
 
             Booking.Title = Nametxt.Text;
@@ -304,36 +195,6 @@ namespace StudioBookingMobile
             Booking.EndTime = Convert.ToInt16(EndTimecmb.SelectedValue.ToString());
             Booking.Location = Roomtxt.Text;
             Booking.Week = WeekHidden.Value;
-
-            Booking.Telephone = PhoneNumber.Text;
-
-            //Sort out Room Members
-
-            ArrayList Controls = ControlstoArray();
-
-            String Memberstr = "";
-
-            foreach (ArrayList Control in Controls)
-            {
-                TextBox Name = (TextBox)Control[0];
-                DropDownList Typecmb = (DropDownList)Control[1];
-
-                if (Name.Text != "")
-                {
-                    Memberstr += ", " + Name.Text.Trim() + " (" + Typecmb.SelectedItem.Text + ")";
-                }
-            }
-
-            if (Memberstr.Length > 2)
-            {
-                Booking.GroupMembers = Memberstr.Substring(2);
-            }
-            else
-            {
-                Booking.GroupMembers = "";
-            }
-
-            Booking.RegNo = VehicleRegtxt.Text;
 
             ClassUserInfo UI = new ClassUserInfo(Context.User.Identity.Name);
 
@@ -361,11 +222,17 @@ namespace StudioBookingMobile
             else
             {
 
-                if ((Booking.Location == "Rehearsal Studio 1" || Booking.Location == "Rehearsal Studio 2") && ((ClassStudioBookings.IsMusicRoomFree(Booking.Day, Booking.Week, Booking.StartTime, Booking.EndTime) || ClassStudioBookings.IsSeminarRoom2Free(Booking.Day,Booking.Week,Booking.StartTime,Booking.EndTime))))
-                {
-                    //Music Room is in use, therefore cant use.
+                //Check for Overlap
 
-                    Errorlbl.Text = "you can't book the " + Booking.Location + " becuase the Music Room or Seminar Room 2 is in use. Please try another time, or check the Music Room bookings.";
+                ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
+
+                RQ1.RunQuery("SELECT Booking_StartTime FROM Bookings WHERE Booking_Day = " + Booking.Day + " AND Booking_Location LIKE '%" + Booking.Location + "%' AND Booking_Week = '" + Booking.Week + "' AND Booking_StartTime = " + Booking.EndTime + " AND Booking_EndTime = " + Booking.StartTime + " AND Booking_Deleted = 0 ORDER BY Booking_StartTime;");
+
+                if (RQ1.numberofresults > 0)
+                {
+                    //Booking Overlap
+
+                    Errorlbl.Text = "another booking which overlaps has been made while you have been making this booking. Return to the <a href='default.aspx?rid=" + Roomtxt.Text + "&amp;week=" + WeekHidden.Value + "'>Calendar</a> to try again.";
 
                     MultiView.SetActiveView(ErrorView);
 
@@ -373,110 +240,37 @@ namespace StudioBookingMobile
                 else
                 {
 
-                    //Check for Overlap
-
-                    ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
-
-                    RQ1.RunQuery("SELECT Booking_StartTime FROM Bookings WHERE Booking_Day = " + Booking.Day + " AND Booking_Location LIKE '%" + Booking.Location + "%' AND Booking_Week = '" + Booking.Week + "' AND Booking_StartTime = " + Booking.EndTime + " AND Booking_EndTime = " + Booking.StartTime + " AND Booking_Deleted = 0 ORDER BY Booking_StartTime;");
-
-                    if (RQ1.numberofresults > 0)
+                    Booking.Name = UI.DisplayName;
+                    Booking.Username = UI.Username;
+                    try
                     {
-                        //Booking Overlap
-
-                        Errorlbl.Text = "another booking which overlaps has been made while you have been making this booking. Return to the <a href='default.aspx?rid=" + Roomtxt.Text + "&amp;week=" + WeekHidden.Value + "'>Calendar</a> to try again.";
-
-                        MultiView.SetActiveView(ErrorView);
-
+                        Booking.Number = Convert.ToInt32(UI.StudentID.ToString());
                     }
-                    else
+                    catch
                     {
-
-                        Booking.Name = UI.DisplayName;
-                        Booking.Username = UI.Username;
-                        try
-                        {
-                            Booking.Number = Convert.ToInt32(UI.StudentID.ToString());
-                        }
-                        catch
-                        {
-                            Booking.Number = 0;
-                        }
-                        Booking.Email = UI.Mail;
-                        Booking.Date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-
-                        Booking.Create();
-                        MultiView.ActiveViewIndex = 1;
-                        SaveEditlbl.Text = "Added";
-                        CalendarLinklbl.Text = "<a href='default.aspx?rid=" + Roomtxt.Text + "&amp;week=" + WeekHidden.Value + "'>Calendar</a>";
-
-                        Booking.SendEmail(0);
-
+                        Booking.Number = 0;
                     }
+                    Booking.Email = UI.Mail;
+                    Booking.Date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+
+                    Booking.Create();
+                    MultiView.ActiveViewIndex = 1;
+                    SaveEditlbl.Text = "Added";
+                    CalendarLinklbl.Text = "<a href='default.aspx?rid=" + Roomtxt.Text + "&amp;week=" + WeekHidden.Value + "'>Calendar</a>";
+
+                    Booking.SendEmail(0);
 
                 }
+
             }
-        }
-
-        private ArrayList ControlstoArray()
-        {
-            ArrayList Controls = new ArrayList();
-
-            ArrayList Member1 = new ArrayList();
-            Member1.Add(Member1Nametxt);
-            Member1.Add(Member1Typecmb);
-
-            Controls.Add(Member1);
-
-            ArrayList Member2 = new ArrayList();
-            Member2.Add(Member2Nametxt);
-            Member2.Add(Member2Typecmb);
-
-            Controls.Add(Member2);
-
-            ArrayList Member3 = new ArrayList();
-            Member3.Add(Member3Nametxt);
-            Member3.Add(Member3Typecmb);
-
-            Controls.Add(Member3);
-
-            ArrayList Member4 = new ArrayList();
-            Member4.Add(Member4Nametxt);
-            Member4.Add(Member4Typecmb);
-
-            Controls.Add(Member4);
-
-            ArrayList Member5 = new ArrayList();
-            Member5.Add(Member5Nametxt);
-            Member5.Add(Member5Typecmb);
-
-            Controls.Add(Member5);
-
-            ArrayList Member6 = new ArrayList();
-            Member6.Add(Member6Nametxt);
-            Member6.Add(Member6Typecmb);
-
-            Controls.Add(Member6);
-
-            ArrayList Member7 = new ArrayList();
-            Member7.Add(Member7Nametxt);
-            Member7.Add(Member7Typecmb);
-
-            Controls.Add(Member7);
-
-            ArrayList Member8 = new ArrayList();
-            Member8.Add(Member8Nametxt);
-            Member8.Add(Member8Typecmb);
-
-            Controls.Add(Member8);
-
-            return Controls;
+            
         }
 
         protected void Deletedcmb_Click(object sender, ImageClickEventArgs e)
         {
             if (BIDHidden.Value != "0")
             {
-                ClassStudioBookings Booking = new ClassStudioBookings(Convert.ToInt16(BIDHidden.Value));
+                ClassKDLBookings Booking = new ClassKDLBookings(Convert.ToInt16(BIDHidden.Value));
 
                 Booking.Deleted = true;
 

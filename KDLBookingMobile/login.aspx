@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="KDLBookingMobile.Login" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="KDLBookingMobile.Login" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>Studio Booking</title>
+    <title>KDL Booking</title>
     <link rel="stylesheet" type="text/css" href="RoundedRectangle.css" />
 </head>
 <body onload="hideAddressbar();">
@@ -20,8 +20,8 @@
 
     <div id="banner">
         <a href="../Default.aspx" class="first"><img src="Images/PocketCampusHome.png" alt="Pocket Campus Home"/></a>
-        <a href="Default.aspx"><img class="second" src="Images/StudioBookingHome.png" alt="Studio Booking Home"/></a>
-        <h1 class="secondheader">Studio Booking</h1>
+        <a href="Default.aspx"><img class="second" src="Images/KDLBookingHome.png" alt="KDL Booking Home"/></a>
+        <h1 class="secondheader">KDL Booking</h1>
     </div>
 
     <div id="content">
@@ -30,7 +30,7 @@
         <form id="studentservices" runat="server">
 
             <ul>
-                <li>To make a new booking or edit a previous booking you must first login to the 84 Filey Road Studio Booking System.</li>
+                <li>To make a new booking or edit a previous booking you must first login to the KDL Booking System.</li>
             </ul>
 
             <ul>

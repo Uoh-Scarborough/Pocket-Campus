@@ -17,7 +17,7 @@ namespace PocketCampusClasses
     public class ClassKDLBookings : ClassBooking
     {
 
-        private string c_AdditionalInfo;
+        private string c_AdditionalInfo = "";
 
         public string AdditionalInfo
         {
@@ -138,6 +138,24 @@ namespace PocketCampusClasses
                 Result = false;
             }
             return Result;
+        }
+
+        public static string GenerateBookingsList(string UserID)
+        {
+            DataSet DS = GenerateBookingsDS(UserID);
+
+            string returnStr = "<ul>";
+
+            foreach (DataRow DR in DS.Tables[0].Rows)
+            {
+                ClassKDLBookings Booking = new ClassKDLBookings(DR);
+
+                returnStr += "<li>" + Booking.Location + "<a href=\"?bid=" + Booking.ID + "\"><img class=\"arrow\" src=\"Images/ArrowButton.jpg\"/></a><br/>" + ClassGeneral.getAcademicDate(Convert.ToInt16(Booking.Week), Booking.Day) + " - " + Booking.StartTimeOut + "</li>";
+            }
+
+            returnStr += "</ul>";
+
+            return returnStr;
         }
 
         public void SendEmail(int Type)

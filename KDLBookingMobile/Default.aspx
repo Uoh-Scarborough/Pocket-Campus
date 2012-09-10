@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="StudioBookingMobile.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="KDLBookingMobile.Default" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -21,8 +21,8 @@
 
     <div id="banner">
         <a href="../Default.aspx" class="first"><img src="Images/PocketCampusHome.png" alt="Pocket Campus Home"/></a>
-        <a href="Default.aspx"><img class="second" src="Images/StudioBookingHome.png" alt="Studio Booking Home"/></a>
-        <h1 class="secondheader">Studio Booking</h1>
+        <a href="Default.aspx"><img class="second" src="Images/KDLBookingHome.png" alt="KDL Booking Home"/></a>
+        <h1 class="secondheader">KDL Booking</h1>
     </div>
 
     <div id="content">
@@ -42,23 +42,13 @@
             </asp:View>
         
             <asp:View ID="RoomList" runat="server">
-                <h1>Please select a studio to book.</h1>
+                <h1>Please select a room book.</h1>
                 
                 <ul>
-                    <li><a href="?rid=Recording Studio 1"><img class="arrow" src="Images/ArrowButton.jpg"/>Recording Studio 1</a></li>
-                    <li><a href="?rid=Recording Studio 2"><img class="arrow" src="Images/ArrowButton.jpg"/>Recording Studio 2</a></li>
-                    <li><a href="?rid=Music Room"><img class="arrow" src="Images/ArrowButton.jpg"/>Music Room</a></li>
-                    <li><a href="?rid=Rehearsal Studio 1"><img class="arrow" src="Images/ArrowButton.jpg"/>Rehearsal Studio 1</a></li>
-                    <li><a href="?rid=Rehearsal Studio 2"><img class="arrow" src="Images/ArrowButton.jpg"/>Rehearsal Studio 2</a></li>
-                    <li><a href="?rid=Research Studio"><img class="arrow" src="Images/ArrowButton.jpg"/>Research Studio</a></li>
-                    <li><a href="?rid=Seminar Workstation 1"><img class="arrow" src="Images/ArrowButton.jpg"/>Seminar Workstation 1</a></li>
-                    <li><a href="?rid=Seminar Workstation 2"><img class="arrow" src="Images/ArrowButton.jpg"/>Seminar Workstation 2</a></li>
-                    <li><a href="?rid=Seminar Workstation 3"><img class="arrow" src="Images/ArrowButton.jpg"/>Seminar Workstation 3</a></li>
-                    <li><a href="?rid=Mixing Studio 1"><img class="arrow" src="Images/ArrowButton.jpg"/>Mixing Studio 1</a></li>
-                    <li><a href="?rid=Mixing Studio 2"><img class="arrow" src="Images/ArrowButton.jpg"/>Mixing Studio 2</a></li>
-                    <li><a href="?rid=Electronica Studio"><img class="arrow" src="Images/ArrowButton.jpg"/>Electronica Studio</a></li>
-                    <li><a href="?rid=Mixing Studio 3"><img class="arrow" src="Images/ArrowButton.jpg"/>Mixing Studio 3</a></li>
-                    <li><a href="?rid=Seminar Room 2"><img class="arrow" src="Images/ArrowButton.jpg"/>Seminar Room 2</a></li>
+                    <li><a href="?rid=KDL 1"><img class="arrow" src="Images/ArrowButton.jpg"/>KDL 1</a></li>
+                    <li><a href="?rid=KDL 2"><img class="arrow" src="Images/ArrowButton.jpg"/>KDL 2</a></li>
+                    <li><a href="?rid=KDL 3"><img class="arrow" src="Images/ArrowButton.jpg"/>KDL 3</a></li>
+
                 </ul>
 
                 <ul>
