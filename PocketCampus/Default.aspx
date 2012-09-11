@@ -2,6 +2,8 @@
 
 <asp:Content ID="first" ContentPlaceHolderID="MainArea" Runat="Server">
 
+  
+
            <div id="bigbuttonrow">
         	
         		<div class="bigbutton" id="maps" onclick="followLink('http://maps.scar.hull.ac.uk')">
@@ -126,13 +128,15 @@
 	       		       		
 	       		<div id="events" class="eventsandnoticesblock">
 	       			
-	       			<asp:Label ID="Eventslbl" runat="server" Text="Label"></asp:Label>
+	       			<asp:Label ID="Eventslbl" runat="server" Text="Label" 
+                        CssClass="eventsandnoticesspan"></asp:Label>
 	       		
 	       		</div>
 	       		
 	       		<div id="notices" class="eventsandnoticesblock">
 
-	       			<asp:Label ID="Noticeslbl" runat="server" Text="Label"></asp:Label>
+	       			<asp:Label ID="Noticeslbl" runat="server" Text="Label" 
+                        CssClass="eventsandnoticesspan"></asp:Label>
 	       		
 	       		</div>
 	       		

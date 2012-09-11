@@ -314,7 +314,7 @@ namespace PocketCampusClasses
             foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
             {
                 ClassNotice Notice = new ClassNotice(DR);
-                ReturnStr += "<li><a href=\"notices.aspx#notice" + Notice.ID + "\">" + Notice.Title + "</a></li>";
+                ReturnStr += "<li><a href=\"http://campusinfo.scar.hull.ac.uk/notices-feed?id=" + Notice.ID + "\">" + Notice.Title + "</a></li>";
                 RQ.connection.connection.Close();
             }
 

@@ -2,16 +2,20 @@
 
 <asp:Content ID="first" ContentPlaceHolderID="MainArea" Runat="Server">
 
+           <div id="bigbuttonrow">
+        	
+        		<div class="bigbutton" id="studiobooking" onclick="followLink('http://studiobooking.scar.hull.ac.uk')">
+        			<a href="http://studiobooking.scar.hull.ac.uk"><span id="mapstext"><p>studio booking</p></span></a>
+        		</div>
+        		
+        		<div class="bigbutton" id="psbooking" onclick="followLink('http://psbooking.scar.hull.ac.uk')">
+        			<a href="http://productionbooking.scar.hull.ac.uk"><span id="portaltext"><p>ps booking</p></span></a>
+        		</div>
+        		
+        		<div class="bigbutton" id="kdlbooking" onclick="followLink('http://kdlbooking.scar.hull.ac.uk')">
+        			<a href="http://kdlbooking.scar.hull.ac.uk"><span id="findapctext"><p>kdl booking</p></span></a>
+        		</div>
 
-                 <table cellpadding="4px" id="studiobookingtable">
-                    <tr>
-                        <td><a href="http://productionbooking.scar.hull.ac.uk/login.aspx"><img src="http://pocketcampusimages.scar.hull.ac.uk/PSStudioBookingButton.png" alt="Production Booking" /></a></td>
-                        <td><h2>Production Studio Booking</h2><h3>Welcome to Production Studio Booking. To view or book a studio you must first log into the Production Booking System using your campus username and password. Click the button to the left to continue to the Production Booking System.</h3></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://studiobooking.scar.hull.ac.uk/login.aspx"><img src="http://pocketcampusimages.scar.hull.ac.uk/84StudioBookingButton.png" alt="Studio Booking" /></a></td>
-                        <td><h2>84 Filey Road Studio Booking</h2><h3>Welcome to 84 Filey Road Booking. To view or book a studio you must first log into the 84 Filey Road Studio Booking Ststem using your campus username and password. Click the button to the left to continue to the Studio Booking System.</h3></td>
-                    </tr>
-                </table> 
+            </div>
 
 </asp:Content>

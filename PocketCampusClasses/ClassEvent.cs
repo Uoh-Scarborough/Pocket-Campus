@@ -330,7 +330,9 @@ namespace PocketCampusClasses
 
                     ClassEvent Event = new ClassEvent(DR);
     
-                    ReturnStr += "<dt><a href=\"events.aspx#event" + Event.ID + "\">" + Event.Title + "</a></dt>";
+                    //ReturnStr += "<dt><a href=\"events.aspx#event" + Event.ID + "\">" + Event.Title + "</a></dt>";
+
+                    ReturnStr += "<li><a href=\"http://campusinfo.scar.hull.ac.uk/events-feed?id=" + Event.ID + "\">" + Event.Title + "</a></li>";
 
                     DateTime WeeksTime = DateTime.Now.AddDays(7);
 
