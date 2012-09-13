@@ -1,0 +1,318 @@
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 860px) {
+
+	span{
+		display:none;
+	}
+	
+	body{
+		font-family: Georgia, Tahoma, Arial;
+		background: #F1E7C9;
+	}
+	
+	div#container{
+		width: 1023px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	div#uohheader{
+		width: 1023px;
+		height: 68px;
+		background: url('../img/CampusHeader.png') no-repeat;
+		padding: 0px;	
+		display: block;
+	}
+	
+	div#pcheader{
+		width: 1023px;
+		height: 102px;
+		background: url('../img/PocketCampusHeader.png') no-repeat;	
+	}
+	
+	div#bigbuttonrow{
+		
+		padding: 5px 0px 5px 15px;
+		height: 140px;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}
+	
+	div#bigbuttonrow div.bigbutton{
+		width: 120px;
+		height: 135px;
+		float: left;	
+		padding: 0px 3px 0px 3px;
+		border-bottom: 0px;	
+	
+	}
+	
+	div#bigbuttonrow div.bigbutton#maps{
+		
+		background: url('../img/Maps.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#portal{
+		
+		background: url('../img/Portal.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#findapc{
+		
+		background: url('../img/FAPC.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#email{
+		
+		background: url('../img/Email.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#timetables{
+		
+		background: url('../img/Timetable.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#roombooking{
+		
+		background: url('../img/RoomBooking.png') no-repeat;	
+		
+	}
+	
+	
+	div#bigbuttonrow div.bigbutton#ebridge{
+		
+		background: url('../img/eBridge.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#studentservices{
+		
+		background: url('../img/StudentServices.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#studiobooking{
+		
+		background: url('../img/StudioBooking.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#psbooking{
+		
+		background: url('../img/PSBooking.png') no-repeat;	
+		
+	}
+	
+		div#bigbuttonrow div.bigbutton#kdlbooking{
+		
+		background: url('../img/KDLBooking.png') no-repeat;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#campusinfo{
+		
+		display: none;	
+		
+	}
+		
+	div.campusinforow{
+		width: 1023px;
+		height: 104px;
+		background: #DCE0B9;
+		padding-top: 5px;
+		padding-left:  10px;
+		display: block;
+	}
+	
+	div.campusinforow div.smallbutton{
+		height: 100px;
+		width: 90px;
+		float: left;
+		padding: 0px 6px 0px 6px;
+		border-bottom: 0px;
+	}
+	
+	div.campusinforow div#campusinfotext{
+		
+		display: block;
+		height: 100px;
+		width: 204px;
+		float: left;
+		background: url('../img/CampusInfo.png') 0 20px no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#accomodation{
+		
+		background: url('../img/Accomodation.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#blackwells{
+		
+		background: url('../img/blackwells.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#calvinos{
+		
+		background: url('../img/calvinos.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#campusconnect{
+		
+		background: url('../img/campusconnect.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#careers{
+		
+		background: url('../img/careers.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#dates{
+		
+		background: url('../img/dates.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#diningroom{
+		
+		background: url('../img/diningroom.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#estates{
+		
+		background: url('../img/estates.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#faqs{
+		
+		background: url('../img/faqs.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#freeelective{
+		
+		background: url('../img/freeelective.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#healthandwellbeing{
+		
+		background: url('../img/healthandwellbeing.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#itservices{
+		
+		background: url('../img/itservices.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#library{
+		
+		background: url('../img/library.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#ote{
+		
+		background: url('../img/ote.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#publictransport{
+		
+		background: url('../img/publictransport.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#studentsunion{
+		
+		background: url('../img/studentsunion.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#studyadvice{
+		
+		background: url('../img/studyadvice.png') no-repeat;
+		
+	}
+	
+	div.campusinforow div.smallbutton#townregion{
+		
+		background: url('../img/townregion.png') no-repeat;
+		
+	}
+	
+	div#eventsandnotices{
+		
+		width: 1023px;
+		height: 146px;
+		background: url('../img/eventsandnotices.png') no-repeat;
+		padding-left: 10px;
+		
+	}
+	
+	div#eventsandnotices div.eventsandnoticesblock{
+		
+		position: ;
+		width: 500px;
+		height: 140px;
+		float: left;
+		
+	}
+	
+	.eventsandnoticesspan
+	{
+		display:block;
+		font-family: arial;
+	}
+	
+	.eventsandnoticesspan ul li
+	{
+		color:#ae2b30;
+	}
+	
+	.eventsandnoticesspan a
+	{
+		color:#ae2b30;
+	}
+	
+	.eventsandnoticesspan p a
+	{
+		display:block;
+	}
+
+	div#footer{
+		
+		width: 1023px;
+		height: 37px;
+		background: url('../img/footer.png') no-repeat;
+		
+	}
+	
+	div#footer p{
+		
+		font-family: arial;
+		font-size: 12px;
+		color:  #ffffff;
+		padding: 10px 0px 3px 10px;
+		
+	}
+
+}

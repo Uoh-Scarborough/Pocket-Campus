@@ -27,7 +27,7 @@
         		</div>
         		
         		<div class="bigbutton" id="roombooking" onclick="followLink('studiobooking.aspx')">
-        			<a href="http://roombooking.scar.hull.ac.uk"><span id="roombookingtext"><p>Room Booking</p></span></a>
+        			<a href="studiobooking.aspx"><span id="roombookingtext"><p>Room Booking</p></span></a>
         		</div>
         		
         		<div class="bigbutton" id="ebridge" onclick="followLink('http://ebridge.hull.ac.uk')">
@@ -82,8 +82,8 @@
         	
         	<div id="campusinforowbottom" class="campusinforow">
         	       	
-	       		<div class="smallbutton" id="faqs" onclick="followLink('http://info.scar.hull.ac.uk')">
-	       			<a href="http://info.scar.hull.ac.uk"><span id="faqstext">faqs</span></a>
+	       		<div class="smallbutton" id="faqs" onclick="followLink('http://campusinfo.scar.hull.ac.uk/faqs')">
+	       			<a href="http://campusinfo.scar.hull.ac.uk/faqs"><span id="faqstext">faqs</span></a>
 	       		</div>
 	       		
 	       		<div class="smallbutton" id="freeelective" onclick="followLink('http://free-electives.scar.hull.ac.uk')">

@@ -8,7 +8,7 @@
         			<a href="http://studiobooking.scar.hull.ac.uk"><span id="mapstext"><p>studio booking</p></span></a>
         		</div>
         		
-        		<div class="bigbutton" id="psbooking" onclick="followLink('http://psbooking.scar.hull.ac.uk')">
+        		<div class="bigbutton" id="psbooking" onclick="followLink('http://productionbooking.scar.hull.ac.uk')">
         			<a href="http://productionbooking.scar.hull.ac.uk"><span id="portaltext"><p>ps booking</p></span></a>
         		</div>
         		

@@ -15,13 +15,12 @@
     
     	<meta name="viewport" content="width=device-width">
     
-    	<link rel="stylesheet" href="http://pocketcampusimages.scar.hull.ac.uk/responsive/css/style.css">
-    	<link rel="stylesheet" href="http://pocketcampusimages.scar.hull.ac.uk/responsive/css/pocketcampus-mobile.css">
-    	<link rel="stylesheet" href="http://pocketcampusimages.scar.hull.ac.uk/responsive/css/pocketcampus.css">
+    	<link rel="stylesheet" href="css/style.css">
+    	<link rel="stylesheet" href="css/pocketcampus-mobile.css">
+    	<link rel="stylesheet" href="css/pocketcampus.css">
     	
-    	<script src="http://pocketcampusimages.scar.hull.ac.uk/responsive/js/vendor/modernizr-2.6.1.min.js"></script>
-    	<script src="http://pocketcampusimages.scar.hull.ac.uk/responsive/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
-
+    	    	<script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    	<script src="js/vendor/modernizr-2.5.3-respond-1.1.0.min.js"></script>
         <script>
 
             function followLink(url) {

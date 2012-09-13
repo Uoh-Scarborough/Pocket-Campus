@@ -1,0 +1,40 @@
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+	
+	div.wpfaqsearch{
+		padding-top: 0px;
+		margin: 0px;
+	}
+	
+	div.wpfaqsearch h3{
+		
+		padding: 0px;
+		margin: 0px;
+		
+	}
+	
+	div.wpfaqsearchformi{
+		
+		padding: 10px auto 10px auto;
+	}	
+	
+	div.wpfaqacc{
+	padding: 0px;
+		margin: 0px;
+		width: 100%;
+		background: #CA5351;
+	}
+	
+	div.wpfaqacc h4{
+		padding: 0px;
+	}
+	
+	div.wpfaqacccontent{
+		
+		padding: 5px;
+		background: #ffffff;
+		
+	}
+	
+	
