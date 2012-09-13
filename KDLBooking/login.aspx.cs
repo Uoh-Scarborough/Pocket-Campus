@@ -63,7 +63,7 @@ namespace KDLBooking
                     else
                     {
 
-                        lblResults.Text = "Only SANM Students have automatic booking rights for the Performance Studios. Non SANM Staff and Students who would like to request a booking, please email <a href='mailto:production-scar@hull.ac.uk'>production-scar@hull.ac.uk</a>.";
+                        lblResults.Text = "You need to be granted access to be able to book rooms. If you would like request access, please email <a href='mailto:campusconnect@hull.ac.uk'>campusconnect@hull.ac.uk</a>.";
 
                     }
                 }
