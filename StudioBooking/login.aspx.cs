@@ -26,6 +26,8 @@ namespace StudioBooking
             PBNC = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.bookingconnectionname);
 
             ClassAppDetails.bookingcurrentconnection = PBNC;
+
+           
             
             // Path to you LDAP directory server.
             // Contact your network administrator to obtain a valid path.

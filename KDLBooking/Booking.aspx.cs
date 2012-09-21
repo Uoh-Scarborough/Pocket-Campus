@@ -92,45 +92,6 @@ namespace KDLBooking
                 StartHidden.Value = (Booking.StartTime).ToString();
                 StartTimetxt.Text = ClassGeneral.getTime(Booking.StartTime);
 
-                ArrayList Controls = ControlstoArray();
-
-                Array Names = Booking.GroupMembers.Split(',');
-
-                try
-                {
-
-                    for (int i = 0; i <= Names.Length - 1; i++)
-                    {
-
-                        ArrayList Control = (ArrayList)Controls[i];
-
-                        TextBox Name = (TextBox)Control[0];
-                        DropDownList Type = (DropDownList)Control[1];
-
-                        String nameString = Names.GetValue(i).ToString().Trim();
-
-                        Name.Text = nameString.Substring(0, nameString.LastIndexOf('('));
-
-                        String tmp = nameString.Substring(nameString.LastIndexOf('(') + 1, nameString.LastIndexOf(')') - nameString.LastIndexOf('(') - 1);
-
-                        if (nameString.Substring(nameString.LastIndexOf('(') + 1, nameString.LastIndexOf(')') - nameString.LastIndexOf('(') - 1) == "Student")
-                        {
-                            Type.SelectedIndex = 0;
-                        }
-                        else
-                        {
-                            Type.SelectedIndex = 1;
-                        }
-
-                    }
-
-
-                }
-                catch (Exception ex)
-                {
-                    //Do Nothing
-                }
-
                 //Find Next Event
 
                 int NextStart = ClassBooking.FindStartofNext(Booking.Location, ClassUseful.ConvertTo2DigitNumber(Booking.Week), Booking.Day, Booking.StartTime, Booking.Username,BID);
@@ -242,32 +203,6 @@ namespace KDLBooking
             Booking.Location = Roomtxt.Text;
             Booking.Week = WeekHidden.Value;
 
-            //Sort out Room Members
-
-            ArrayList Controls = ControlstoArray();
-
-            String Memberstr = "";
-
-            foreach (ArrayList Control in Controls)
-            {
-                TextBox Name = (TextBox)Control[0];
-                DropDownList Typecmb = (DropDownList)Control[1];
-
-                if (Name.Text != "")
-                {
-                    Memberstr += ", " + Name.Text.Trim() + " (" + Typecmb.SelectedItem.Text + ")";
-                }
-            }
-
-            if (Memberstr.Length > 2)
-            {
-                Booking.GroupMembers = Memberstr.Substring(2);
-            }
-            else
-            {
-                Booking.GroupMembers = "";
-            }
-
             ClassUserInfo UI = new ClassUserInfo(Context.User.Identity.Name);
 
             if (EditHidden.Value != "0")
@@ -352,61 +287,6 @@ namespace KDLBooking
                 //}
             }
 
-        }
-
-        private ArrayList ControlstoArray()
-        {
-            ArrayList Controls = new ArrayList();
-
-            ArrayList Member1 = new ArrayList();
-            Member1.Add(Member1Nametxt);
-            Member1.Add(Member1Typecmb);
-
-            Controls.Add(Member1);
-
-            ArrayList Member2 = new ArrayList();
-            Member2.Add(Member2Nametxt);
-            Member2.Add(Member2Typecmb);
-
-            Controls.Add(Member2);
-
-            ArrayList Member3 = new ArrayList();
-            Member3.Add(Member3Nametxt);
-            Member3.Add(Member3Typecmb);
-
-            Controls.Add(Member3);
-
-            ArrayList Member4 = new ArrayList();
-            Member4.Add(Member4Nametxt);
-            Member4.Add(Member4Typecmb);
-
-            Controls.Add(Member4);
-
-            ArrayList Member5 = new ArrayList();
-            Member5.Add(Member5Nametxt);
-            Member5.Add(Member5Typecmb);
-
-            Controls.Add(Member5);
-
-            ArrayList Member6 = new ArrayList();
-            Member6.Add(Member6Nametxt);
-            Member6.Add(Member6Typecmb);
-
-            Controls.Add(Member6);
-
-            ArrayList Member7 = new ArrayList();
-            Member7.Add(Member7Nametxt);
-            Member7.Add(Member7Typecmb);
-
-            Controls.Add(Member7);
-
-            ArrayList Member8 = new ArrayList();
-            Member8.Add(Member8Nametxt);
-            Member8.Add(Member8Typecmb);
-
-            Controls.Add(Member8);
-
-            return Controls;
         }
 
         protected void Deletecmd_Click(object sender, EventArgs e)

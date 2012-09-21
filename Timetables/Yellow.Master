@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/yellowstyle.css" />
         <link rel="stylesheet" type="text/css" href="http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/loginstyle.css" />
         <link rel="stylesheet" type="text/css" href="timetablesstyle.css" />
+        <link rel="Stylesheet" type="text/css" href="<%=sStyleSheet%>" />
     </head>
     <body>
         <div id="wrapper">

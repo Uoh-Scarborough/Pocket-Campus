@@ -64,7 +64,7 @@ namespace ProductionBooking
                 }
                 else
                 {
-                    Weekscmb.SelectedValue = ClassGeneral.getAcademicWeek().ToString();
+                    Weekscmb.SelectedValue = ClassUseful.ConvertTo2DigitNumber(ClassGeneral.getAcademicWeek());
                     generategrid(Roomcmb.Text, ClassGeneral.getAcademicWeek());
                 }
 

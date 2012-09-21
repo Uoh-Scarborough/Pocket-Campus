@@ -49,6 +49,7 @@
     <td>
     <asp:Button ID="Gocmd" runat="server" Text="Go" Width="59px" 
             onclick="Gocmd_Click" />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </td>
         </tr>
 

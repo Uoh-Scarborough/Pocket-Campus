@@ -30,6 +30,8 @@ namespace StudioBooking
             string strClientIP;
             strClientIP = Request.ServerVariables["REMOTE_ADDR"];
 
+            //Label1.Text = strClientIP;
+
             if (ClassAppDetails.kioskip.Contains(strClientIP))
             {
                 //sStyleSheet = "http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/kioskstyle.css";
@@ -63,7 +65,7 @@ namespace StudioBooking
                 }
                 else
                 {
-                    Weekscmb.SelectedValue = ClassGeneral.getAcademicWeek().ToString();
+                    Weekscmb.SelectedValue = ClassUseful.ConvertTo2DigitNumber(ClassGeneral.getAcademicWeek());
                     generategrid(Roomcmb.Text, ClassGeneral.getAcademicWeek());
                 }
 

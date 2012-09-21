@@ -27,20 +27,6 @@ namespace KDLBooking
             ClassAppDetails.bookingcurrentconnection = PBNC;
             ClassAppDetails.ttcurrentconnection = TTNC;
 
-            string strClientIP;
-            strClientIP = Request.ServerVariables["REMOTE_ADDR"];
-
-            if (ClassAppDetails.kioskip.Contains(strClientIP))
-            {
-                //sStyleSheet = "http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/kioskstyle.css";
-                HtmlLink newStyleSheet = new HtmlLink();
-                newStyleSheet.Href = "http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/kioskstyle.css";
-                newStyleSheet.Attributes.Add("type", "text/css");
-                newStyleSheet.Attributes.Add("rel", "stylesheet");
-                Page.Header.Controls.Add(newStyleSheet);
-            }
-
-
             if(Request.Browser["IsMobileDevice"] == "true"){
                 Response.Redirect("http://m.studiobooking.scar.hull.ac.uk");
             }
@@ -63,7 +49,8 @@ namespace KDLBooking
                 }
                 else
                 {
-                    Weekscmb.SelectedValue = ClassGeneral.getAcademicWeek().ToString();
+
+                    Weekscmb.SelectedValue = ClassUseful.ConvertTo2DigitNumber(ClassGeneral.getAcademicWeek());
                     generategrid(Roomcmb.Text, ClassGeneral.getAcademicWeek());
                 }
 

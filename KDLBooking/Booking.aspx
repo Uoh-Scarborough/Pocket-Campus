@@ -41,45 +41,6 @@
                             <td><asp:TextBox ID="PhoneNumber" runat="server" Width="150px"></asp:TextBox></td>
                         </tr>
                         <tr>
-                            <td valign="top">Additional Group Members:</td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>1</td>
-                                        <td><asp:TextBox ID="Member1Nametxt" runat=server></asp:TextBox></td>
-                                        <td><asp:DropDownList ID="Member1Typecmb" runat=server><asp:ListItem Text="Student" Value=1></asp:ListItem><asp:ListItem Text="Guest" Value=2></asp:ListItem></asp:DropDownList></td>
-                                        <td>2</td>
-                                        <td><asp:TextBox ID="Member2Nametxt" runat=server></asp:TextBox></td>
-                                        <td><asp:DropDownList ID="Member2Typecmb" runat=server><asp:ListItem Text="Student" Value=1></asp:ListItem><asp:ListItem Text="Guest" Value=2></asp:ListItem></asp:DropDownList></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td><asp:TextBox ID="Member3Nametxt" runat=server></asp:TextBox></td>
-                                        <td><asp:DropDownList ID="Member3Typecmb" runat=server><asp:ListItem Text="Student" Value=1></asp:ListItem><asp:ListItem Text="Guest" Value=2></asp:ListItem></asp:DropDownList></td>
-                                        <td>4</td>
-                                        <td><asp:TextBox ID="Member4Nametxt" runat=server></asp:TextBox></td>
-                                        <td><asp:DropDownList ID="Member4Typecmb" runat=server><asp:ListItem Text="Student" Value=1></asp:ListItem><asp:ListItem Text="Guest" Value=2></asp:ListItem></asp:DropDownList></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td><asp:TextBox ID="Member5Nametxt" runat=server></asp:TextBox></td>
-                                        <td><asp:DropDownList ID="Member5Typecmb" runat=server><asp:ListItem Text="Student" Value=1></asp:ListItem><asp:ListItem Text="Guest" Value=2></asp:ListItem></asp:DropDownList></td>
-                                        <td>6</td>
-                                        <td><asp:TextBox ID="Member6Nametxt" runat=server></asp:TextBox></td>
-                                        <td><asp:DropDownList ID="Member6Typecmb" runat=server><asp:ListItem Text="Student" Value=1></asp:ListItem><asp:ListItem Text="Guest" Value=2></asp:ListItem></asp:DropDownList></td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td><asp:TextBox ID="Member7Nametxt" runat=server></asp:TextBox></td>
-                                        <td><asp:DropDownList ID="Member7Typecmb" runat=server><asp:ListItem Text="Student" Value=1></asp:ListItem><asp:ListItem Text="Guest" Value=2></asp:ListItem></asp:DropDownList></td>
-                                        <td>8</td>
-                                        <td><asp:TextBox ID="Member8Nametxt" runat=server></asp:TextBox></td>
-                                        <td><asp:DropDownList ID="Member8Typecmb" runat=server><asp:ListItem Text="Student" Value=1></asp:ListItem><asp:ListItem Text="Guest" Value=2></asp:ListItem></asp:DropDownList></td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
                             <td>
                                 <asp:HiddenField ID="WeekHidden" runat="server" />
                                 <asp:HiddenField ID="DayHidden" runat="server" />
