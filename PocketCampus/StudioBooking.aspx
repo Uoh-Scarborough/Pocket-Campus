@@ -12,9 +12,9 @@
         			<a href="http://productionbooking.scar.hull.ac.uk"><span id="portaltext"><p>ps booking</p></span></a>
         		</div>
         		
-        		<div class="bigbutton" id="kdlbooking" onclick="followLink('http://kdlbooking.scar.hull.ac.uk')">
+        		<!--<div class="bigbutton" id="kdlbooking" onclick="followLink('http://kdlbooking.scar.hull.ac.uk')">
         			<a href="http://kdlbooking.scar.hull.ac.uk"><span id="findapctext"><p>kdl booking</p></span></a>
-        		</div>
+        		</div>-->
 
             </div>
 

@@ -2,41 +2,43 @@
 
 <asp:Content ID="first" ContentPlaceHolderID="MainArea" Runat="Server">
 
-  
-
            <div id="bigbuttonrow">
         	
         		<div class="bigbutton" id="maps" onclick="followLink('http://maps.scar.hull.ac.uk')">
-        			<a href="http://maps.scar.hull.ac.uk"><span id="mapstext"><p>Maps</p></span></a>
+        			<a href="http://maps.scar.hull.ac.uk"><span id="mapstext">maps</span></a>
         		</div>
         		
         		<div class="bigbutton" id="portal" onclick="followLink('http://portal.hull.ac.uk')">
-        			<a href="http://portal.hull.ac.uk"><span id="portaltext"><p>Portal</p></span></a>
+        			<a href="http://portal.hull.ac.uk"><span id="portaltext">portal</span></a>
         		</div>
         		
         		<div class="bigbutton" id="findapc" onclick="followLink('http://maps.scar.hull.ac.uk/index.php?newaction=showfindapc')">
-        			<a href="http://maps.scar.hull.ac.uk"><span id="findapctext"><p>Find a PC</p></span></a>
+        			<a href="http://maps.scar.hull.ac.uk"><span id="findapctext">find a pc</span></a>
         		</div>
         		
         		<div class="bigbutton" id="email" onclick="followLink('http://mail.scar.hull.ac.uk')">
-        			<a href="http://mail.scar.hull.ac.uk"><span id="emailtext"><p>Email</p></span></a>
+        			<a href="http://mail.scar.hull.ac.uk"><span id="emailtext">email</span></a>
         		</div>
         		
         		<div class="bigbutton" id="timetables" onclick="followLink('http://timetables.scar.hull.ac.uk')">
-        			<a href="http://timetables.scar.hull.ac.uk"><span id="timetablestext"><p>Timetables</p></span></a>
+        			<a href="http://timetables.scar.hull.ac.uk"><span id="timetablestext">timetables</span></a>
         		</div>
         		
         		<div class="bigbutton" id="roombooking" onclick="followLink('studiobooking.aspx')">
-        			<a href="studiobooking.aspx"><span id="roombookingtext"><p>Room Booking</p></span></a>
+        			<a href="studiobooking.aspx"><span id="roombookingtext">room booking</span></a>
         		</div>
         		
         		<div class="bigbutton" id="ebridge" onclick="followLink('http://ebridge.hull.ac.uk')">
-        			<a href="http://ebridge.hull.ac.uk"><span id="ebridgetext"><p>eBridge</p></span></a>
+        			<a href="http://ebridge.hull.ac.uk"><span id="ebridgetext">eBridge</span></a>
         		</div>
         		
         		<div class="bigbutton" id="studentservices" onclick="followLink('http://studentservices.scar.hull.ac.uk')">
-        			<a href="http://studentservices.scar.hull.ac.uk"><span id="studentservicestext"><p>Student Services</p></span></a>
+        			<a href="http://studentservices.scar.hull.ac.uk"><span id="studentservicestext">student services</span></a>
         		</div>
+
+                <div class="bigbutton" id="campusinfo" onclick="followLink('http://campusinfo.scar.hull.ac.uk')">
+                    <a href="http://campusinfo.scar.hull.ac.uk"><span id="campusinfotextbig">campus information</span></a>
+                </div>
         	
         	</div>
         	
@@ -115,7 +117,7 @@
 	       		</div>
 	       		
 	       		<div class="smallbutton" id="studyadvice" onclick="followLink('http://campusinfo.scar.hull.ac.uk/study-advice')">
-	       			<a href="http://campusinfo.scar.hull.ac.uk/study-advice"><span id="studyadvicetext">study advice</span></a>
+	       			<a href="http://campusinfo.scar.hull.ac.uk/study-advice"><span id="studyadvicetext">study skills</span></a>
 	       		</div>
 	       		
 	       		<div class="smallbutton" id="townregion" onclick="followLink('http://campusinfo.scar.hull.ac.uk/town-and-region')">
@@ -141,7 +143,6 @@
 	       		</div>
 	       		
 	       		
-	       	
 	       	</div>
 
 </asp:Content>
