@@ -92,7 +92,7 @@
 		width: 100%;
 		height: 40px;
 		background: #ffffff;
-		border- top: 5px solid #ffffff;
+		border-top: 5px solid #ffffff;
 		border-bottom: 1px solid #000000;	
 		display: block;
 		cursor: pointer;
@@ -106,13 +106,9 @@
 		width: 100%;
 		text-decoration: none;
 		colour: #ffffff;
-	}
-	
-	div#bigbuttonrow div.bigbutton a span p{
 		padding:  5px 0px 0px 45px;
 		margin: 0px;
 		font-family: Arial;
-		colour: #ffffff;
 		text-decoration: none;
 	}
 	
@@ -201,7 +197,7 @@
 		width: 100%;
 		height: 40px;
 		background: #ffffff;
-		border- top: 5px solid #ffffff;
+		border-top: 5px solid #ffffff;
 		border-bottom: 1px solid #000000;	
 		display: block;
 		cursor: pointer;
@@ -226,7 +222,7 @@
 	}
 	
 	
-	div.campusinforow div#campusinfotext{
+	div.campusinforow div#campusinfotextbig{
 		
 		display: none;
 		
@@ -358,6 +354,38 @@
 	{
 		display:block;
 		font-family: arial;
+	}
+	
+	.eventsandnoticesspan dl
+	{
+		margin:0px;
+		border:0px;
+		padding:0px;
+	}
+	
+	.eventsandnoticesspan dl dd
+	{
+		font-family: Arial;
+		font-size:10px;
+		position: relative;
+		top: -10px;
+		left: -40px;
+		margin-bottom:0px;
+		border-bottom:0px;
+	}
+	
+	.eventsandnoticesspan ul li span.noticedetails
+	{
+		display:block;
+		font-family: Arial;
+		color: Black;
+		font-size:10px;
+		padding:0px;
+		margin:0px;
+		border: 0px;
+		position: relative;
+		top: -40px;
+		height: 20px;
 	}
 	
 	.eventsandnoticesspan ul li

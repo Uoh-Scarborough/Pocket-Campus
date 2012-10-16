@@ -39,6 +39,7 @@
 		height: 140px;
 		margin-left: auto;
 		margin-right: auto;
+		
 	
 	}
 	
@@ -47,7 +48,7 @@
 		height: 135px;
 		float: left;	
 		padding: 0px 3px 0px 3px;
-		border-bottom: 0px;	
+		border: 0px;
 	
 	}
 	
@@ -138,7 +139,7 @@
 		width: 90px;
 		float: left;
 		padding: 0px 6px 0px 6px;
-		border-bottom: 0px;
+		border: 0px;
 	}
 	
 	div.campusinforow div#campusinfotext{
@@ -269,10 +270,8 @@
 	}
 	
 	div#eventsandnotices div.eventsandnoticesblock{
-		
-		position: ;
 		width: 500px;
-		height: 140px;
+		
 		float: left;
 		
 	}
@@ -283,9 +282,41 @@
 		font-family: arial;
 	}
 	
+	.eventsandnoticesspan dl
+	{
+		margin:0px;
+		border:0px;
+		padding:0px;
+	}
+	
+	.eventsandnoticesspan dl dd
+	{
+		font-family: Arial;
+		font-size:10px;
+		position: relative;
+		top: -10px;
+		left: -40px;
+		margin-bottom:0px;
+		border-bottom:0px;
+	}
+	
 	.eventsandnoticesspan ul li
 	{
 		color:#ae2b30;
+	}
+	
+	.eventsandnoticesspan ul li span.noticedetails
+	{
+		display:block;
+		font-family: Arial;
+		color: Black;
+		font-size:10px;
+		padding:0px;
+		margin:0px;
+		border: 0px;
+		position: relative;
+		top: -40px;
+		height: 20px;
 	}
 	
 	.eventsandnoticesspan a
@@ -299,7 +330,7 @@
 	}
 
 	div#footer{
-		
+		clear:both;
 		width: 1023px;
 		height: 37px;
 		background: url('../img/footer.png') no-repeat;

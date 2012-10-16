@@ -132,7 +132,7 @@ namespace Comms
                     }
 
                     RQ.RunQuery("SELECT * FROM Events WHERE Event_Deleted = 0 AND Event_Valid = 1 AND Event_DateTime >= '" + DateTime.Now.ToShortDateString() + "' " + FinalInc + FinalExc + " ORDER BY Event_DateTime");
-                    RQ.connection.connection.Close();
+                    //RQ.connection.connection.Close();
 
                     foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
                     {
@@ -208,7 +208,7 @@ namespace Comms
 
                     RQ.RunQuery("SELECT Event_Attachment FROM Events WHERE Event_Deleted = 0 AND Event_Valid = 1 AND Event_DateTime >= '" + DateTime.Now.ToShortDateString() + "' AND Event_CategoryIDLNK = 7 AND Event_Attachment != '' ORDER BY Event_DateTime");
 
-                    RQ.connection.connection.Close();
+                    //RQ.connection.connection.Close();
 
                     foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
                     {
