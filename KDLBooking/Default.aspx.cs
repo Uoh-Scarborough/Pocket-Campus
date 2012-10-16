@@ -126,7 +126,7 @@ namespace KDLBooking
             TableRow Footer = new TableRow();
             TableRow TR = new TableRow();
 
-            for (int i = 0; i <= 72; i++)
+            for (int i = 0; i <= 60; i++)
             {
                 TableCell TC = new TableCell();
                 TC.Text = "&nbsp;";
@@ -134,35 +134,32 @@ namespace KDLBooking
                 TR.Cells.Add(TC);
             }
 
-            string[] CellsTexts = new string[19];
+            string[] CellsTexts = new string[16];
 
             CellsTexts[0] = "";
-            CellsTexts[1] = "06:15";
-            CellsTexts[2] = "07:15";
-            CellsTexts[3] = "08:15";
-            CellsTexts[4] = "09:15";
-            CellsTexts[5] = "10:15";
-            CellsTexts[6] = "11:15";
-            CellsTexts[7] = "12:15";
-            CellsTexts[8] = "13:15";
-            CellsTexts[9] = "14:15";
-            CellsTexts[10] = "15:15";
-            CellsTexts[11] = "16:15";
-            CellsTexts[12] = "17:15";
-            CellsTexts[13] = "18:15";
-            CellsTexts[14] = "19:15";
-            CellsTexts[15] = "20:15";
-            CellsTexts[16] = "21:15";
-            CellsTexts[17] = "22:15";
-            CellsTexts[18] = "23:15";
+            CellsTexts[1] = "09:15";
+            CellsTexts[2] = "10:15";
+            CellsTexts[3] = "11:15";
+            CellsTexts[4] = "12:15";
+            CellsTexts[5] = "13:15";
+            CellsTexts[6] = "14:15";
+            CellsTexts[7] = "15:15";
+            CellsTexts[8] = "16:15";
+            CellsTexts[9] = "17:15";
+            CellsTexts[10] = "18:15";
+            CellsTexts[11] = "19:15";
+            CellsTexts[12] = "20:15";
+            CellsTexts[13] = "21:15";
+            CellsTexts[14] = "22:15";
+            CellsTexts[15] = "23:15";
 
-            for (int i = 0; i<= 18; i++)
+            for (int i1 = 0; i1<= 15; i1++)
             {
                 TableCell Cell = new TableCell();
                 Cell.Font.Size = 8;
-                Cell.Text = CellsTexts[i];
+                Cell.Text = CellsTexts[i1];
 
-                if (i > 0)
+                if (i1 > 0)
                 {
                     Cell.ColumnSpan = 4;
                 }
@@ -294,7 +291,7 @@ namespace KDLBooking
 
                     Day.Cells.Add(DayCell);
 
-                    int LastCol = 26;
+                    int LastCol = 38;
 
                     int RowCounter = 0;
 
@@ -480,7 +477,7 @@ namespace KDLBooking
                         //Was 93
 
                         //Was 73
-                        for (int c = LastCol; c <= 97; c++)
+                        for (int c = LastCol; c <= 96; c++)
                         {
                             TableCell Cell = new TableCell();
                             Cell.CssClass = "bookable";
