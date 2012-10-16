@@ -60,9 +60,9 @@ namespace PocketCampusClasses
             Number = Convert.ToInt32(RQ.dataset.Tables[0].Rows[0].ItemArray[10].ToString());
             Date = Convert.ToDateTime(RQ.dataset.Tables[0].Rows[0].ItemArray[11].ToString());
             Telephone = RQ.dataset.Tables[0].Rows[0].ItemArray[12].ToString();
-            //GroupMembers = RQ.dataset.Tables[0].Rows[0].ItemArray[13].ToString();
-            //RegNo = RQ.dataset.Tables[0].Rows[0].ItemArray[14].ToString();
-            Deleted = Convert.ToBoolean(RQ.dataset.Tables[0].Rows[0].ItemArray[13].ToString());
+            GroupMembers = RQ.dataset.Tables[0].Rows[0].ItemArray[13].ToString();
+            RegNo = RQ.dataset.Tables[0].Rows[0].ItemArray[14].ToString();
+            Deleted = Convert.ToBoolean(RQ.dataset.Tables[0].Rows[0].ItemArray[15].ToString());
             //Deleted = false;
         }
 

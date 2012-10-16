@@ -9,6 +9,8 @@
     
         <h1>Scarborough Student Services <asp:Label ID="Adminlbl" runat="server" Text="Admin"></asp:Label></h1>
 
+        <p><b>Please note: </b>Students living within the Scarborough Borough Council area or Hull City Council area do not need to request a Council tax exemption letter as information has been passed to the councils indicating you are registered students at the University.</p>
+
         <form id="studentservices" runat="server">
 
             <p><asp:Label id="Infolbl" runat="server" /></p>

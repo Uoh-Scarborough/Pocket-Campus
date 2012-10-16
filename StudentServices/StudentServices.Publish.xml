@@ -2,12 +2,12 @@
 <publishData>
   <publishProfile publishUrl="\\hardy\$Data\Websites\StudentServices" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
     <file relUrl="bin/StudentServices.dll" publishTime="10/25/2010 11:26:04" />
-    <file relUrl="bin/StandardClasses.pdb" publishTime="10/07/2010 16:31:10" />
+    <file relUrl="Images/ScarboroughStudentServices.jpg" publishTime="07/23/2009 11:34:04" />
     <file relUrl="login.aspx" publishTime="08/17/2009 11:21:56" />
     <file relUrl="bin/StandardClasses.dll" publishTime="10/06/2010 11:44:18" />
     <file relUrl="Web.config" publishTime="07/02/2010 09:24:34" />
     <file relUrl="kioskstyle.css" publishTime="08/17/2009 11:21:20" />
-    <file relUrl="Images/ScarboroughStudentServices.jpg" publishTime="07/23/2009 11:34:04" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="10/07/2010 16:31:10" />
     <file relUrl="default.aspx" publishTime="10/25/2010 11:25:25" />
     <file relUrl="bin/StudentServices.pdb" publishTime="10/25/2010 11:26:04" />
     <file relUrl="Global.asax" publishTime="05/11/2009 16:06:26" />
@@ -15,16 +15,16 @@
   </publishProfile>
   <publishProfile publishUrl="\\ERIC\wwwroot\StudentServices" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Eric" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="Web.config" publishTime="08/30/2011 10:10:24" />
-    <file relUrl="login.aspx" publishTime="08/30/2011 11:23:30" />
+    <file relUrl="login.aspx" publishTime="09/21/2012 14:54:12" />
     <file relUrl="Images/ScarboroughStudentServices.jpg" publishTime="07/23/2009 11:34:04" />
-    <file relUrl="bin/StandardClasses.pdb" publishTime="08/13/2012 11:29:51" />
-    <file relUrl="bin/PocketCampusClasses.dll" publishTime="08/13/2012 11:40:14" />
-    <file relUrl="bin/StudentServices.dll" publishTime="08/13/2012 11:40:15" />
-    <file relUrl="bin/StandardClasses.dll" publishTime="08/13/2012 11:29:51" />
-    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="08/13/2012 11:40:13" />
-    <file relUrl="bin/StudentServices.pdb" publishTime="08/13/2012 11:40:15" />
-    <file relUrl="Global.asax" publishTime="05/11/2009 16:06:26" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="09/13/2012 11:31:20" />
     <file relUrl="Green.Master" publishTime="08/30/2011 11:31:53" />
+    <file relUrl="bin/StudentServices.dll" publishTime="09/21/2012 11:35:38" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="09/13/2012 11:31:21" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="09/21/2012 11:35:36" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="09/21/2012 11:35:36" />
+    <file relUrl="bin/StudentServices.pdb" publishTime="09/21/2012 11:35:38" />
+    <file relUrl="Global.asax" publishTime="05/11/2009 16:06:26" />
     <file relUrl="kioskstyle.css" publishTime="08/17/2009 11:21:20" />
     <file relUrl="default.aspx" publishTime="08/30/2011 13:59:32" />
   </publishProfile>
