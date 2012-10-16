@@ -292,35 +292,31 @@ namespace PocketCampusClasses
 
             int EventCounter = 0;
 
-            ReturnStr += "<div id=\"eventsarea\" class=\"events\">";
-
-            ReturnStr += "<table><tr><td>";
-
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
             try
             {
 
-                ReturnStr += "<dl>";
+                ReturnStr += "<ul>";
 
                 if (ClassAppDetails.openday == "1")
                 {
                     //Open Day
                     
                     RQ.RunQuery("SELECT Top 6 * FROM Events WHERE Event_Deleted = 0 AND Event_CategoryIDLNK = 11 AND Event_Valid = 1 AND Event_DateTime > '" + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString() + "' ORDER BY Event_DateTime");
-                    RQ.connection.connection.Close();
+                    //RQ.connection.connection.Close();
                    
                 }
                 else
                 {
 
                     RQ.RunQuery("SELECT TOP 6 * FROM Events WHERE Event_CategoryIDLNK != 11 AND Event_Deleted = 0 AND Event_Valid = 1 AND Event_DateTime >= '" + DateTime.Now.ToShortDateString() + "' AND Event_DateTime <= '" + DateTime.Now.AddDays(7).ToShortDateString() + "' ORDER BY Event_DateTime");
-                    RQ.connection.connection.Close();
+                    //RQ.connection.connection.Close();
 
                     if (RQ.numberofresults < 6)
                     {
                         RQ.RunQuery("SELECT Top 6 * FROM Events WHERE Event_CategoryIDLNK != 11 AND Event_Deleted = 0 AND Event_Valid = 1 AND Event_DateTime >= '" + DateTime.Now.ToShortDateString() + "' ORDER BY Event_DateTime");
-                        RQ.connection.connection.Close();
+                        //RQ.connection.connection.Close();
                     }
 
                 }
@@ -332,23 +328,23 @@ namespace PocketCampusClasses
     
                     //ReturnStr += "<dt><a href=\"events.aspx#event" + Event.ID + "\">" + Event.Title + "</a></dt>";
 
-                    ReturnStr += "<li><a href=\"http://campusinfo.scar.hull.ac.uk/events-feed?id=" + Event.ID + "\">" + Event.Title + "</a></li>";
+                    ReturnStr += "<li><a href=\"http://campusinfo.scar.hull.ac.uk/events-feed?id=" + Event.ID + "\">" + Event.Title + "</a>";
 
                     DateTime WeeksTime = DateTime.Now.AddDays(7);
 
                     if (Event.EventDateTime.CompareTo(WeeksTime) > 0)
                     {
-                        ReturnStr += "<dd>" + Event.EventDateTime.ToShortDateString() + " " + Event.EventDateTime.ToShortTimeString() + " " + Event.Location + "</dd>";
+                        ReturnStr += "<span class='noticedetails'><br/>" + Event.EventDateTime.ToShortDateString() + " " + Event.EventDateTime.ToShortTimeString() + " " + Event.Location + "</span></li>";
                     }
                     else
                     {
-                        ReturnStr += "<dd>" + Event.EventDateTime.DayOfWeek + " " + Event.EventDateTime.ToShortTimeString() + " " + Event.Location + "</dd>";
+                        ReturnStr += "<span class='noticedetails'><br/>" + Event.EventDateTime.DayOfWeek + " " + Event.EventDateTime.ToShortTimeString() + " " + Event.Location + "</span></li>";
                     }
 
                     EventCounter += 1;
                 }
 
-                ReturnStr += "</dl>";
+                ReturnStr += "</ul>";
 
             }
             catch
@@ -356,11 +352,7 @@ namespace PocketCampusClasses
 
             }
 
-            ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fEvents.aspx%3faid%3d1%26eid%3d-1&aid=1&eid=-1\">Add New Event</a></p>";
-
-            ReturnStr += "</td></tr></table>";
-
-            ReturnStr += "</div>";
+            ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fEvents.aspx&amp;aid=1&amp;eid=-1\">Add New Event</a></p>";
 
             return ReturnStr;
         }
@@ -400,7 +392,7 @@ namespace PocketCampusClasses
 
             ReturnStr += "</dl>";
 
-            ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fEvents.aspx%3faid%3d1%26eid%3d-1&aid=1&eid=-1\">Add New Event</a></p>";
+            ReturnStr += "<p><a href=\"http://comms.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fEvents.aspx%3faid%3d1%26eid%3d-1&aid=1&eid=-1\">Add New Event</a></p>";
 
             ReturnStr += "</div>";
 

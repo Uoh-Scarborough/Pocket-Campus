@@ -320,7 +320,7 @@ namespace PocketCampusClasses
 
             ReturnStr += "</ul>";
 
-            ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fNotices.aspx%3faid%3d1%26nid%3d-1&aid=1&nid=-1\">Add New Notice</a></p>";
+            ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fNotices.aspx&amp;aid=1&amp;nid=-1\">Add New Notice</a></p>";
 
             //ReturnStr += "</div>";
 
@@ -360,7 +360,7 @@ namespace PocketCampusClasses
 
             ReturnStr += "</ul>";
 
-            ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fnotices.aspx?aid=1&amp;nid=-1\">Add New Notice</a></p>";
+            ReturnStr += "<p><a href=\"http://comms.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fnotices.aspx?aid=1&amp;nid=-1\">Add New Notice</a></p>";
 
             //ReturnStr += "</div>";
 
