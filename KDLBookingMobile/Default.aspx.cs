@@ -126,26 +126,23 @@ namespace KDLBookingMobile
             //ArrayList ActivityList = ClassProductionBookings.GenerateDaySet(Day, Week, RID);
             ArrayList ActivityList = ClassKDLBookings.GenerateDaySet(Day, Week, RID, Context.User.Identity.Name,ClassBooking.BookingType.KDLBooking);
 
-            string[] CellsTexts = new string[18];
+            string[] CellsTexts = new string[15];
 
-            CellsTexts[0] = "06:15";
-            CellsTexts[1] = "07:15";
-            CellsTexts[2] = "08:15";
-            CellsTexts[3] = "09:15";
-            CellsTexts[4] = "10:15";
-            CellsTexts[5] = "11:15";
-            CellsTexts[6] = "12:15";
-            CellsTexts[7] = "13:15";
-            CellsTexts[8] = "14:15";
-            CellsTexts[9] = "15:15";
-            CellsTexts[10] = "16:15";
-            CellsTexts[11] = "17:15";
-            CellsTexts[12] = "18:15";
-            CellsTexts[13] = "19:15";
-            CellsTexts[14] = "20:15";
-            CellsTexts[15] = "21:15";
-            CellsTexts[16] = "22:15";
-            CellsTexts[17] = "23:15";
+            CellsTexts[0] = "09:15";
+            CellsTexts[1] = "10:15";
+            CellsTexts[2] = "11:15";
+            CellsTexts[3] = "12:15";
+            CellsTexts[4] = "13:15";
+            CellsTexts[5] = "14:15";
+            CellsTexts[6] = "15:15";
+            CellsTexts[7] = "16:15";
+            CellsTexts[8] = "17:15";
+            CellsTexts[9] = "18:15";
+            CellsTexts[10] = "19:15";
+            CellsTexts[11] = "20:15";
+            CellsTexts[12] = "21:15";
+            CellsTexts[13] = "22:15";
+            CellsTexts[14] = "23:15";
 
             int j = 0;
             int drawnext = -1;
@@ -153,7 +150,7 @@ namespace KDLBookingMobile
 
             //63
 
-            for (int i = 0; i <= 71; i++)
+            for (int i = 0; i <= 59; i++)
             {
 
                 TableRow Row = new TableRow();
@@ -247,7 +244,7 @@ namespace KDLBookingMobile
                             else
                             {
                                 //Draw Blank
-                                Cell2.Text = "<a href='Booking.aspx?RID=" + RID + "&amp;WID=" + Week + "&amp;DID=" + Day + "&amp;TID=" + (i + 26) + "'>&nbsp;</a>";
+                                Cell2.Text = "<a href='Booking.aspx?RID=" + RID + "&amp;WID=" + Week + "&amp;DID=" + Day + "&amp;TID=" + (i + 38) + "'>&nbsp;</a>";
                                 drawnext++;
                             }
 
@@ -282,7 +279,7 @@ namespace KDLBookingMobile
                             else
                             {
                                 //Draw Blank
-                                Cell2.Text = "<a href='Booking.aspx?RID=" + RID + "&amp;WID=" + Week + "&amp;DID=" + Day + "&amp;TID=" + (i + 26) + "'>&nbsp;</a>";
+                                Cell2.Text = "<a href='Booking.aspx?RID=" + RID + "&amp;WID=" + Week + "&amp;DID=" + Day + "&amp;TID=" + (i + 38) + "'>&nbsp;</a>";
                                 drawnext++;
                             }
                         }
@@ -316,7 +313,7 @@ namespace KDLBookingMobile
                             else
                             {
                                 //Draw Blank
-                                Cell2.Text = "<a href='Booking.aspx?RID=" + RID + "&amp;WID=" + Week + "&amp;DID=" + Day + "&amp;TID=" + (i + 26) + "'>&nbsp;</a>";
+                                Cell2.Text = "<a href='Booking.aspx?RID=" + RID + "&amp;WID=" + Week + "&amp;DID=" + Day + "&amp;TID=" + (i + 38) + "'>&nbsp;</a>";
                                 drawnext++;
                             }
 
@@ -326,7 +323,7 @@ namespace KDLBookingMobile
 
                         //Draw Blank
 
-                        Cell2.Text = "<a href='Booking.aspx?RID=" + RID + "&amp;WID=" + Week + "&amp;DID=" + Day + "&amp;TID=" + (i + 26) + "'>&nbsp;</a>";
+                        Cell2.Text = "<a href='Booking.aspx?RID=" + RID + "&amp;WID=" + Week + "&amp;DID=" + Day + "&amp;TID=" + (i + 38) + "'>&nbsp;</a>";
                         drawnext++;
                     }
                     
