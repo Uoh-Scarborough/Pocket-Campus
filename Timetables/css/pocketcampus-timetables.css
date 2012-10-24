@@ -1,0 +1,277 @@
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 860px) 
+{
+	html
+	{
+		font-family:Arial;	
+	}
+	
+	div#breadcrumb
+	{
+		display:none;
+	}
+	
+	select.courselist
+	{
+		width:63%;
+		margin: 5px 2% 5px 2%;	
+		float:left;	
+	}
+	
+	select.weeklist
+	{
+		display:inline;
+		width:auto;
+		margin: 5px 2% 5px 2%;	
+	}
+	
+	span.weeklabel
+	{
+		display:block;
+		margin: 1px 2% 1px 2%;
+	}
+
+	table.timetable
+	{
+		width:1000px;
+		border-collapse:collapse;
+		display:table;
+	}
+	
+	table.timetable tr
+	{
+		display:table-row;
+	}
+	
+	table.timetable tr td
+	{
+		display:table-cell;
+	}		
+	
+	table.timetable tr.headertimes td
+	{
+		border-style: none;
+		width: 20px;
+		font-size: 8pt;
+	}
+	
+	
+	table.timetable tr.firstrow
+	{
+		border-style: none;
+		font-family:Arial;
+		border-top:15px solid #cc554f;
+	}
+	
+	
+	
+	
+	table.timetable tr.headerday td.headerdays
+	{
+		border-style: none;
+		border-width: 1px;
+		border-color: Black;
+		font-weight: bold;
+		width:20px;
+		background:#cc554f;
+		
+	}
+	
+	table.timetable tr.headerday td.headerdays span
+	{
+		position:relative;
+		top: -20px;
+		color: White;
+		display:block;
+	}
+	
+	.highlight
+	{
+		background: #eaa8a6;
+	}
+	
+	
+	table.timetable tr td.blankcell
+	{
+		border: 1px solid black;
+		width: 25px;
+	}
+	
+	table.timetable tr td.actcell
+	{
+		 border: 2px solid black;
+		 font-size: 7px;
+		 background: white;
+	}
+	
+	table.timetable tr td.thisweek table.acttable tr.bottomrow td.actpattern{
+		background: red; 
+	}
+	
+	table.acttable
+	{
+		width:100%;
+		background: white;
+		min-height:60px;
+		font-size: 10px;
+		font-family:Arial;
+		display:table;
+	}
+	
+	table.acttable tr
+	{
+		display:table-row;
+	}
+	
+	table.acttable td
+	{
+		display:table-cell;
+	}
+	
+	table.acttable tr.toprow
+	{
+		width:100%;
+		vertical-align:top;
+	}
+	
+	table.acttable tr.bottomrow
+	{
+		width:100%;
+		vertical-align:bottom;
+	}
+	
+	table.acttable tr td.actmod
+	{
+		text-align:left;
+		width:50%;
+	}
+	
+	table.acttable tr td.actlocation
+	{
+		text-align:right;
+		width:50%;
+	}
+	
+	.thisweek
+	{
+		background:#cc554f;
+	}
+	
+	table.acttable tr td.actstart
+	{
+		background:#7D7D7D;
+		font-size:8px;
+	}
+	
+	table.acttable tr td.actend
+	{
+		background:#7D7D7D;
+		font-size:8px;
+	}
+	
+	table.acttable tr td.actpattern
+	{
+		text-align:center;
+		font-size:7px;
+	}
+	
+	table.acttable tr td.actpattern span.actweekstext
+	{
+		display:none;
+	}
+	
+	table.acttable tr td.actstart span.actstartend
+	{
+		display:none;
+	}
+	
+	table.acttable tr td.actend
+	{
+		background:#7D7D7D;
+		text-align:right;
+	}
+	
+	.spancols1
+	{
+		width: 25px;
+	}
+	
+	.spancols2
+	{
+		width: 50px;
+	}
+	
+	.spancols3
+	{
+		width: 75px;
+	}
+	
+	.spancols4
+	{
+		width: 100px;
+	}
+	
+	.spancols5
+	{
+		width: 125px;
+	}
+	
+	.spancols6
+	{
+		width: 150px;
+	}
+	
+	.spancols7
+	{
+		width: 175px;
+	}
+	
+	.spancols8
+	{
+		width: 200px;
+	}
+	
+	.spancols9
+	{
+		width: 225px;
+	}
+	
+	.spancols10
+	{
+		width: 250px;
+	}
+	
+	.spancols11
+	{
+		width: 275px;
+	}
+	
+	.spancols12
+	{
+		width: 300px;
+	}
+	
+	.spancols13
+	{
+		width: 325px;
+	}
+	
+	.spancols14
+	{
+		width: 350px;
+	}
+	
+	.spancols15
+	{
+		width: 375px;
+	}
+	
+	.spancols16
+	{
+		width: 400px;
+	}
+	
+}

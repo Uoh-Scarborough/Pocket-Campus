@@ -13,13 +13,13 @@ namespace Timetables {
     public partial class _Default {
         
         /// <summary>
-        /// courseform control.
+        /// courselabelbread control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm courseform;
+        protected global::System.Web.UI.WebControls.Label courselabelbread;
         
         /// <summary>
         /// CourseList control.
@@ -31,51 +31,6 @@ namespace Timetables {
         protected global::System.Web.UI.WebControls.DropDownList CourseList;
         
         /// <summary>
-        /// CourseButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CourseButton;
-        
-        /// <summary>
-        /// NoTimetablePanel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel NoTimetablePanel;
-        
-        /// <summary>
-        /// NoTimetablelbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NoTimetablelbl;
-        
-        /// <summary>
-        /// WeekPanel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel WeekPanel;
-        
-        /// <summary>
-        /// Weeklbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Weeklbl;
-        
-        /// <summary>
         /// WeekList control.
         /// </summary>
         /// <remarks>
@@ -85,13 +40,22 @@ namespace Timetables {
         protected global::System.Web.UI.WebControls.DropDownList WeekList;
         
         /// <summary>
-        /// WeekButton control.
+        /// Courselbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button WeekButton;
+        protected global::System.Web.UI.WebControls.Label Courselbl;
+        
+        /// <summary>
+        /// Weeklbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Weeklbl;
         
         /// <summary>
         /// Timetable control.

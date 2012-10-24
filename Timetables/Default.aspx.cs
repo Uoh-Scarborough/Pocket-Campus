@@ -40,7 +40,7 @@ namespace Timetables
                 newStyleSheet.Href = "http://pocketcampusimages.scar.hull.ac.uk/BaseStyles/kioskstyle.css";
                 newStyleSheet.Attributes.Add("type", "text/css");
                 newStyleSheet.Attributes.Add("rel", "stylesheet");
-                Page.Header.Controls.Add(newStyleSheet);
+                //Page.Header.Controls.Add(newStyleSheet);
             }
 
             int TID = Convert.ToInt32(Request["tid"]);
@@ -58,11 +58,11 @@ namespace Timetables
                 }
                 else
                 {
-                    NoTimetablelbl.Text = "No Timetable Selected, please select a Timetable from the drop down above.";
+                    //NoTimetablelbl.Text = "No Timetable Selected, please select a Timetable from the drop down above.";
 
-                    NoTimetablePanel.Visible = true;
+                    //NoTimetablePanel.Visible = true;
 
-                    WeekPanel.Visible = false;
+                    //WeekPanel.Visible = false;
 
                     TIDPanel.Visible = false;
 
@@ -70,7 +70,7 @@ namespace Timetables
             }
             else
             {
-                NoTimetablelbl.Text = "";
+                //NoTimetablelbl.Text = "";
             }
 
         }
@@ -109,6 +109,10 @@ namespace Timetables
 
         public void generategrid(int ActID, int ActWeek)
         {
+
+            Courselbl.Text = CourseList.SelectedItem.Text;
+            courselabelbread.Text = CourseList.SelectedItem.Text;
+
             int Week = ClassGeneral.getAcademicWeek();
 
             string sWeek = "";
@@ -129,9 +133,11 @@ namespace Timetables
 
             Weeklbl.Text = "We are in Academic Week " + Week;
 
-            NoTimetablePanel.Visible = false;
+            //NoTimetablePanel.Visible = false;
 
-            WeekPanel.Visible = true;
+            //WeekPanel.Visible = true;
+
+            Timetable.CssClass = "timetable";
 
             Timetable.Dispose();
 
@@ -147,89 +153,48 @@ namespace Timetables
 
             //Generate Table Header
 
-            TableRow Header = new TableRow();
+            TableHeaderRow Header = new TableHeaderRow();
+            Header.CssClass = "headertimes";
             TableRow Footer = new TableRow();
 
             //Loop Through Time
 
-            string[] CellTexts = new string[21];
+            string[] CellTexts = new string[20];
 
-            ClassReadQuery RQCheck = new ClassReadQuery(ClassAppDetails.ttcurrentconnection);
+            CellTexts[0] = "";
+            CellTexts[1] = "9:15";
+            CellTexts[2] = "9:45";
+            CellTexts[3] = "10:15";
+            CellTexts[4] = "10:45";
+            CellTexts[5] = "11:15";
+            CellTexts[6] = "11:45";
+            CellTexts[7] = "12:15";
+            CellTexts[8] = "12:45";
+            CellTexts[9] = "13:15";
+            CellTexts[10] = "13:45";
+            CellTexts[11] = "14:15";
+            CellTexts[12] = "14:45";
+            CellTexts[13] = "15:15";
+            CellTexts[14] = "15:45";
+            CellTexts[15] = "16:15";
+            CellTexts[16] = "16:45";
+            CellTexts[17] = "17:15";
+            CellTexts[18] = "17:45";
+            CellTexts[19] = "18:15";
 
-            RQCheck.RunQuery("SELECT Activity_ID_LNK FROM Activities WHERE Activity_Course_ID_LNK = " + ActID + " AND Activity_StartTime <= 48;");
+            MasterLastCol = 38;
+            EndCol = 75;
 
-            if (RQCheck.numberofresults == 0)
-            {
-                //Start = 48 (12:00)
-                CellTexts[0] = "";
-                CellTexts[1] = "12:00";
-                CellTexts[2] = "12:30";
-                CellTexts[3] = "13:00";
-                CellTexts[4] = "13:30";
-                CellTexts[5] = "14:00";
-                CellTexts[6] = "14:30";
-                CellTexts[7] = "15:00";
-                CellTexts[8] = "15:30";
-                CellTexts[9] = "16:00";
-                CellTexts[10] = "16:30";
-                CellTexts[11] = "17:00";
-                CellTexts[12] = "17:30";
-                CellTexts[13] = "18:00";
-                CellTexts[14] = "18:30";
-                CellTexts[15] = "19:00";
-                CellTexts[16] = "19:30";
-                CellTexts[17] = "20:00";
-                CellTexts[18] = "20:30";
-                CellTexts[19] = "21:00";
-                CellTexts[20] = "21:30";
-
-                MasterLastCol = 49;
-                EndCol = 88;
-            }
-            else
-            {
-
-                //Start = 36 (9:00)
-
-                CellTexts[0] = "";
-                CellTexts[1] = "9:00";
-                CellTexts[2] = "9:30";
-                CellTexts[3] = "10:00";
-                CellTexts[4] = "10:30";
-                CellTexts[5] = "11:00";
-                CellTexts[6] = "11:30";
-                CellTexts[7] = "12:00";
-                CellTexts[8] = "12:30";
-                CellTexts[9] = "13:00";
-                CellTexts[10] = "13:30";
-                CellTexts[11] = "14:00";
-                CellTexts[12] = "14:30";
-                CellTexts[13] = "15:00";
-                CellTexts[14] = "15:30";
-                CellTexts[15] = "16:00";
-                CellTexts[16] = "16:30";
-                CellTexts[17] = "17:00";
-                CellTexts[18] = "17:30";
-                CellTexts[19] = "18:00";
-                CellTexts[20] = "18:30";
-
-                MasterLastCol = 37;
-                EndCol = 76;
-
-            }
-
-            for (int i = 0; i <= 20; i++)
+            for (int i = 0; i <= 19; i++)
             {
                 TableCell Cell = new TableCell();
-                Cell.Font.Size = 8;
                 Cell.Text = CellTexts[i];
 
                 if (i > 0)
                 {
                     Cell.ColumnSpan = 2;
                 }
-                Cell.BorderStyle = BorderStyle.None;
-                Cell.Width = 20;
+                
                 Header.Cells.Add(Cell);
                 //Footer.Cells.Add(Cell);
             }
@@ -253,53 +218,48 @@ namespace Timetables
             //Loop 5 Times
             for (int d = 0; d < 5; d++)
             {
+
+                Boolean HasActs = false;
+
                 DataRow[] TTActs = RQ.dataset.Tables[0].Select("Activity_Day = " + d);
                
                 TableRow Day = new TableRow();
-
+                Day.CssClass = "headerday firstrow";
                 TableRow OriginalDay = Day;
 
-                Day.BorderStyle = BorderStyle.None;
-
                 TableCell DayCell = new TableCell();
-                DayCell.BorderStyle = BorderStyle.None;
-                DayCell.BorderWidth = 1;
-                DayCell.BorderColor = System.Drawing.Color.Black;
-                //DayCell.Height= 50;
+                DayCell.CssClass = "headerdays";
 
                 if (d == 0)
                 {
-                    DayCell.Text = "Mon";
-                    //Day.BackColor = System.Drawing.Color.FromArgb(183, 204, 219);
-                    Day.BackColor = System.Drawing.Color.FromArgb(255, 232, 127);
+                    DayCell.Text = "<span>Mon</span>";
+                    //Day.CssClass = Day.CssClass + " highlight";
                     DayCell.RowSpan = 0;
                     DayCell.ColumnSpan = 0;
                 }
                 else if (d == 1)
                 {
-                    DayCell.Text = "Tue";
+                    DayCell.Text = "<span>Tue</span>";
                     DayCell.RowSpan = 0;
                     DayCell.ColumnSpan = 0;
                 }
                 else if (d == 2)
                 {
-                    DayCell.Text = "Wed";
-                    //Day.BackColor = System.Drawing.Color.FromArgb(183, 204, 219);
-                    Day.BackColor = System.Drawing.Color.FromArgb(255, 232, 127);
+                    DayCell.Text = "<span>Wed</span>";
+                    //Day.CssClass = Day.CssClass + " highlight";
                     DayCell.RowSpan = 0;
                     DayCell.ColumnSpan = 0;
                 }
                 else if (d == 3)
                 {
-                    DayCell.Text = "Thu";
+                    DayCell.Text = "<span>Thu</span>";
                     DayCell.RowSpan = 0;
                     DayCell.ColumnSpan = 0;
                 }
                 else
                 {
-                    DayCell.Text = "Fri";
-                    //Day.BackColor = System.Drawing.Color.FromArgb(183, 204, 219);
-                    Day.BackColor = System.Drawing.Color.FromArgb(255, 232, 127);
+                    DayCell.Text = "<span>Fri</span>";
+                    //Day.CssClass = Day.CssClass + " highlight";
                     DayCell.RowSpan = 0;
                     DayCell.ColumnSpan = 0;
                 }
@@ -315,27 +275,21 @@ namespace Timetables
                     ClassActivities Act = new ClassActivities(DR);
 
                     //Fill in Last Col to Start Col
-                    //if (Act.StartTime < LastCol - 1)
                     if (Act.StartTime < LastCol - 1)
                     {
                         //New Row
 
-                        System.Drawing.Color CellCol = Day.BackColor;
-
                         //Finish Off Row
-                        //if (LastCol < 76)
                         if (LastCol < EndCol)
                         {
-                            //Was 73
-                            //for (int c = LastCol; c <= 76; c++)
                             for (int c = LastCol; c <= EndCol; c++)
                             {
                                 TableCell Cell = new TableCell();
-                                Cell.BorderWidth = 1;
-                                Cell.BorderColor = System.Drawing.Color.Black;
                                 Cell.Text = "";
+                                Cell.CssClass = "blankcell";
                                 Day.Cells.Add(Cell);
                             }
+
                         }
 
                         Timetable.Rows.Add(Day);
@@ -344,9 +298,17 @@ namespace Timetables
 
                         if (OriginalDay.Cells[0].RowSpan == 1) { OriginalDay.Cells[0].RowSpan = 2; }
 
+                        //OriginalDay.CssClass += " NotLastRow";
+                        
                         Day = new TableRow();
 
-                        Day.BackColor = CellCol;
+                        Day.CssClass = OriginalDay.CssClass;
+
+                        Day.CssClass = Day.CssClass.Replace("firstrow", "");
+
+                        //Day.CssClass += " notfirstrow";
+
+                        //Day.BackColor = CellCol;
 
                         //LastCol = 37;
                         LastCol = MasterLastCol;
@@ -355,43 +317,44 @@ namespace Timetables
                     for (int c = LastCol; c <= Act.StartTime; c++)
                     {
                         TableCell Cell = new TableCell();
-                        Cell.BorderColor = System.Drawing.Color.Black;
-                        Cell.BorderWidth = 1;
                         Cell.Text = "";
-                        Cell.Width = 20;
+                        Cell.CssClass = "blankcell";
                         Day.Cells.Add(Cell);
 
                     }
 
                     TableCell ActCel = new TableCell();
+                    ActCel.CssClass = "actcell";
 
-                    ActCel.BorderWidth = 2;
+                    String testWeek = Week.ToString();
 
-                    ActCel.BorderColor = System.Drawing.Color.Black; 
+                    if (sWeek != "00"){
+                        testWeek = sWeek;
+                    } 
 
-                    if (Act.InWeek(Week.ToString()))
+                    String thisWeekClass = "";
+
+                    if (Act.InWeek(testWeek))
                     {
-                        ActCel.BorderColor = System.Drawing.Color.FromArgb(174, 43, 48);
+                        thisWeekClass = " thisweek";
+                        //ActCel.CssClass = ActCel.CssClass + " thisweek";
                     }
-                    //ActCel.Text = Act.Title + "<br/>" + Act.Staff;
-
-                    ActCel.Font.Size = 7;
-
-                    ActCel.BackColor = System.Drawing.Color.White;
-
-                    //ActCel.Text = "<table width=100%><tr valign=top><td colspan=3>" + Act.OutputStaff + "</td><td style=\"text-align:right;\">" + Act.Location + "</td></tr><tr><td colspan=4>" + Act.Title + "</td></tr><tr valign=bottom><td style=\"background:#7D7D7D;\">" + Act.StartTimeOut + "<td colspan=2 style=\"text-align:center\">" + Act.Pattern + "</td><td style=\"text-align:right;background:#7D7D7D;\">" + Act.EndTimeOut + "</td></tr></table>";
-
-                    ActCel.Text = "<table width=100%><tr valign=top><td colspan=3>" + Act.ModuleNumber + "</td><td style=\"text-align:right;\">" + Act.Location + "</td></tr><tr><td colspan=4>" + Act.Title + "</td></tr><tr valign=bottom><td style=\"background:#7D7D7D;\">" + Act.StartTimeOut + "</td><td colspan=2 style=\"text-align:center\">" + Act.Pattern + "</td><td style=\"text-align:right;background:#7D7D7D;\">" + Act.EndTimeOut + "</td></tr></table>";
 
                     ActCel.ColumnSpan = Act.EndTime - Act.StartTime;
 
-                    ActCel.Width = ActCel.ColumnSpan * 25;
+                    ActCel.CssClass = ActCel.CssClass + " spancols" + ActCel.ColumnSpan;
+                 
+                    ActCel.Text = "<table class='acttable'><tr class='toprow'><td colspan=3 class='actmod'>" + Act.ModuleNumber + "</td><td class='actlocation'>" + Act.Location + "</td></tr><tr><td colspan=4 class='acttitle spancols" + ActCel.ColumnSpan + "'>" + Act.Title + "</td></tr><tr class='bottomrow'><td class='actstart'>" + Act.StartTimeOut + "<span class='actstartend'> - " + Act.EndTimeOut + "</span></td><td colspan=2 class='actpattern " + thisWeekClass + "'><span class='actweekstext'>Weeks: </span>" + Act.Pattern + "</td><td class='actend'>" + Act.EndTimeOut + "</td></tr></table>";
+
+                    //ActCel.Width = ActCel.ColumnSpan * 25;
 
                     Day.Cells.Add(ActCel);
 
                     RowCounter += 1;
 
                     LastCol = Act.EndTime + 1;
+
+                    HasActs = true;
                 }
 
                 //Finish Off Row
@@ -403,12 +366,15 @@ namespace Timetables
                     for (int c = LastCol; c <= EndCol; c++)
                     {
                         TableCell Cell = new TableCell();
-                        Cell.BorderColor = System.Drawing.Color.Black;
-                        Cell.BorderWidth = 1;
                         Cell.Text = "";
-                        Cell.Width = 20;
+                        Cell.CssClass = "blankcell";
                         Day.Cells.Add(Cell);
                     }
+                }
+
+                if (!HasActs)
+                {
+                    Day.CssClass += " blankday";
                 }
 
                 Timetable.Rows.Add(Day);
@@ -428,22 +394,17 @@ namespace Timetables
 
         protected void CourseList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            loadweeks();
+            //loadweeks();
 
-            generategrid(Convert.ToInt16(CourseList.SelectedValue),0);
+            generategrid(Convert.ToInt16(CourseList.SelectedValue), Convert.ToInt16(WeekList.SelectedValue));
         }
 
-        protected void CourseButton_Click(object sender, EventArgs e)
-        {
-            loadweeks();
-
-            generategrid(Convert.ToInt16(CourseList.SelectedValue),0);
-        }
 
         protected void WeekButton_Click(object sender, EventArgs e)
         {
             generategrid(Convert.ToInt16(CourseList.SelectedValue),Convert.ToInt16(WeekList.SelectedValue));
         }
+
 
 
     }
