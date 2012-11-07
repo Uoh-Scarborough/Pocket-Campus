@@ -35,7 +35,7 @@
                <asp:ListItem>Seminar Workstation 3</asp:ListItem> 
                <asp:ListItem>Mixing Studio 1</asp:ListItem>
                <asp:ListItem>Mixing Studio 2</asp:ListItem>
-           
+               <asp:ListItem>Postgraduate Studio</asp:ListItem>
                <asp:ListItem>Mixing Studio 3</asp:ListItem> 
                <asp:ListItem>Seminar Room 2</asp:ListItem> 
             </asp:DropDownList>
@@ -49,7 +49,7 @@
     <td>
     <asp:Button ID="Gocmd" runat="server" Text="Go" Width="59px" 
             onclick="Gocmd_Click" />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+       
     </td>
         </tr>
 

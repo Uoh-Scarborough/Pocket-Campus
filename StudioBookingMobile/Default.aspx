@@ -56,7 +56,7 @@
                     <li><a href="?rid=Seminar Workstation 3"><img class="arrow" src="Images/ArrowButton.jpg"/>Seminar Workstation 3</a></li>
                     <li><a href="?rid=Mixing Studio 1"><img class="arrow" src="Images/ArrowButton.jpg"/>Mixing Studio 1</a></li>
                     <li><a href="?rid=Mixing Studio 2"><img class="arrow" src="Images/ArrowButton.jpg"/>Mixing Studio 2</a></li>
-                    <li><a href="?rid=Electronica Studio"><img class="arrow" src="Images/ArrowButton.jpg"/>Electronica Studio</a></li>
+                    <li><a href="?rid=Postgraduate Studio"><img class="arrow" src="Images/ArrowButton.jpg"/>Postgraduate Studio</a></li>
                     <li><a href="?rid=Mixing Studio 3"><img class="arrow" src="Images/ArrowButton.jpg"/>Mixing Studio 3</a></li>
                     <li><a href="?rid=Seminar Room 2"><img class="arrow" src="Images/ArrowButton.jpg"/>Seminar Room 2</a></li>
                 </ul>
