@@ -124,6 +124,7 @@
                                <asp:ListItem>Mixing Studio 2</asp:ListItem>
                                <asp:ListItem>Mixing Studio 3</asp:ListItem> 
                                <asp:ListItem>Seminar Room 2</asp:ListItem> 
+                                <asp:ListItem>Postgraduate Studio</asp:ListItem>
                             </asp:CheckBoxList>
                         </td>
                     </tr>
