@@ -97,7 +97,9 @@ namespace KDLBooking
                 int NextStart = ClassBooking.FindStartofNext(Booking.Location, ClassUseful.ConvertTo2DigitNumber(Booking.Week), Booking.Day, Booking.StartTime, Booking.Username,BID);
 
                 int WeekBookings = ClassGroupMembers.RemainingUseage(Booking.Username, Booking.Location, ClassUseful.ConvertTo2DigitNumber(Booking.Week), Booking.Day);
+                WeekBookings += (Booking.EndTime - Booking.StartTime) * 15;
 
+                //Increment WeekBookings to include the lenght of this booking. 
                 int EndTime = ClassBooking.CalculateEndTime(Convert.ToInt32(StartHidden.Value), WeekBookings, NextStart);
 
                 EndTimecmb.Items.Clear();
@@ -166,7 +168,7 @@ namespace KDLBooking
 
                     //More than allowed
 
-                    Errorlbl.Text = "you have already made your full allowance of bookings for this room for the chosen week. Please try another room.";
+                    Errorlbl.Text = "you have already made your full allowance of bookings for this room for the chosen day. Please try room bookings if you would like to book another room.";
 
                     MultiView.SetActiveView(ErrorView);
 

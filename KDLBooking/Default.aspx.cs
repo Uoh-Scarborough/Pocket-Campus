@@ -134,26 +134,28 @@ namespace KDLBooking
                 TR.Cells.Add(TC);
             }
 
-            string[] CellsTexts = new string[16];
+            string[] CellsTexts = new string[18];
 
             CellsTexts[0] = "";
-            CellsTexts[1] = "09:15";
-            CellsTexts[2] = "10:15";
-            CellsTexts[3] = "11:15";
-            CellsTexts[4] = "12:15";
-            CellsTexts[5] = "13:15";
-            CellsTexts[6] = "14:15";
-            CellsTexts[7] = "15:15";
-            CellsTexts[8] = "16:15";
-            CellsTexts[9] = "17:15";
-            CellsTexts[10] = "18:15";
-            CellsTexts[11] = "19:15";
-            CellsTexts[12] = "20:15";
-            CellsTexts[13] = "21:15";
-            CellsTexts[14] = "22:15";
-            CellsTexts[15] = "23:15";
+            CellsTexts[1] = "07:15";
+            CellsTexts[2] = "08:15";
+            CellsTexts[3] = "09:15";
+            CellsTexts[4] = "10:15";
+            CellsTexts[5] = "11:15";
+            CellsTexts[6] = "12:15";
+            CellsTexts[7] = "13:15";
+            CellsTexts[8] = "14:15";
+            CellsTexts[9] = "15:15";
+            CellsTexts[10] = "16:15";
+            CellsTexts[11] = "17:15";
+            CellsTexts[12] = "18:15";
+            CellsTexts[13] = "19:15";
+            CellsTexts[14] = "20:15";
+            CellsTexts[15] = "21:15";
+            CellsTexts[16] = "22:15";
+            CellsTexts[17] = "23:15";
 
-            for (int i1 = 0; i1<= 15; i1++)
+            for (int i1 = 0; i1<= 17; i1++)
             {
                 TableCell Cell = new TableCell();
                 Cell.Font.Size = 8;
@@ -291,7 +293,7 @@ namespace KDLBooking
 
                     Day.Cells.Add(DayCell);
 
-                    int LastCol = 38;
+                    int LastCol = 30;
 
                     int RowCounter = 0;
 
@@ -368,7 +370,8 @@ namespace KDLBooking
                                 else
                                 {
                                     //Not Editable
-                                    OutText = "<table class=booking><tr valign=top><td>&nbsp;</td><td class=cellright>&nbsp;</td></tr><tr><td colspan=4>" + Booking.Title + "</td></tr><tr valign=bottom><td class=bottomleft>" + Booking.StartTimeOut.Trim() + "</td><td class=bottomright>" + Booking.EndTimeOut + "</td></tr></table>";
+                                    //OutText = "<table class=booking><tr valign=top><td>&nbsp;</td><td class=cellright>&nbsp;</td></tr><tr><td colspan=4>" + Booking.Title + "</td></tr><tr valign=bottom><td class=bottomleft>" + Booking.StartTimeOut.Trim() + "</td><td class=bottomright>" + Booking.EndTimeOut + "</td></tr></table>";
+                                    OutText = "<table class=booking><tr valign=top><td>&nbsp;</td><td class=cellright>&nbsp;</td></tr><tr><td colspan=4>Room Booked</td></tr><tr valign=bottom><td class=bottomleft>" + Booking.StartTimeOut.Trim() + "</td><td class=bottomright>" + Booking.EndTimeOut + "</td></tr></table>";
                                 }
                             }
                         }

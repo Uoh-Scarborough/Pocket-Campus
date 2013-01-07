@@ -211,7 +211,7 @@ namespace PocketCampusClasses
 
             if (ClassGroupMembers.SendAdminEmail(this.Username))
             {
-                ClassEmail.SendMailMessage("campusconnect@hull.ac.uk", "campusconnect@hull.ac.uk", "", "", "KDL Room Booking Confirmation", email);
+                ClassEmail.SendMailMessage("campusconnect@hull.ac.uk", "campusconnect@hull.ac.uk", "", "", "KDL Room Booking Information", email);
 
             }
         }
