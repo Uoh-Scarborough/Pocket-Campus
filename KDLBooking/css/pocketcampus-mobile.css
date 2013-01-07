@@ -1,0 +1,418 @@
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 320px){
+	
+	body{
+		font-family: Georgia, Tahoma, Arial;
+		background: #F1E7C9;
+		width: 100%;
+		display: block;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	h1{
+		font-size: 14px;
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		font-family: Arial;
+		font-weight: normal;
+	}
+	
+	h2{
+		font-size: 12px;
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		font-family: Arial;
+		font-weight: normal;
+	}
+	
+	a{
+		color: #000000;
+		text-decoration: none;
+	}
+	
+	a:visited{
+		
+		color: #000000;
+		text-decoration: none;
+	}
+	
+	div#container{
+		padding: 0px;
+		width: 100%;
+	}
+	
+	div#uohheader{
+		display: none;
+		background: #ffffff;
+	}
+	
+	div#pcheader{
+		position: relative;
+		top: 0px;
+		width: 100%;
+		height: 41px;
+		background: url('../img/Mobile_PocketCampusBG.png');
+	}
+	
+	div#pcheader span#pcheaderleft{
+		float: left;
+		width:  147px;
+		height: 41px;
+		background: url('../img/Mobile_PocketCampusLeft.png') no-repeat;
+	}
+	
+	div#pcheader span#pcheaderright{
+		float: right;
+		width:  147px;
+		height: 41px;
+		background: url('../img/Mobile_PocketCampusRight.png') no-repeat;
+	}
+	
+	div#bigbuttonrow{
+		height: auto;
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	
+	}
+	
+	div#bigbuttonrow div.bigbutton{
+		width: 100%;
+		height: 40px;
+		background: #ffffff;
+		border-top: 5px solid #ffffff;
+		border-bottom: 1px solid #000000;	
+		display: block;
+		cursor: pointer;
+	}
+	
+	div#bigbuttonrow div.bigbutton a {
+		colour: #ffffff;
+	}
+	
+	div#bigbuttonrow div.bigbutton a span{
+		width: 100%;
+		text-decoration: none;
+		colour: #ffffff;
+		padding:  5px 0px 0px 45px;
+		margin: 0px;
+		font-family: Arial;
+		text-decoration: none;
+	}
+	
+	div#bigbuttonrow div.bigbutton#maps{
+		background: url('../img/Mobile_Maps.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#portal{
+		
+		background: url('../img/Mobile_Portal.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#findapc{
+		
+		background: url('../img/Mobile_FAPC.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#email{
+		
+		background: url('../img/Mobile_Email.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#timetables{
+		
+		background: url('../img/Mobile_Timetable.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#roombooking{
+		
+		background: url('../img/Mobile_RoomBooking.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	
+	div#bigbuttonrow div.bigbutton#ebridge{
+		
+		background: url('../img/Mobile_eBridge.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#studentservices{
+		
+		background: url('../img/Mobile_StudentSerivces.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#campusinfo{
+		
+		background: url('../img/Mobile_CampusInformation.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#studiobooking{
+		
+		background: url('../img/Mobile_StudioBooking.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#psbooking{
+		
+		background: url('../img/Mobile_ProductionBooking.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	div#bigbuttonrow div.bigbutton#kdlbooking{
+		
+		background: url('../img/Mobile_KDLBooking.png') no-repeat #ffffff 5px;	
+		
+	}
+	
+	
+	div.campusinforow{
+		display: none;
+		height: auto;
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	}
+	
+	div.campusinforow div.smallbutton{
+		width: 100%;
+		height: 40px;
+		background: #ffffff;
+		border-top: 5px solid #ffffff;
+		border-bottom: 1px solid #000000;	
+		display: block;
+		cursor: pointer;
+	}
+	
+	div.campusinforow div.smallbutton a {
+		colour: #ffffff;
+	}
+	
+	div.campusinforow div.smallbutton a span{
+		width: 100%;
+		text-decoration: none;
+		colour: #ffffff;
+	}
+	
+	div.campusinforow div.smallbutton a span{
+		padding:  5px 0px 0px 45px;
+		margin: 0px;
+		font-family: Arial;
+		colour: #ff0000;
+		text-decoration: none;
+	}
+	
+	
+	div.campusinforow div#campusinfotextbig{
+		
+		display: none;
+		
+	}
+	
+	div.campusinforow div.smallbutton#accomodation{
+		
+		background: url('../img/Mobile_Accomodation.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#blackwells{
+		
+		background: url('../img/Mobile_Blackwells.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#calvinos{
+		
+		background: url('../img/Mobile_Calvinos.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#campusconnect{
+		
+		background: url('../img/Mobile_CampusConnect.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#careers{
+		
+		background: url('../img/Mobile_Careers.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#dates{
+		
+		background: url('../img/Mobile_Dates.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#diningroom{
+		
+		background: url('../img/Mobile_DiningRoom.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#estates{
+		
+		background: url('../img/Mobile_Estates.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#faqs{
+		
+		background: url('../img/Mobile_FAQS.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#freeelective{
+		
+		background: url('../img/Mobile_FreeElective.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#healthandwellbeing{
+		
+		background: url('../img/Mobile_HealthandWellbeing.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#itservices{
+		
+		background: url('../img/Mobile_ITServices.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#library{
+		
+		background: url('../img/Mobile_Library.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#ote{
+		
+		background: url('../img/Mobile_OTE.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#publictransport{
+		
+		background: url('../img/Mobile_PublicTransport.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#studentsunion{
+		
+		background: url('../img/Mobile_StudentsUnion.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#studyadvice{
+		
+		background: url('../img/Mobile_StudyAdvice.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div.campusinforow div.smallbutton#townregion{
+		
+		background: url('../img/Mobile_TownandRegion.png') no-repeat #ffffff 5px;
+		
+	}
+	
+	div#eventsandnotices{
+		
+		width: 100%;
+		display: block;
+
+	}
+	
+	div#eventsandnotices div.eventsandnoticesblock{
+		
+		width: 100%;
+
+		
+	}
+	
+	.eventsandnoticesspan
+	{
+		display:block;
+		font-family: arial;
+	}
+	
+	.eventsandnoticesspan dl
+	{
+		margin:0px;
+		border:0px;
+		padding:0px;
+	}
+	
+	.eventsandnoticesspan dl dd
+	{
+		font-family: Arial;
+		font-size:10px;
+		position: relative;
+		top: -10px;
+		left: -40px;
+		margin-bottom:0px;
+		border-bottom:0px;
+	}
+	
+	.eventsandnoticesspan ul li span.noticedetails
+	{
+		display:block;
+		font-family: Arial;
+		color: Black;
+		font-size:10px;
+		padding:0px;
+		margin:0px;
+		border: 0px;
+		position: relative;
+		top: -40px;
+		height: 20px;
+	}
+	
+	.eventsandnoticesspan ul li
+	{
+		color:#ae2b30;
+	}
+	
+	.eventsandnoticesspan a
+	{
+		color:#ae2b30;
+		font-size:12px;
+	}
+	
+	.eventsandnoticesspan p a
+	{
+		display:none;
+	}
+	
+	div#footer{
+		
+		width: 100%;
+		height: 37px;
+		background: url('../img/footer.png') no-repeat;
+		
+	}
+	
+	div#footer p{
+		
+		
+		font-size: 12px;
+		color:  #ffffff;
+		padding: 10px 0px 3px 10px;
+		
+	}
+
+}
