@@ -198,7 +198,7 @@ namespace PocketCampusClasses
             ClassReadQuery RQ2 = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
             ClassReadQuery RQ3 = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
 
-            int StartOfNext = 97;
+            int StartOfNext = 96;
             Boolean FoundNext = false;
 
             string Query1 = string.Format("SELECT Activity_StartTime FROM Activities WHERE Activity_Day = {0} AND Activity_Location LIKE '%{1}%' AND Activity_Weeks LIKE '%{2}%' AND Activity_StartTime >= {3} ORDER BY Activity_StartTime;", Day, Room, Week, Start);
