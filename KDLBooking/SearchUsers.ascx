@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SearchUsers.ascx.cs" Inherits="KDLBooking.SearchUsers" %>
 
-<asp:Label ID="Label1" runat="server" Text="Student ID:"></asp:Label>
+Student ID:
 <asp:TextBox ID="StudentIDtxt" runat="server" style="margin-left: 45px;margin-right: 45px;" 
     Width="122px"></asp:TextBox>
 
@@ -14,7 +14,7 @@ Surname:
     &nbsp;</p>
 
 <asp:Table ID="UserTable" runat="server" Width="980px" Height="31px" style="padding:15px">
-    <asp:TableHeaderRow BackColor="#91a23d" ForeColor="White">
+    <asp:TableHeaderRow ForeColor="Black">
         <asp:TableHeaderCell CssClass="tablename">Name</asp:TableHeaderCell>
         <asp:TableHeaderCell CssClass="tablename">Student Number</asp:TableHeaderCell>
         <asp:TableHeaderCell CssClass="tablerequest">Email</asp:TableHeaderCell>

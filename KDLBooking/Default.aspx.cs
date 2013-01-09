@@ -27,14 +27,10 @@ namespace KDLBooking
             ClassAppDetails.bookingcurrentconnection = PBNC;
             ClassAppDetails.ttcurrentconnection = TTNC;
 
-            if(Request.Browser["IsMobileDevice"] == "true"){
-                Response.Redirect("http://m.studiobooking.scar.hull.ac.uk");
-            }
-
             if (!IsPostBack)
             {
                 loadweeks();
-
+                
                 string RID, WID;
 
                 RID = Request["rid"];
@@ -45,6 +41,7 @@ namespace KDLBooking
 
                 if (WID != null)
                 {
+                    Weekscmb.SelectedValue = ClassUseful.ConvertTo2DigitNumber(WID);
                     generategrid(Roomcmb.Text, Convert.ToInt16(Weekscmb.Text));
                 }
                 else
@@ -54,8 +51,8 @@ namespace KDLBooking
                     generategrid(Roomcmb.Text, ClassGeneral.getAcademicWeek());
                 }
 
-
             }
+            
         }
 
         private void loadweeks()
@@ -75,13 +72,9 @@ namespace KDLBooking
                 WeekIndex = ClassGeneral.getAcademicWeek();
             }
 
-
             for (int i = 1; ((i <= Weeks) && i <= 56); i++)
-            //for(int i = 1; ((i<= Weeks) && i<=45);i++)
             {
                 ListItem LI = new ListItem(ClassGeneral.getAcademicWeekDetails(i), ClassUseful.ConvertTo2DigitNumber(i));
-
-                //int Week = ClassGeneral.getAcademicWeek();
 
                 if (WeekIndex == i)
                 {
@@ -94,10 +87,10 @@ namespace KDLBooking
 
         public void generategrid(string Room, int Week)
         {
-            Timetable.Dispose();
-
             string sWeek;
+
             Boolean showallrooms = false;
+
             int Dayint = 0;
 
             if (Room == "All")
@@ -115,24 +108,32 @@ namespace KDLBooking
                 sWeek = Week.ToString();
             }
 
+            Timetable.CssClass = "timetable";
+
+            Timetable.Dispose();
+
             Timetable.Rows.Clear();
-            //Timetable.Width = 700;
+
+            while (Timetable.Rows.Count > 1)
+            {
+                Timetable.Rows.RemoveAt(0);
+            }
+
+            Timetable.Rows.Clear();
+
+            while (Timetable.Rows.Count > 1)
+            {
+                Timetable.Rows.RemoveAt(0);
+            }
 
             Timetable.CellPadding = 0;
             Timetable.CellSpacing = 0;
 
             //Generate Table Header
-            TableRow Header = new TableRow();
+            TableHeaderRow Header = new TableHeaderRow();
+            Header.CssClass = "headertimes";
             TableRow Footer = new TableRow();
             TableRow TR = new TableRow();
-
-            for (int i = 0; i <= 60; i++)
-            {
-                TableCell TC = new TableCell();
-                TC.Text = "&nbsp;";
-                TC.CssClass = "toppad";
-                TR.Cells.Add(TC);
-            }
 
             string[] CellsTexts = new string[18];
 
@@ -166,9 +167,6 @@ namespace KDLBooking
                     Cell.ColumnSpan = 4;
                 }
 
-                Cell.BorderColor = System.Drawing.Color.Black;
-                Cell.BorderStyle = BorderStyle.None;
-                Cell.Width = 36;
                 Header.Cells.Add(Cell);
             }
 
@@ -221,17 +219,12 @@ namespace KDLBooking
                 {
 
                     TableRow Day = new TableRow();
+                    Day.CssClass = "headerday firstrow";
 
                     TableRow OriginalDay = Day;
 
-                    Day.BorderStyle = BorderStyle.None;
-
                     TableCell DayCell = new TableCell();
-                    DayCell.BorderColor = System.Drawing.Color.Black;
-                    DayCell.BorderStyle = BorderStyle.None;
-                    DayCell.BorderWidth = 2;
-                    DayCell.Width = 10;
-                    //DayCell.Height= 50;
+                    DayCell.CssClass = "headerdays";
 
                     if (showallrooms)
                     {
@@ -239,15 +232,13 @@ namespace KDLBooking
                         switch (d)
                         {
                             case 0:
-                                DayCell.Text = "KDL 1";
-                                Day.CssClass = "rowone";
+                                DayCell.Text = "<span>KDL 1</span>";
                                 break;
                             case 1:
-                                DayCell.Text = "KDL 2";
+                                DayCell.Text = "<span>KDL 2</span>";
                                 break;
                             case 2:
-                                DayCell.Text = "KDL 3";
-                                Day.CssClass = "rowone";
+                                DayCell.Text = "<span>KDL 3</span>";
                                 break;
                         }
 
@@ -257,43 +248,42 @@ namespace KDLBooking
 
                         if (d == 0)
                         {
-                            DayCell.Text = "Mon";
-                            Day.CssClass = "rowone";
-
+                            DayCell.Text = "<span>Mon</span>";
                         }
                         else if (d == 1)
                         {
-                            DayCell.Text = "Tue";
+                            DayCell.Text = "<span>Tue</span>";
                         }
                         else if (d == 2)
                         {
-                            DayCell.Text = "Wed";
-                            Day.CssClass = "rowone";
+                            DayCell.Text = "<span>Wed</span>";
                         }
                         else if (d == 3)
                         {
-                            DayCell.Text = "Thu";
+                            DayCell.Text = "<span>Thu</span>";
                         }
                         else if (d == 4)
                         {
-                            DayCell.Text = "Fri";
-                            Day.CssClass = "rowone";
+                            DayCell.Text = "<span>Fri</span>";
                         }
                         else if (d == 5)
                         {
-                            DayCell.Text = "Sat";
+                            DayCell.Text = "<span>Sat</span>";
                         }
                         else
                         {
-                            DayCell.Text = "Sun";
-                            Day.CssClass = "rowone";
+                            DayCell.Text = "<span>Sun</span>";
                         }
 
                     }
 
+                    DayCell.RowSpan = 0;
+                    DayCell.ColumnSpan = 0;
+
                     Day.Cells.Add(DayCell);
 
                     int LastCol = 30;
+                    int lastActivityEnd = LastCol-1;
 
                     int RowCounter = 0;
 
@@ -312,6 +302,10 @@ namespace KDLBooking
                             //Booking
                             ClassKDLBookings Booking = (ClassKDLBookings)Obj;
                             StartTime = Booking.StartTime;
+
+                            //Edit and Delete Buttons
+                            String EditButton = "<a href=\"Booking.aspx?bid=" + Booking.ID + "\">Edit</a>";
+                            String DeleteButton = "<a href=\"Booking.aspx?bid=" + Booking.ID + "&amp;delid=1\">Delete</a>";
 
                             //Check if closure
                             if (Booking.Title == "Lecture In Progress")
@@ -355,9 +349,10 @@ namespace KDLBooking
                             //ClassUserInfo UI = new ClassUserInfo(Context.User.Identity.Name);
 
                             if (ClassGroupMembers.IsAdmin(UI.Username))
-                            { //UI.InGroup("StudioBookingAdmin")){
+                            { 
                                 //Always Edit
-                                OutText = "<table class=booking><tr valign=top><td><a href=\"Booking.aspx?bid=" + Booking.ID + "\">Edit</a></td><td class=cellright><a href=\"Booking.aspx?bid=" + Booking.ID + "&amp;delid=1\">Delete</a></td></tr><tr><td colspan=2>" + Booking.Title + "</td></tr><tr valign=bottom><td class=bottomleft>" + Booking.StartTimeOut.Trim() + "</td><td class=bottomright>" + Booking.EndTimeOut.Trim() + "</td></tr></table>";
+                                OutText = ClassBooking.ActivityTable(EditButton, DeleteButton, Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
+                                lastActivityEnd = Booking.EndTime;
                             }
                             else
                             {
@@ -365,13 +360,14 @@ namespace KDLBooking
                                 if (Booking.Number.ToString() == UI.StudentID)
                                 {
                                     //Editable
-                                    OutText = "<table class=booking><tr valign=top><td><a href=\"Booking.aspx?bid=" + Booking.ID + "\">Edit</a></td><td class=cellright><a href=\"Booking.aspx?bid=" + Booking.ID + "&amp;delid=1\">Delete</a></td></tr><tr><td colspan=2>" + Booking.Title + "</td></tr><tr valign=bottom><td class=bottomleft>" + Booking.StartTimeOut + "</td><td class=bottomright>" + Booking.EndTimeOut + "</td></tr></table>";
+                                    OutText = ClassBooking.ActivityTable(EditButton, DeleteButton, Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
+                                    lastActivityEnd = Booking.EndTime;
                                 }
                                 else
                                 {
                                     //Not Editable
-                                    //OutText = "<table class=booking><tr valign=top><td>&nbsp;</td><td class=cellright>&nbsp;</td></tr><tr><td colspan=4>" + Booking.Title + "</td></tr><tr valign=bottom><td class=bottomleft>" + Booking.StartTimeOut.Trim() + "</td><td class=bottomright>" + Booking.EndTimeOut + "</td></tr></table>";
-                                    OutText = "<table class=booking><tr valign=top><td>&nbsp;</td><td class=cellright>&nbsp;</td></tr><tr><td colspan=4>Room Booked</td></tr><tr valign=bottom><td class=bottomleft>" + Booking.StartTimeOut.Trim() + "</td><td class=bottomright>" + Booking.EndTimeOut + "</td></tr></table>";
+                                    OutText = ClassBooking.ActivityTable("", "", Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
+                                    lastActivityEnd = Booking.EndTime;
                                 }
                             }
                         }
@@ -383,11 +379,10 @@ namespace KDLBooking
                             StartTime = Act.StartTime;
 
                             //Check if closure
-                            if (Act.Title == "Lecture In Progressd")
+                            if (Act.Title == "Lecture In Progress")
                             {
                                 try
                                 {
-
 
                                     Object nObj = ActivityList[MergeListCounter + 1];
 
@@ -421,7 +416,8 @@ namespace KDLBooking
 
                             EndTime = Act.EndTime;
 
-                            OutText = "<table class=booking><tr valign=top><td>" + Act.ModuleNumber + "</td><td></td></tr><tr><td colspan=2>" + Act.Title + "</td></tr><tr valign=bottom><td class=bottomleft>" + Act.StartTimeOut + "</td><td class=bottomright>" + Act.EndTimeOut + "</td></tr></table>";
+                            OutText = ClassBooking.ActivityTable(Act.ModuleNumber, "", Act.Title, Act.StartTime, Act.EndTime, "", lastActivityEnd, Room,Weekscmb.SelectedValue,d);
+                            lastActivityEnd = Act.EndTime;
                        
                         }
                         else
@@ -433,21 +429,22 @@ namespace KDLBooking
                             StartTime = Const.BookableStart;
                             EndTime = Const.BookableEnd;
 
-                            OutText = "<table class=booking><tr valign=top><td></td><td></td></tr><tr><td colspan=2>" + Const.Title + "</td></tr><tr valign=bottom><td class=bottomleft>" + ClassGeneral.getTime(Const.BookableStart) + "</td><td class=bottomright>" + ClassGeneral.getTime(Const.BookableEnd) + "</td></tr></table>";
+                            OutText = ClassBooking.ActivityTable("", "", Const.Title, Const.BookableStart,Const.BookableEnd, "", lastActivityEnd, Room, Weekscmb.SelectedValue,d);
+                            lastActivityEnd = Const.BookableEnd;
                         }
 
 
                         for (int c = LastCol; c <= (StartTime); c++)
                         {
                             TableCell Cell = new TableCell();
-                            Cell.CssClass = "bookable";
+                            Cell.CssClass = "blankcell";
                             if (showallrooms)
                             {
-                                Cell.Text = Cell.Text = "<a href='Booking.aspx?rid=" + Room + "&amp;wid=" + Weekscmb.SelectedValue + "&amp;did=" + Dayint + "&amp;tid=" + c + "' class='fullcell'>&nbsp;</a>";
+                                Cell.Text = ClassBooking.BookableCell(Room,Weekscmb.SelectedValue,Dayint,c);
                             }
                             else
                             {
-                                Cell.Text = Cell.Text = "<a href='Booking.aspx?rid=" + Roomcmb.Text + "&amp;wid=" + Weekscmb.SelectedValue + "&amp;did=" + d + "&amp;tid=" + c + "' class='fullcell'>&nbsp;</a>";
+                                Cell.Text = ClassBooking.BookableCell(Roomcmb.Text,Weekscmb.SelectedValue,d,c);
                             }
                             Day.Cells.Add(Cell);
                         }
@@ -460,7 +457,7 @@ namespace KDLBooking
 
                             ActCel.ColumnSpan = EndTime - StartTime;
 
-                            ActCel.CssClass = "bookingcell";
+                            ActCel.CssClass = "actcell spancols " + ActCel.ColumnSpan;
 
                             Day.Cells.Add(ActCel);
 
@@ -477,21 +474,26 @@ namespace KDLBooking
                     //Finish Off Row
                     if (LastCol < 97)
                     {
-                        //Was 93
 
-                        //Was 73
                         for (int c = LastCol; c <= 96; c++)
                         {
                             TableCell Cell = new TableCell();
-                            Cell.CssClass = "bookable";
+                            Cell.CssClass = "blankcell";
                             if (showallrooms)
                             {
-                                Cell.Text = Cell.Text = "<a href='Booking.aspx?rid=" + Room + "&amp;wid=" + Weekscmb.SelectedValue + "&amp;did=" + Dayint + "&amp;tid=" + c + "' class='fullcell'>&nbsp;</a>";
+                                Cell.Text = ClassBooking.BookableCell(Room,Weekscmb.SelectedValue,Dayint,c);
                             }
                             else
                             {
-                                Cell.Text = Cell.Text = "<a href='Booking.aspx?rid=" + Roomcmb.Text + "&amp;wid=" + Weekscmb.SelectedValue + "&amp;did=" + d + "&amp;tid=" + c + "' class='fullcell'>&nbsp;</a>";
+                                Cell.Text = ClassBooking.BookableCell(Roomcmb.Text,Weekscmb.SelectedValue,d,c);
                             }
+
+                            if (c == 96){
+                                Cell.CssClass = "lastcell";
+                                Cell.Text += ClassBooking.FreeSpaceTable(Room, Weekscmb.SelectedValue,d, lastActivityEnd, 96);
+
+                            }
+
                             Day.Cells.Add(Cell);
                         }
                     }
@@ -503,17 +505,13 @@ namespace KDLBooking
             }
         }
 
-        protected void Gocmd_Click(object sender, EventArgs e)
-        {
-            generategrid(Roomcmb.Text,Convert.ToInt16(Weekscmb.SelectedValue));
-        }
-
         protected void Roomcmb_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (Roomcmb.SelectedIndex == 3)
             {
 
                 Dayscmb.Visible = true;
+                
 
             }
             else
@@ -524,6 +522,24 @@ namespace KDLBooking
                 loadweeks();
 
             }
+
+            generategrid(Roomcmb.Text, Convert.ToInt16(Weekscmb.SelectedValue));
+
+        }
+
+        protected void Weekscmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            generategrid(Roomcmb.Text, Convert.ToInt16(Weekscmb.SelectedValue));
+        }
+
+        protected void Dayscmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            generategrid(Roomcmb.Text, Convert.ToInt16(Weekscmb.SelectedValue));
+        }
+
+        protected void Dayscmb_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            generategrid(Roomcmb.Text, Convert.ToInt16(Weekscmb.SelectedValue));
         }
 
     }

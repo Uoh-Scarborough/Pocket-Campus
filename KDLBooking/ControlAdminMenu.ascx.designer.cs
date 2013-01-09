@@ -22,6 +22,24 @@ namespace KDLBooking {
         protected global::System.Web.UI.WebControls.Panel MenuPanel;
         
         /// <summary>
+        /// AdminMenulbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label AdminMenulbl;
+        
+        /// <summary>
+        /// AdminMenuOptionslbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label AdminMenuOptionslbl;
+        
+        /// <summary>
         /// GroupsBtn control.
         /// </summary>
         /// <remarks>
@@ -38,6 +56,15 @@ namespace KDLBooking {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink Constraintsbtn;
+        
+        /// <summary>
+        /// Calendarbtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink Calendarbtn;
         
         /// <summary>
         /// Bookingbtn control.

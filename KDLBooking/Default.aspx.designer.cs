@@ -13,24 +13,6 @@ namespace KDLBooking {
     public partial class Default {
         
         /// <summary>
-        /// HomeButtonlbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl HomeButtonlbl;
-        
-        /// <summary>
-        /// roomdateform control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm roomdateform;
-        
-        /// <summary>
         /// ControlAdminMenu1 control.
         /// </summary>
         /// <remarks>
@@ -47,15 +29,6 @@ namespace KDLBooking {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
-        /// <summary>
-        /// UpdatePanel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
         /// Roomcmb control.
@@ -83,15 +56,6 @@ namespace KDLBooking {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Dayscmb;
-        
-        /// <summary>
-        /// Gocmd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Gocmd;
         
         /// <summary>
         /// Timetable control.

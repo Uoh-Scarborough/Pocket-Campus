@@ -46,14 +46,17 @@ namespace PocketCampusClasses
                 int ST = StartTime;
                 int Hours = ST / 4;
                 int Minutes = 15 * (ST - Hours * 4);
+                string OutStr = "";
                 if (Minutes == 0)
                 {
-                    return Hours + ":0" + Minutes;
+                    OutStr = Hours + ":0" + Minutes;
                 }
                 else
                 {
-                    return Hours + ":" + Minutes;
+                    OutStr = Hours + ":" + Minutes;
                 }
+
+                return OutStr.Trim();
             }
         }
 
@@ -70,14 +73,17 @@ namespace PocketCampusClasses
                 int ET = EndTime;
                 int Hours = ET / 4;
                 int Minutes = 15 * (ET - Hours * 4);
+                string OutStr = "";
                 if (Minutes == 0)
                 {
-                    return Hours + ":0" + Minutes;
+                   OutStr = Hours + ":0" + Minutes;
                 }
                 else
                 {
-                    return Hours + ":" + Minutes;
+                    OutStr =  Hours + ":" + Minutes;
                 }
+
+                return OutStr.Trim();
             }
         }
 
@@ -182,7 +188,7 @@ namespace PocketCampusClasses
         {
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
 
-            RQ.RunQuery("SELECT * FROM Bookings WHERE Booking_Username = '" + UserID + "' AND Booking_Deleted = 0;");
+            RQ.RunQuery("SELECT * FROM Bookings WHERE Booking_Username = '" + UserID + "' AND Booking_Deleted = 0 AND Booking_Week >= " + ClassGeneral.getAcademicWeek());
 
             return RQ.dataset;
         }
@@ -244,6 +250,62 @@ namespace PocketCampusClasses
             }
 
             return StartOfNext;
+        }
+
+        public static int FindEndOfLast(string Room, string Week, int Day, int Start, string UserID, int BookingID)
+        {
+            //Find Next Event
+
+            ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.ttcurrentconnection);
+            ClassReadQuery RQ2 = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
+            ClassReadQuery RQ3 = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
+
+            int EndOfLast = 29;
+            Boolean FoundLast = false;
+
+            string Query1 = string.Format("SELECT Activity_EndTime FROM Activities WHERE Activity_Day = {0} AND Activity_Location LIKE '%{1}%' AND Activity_Weeks LIKE '%{2}%' AND Activity_EndTime <= {3} ORDER BY Activity_StartTime;", Day, Room, Week, Start);
+            RQ1.RunQuery(Query1);
+
+
+            string Query2 = string.Format("SELECT Booking_EndTime FROM Bookings WHERE Booking_Day = {0} AND Booking_Location LIKE '%{1}%' AND Booking_Week = '{2}' AND Booking_EndTime <= {3} AND Booking_Deleted = 0 AND Booking_ID_LNK != {4} ORDER BY Booking_StartTime;", Day, Room, Convert.ToInt16(Week), Start, BookingID);
+            RQ2.RunQuery(Query2);
+
+
+            string Query3 = string.Format("SELECT * FROM Room_User_Constraints_View WHERE GroupMembers_UserID = '{0}' AND Constraint_Type = 0 AND Constraint_Room = '{1}' AND ((Constraint_StartDate >= '{2}' AND Constraint_EndDate <= '{3}') OR (Constraint_StartDate <= '{2}' AND Constraint_EndDate >= '{3}') OR (Constraint_StartDate >= '{2}' AND Constraint_StartDate <= '{3}') OR (Constraint_EndDate >= '{2}' AND Constraint_EndDate <= '{3}')) ORDER BY Constraint_Value ASC;", UserID, Room, ClassGeneral.getAcademicDate(Convert.ToInt16(Week), Day), ClassGeneral.getAcademicDate(Convert.ToInt16(Week), Day));
+            RQ3.RunQuery(Query3);
+
+
+            ArrayList EndTimes = new ArrayList();
+
+            if (RQ1.dataset.Tables[0].Rows.Count > 0)
+            {
+                DataRow DR1 = RQ1.dataset.Tables[0].Rows[0];
+                EndTimes.Add(Convert.ToInt16(DR1["Activity_EndTime"]));
+                FoundLast = true;
+            }
+
+            if (RQ2.dataset.Tables[0].Rows.Count > 0)
+            {
+                DataRow DR2 = RQ2.dataset.Tables[0].Rows[0];
+                EndTimes.Add(Convert.ToInt16(DR2["Booking_EndTime"]));
+                FoundLast = true;
+            }
+
+            if (RQ3.dataset.Tables[0].Rows.Count > 0)
+            {
+                DataRow DR3 = RQ3.dataset.Tables[0].Rows[0];
+                EndTimes.Add(Convert.ToInt16(DR3["Constraint_BookableEnd"]));
+                FoundLast = true;
+            }
+
+            EndTimes.Sort();
+
+            if (FoundLast)
+            {
+                EndOfLast = Convert.ToInt16(EndTimes[0]);
+            }
+
+            return EndOfLast;
         }
 
         public static int CalculateEndTime(int StartTime, int Remain, int NextBooking)
@@ -702,6 +764,43 @@ namespace PocketCampusClasses
 
             return MergeList;
 
+        }
+
+        public static String ActivityTable(string ActMod, string ActLoc, string ActTitle, int ActStart, int ActEnd, string ActPattern, int LastActEnd, string Room, string Week, int Day)
+        {
+            StringBuilder OutText = new StringBuilder();
+
+            OutText.AppendFormat("<span class=activity><table class=acttable><tr class='toprow'><td class='actmod' colspan=3>{0}</td><td class=actlocation>{1}</td></tr><tr><td class='acttitle' colspan=2>{2}</td></tr><tr class=bottomrow><td class=actstart>{3}</td><td class=actpattern>{4}</td><td class=actend>{5}</td></tr></table></span>", ActMod,ActLoc, ActTitle, ClassGeneral.getTime(ActStart), ActPattern, ClassGeneral.getTime(ActEnd));
+
+            OutText.Append(FreeSpaceTable(Room, Week, Day, LastActEnd, ActStart));
+
+            return OutText.ToString();
+
+        }
+
+        public static String FreeSpaceTable(string Room, string Week, int Day, int LastActEnd, int ActStart)
+        {
+            StringBuilder OutText = new StringBuilder();
+
+            if (LastActEnd < ActStart)
+            {
+
+                OutText.AppendFormat("<span class=freespace><table class=acttable><tr class='toprow'><td><a href='Booking.aspx?rid={0}&amp;wid={1}&amp;did={2}&amp;tid={3}&amp;flex=true'>Book between {4} and {5}</a></td></tr></table></span>", Room, Week, Day, LastActEnd, ClassGeneral.getTime(LastActEnd), ClassGeneral.getTime(ActStart));
+
+            }
+
+
+            return OutText.ToString();
+
+        }
+
+        public static String BookableCell(string Room, string Week, int Day, int TID)
+        {
+            StringBuilder OutText = new StringBuilder();
+
+            OutText.AppendFormat("<a href='Booking.aspx?rid={0}&amp;wid={1}&amp;did={2}&amp;tid={3}' class='fullcell'>&nbsp;</a>",Room,Week,Day,TID-1);
+
+            return OutText.ToString();
         }
 
 

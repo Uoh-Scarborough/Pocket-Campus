@@ -1,14 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Constraints.aspx.cs" Inherits="KDLBooking.Constraints" MasterPageFile="~/Green.Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Constraints.aspx.cs" Inherits="KDLBooking.Constraints" MasterPageFile="~/Responsive.Master" %>
 
 <%@ Register assembly="BasicFrame.WebControls.BasicDatePicker" namespace="BasicFrame.WebControls" tagprefix="BDP" %>
 
     <%@ Register src="ControlAdminMenu.ascx" tagname="ControlAdminMenu" tagprefix="uc1" %>
 
-<asp:Content ID="KDLBookingLogo" ContentPlaceHolderID="HomeButtonCPH" runat="server"><a href="http://kdlbooking.scar.hull.ac.uk"><label id="HomeButtonlbl" runat="server"><img src="http://pocketcampusimages.scar.hull.ac.uk/KDLBookingLogo.png" alt="KDL Booking Logo" /></label></a></asp:Content>
-
 <asp:Content ID="mainform" ContentPlaceHolderID="MainArea" Runat="Server">
-    
-    <form id="constraintsform" runat="server" style="padding:10px;">
 
         <uc1:ControlAdminMenu ID="ControlAdminMenu1" runat="server" />
 
@@ -148,8 +144,6 @@
             </asp:View>
         
         </asp:MultiView>
-
-    </form>
 
 </asp:Content>
 

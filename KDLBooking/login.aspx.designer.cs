@@ -13,24 +13,6 @@ namespace KDLBooking {
     public partial class login {
         
         /// <summary>
-        /// HomeButtonlbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl HomeButtonlbl;
-        
-        /// <summary>
-        /// studentservices control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm studentservices;
-        
-        /// <summary>
         /// UserName control.
         /// </summary>
         /// <remarks>

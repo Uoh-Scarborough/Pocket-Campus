@@ -24,43 +24,57 @@ namespace PocketCampusClasses
 
         public ClassUserInfo(string Username)
         {
-            DirectorySearcher search = new DirectorySearcher(ClassAppDetails.ldapserver);
-            search.Filter = "(SAMAccountName=" + Username + ")";
-            search.PropertiesToLoad.Add("description");
-            search.PropertiesToLoad.Add("displayName");
-            search.PropertiesToLoad.Add("mail");
-            search.PropertiesToLoad.Add("memberOf");
-            SearchResult result = search.FindOne();
+                DirectorySearcher search = new DirectorySearcher(ClassAppDetails.ldapserver);
+                search.Filter = "(SAMAccountName=" + Username + ")";
+                search.PropertiesToLoad.Add("description");
+                search.PropertiesToLoad.Add("displayName");
+                search.PropertiesToLoad.Add("mail");
+                search.PropertiesToLoad.Add("memberOf");
+                SearchResult result = search.FindOne();
 
-            c_Username = Username;
-            c_DisplayName = (String)result.Properties["displayName"][0];
-            try
-            {
-                c_StudentID = (String)result.Properties["description"][0];
-            }
-            catch
-            {
-                c_StudentID = "0";
-            }
+                c_Username = Username;
+                try
+                {
+                    c_DisplayName = (String)result.Properties["displayName"][0];
+                }
+                catch
+                {
+                    c_DisplayName = "";
+                }
+                try
+                {
+                    c_StudentID = (String)result.Properties["description"][0];
+                }
+                catch
+                {
+                    c_StudentID = "0";
+                }
 
-            try
-            {
-                c_EmailAddress = (String)result.Properties["mail"][0];
-            }
-            catch
-            {
-                c_EmailAddress = "";
-            }
+                try
+                {
+                    c_EmailAddress = (String)result.Properties["mail"][0];
+                }
+                catch
+                {
+                    c_EmailAddress = "";
+                }
 
 
-            //Loop Through members
+                //Loop Through members
+                try
+                {
+                    for (int i = 0; i <= result.Properties["memberOf"].Count - 1; i++)
+                    {
+                        string[] groupdetails = result.Properties["memberOf"][i].ToString().Split(',');
 
-            for (int i = 0; i <= result.Properties["memberOf"].Count - 1; i++)
-            {
-                string[] groupdetails = result.Properties["memberOf"][i].ToString().Split(',');
+                        c_Groups += groupdetails[0].Substring(3) + ", ";
+                    }
+                }
+                catch
+                {
+                    c_Groups = "";
+                }
 
-                c_Groups += groupdetails[0].Substring(3) + ", ";
-            }
         }
 
         public string Username

@@ -15,20 +15,15 @@
     
     	<meta name="viewport" content="width=device-width">
     
-        <link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-timetables-print.css">
-
-    	<!--<link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-mobile.css">
-        <link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-timetables-mobile.css">-->
-    	<link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus.css">
-        <link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-timetables.css">
+    	<link rel="stylesheet" href="css/pocketcampus-mobile.css">
+    	<link rel="stylesheet" href="css/pocketcampus.css">
+        <link rel="stylesheet" href="css/pocketcampus-roombooking.css">
+        <link rel="stylesheet" href="css/pocketcampus-roombooking-mobile.css">
         
-    	<link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/style.css">
+    	<link rel="stylesheet" href="css/style.css">
 
-
-       
-    	
-    	<script src="http://timetables.scar.hull.ac.uk/js/vendor/modernizr-2.6.1.min.js"></script>
-    	<script src="http://timetables.scar.hull.ac.uk/js/vendor/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    	<script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    	<script src="js/vendor/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 
         <script>
 

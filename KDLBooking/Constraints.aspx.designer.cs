@@ -13,24 +13,6 @@ namespace KDLBooking {
     public partial class Constraints {
         
         /// <summary>
-        /// HomeButtonlbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl HomeButtonlbl;
-        
-        /// <summary>
-        /// constraintsform control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm constraintsform;
-        
-        /// <summary>
         /// ControlAdminMenu1 control.
         /// </summary>
         /// <remarks>

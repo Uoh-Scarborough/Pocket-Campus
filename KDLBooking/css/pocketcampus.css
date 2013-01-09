@@ -4,8 +4,19 @@
 
 @media only screen and (min-width: 860px) {
 
+	h1
+	{
+		font-size:20px;
+		font-weight: bold;
+	}
+
 	span{
 		display:none;
+	}
+	
+	span.activity
+	{
+		display:block;
 	}
 	
 	body{
@@ -345,5 +356,7 @@
 		padding: 10px 0px 3px 10px;
 		
 	}
+	
+	
 
 }

@@ -13,24 +13,6 @@ namespace KDLBooking {
     public partial class Booking {
         
         /// <summary>
-        /// HomeButtonlbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl HomeButtonlbl;
-        
-        /// <summary>
-        /// bookingform control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm bookingform;
-        
-        /// <summary>
         /// ControlAdminMenu1 control.
         /// </summary>
         /// <remarks>
@@ -67,6 +49,15 @@ namespace KDLBooking {
         protected global::System.Web.UI.WebControls.Label Bookinglbl;
         
         /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
         /// Nametxt control.
         /// </summary>
         /// <remarks>
@@ -92,6 +83,15 @@ namespace KDLBooking {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Datetxt;
+        
+        /// <summary>
+        /// StartTimecmb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList StartTimecmb;
         
         /// <summary>
         /// StartTimetxt control.
@@ -146,6 +146,15 @@ namespace KDLBooking {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField StartHidden;
+        
+        /// <summary>
+        /// LengthHidden control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField LengthHidden;
         
         /// <summary>
         /// EditHidden control.
@@ -263,5 +272,23 @@ namespace KDLBooking {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Errorlbl;
+        
+        /// <summary>
+        /// MyBookingsView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View MyBookingsView;
+        
+        /// <summary>
+        /// BookingsList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label BookingsList;
     }
 }

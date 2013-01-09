@@ -144,16 +144,18 @@ namespace PocketCampusClasses
         {
             DataSet DS = GenerateBookingsDS(UserID);
 
-            string returnStr = "<ul>";
+            string returnStr = "<table id='bookings'>";
+
+            returnStr += "<tr><th>Location</th><th>Date / Time</th><th></th><th></th></tr>";
 
             foreach (DataRow DR in DS.Tables[0].Rows)
             {
                 ClassKDLBookings Booking = new ClassKDLBookings(DR);
 
-                returnStr += "<li>" + Booking.Location + "<a href=\"?bid=" + Booking.ID + "\"><img class=\"arrow\" src=\"Images/ArrowButton.jpg\"/></a><br/>" + ClassGeneral.getAcademicDate(Convert.ToInt16(Booking.Week), Booking.Day) + " - " + Booking.StartTimeOut + "</li>";
+                returnStr += "<tr><td>" + Booking.Location + "</td><td>" + ClassGeneral.getAcademicDate(Convert.ToInt32(Booking.Week), Booking.Day) + " " + Booking.StartTimeOut + "</td><td><a href=\"?bid=" + Booking.ID + "\">Edit</a></td><td><a href=\"?bid=" + Booking.ID + "&amp;delid=1\">Delete</a></td></tr>";
             }
 
-            returnStr += "</ul>";
+            returnStr += "</table>";
 
             return returnStr;
         }

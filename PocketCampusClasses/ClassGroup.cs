@@ -146,7 +146,8 @@ namespace PocketCampusClasses
 
             foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
             {
-                c_Members.Add(new ClassGroupMembers(DR));
+
+                    c_Members.Add(new ClassGroupMembers(DR));
             }
 
             c_Members.Sort();

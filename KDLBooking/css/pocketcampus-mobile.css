@@ -14,12 +14,12 @@
 	}
 	
 	h1{
-		font-size: 14px;
+		font-size: 16px;
 		padding: 0px;
 		margin: 0px;
 		border: 0px;
 		font-family: Arial;
-		font-weight: normal;
+		font-weight: bold;
 	}
 	
 	h2{
@@ -34,6 +34,11 @@
 	a{
 		color: #000000;
 		text-decoration: none;
+	}
+	
+	p
+	{
+		font-size:11px;
 	}
 	
 	a:visited{

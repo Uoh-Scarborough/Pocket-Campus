@@ -11,7 +11,7 @@
             <div id="breadcrumb"><p><a href="http://pocketcampus.scar.hull.ac.uk">Pocket Campus</a> > <a href="http://timetables.scar.hull.ac.uk">Timetables</a> > <asp:Label ID="courselabelbread" runat="server"></asp:Label> </p></div>
 
             <asp:DropDownList id="CourseList" CssClass="courselist" runat="server" 
-                AutoPostBack="True" onselectedindexchanged="CourseList_SelectedIndexChanged"></asp:DropDownList>
+                AutoPostBack="True" onselectedindexchanged="WeekButton_Click"></asp:DropDownList>
             
             <asp:DropDownList id="WeekList" CssClass="weeklist" runat="server" AutoPostBack="True"  onselectedindexchanged="CourseList_SelectedIndexChanged"></asp:DropDownList>    
             <asp:Label ID="Courselbl" runat="server" CssClass="courselabel"></asp:Label>

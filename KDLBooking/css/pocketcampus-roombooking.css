@@ -9,6 +9,26 @@
 		font-family:Arial;	
 	}
 	
+	div#mainbodyarea #logindetailstable
+	{
+		margin: 0px auto 10px auto;
+	}
+	
+	div#mainbodyarea #logindetailstable .formtitle
+	{
+		width:100px;
+	}
+	
+	div#mainbodyarea #logindetailstable .inputtext
+	{
+		width:200px;
+	}
+	
+	div#mainbodyarea #logindetailstable #submitrow
+	{
+		text-align:right;
+	}
+	
 	div#breadcrumb
 	{
 		display:none;
@@ -97,7 +117,23 @@
 	table.timetable tr td.blankcell
 	{
 		border: 1px solid black;
-		width: 25px;
+		width: 14px;
+	}
+	
+	table.timetable tr td.lastcell
+	{
+		border: 1px solid black;
+		width: 14px;
+	}
+	
+	table.timetable tr td.blankcell a
+	{
+	 	text-decoration:None; height: 100px; width:100%; display: block;
+	}
+	
+	table.timetable tr td.lastcell a
+	{
+	 	text-decoration:None; height: 100px; width:100%; display: block;
 	}
 	
 	table.timetable tr td.actcell
@@ -109,6 +145,11 @@
 	
 	table.timetable tr td.thisweek table.acttable tr.bottomrow td.actpattern{
 		background: red; 
+	}
+	
+	span.activity
+	{
+		display:block;
 	}
 	
 	table.acttable
@@ -194,84 +235,113 @@
 		text-align:right;
 	}
 	
+	/*950px / 96 Cols*/
+	
+	.visiblespan
+	{
+		display:inline;
+	}
+	
 	.spancols1
 	{
-		width: 25px;
+		width: 14px;
 	}
 	
 	.spancols2
 	{
-		width: 50px;
+		width: 28px;
 	}
 	
 	.spancols3
 	{
-		width: 75px;
+		width: 42px;
 	}
 	
 	.spancols4
 	{
-		width: 100px;
+		width: 56px;
 	}
 	
 	.spancols5
 	{
-		width: 125px;
+		width: 70px;
 	}
 	
 	.spancols6
 	{
-		width: 150px;
+		width: 84px;
 	}
 	
 	.spancols7
 	{
-		width: 175px;
+		width: 98px;
 	}
 	
 	.spancols8
 	{
-		width: 200px;
+		width: 112px;
 	}
 	
 	.spancols9
 	{
-		width: 225px;
+		width: 126px;
 	}
 	
 	.spancols10
 	{
-		width: 250px;
+		width: 140px;
 	}
 	
 	.spancols11
 	{
-		width: 275px;
+		width: 154px;
 	}
 	
 	.spancols12
 	{
-		width: 300px;
+		width: 168px;
 	}
 	
 	.spancols13
 	{
-		width: 325px;
+		width: 182px;
 	}
 	
 	.spancols14
 	{
-		width: 350px;
+		width: 196px;
 	}
 	
 	.spancols15
 	{
-		width: 375px;
+		width: 210px;
 	}
 	
 	.spancols16
 	{
-		width: 400px;
+		width: 224px;
 	}
+	
+	table#bookings
+	{
+		
+	}
+	
+	table#bookings tr th
+	{
+		text-align:left;
+		background: url('../img/footer.png') no-repeat;
+		color: #ffffff;
+	}
+	
+	table#bookings tr td
+	{
+		padding-left: 10px;
+		padding-right: 10px; 
+		background: #ffffff;
+		border-bottom: 1px solid #000000;
+	}
+	
+
 	
 }

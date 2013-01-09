@@ -1,14 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Groups.aspx.cs" Inherits="KDLBooking.Groups" MasterPageFile="~/Green.Master" EnableSessionState="True" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Groups.aspx.cs" Inherits="KDLBooking.Groups" MasterPageFile="~/Responsive.Master" EnableSessionState="True" %>
 
 <%@ Register  TagPrefix="Tools" TagName="SearchUsers" Src="~/SearchUsers.ascx" %>
 
 <%@ Register src="ControlAdminMenu.ascx" tagname="ControlAdminMenu" tagprefix="uc1" %>
 
-<asp:Content ID="KDLBookingLogo" ContentPlaceHolderID="HomeButtonCPH" runat="server"><a href="http://kdlbooking.scar.hull.ac.uk"><label id="HomeButtonlbl" runat="server"><img src="http://pocketcampusimages.scar.hull.ac.uk/KDLBookingLogo.png" alt="KDL Booking Logo" /></label></a></asp:Content>
-
 <asp:Content ID="mainform" ContentPlaceHolderID="MainArea" Runat="Server">
 
-<form id="mainform" runat="server">
 
     <uc1:ControlAdminMenu ID="ControlAdminMenu1" runat="server" />
 
@@ -162,9 +159,5 @@
         </asp:View>
     
     </asp:MultiView>
-
-    
-
-</form>
 
 </asp:Content>

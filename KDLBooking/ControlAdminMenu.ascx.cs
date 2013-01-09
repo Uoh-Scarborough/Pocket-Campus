@@ -23,11 +23,17 @@ namespace KDLBooking
 
             if (ClassGroupMembers.IsAdmin(UI.Username))
             {
-                MenuPanel.Visible = true;
+
+                AdminMenulbl.Visible = true;
+                AdminMenuOptionslbl.Visible = true;
+
             }
             else
             {
-                MenuPanel.Visible = false;
+
+                AdminMenulbl.Visible = false;
+                AdminMenuOptionslbl.Visible = false;
+
             }
         }
     }
