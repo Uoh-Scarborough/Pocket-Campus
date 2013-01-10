@@ -1,33 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="\\eric\wwwroot\KDLRoomBooking" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Live" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+  <publishProfile publishUrl="\\eric\wwwroot\KDLRoomBooking" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Live" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="js/main.js" publishTime="01/07/2013 13:48:37" />
+    <file relUrl="css/pocketcampus-timetables-print.css" publishTime="01/07/2013 13:48:09" />
+    <file relUrl="css/pocketcampus-mobile.css" publishTime="01/09/2013 09:29:50" />
+    <file relUrl="img/Mobile_PocketCampusRight.png" publishTime="01/07/2013 13:48:36" />
     <file relUrl="Emails/EditBookingConfirmation.html" publishTime="10/16/2012 14:09:13" />
-    <file relUrl="bin/PocketCampusClasses.dll" publishTime="10/08/2012 16:26:12" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="01/09/2013 11:35:54" />
+    <file relUrl="img/PocketCampusHeader.png" publishTime="01/07/2013 13:48:36" />
     <file relUrl="kioskstyle.css" publishTime="07/19/2012 13:23:49" />
-    <file relUrl="Constraints.aspx" publishTime="07/31/2012 12:55:58" />
-    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="10/08/2012 16:26:12" />
+    <file relUrl="Constraints.aspx" publishTime="01/09/2013 11:42:52" />
+    <file relUrl="img/Timetable.png" publishTime="01/07/2013 13:48:36" />
+    <file relUrl="img/Mobile_PocketCampus.png" publishTime="01/07/2013 13:48:36" />
+    <file relUrl="js/script.js" publishTime="01/07/2013 13:48:37" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="01/09/2013 11:35:54" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="07/19/2012 13:23:03" />
-    <file relUrl="Emails/AdminBookingDeleted.html" publishTime="10/16/2012 14:09:14" />
-    <file relUrl="Booking.aspx" publishTime="09/14/2012 08:42:11" />
-    <file relUrl="Green.Master" publishTime="07/31/2012 12:44:24" />
+    <file relUrl="img/footer.png" publishTime="01/07/2013 13:48:36" />
+    <file relUrl="js/plugins.js" publishTime="01/07/2013 13:48:37" />
+    <file relUrl="Responsive.Master" publishTime="01/09/2013 13:09:01" />
+    <file relUrl="Emails/AdminBookingDeleted.html" publishTime="01/07/2013 11:49:09" />
+    <file relUrl="Booking.aspx" publishTime="01/09/2013 10:37:48" />
+    <file relUrl="js/vendor/modernizr-2.5.3-respond-1.1.0.min.js" publishTime="01/07/2013 13:48:37" />
     <file relUrl="ProductionBooking.Publish.xml" publishTime="07/19/2012 13:23:49" />
-    <file relUrl="Restrict.aspx" publishTime="07/19/2012 13:44:27" />
+    <file relUrl="js/vendor/jquery-1.7.2.min.js" publishTime="01/07/2013 13:48:37" />
+    <file relUrl="img/Mobile_PocketCampusLeft.png" publishTime="01/07/2013 13:48:36" />
+    <file relUrl="css/pocketcampus-roombooking-mobile.css" publishTime="01/09/2013 11:55:48" />
     <file relUrl="bin/BasicFrame.WebControls.BasicDatePicker.dll" publishTime="04/24/2009 00:03:24" />
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="07/19/2012 13:23:03" />
-    <file relUrl="Emails/BookingConfirmation.html" publishTime="10/16/2012 14:09:04" />
-    <file relUrl="bin/KDLBooking.dll" publishTime="10/17/2012 08:51:53" />
-    <file relUrl="Default.aspx" publishTime="07/31/2012 12:50:29" />
+    <file relUrl="js/vendor/jquery-1.8.0.min.js" publishTime="01/07/2013 13:48:37" />
+    <file relUrl="Emails/BookingConfirmation.html" publishTime="01/07/2013 11:47:10" />
+    <file relUrl="bin/KDLBooking.dll" publishTime="01/09/2013 13:04:42" />
+    <file relUrl="Default.aspx" publishTime="01/09/2013 11:27:23" />
     <file relUrl="Emails/AdminEditBookingConfirmation.html" publishTime="10/16/2012 14:08:58" />
-    <file relUrl="ControlAdminMenu.ascx" publishTime="07/25/2012 16:24:32" />
+    <file relUrl="ControlAdminMenu.ascx" publishTime="01/09/2013 11:40:03" />
+    <file relUrl="js/vendor/modernizr-2.6.1.min.js" publishTime="01/07/2013 13:48:37" />
     <file relUrl="bin/StandardClasses.dll" publishTime="09/13/2012 11:31:21" />
-    <file relUrl="DefaultOld.aspx" publishTime="07/25/2012 16:12:10" />
+    <file relUrl="css/pocketcampus-roombooking.css" publishTime="01/09/2013 11:34:11" />
     <file relUrl="Emails/BookingDeleted.html" publishTime="10/16/2012 14:09:09" />
-    <file relUrl="Web.config" publishTime="09/13/2012 11:55:59" />
-    <file relUrl="Groups.aspx" publishTime="07/31/2012 12:56:32" />
+    <file relUrl="Web.config" publishTime="01/09/2013 11:49:56" />
+    <file relUrl="img/Mobile_PocketCampusBG.png" publishTime="01/07/2013 13:48:36" />
+    <file relUrl="css/pocketcampus.css" publishTime="01/09/2013 09:28:36" />
+    <file relUrl="Groups.aspx" publishTime="01/09/2013 11:41:45" />
+    <file relUrl="img/CampusHeader.png" publishTime="01/07/2013 13:48:36" />
     <file relUrl="bin/StandardClasses.pdb" publishTime="09/13/2012 11:31:20" />
-    <file relUrl="bin/KDLBooking.pdb" publishTime="10/17/2012 08:51:53" />
-    <file relUrl="login.aspx" publishTime="07/31/2012 12:54:34" />
-    <file relUrl="SearchUsers.ascx" publishTime="08/13/2012 11:32:06" />
+    <file relUrl="bin/KDLBooking.pdb" publishTime="01/09/2013 13:04:42" />
+    <file relUrl="css/style.css" publishTime="01/07/2013 13:48:09" />
+    <file relUrl="login.aspx" publishTime="01/08/2013 11:26:12" />
+    <file relUrl="SearchUsers.ascx" publishTime="01/09/2013 11:47:38" />
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="07/19/2012 13:23:03" />
   </publishProfile>
 </publishData>

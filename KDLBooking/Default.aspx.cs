@@ -366,7 +366,7 @@ namespace KDLBooking
                                 else
                                 {
                                     //Not Editable
-                                    OutText = ClassBooking.ActivityTable("", "", Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
+                                    OutText = ClassBooking.ActivityTable("", "", "Room Booked", Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
                                     lastActivityEnd = Booking.EndTime;
                                 }
                             }

@@ -79,19 +79,7 @@ namespace KDLBooking
         }
 
         protected void Page_Load(object sender, EventArgs e)
-        {
-            string strUserAgent = Request.UserAgent.ToString().ToLower();
-            if (strUserAgent != null)
-            {
-                if (Request.Browser.IsMobileDevice == true || strUserAgent.Contains("iphone") ||
-                    strUserAgent.Contains("blackberry") || strUserAgent.Contains("mobile") ||
-                    strUserAgent.Contains("windows ce") || strUserAgent.Contains("opera mini") ||
-                    strUserAgent.Contains("palm"))
-                {
-                    Response.Redirect("http://m.studiobooking.scar.hull.ac.uk");
-                }
-            }
-           
+        {           
             if(!IsPostBack){
                FormsAuthentication.SignOut();
             }
