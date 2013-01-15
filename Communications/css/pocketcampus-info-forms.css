@@ -1,0 +1,28 @@
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+
+	form span{
+		
+		display: block;
+		
+	}
+	
+	form ul li label{
+		padding: 0px 0px 0px 10px;
+		margin: 0px;
+		height: 20px;
+	}
+	
+	form ul li label span{
+		position: relative;
+		top: -25px;
+		left: -15px;
+	}
+	
+	form ul li input{
+		
+	}
+	
+}
