@@ -348,7 +348,7 @@ namespace KDLBooking
 
                             //ClassUserInfo UI = new ClassUserInfo(Context.User.Identity.Name);
 
-                            if (ClassGroupMembers.IsAdmin(UI.Username))
+                            if (ClassGroupMembers.IsAdmin(UI.Username) || ClassGroupMembers.IsMember(UI.Username,"CampusConnect"))
                             { 
                                 //Always Edit
                                 OutText = ClassBooking.ActivityTable(EditButton, DeleteButton, Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
