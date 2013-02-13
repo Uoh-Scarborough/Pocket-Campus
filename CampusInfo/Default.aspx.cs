@@ -64,7 +64,7 @@ namespace CampusInfo
 
                             ClassCategory NoticesCat = new ClassCategory(LivePage.NoticesCateogryID);
 
-                            Notices = ClassNotice.loadNoticesList(NoticesCat);
+                            Notices = ClassCommsBase.loadNoticesList(NoticesCat);
 
                             Mode = 1;
                         }
