@@ -277,6 +277,24 @@ namespace PocketCampusClasses
             }
         }
 
+        public static Boolean IsMember(string UserID, string Group)
+        {
+            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
+
+            string Query = string.Format("SELECT * FROM Group_Members_View WHERE Group_Name = '{0}' AND GroupMembers_UserID = '{1}'", Group, UserID);
+
+            RQ.RunQuery(Query);
+
+            if (RQ.numberofresults > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static Boolean SendAdminEmail(string UserID)
         {
             //Send email based on the group the user is in.

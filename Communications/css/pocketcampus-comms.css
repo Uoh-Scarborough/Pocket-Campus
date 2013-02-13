@@ -1,0 +1,72 @@
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 860px) {
+	
+	table.list
+	{
+		width:100%;
+	}
+	
+	table.list th
+	{
+		background: grey;
+		color: White;
+		border: 1px solid black;
+	}
+	
+	table.list tr.basevalid
+	{
+		background: green;
+	}
+	
+	table.list tr.basevalidnotshowing
+	{
+		background: orange;
+	}
+	
+	table.list tr.baseinvalid
+	{
+		background: red;
+	}
+	
+	.categoryfield
+	{
+		display: table-cell;
+	}
+	
+	.displayrangefield
+	{
+		display: table-cell;
+	}
+	
+	.adminmenu
+	{
+		padding:0px;
+	}
+	
+	div#mainbodyarea table.informationtable
+	{
+		margin: 0px;
+	}
+	
+	div#mainbodyarea table.informationtable .titletext
+	{
+		width:600px;
+		font-size: 12px;
+	}
+	
+	div#mainbodyarea table.informationtable .shorttext
+	{
+		width:100px;
+		font-size:11px;
+	}
+	
+	div#mainbodyarea table.informationtable .datetext
+	{
+		width:100px;
+		font-size:12px;
+	}
+	
+}

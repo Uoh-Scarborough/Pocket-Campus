@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Media Feed</title>
+    <link />
+    <description>Media Feed for Pocket Campus</description>
+    <item>
+      <title>Blah</title>
+      <description>Blah</description>
+      <content url="C:\\Users\\346388\\Desktop\\PocketCampus\\Communications\\Uploads/Attachements/vagorigging2112013104848.pdf" type="image/jpeg" duration="15" />
+    </item>
+    <item>
+      <title>Advanced Notice</title>
+      <description>This is and advanced notice</description>
+      <content url="" type="image/jpeg" duration="15" />
+    </item>
+  </channel>
+</rss>

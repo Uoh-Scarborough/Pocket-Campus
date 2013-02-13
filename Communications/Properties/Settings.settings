@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Communications.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Communications_Notices_Pocket_x0020_Campus_x0020_Web_x0020_Services_x0020___x0020_Notices_x0020__x0026__x0020_Events" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/PCWS/NoticesEvents.asmx</Value>
+    </Setting>
+    <Setting Name="Communications_uk_ac_hull_scar_pcws_Pocket_x0020_Campus_x0020_Web_x0020_Services_x0020___x0020_Communications" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://pcws.scar.hull.ac.uk/Communications.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -70,21 +70,30 @@ namespace PocketCampusClasses
             Name = DR["Group_Name"].ToString();
             Deleted = Convert.ToBoolean(DR["Group_Deleted"]);
 
-            //Load Constraints
-            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
 
-            string Query = "";
-            Query = String.Format("SELECT Constraint_ID_LNK FROM Constraint_Group_View WHERE Constraint_Group_Group_ID_LNK = {0} ORDER BY Constraint_Title;",ID);        
-            RQ.RunQuery(Query);
-
-            c_Constraints = new ArrayList();
-
-            foreach (DataRow DR1 in RQ.dataset.Tables[0].Rows)
+            try
             {
-                c_Constraints.Add(Convert.ToInt32(DR1["Constraint_ID_LNK"]));
-            }
+                //Load Constraints
+                ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
 
-            c_Constraints.Sort();
+                string Query = "";
+                Query = String.Format("SELECT Constraint_ID_LNK FROM Constraint_Group_View WHERE Constraint_Group_Group_ID_LNK = {0} ORDER BY Constraint_Title;", ID);
+                RQ.RunQuery(Query);
+
+                c_Constraints = new ArrayList();
+
+                foreach (DataRow DR1 in RQ.dataset.Tables[0].Rows)
+                {
+                    c_Constraints.Add(Convert.ToInt32(DR1["Constraint_ID_LNK"]));
+                }
+
+                c_Constraints.Sort();
+            }
+            catch
+            {
+
+                //Do Nothing
+            }
 
         }
 
@@ -116,18 +125,29 @@ namespace PocketCampusClasses
 
             WQ.RunQuery(Query);
 
-            string Query2 = String.Format("Update Constraint_Groups SET Constraint_Group_Deleted = 1 WHERE Constraint_Group_Group_ID_LNK = {0};", ID);
-
-            WQ.RunQuery(Query2);
-
-            foreach (object ConstraintID in c_Constraints)
-            {
-                string Query3 = String.Format("INSERT INTO Constraint_Groups (Constraint_Group_Group_ID_LNK, Constraint_Group_Constraint_ID_LNK, Constraint_Group_Deleted) VALUES ({0},{1},0);", c_ID, Convert.ToInt32(ConstraintID));
-
-                WQ.RunQuery(Query3);
-            }
-
             Result = true;
+
+            try
+            {
+
+                string Query2 = String.Format("Update Constraint_Groups SET Constraint_Group_Deleted = 1 WHERE Constraint_Group_Group_ID_LNK = {0};", ID);
+
+                WQ.RunQuery(Query2);
+
+                foreach (object ConstraintID in c_Constraints)
+                {
+                    string Query3 = String.Format("INSERT INTO Constraint_Groups (Constraint_Group_Group_ID_LNK, Constraint_Group_Constraint_ID_LNK, Constraint_Group_Deleted) VALUES ({0},{1},0);", c_ID, Convert.ToInt32(ConstraintID));
+
+                    WQ.RunQuery(Query3);
+                }
+
+                Result = true;
+
+            }
+            catch
+            {
+                //Do Nothing
+            }
             
             return Result;
         }

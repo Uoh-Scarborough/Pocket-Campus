@@ -2,18 +2,18 @@
 
 <%@ Register  TagPrefix="Tools" TagName="SearchUsers" Src="~/Controls/Control_SearchUsers.ascx" %>
 
-<%@ Register src="ControlAdminMenu.ascx" tagname="ControlAdminMenu" tagprefix="uc1" %>
+<%@ Register src="~/Controls/Control_Menu.ascx" tagname="ControlAdminMenu" tagprefix="uc1" %>
 
 <asp:Content ID="mainform" ContentPlaceHolderID="MainArea" Runat="Server">
 
-
-    <asp:MultiView ID="MultiView" runat="server">
+    <uc1:ControlAdminMenu ID="ControlAdminMenu1" runat="server" />
+&nbsp;<asp:MultiView ID="MultiView" runat="server">
     
         <asp:View ID="ViewGroupList" runat="server" onload="ViewGroupList_Load">
         
             <h1>Groups</h1>
             
-            <p>Listed below are the groups managed by the Studio Booking system.</p>
+            <p>Listed below are the groups managed by the Communications system.</p>
 
             <p><asp:LinkButton ID="AddGrouplbtn" Text="Add Group" runat="server" 
                     onclick="AddGrouplbtn_Click" /></p>
@@ -21,9 +21,11 @@
             <asp:GridView ID="GroupsGrid" runat="server" AutoGenerateColumns="False" 
                 EnableModelValidation="True" onrowcommand="GroupsGrid_RowCommand" Width="100%">
                 <Columns>
-                    <asp:BoundField DataField="Group_Name" HeaderText="Group Name" ControlStyle-Width="50%" />
+                    <asp:BoundField DataField="Group_Name" HeaderText="Group Name" 
+                        ControlStyle-Width="50%" >
+                    <ControlStyle Width="50%" />
+                    </asp:BoundField>
                     <asp:ButtonField CommandName="ViewGroup" Text="View Group" />
-                    <asp:ButtonField CommandName="GroupConstraints" Text="Group Constraints" />
                     <asp:TemplateField><ItemTemplate>
                             <asp:LinkButton ID="DeleteGroupbtn" runat="server" Text="Delete Group" CommandName="DeleteGroup" CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"  OnClientClick="return confirm('Are you sure you want to delete?');"/>
                         </ItemTemplate></asp:TemplateField>
@@ -116,46 +118,6 @@
 
         </asp:View>
 
-         <asp:View ID="ViewGroupConstraints" runat="server">
-            
-            <h1><asp:Label ID="GroupNamelbl1" runat="server"/></h1>
-
-            <p>Select from the list below which constraints you want to apply to the group.</p>
-            
-            <h2 style="color:Black">Studio Closures</h2>
-
-            <asp:CheckBoxList ID="StudioClosureList" runat="server" RepeatColumns="5">
-
-            </asp:CheckBoxList>
-
-            <h2 style="color:Black">Duration Restrictions</h2>
-
-            <asp:CheckBoxList ID="DurationList" runat="server" RepeatColumns="5">
-
-            </asp:CheckBoxList>
-
-            <h2 style="color:Black">Daily Allowance</h2>
-
-            <asp:CheckBoxList ID="WeeklyAllowanceList" runat="server" RepeatColumns="5">
-
-            </asp:CheckBoxList>
-
-            <h2 style="color:Black">Booking Range</h2>
-
-            <asp:CheckBoxList ID="BookingRangeList" runat="server" RepeatColumns="5">
-
-            </asp:CheckBoxList>
-
-             <br />
-             <asp:Button ID="SaveConstraintsbtn" runat="server" 
-                 onclick="SaveConstraintsbtn_Click" Text="Save Constraints" />
-             <br />
-
-            <asp:LinkButton ID="HomeButton1" runat="server" 
-                onclick="Homebt_OnClick" Text="Return to Group Management" />
-
-        </asp:View>
-    
     </asp:MultiView>
 
 </asp:Content>

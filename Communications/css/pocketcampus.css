@@ -8,6 +8,29 @@
 		display:none;
 	}
 	
+	span.visible
+	{
+		display:inline;
+	}
+	
+	span.visiblespan
+	{
+		display:inline;
+	}
+	
+	h1
+	{
+		padding-top:0px;
+		margin-top:0px;
+		font-size:30px;
+	}
+	
+	h2
+	{
+		padding-top:10px;
+		font-size:20px;
+	}
+	
 	body{
 		font-family: Georgia, Tahoma, Arial;
 		background: #F1E7C9;

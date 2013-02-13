@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://pcws.scar.hull.ac.uk/Communications.asmx?wsdl" docRef="http://pcws.scar.hull.ac.uk/Communications.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://pcws.scar.hull.ac.uk/Communications.asmx" xmlns:q1="http://pcws.scar.hull.ac.uk/" binding="q1:Pocket_x005F_x0020_Campus_x005F_x0020_Web_x005F_x0020_Services_x005F_x0020_-_x005F_x0020_CommunicationsSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://pcws.scar.hull.ac.uk/Communications.asmx" xmlns:q2="http://pcws.scar.hull.ac.uk/" binding="q2:Pocket_x005F_x0020_Campus_x005F_x0020_Web_x005F_x0020_Services_x005F_x0020_-_x005F_x0020_CommunicationsSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

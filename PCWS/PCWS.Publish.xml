@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="\\eric\wwwroot\pcws" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Eric" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="bin/PCWS.pdb" publishTime="02/06/2012 11:10:05" />
-    <file relUrl="bin/PocketCampusClasses.dll" publishTime="04/18/2012 15:22:31" />
-    <file relUrl="NoticesEvents.asmx" publishTime="12/20/2011 14:52:28" />
-    <file relUrl="ProductionBooking.asmx" publishTime="01/04/2012 08:46:45" />
-    <file relUrl="Pages.asmx" publishTime="02/06/2012 09:20:11" />
-    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="04/18/2012 15:22:31" />
-    <file relUrl="Web.config" publishTime="02/02/2012 16:19:14" />
-    <file relUrl="bin/StandardClasses.pdb" publishTime="02/13/2012 16:46:44" />
+    <file relUrl="Web.config" publishTime="01/30/2013 15:48:42" />
+    <file relUrl="Feeds/libraryimages.html" publishTime="01/31/2013 09:18:01" />
+    <file relUrl="bin/PCWS.dll" publishTime="02/12/2013 09:30:09" />
+    <file relUrl="Feeds/librarytext.html" publishTime="01/31/2013 09:18:11" />
+    <file relUrl="Feeds/noticeeventsimages.html" publishTime="01/31/2013 10:08:35" />
     <file relUrl="Timetables.asmx" publishTime="02/02/2012 14:48:03" />
-    <file relUrl="bin/StandardClasses.dll" publishTime="02/13/2012 16:46:44" />
-    <file relUrl="bin/PCWS.dll" publishTime="04/30/2012 12:22:05" />
-    <file relUrl="Default.htm" publishTime="02/06/2012 10:55:49" />
+    <file relUrl="bin/PocketCampusClasses.dll" publishTime="01/31/2013 10:25:02" />
+    <file relUrl="bin/PCWS.pdb" publishTime="02/12/2013 09:30:09" />
+    <file relUrl="Feeds/Images/CCHeader.jpg" publishTime="01/31/2013 08:37:50" />
+    <file relUrl="bin/StandardClasses.pdb" publishTime="01/15/2013 09:51:12" />
+    <file relUrl="bin/StandardClasses.dll" publishTime="01/15/2013 09:51:12" />
+    <file relUrl="Communications.asmx" publishTime="01/30/2013 10:14:07" />
+    <file relUrl="bin/PocketCampusClasses.pdb" publishTime="01/31/2013 10:25:01" />
+    <file relUrl="Default.htm" publishTime="01/30/2013 10:08:39" />
+    <file relUrl="ProductionBooking.asmx" publishTime="01/04/2012 08:46:45" />
   </publishProfile>
 </publishData>

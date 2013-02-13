@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Responsive.master.cs" Inherits="PocketCampus.Responsive" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Responsive.Master.cs" Inherits="PocketCampus.Responsive" %>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -14,10 +14,8 @@
     	<meta name="author" content="">
     
     	<meta name="viewport" content="width=device-width">
-    
-        <link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-timetables-print.css">
 
-    	<!--<link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-mobile.css">
+    	<<link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-mobile.css">
         <link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-timetables-mobile.css">-->
     	<link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus.css">
         <link rel="stylesheet" href="http://timetables.scar.hull.ac.uk/css/pocketcampus-timetables.css">

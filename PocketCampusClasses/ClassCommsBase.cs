@@ -2,6 +2,7 @@
 using System.Data;
 using System.Collections;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -15,13 +16,36 @@ using StandardClasses;
 
 namespace PocketCampusClasses
 {
-    public class ClassCommsBase : ClassBase
+    public class ClassCommsBase
     {
 
+        public enum CommsType
+        {
+            Notice,
+            Event,
+            Menu,
+            Ticker
+        }
+
+        public enum EmailType
+        {
+            Add,
+            Valid,
+            Invalid
+        }
+        
+        protected int c_BaseID;
         private int c_CategoryID;
-        private string c_Title, c_Notice, c_PostedBy, c_PostedByID, c_PostedByEmail, c_Attachment, c_ValidatedBy, c_InvalidReason;
+        private string c_Title, c_Content, c_PostedBy, c_PostedByID, c_PostedByEmail, c_Attachment, c_ValidatedBy, c_InvalidReason;
         private DateTime c_DisplayFrom, c_DisplayTo, c_PostedDate, c_ValidatedDate;
-        private Boolean c_Urgent, c_Valid;
+        private Boolean c_Urgent, c_Valid, c_UseAttachment;
+        protected Boolean c_Deleted;
+
+        public int BaseID
+        {
+            get { return c_BaseID; }
+            set { c_BaseID = value; }
+        }
 
         public string Title
         {
@@ -29,10 +53,10 @@ namespace PocketCampusClasses
             set { c_Title = value.Trim(); }
         }
 
-        public string Notice
+        public string Content
         {
-            get { return c_Notice.Trim(); }
-            set { c_Notice = value.Trim(); }
+            get { return c_Content.Trim(); }
+            set { c_Content = value.Trim(); }
         }
 
         public string Attachment
@@ -56,6 +80,18 @@ namespace PocketCampusClasses
             }
         }
 
+        public Boolean UseAttachement
+        {
+            get
+            {
+                return c_UseAttachment;
+            }
+            set
+            {
+                c_UseAttachment = value;
+            }
+        }
+
         public DateTime DisplayFrom
         {
             get { return c_DisplayFrom; }
@@ -74,7 +110,7 @@ namespace PocketCampusClasses
             set { c_Urgent = value; }
         }
 
-        public ClassCategory Category
+        public virtual ClassCategory Category
         {
             get { return new ClassCategory(c_CategoryID); }
             set { c_CategoryID = value.ID; }
@@ -128,6 +164,13 @@ namespace PocketCampusClasses
             set { c_InvalidReason = value; }
         }
 
+        public Boolean Deleted
+        {
+            get { return c_Deleted; }
+            set { c_Deleted = value; }
+        }
+
+
         public ClassCommsBase()
         {
             //Initialise New Class
@@ -136,7 +179,7 @@ namespace PocketCampusClasses
             Attachment = "";
         }
 
-        public ClassCommsBase(int ID)
+        public void LoadBaseFromID(int ID)
         {
             //Initialise New Class
             string Query = "SELECT * From CommsBase WHERE CommsBase_ID_LNK = " + ID;
@@ -144,20 +187,16 @@ namespace PocketCampusClasses
             RQ.RunQuery(Query);
             RQ.connection.connection.Close();
 
-            LoadFromDR(RQ.dataset.Tables[0].Rows[0]);
+            LoadBaseFromDR(RQ.dataset.Tables[0].Rows[0]);
         }
 
-        public ClassCommsBase(DataRow DR)
+        protected void LoadBaseFromDR(DataRow DR)
         {
-            LoadFromDR(DR);
-        }
-
-        private void LoadFromDR(DataRow DR)
-        {
-            ID = Convert.ToInt32(DR["CommsBase_ID_LNK"].ToString());
+            BaseID = Convert.ToInt32(DR["CommsBase_ID_LNK"].ToString());
             Title = DR["CommsBase_Title"].ToString();
-            Notice = DR["CommsBase_Notice"].ToString();
+            Content = DR["CommsBase_Notice"].ToString();
             Attachment = DR["CommsBase_Attachement"].ToString();
+            UseAttachement = Convert.ToBoolean(DR["CommsBase_UseAttachement"]);
             DisplayFrom = Convert.ToDateTime(DR["CommsBase_DisplayFrom"].ToString());
             DisplayTo = Convert.ToDateTime(DR["CommsBase_DisplayTo"].ToString());
             Urgent = Convert.ToBoolean(DR["CommsBase_Urgent"].ToString());
@@ -168,6 +207,7 @@ namespace PocketCampusClasses
             PostedDate = Convert.ToDateTime(DR["CommsBase_PostedDate"].ToString());
             Valid = Convert.ToBoolean(DR["CommsBase_Valid"].ToString());
             ValidatedBy = DR["CommsBase_ValidatedBy"].ToString();
+
             try
             {
                 ValidatedDate = Convert.ToDateTime(DR["CommsBase_ValidatedDate"].ToString());
@@ -180,32 +220,60 @@ namespace PocketCampusClasses
             Deleted = Convert.ToBoolean(DR["CommsBase_Deleted"].ToString());
         }
 
-        public bool Create()
+        protected void LoadBaseFromBase(ClassCommsBase Base)
+        {
+            BaseID = Base.BaseID;
+            Title = Base.Title;
+            Content = Base.Content;
+            Attachment = Base.Attachment;
+            UseAttachement = Base.UseAttachement;
+            DisplayFrom = Base.DisplayFrom;
+            DisplayTo = Base.DisplayTo;
+            Urgent = Base.Urgent;
+            Category = Base.Category;
+            PostedBy = Base.PostedBy;
+            PostedByID = Base.PostedByID;
+            PostedByEmail = Base.PostedByEmail;
+            PostedDate = Base.PostedDate;
+            Valid = Base.Valid;
+            ValidatedBy = Base.ValidatedBy;
+            ValidatedDate = Base.ValidatedDate;
+            InvalidReason = Base.InvalidReason;
+            Deleted = Base.Deleted;
+        }
+
+        public ClassCommsBase GetBase()
+        {
+            return this;
+        }
+
+        public bool CreateBase()
         {
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             bool Result;
 
-            string Query = "INSERT INTO CommsBase (CommsBase_Title, CommsBase_Notice, CommsBase_Attachement, CommsBase_DisplayFrom, CommsBase_DisplayTo, CommsBase_Urgent, CommsBase_CategoryIDLNK, CommsBase_PostedBy, CommsBase_PostedByID, CommsBase_PostedByEmail, CommsBase_PostedDate, CommsBase_Valid, CommsBase_ValidatedBy, CommsBase_ValidatedDate, CommsBase_InvalidReason, CommsBase_Deleted) VALUES ('" + ClassUseful.FormatStringForDB(Title) + "','" + ClassUseful.FormatStringForDB(Notice) + "','" + Attachment + "','" + DisplayFrom.ToShortDateString() + "','" + DisplayTo.ToShortDateString() + "'," + Urgent.GetHashCode() + "," + c_CategoryID + ",'" + PostedBy + "','" + PostedByID + "','" + PostedByEmail + "','" + PostedDate.ToShortDateString() + "'," + Valid.GetHashCode() + ",'" + ValidatedBy + "','" + ValidatedDate.ToString() + "','" + InvalidReason + "',0) SELECT @@IDENTITY;";
+            string Query = "INSERT INTO CommsBase (CommsBase_Title, CommsBase_Notice, CommsBase_Attachement, CommsBase_UseAttachement, CommsBase_DisplayFrom, CommsBase_DisplayTo, CommsBase_Urgent, CommsBase_CategoryIDLNK, CommsBase_PostedBy, CommsBase_PostedByID, CommsBase_PostedByEmail, CommsBase_PostedDate, CommsBase_Valid, CommsBase_ValidatedBy, CommsBase_ValidatedDate, CommsBase_InvalidReason, CommsBase_Deleted) VALUES ('" + ClassUseful.FormatStringForDB(Title) + "','" + ClassUseful.FormatStringForDB(Content) + "','" + Attachment + "'," + UseAttachement.GetHashCode() + ",'" + DisplayFrom.ToShortDateString() + "','" + DisplayTo.ToShortDateString() + "'," + Urgent.GetHashCode() + "," + c_CategoryID + ",'" + PostedBy + "','" + PostedByID + "','" + PostedByEmail + "','" + PostedDate.ToShortDateString() + "'," + Valid.GetHashCode() + ",'" + ValidatedBy + "','" + ValidatedDate.ToString() + "','" + InvalidReason + "',0) SELECT @@IDENTITY;";
 
             try
             {
                 RQ.RunQuery(Query);
-                c_ID = Convert.ToInt16(RQ.dataset.Tables[0].Rows[0].ItemArray[0]);
+                c_BaseID = Convert.ToInt16(RQ.dataset.Tables[0].Rows[0].ItemArray[0]);
                 Result = true;
             }
             catch (Exception ex)
             {
                 Result = false;
             }
+
             return Result;
         }
 
-        public bool Save()
+        public bool SaveBase()
         {
             ClassWriteQuery WQ = new ClassWriteQuery(ClassAppDetails.commscurrentconnection);
             bool Result;
 
-            string Query = "UPDATE CommsBase SET CommsBase_Title = '" + ClassUseful.FormatStringForDB(Title) + "', CommsBase_Notice = '" + ClassUseful.FormatStringForDB(Notice) + "', CommsBase_Attachement = '" + Attachment + "', CommsBase_DisplayFrom = '" + DisplayFrom.ToShortDateString() + "', CommsBase_DisplayTo = '" + DisplayTo + "', CommsBase_Urgent = " + Urgent.GetHashCode() + ", CommsBase_CategoryIDLNK = " + c_CategoryID + ", CommsBase_PostedBy = '" + PostedBy + "', CommsBase_PostedByID = '" + PostedByID + "', CommsBase_PostedByEmail = '" + PostedByEmail + "', CommsBase_PostedDate = '" + PostedDate + "', CommsBase_Valid = " + Valid.GetHashCode() + ", CommsBase_ValidatedBy = '" + ValidatedBy + "', CommsBase_ValidatedDate = '" + ValidatedDate.ToString() + "', CommsBase_InvalidReason = '" + InvalidReason + "', CommsBase_Deleted = " + Deleted.GetHashCode() + " WHERE CommsBase_ID_LNK = " + ID + ";";
+            string Query = "UPDATE CommsBase SET CommsBase_Title = '" + ClassUseful.FormatStringForDB(Title) + "', CommsBase_Notice = '" + ClassUseful.FormatStringForDB(Content) + "', CommsBase_Attachement = '" + Attachment + "', CommsBase_UseAttachement = " + UseAttachement.GetHashCode() + ", CommsBase_DisplayFrom = '" + DisplayFrom.ToShortDateString() + "', CommsBase_DisplayTo = '" + DisplayTo + "', CommsBase_Urgent = " + Urgent.GetHashCode() + ", CommsBase_CategoryIDLNK = " + c_CategoryID + ", CommsBase_PostedBy = '" + PostedBy + "', CommsBase_PostedByID = '" + PostedByID + "', CommsBase_PostedByEmail = '" + PostedByEmail + "', CommsBase_PostedDate = '" + PostedDate + "', CommsBase_Valid = " + Valid.GetHashCode() + ", CommsBase_ValidatedBy = '" + ValidatedBy + "', CommsBase_ValidatedDate = '" + ValidatedDate.ToString() + "', CommsBase_InvalidReason = '" + InvalidReason + "', CommsBase_Deleted = " + Deleted.GetHashCode() + " WHERE CommsBase_ID_LNK = " + BaseID + ";";
             try
             {
                 WQ.RunQuery(Query);
@@ -218,178 +286,55 @@ namespace PocketCampusClasses
             return Result;
         }
 
-        public void sendAdminEmail()
+        public void sendEmail(CommsType Type, EmailType Email, int ParentID, Boolean Admin, String To)
         {
-            string EmailTitle = "New Notice Added";
+            StreamReader streamReader = new StreamReader(ClassAppDetails.emaildir + "/CommunicationAddedAdmin.html");
+            string emailTitle = "";
 
-            string EmailDetails = "<html><head><title>New Notice Added -" + Title + "</title></head><body>";
-            EmailDetails += "<p>Dear Comms Admin,</p>";
-            EmailDetails += "<p>A new notice entited " + Title + " has not been added to the system and is awaiting validation.</p>";
-            EmailDetails += "<p>You can view the notices at <a href=\"comms.scar.hull.ac.uk/notices.aspx?aid=1&amp;nid=" + ID + "\">comms.scar.hull.ac.uk/notice.aspx?aid=1&amp;nid=" + ID + "</a></p>";
-            EmailDetails += "<p>&nbsp;</p>";
-            EmailDetails += "<p>Scarborough Communications<br/>Scarborough Campus<br/>01723 362392<br/>comms-scar@hull.ac.uk</p>";
+            switch(Email){
+                case EmailType.Add:
+                    if (Admin)
+                    {
+                        streamReader = new StreamReader(ClassAppDetails.emaildir + "/CommunicationAddedAdmin.html");
+                    }
+                    else
+                    {
+                        streamReader = new StreamReader(ClassAppDetails.emaildir + "/CommunicationAdded.html");
+                    }
+                    emailTitle = "New " + Type.ToString() + " Added";
 
-            ClassEmail.SendMailMessage("pocketcampus@hull.ac.uk", ClassAppDetails.adminemail, "", "", EmailTitle, EmailDetails);
+                    break;
+
+                case EmailType.Invalid:
+                    streamReader = new StreamReader(ClassAppDetails.emaildir + "/CommunicationInvalid.html");
+                    emailTitle = Type.ToString() + " Invalid";
+
+                    break;
+
+                case EmailType.Valid:
+
+                    streamReader = new StreamReader(ClassAppDetails.emaildir + "/CommunicationValid.html");
+                    emailTitle = Type.ToString() + " Valid";
+
+                    break;
+            }
+
+            string email = streamReader.ReadToEnd();
+            streamReader.Close();
+
+            email = email.Replace("@CommType", Type.ToString());
+
+            email = email.Replace("@Name", this.PostedBy);
+
+            email = email.Replace("@Title", this.Title);
+
+            email = email.Replace("@CommURL", "http://communications.scar.hull.ac.uk?cmd=" + Type.ToString() + "&id=" + ParentID);
+
+            email = email.Replace("@Reason", this.InvalidReason);
+
+            ClassEmail.SendMailMessage("pocketcampus@hull.ac.uk", To, "", "", emailTitle, email);
+            
         }
-
-        public void sendEmail()
-        {
-            if (!Valid)
-            {
-                string EmailTitle = "Notice Invalid";
-
-                string EmailDetails = "<html><head><title>Notice Invalid -" + Title + "</title></head><body>";
-                EmailDetails += "<p>Dear " + PostedBy + "</p>";
-                EmailDetails += "<p>Your notice entited " + Title + " has not been succesfully validated.</p>";
-
-                if (InvalidReason != "")
-                {
-                    EmailDetails += "<p>The reason given was, " + InvalidReason + "</p>";
-                }
-
-                EmailDetails += "<p>You can review the notice at <a href=\"comms.scar.hull.ac.uk/notices.aspx?aid=1&amp;nid=" + ID + "\">comms.scar.hull.ac.uk/notices.aspx?aid=1&amp;nid=" + ID + "</a></p>";
-                EmailDetails += "<p>&nbsp;</p>";
-                EmailDetails += "<p>Scarborough Communications<br/>Scarborough Campus<br/>01723 362392<br/>comms-scar@hull.ac.uk</p>";
-
-                ClassEmail.SendMailMessage("pocketcampus@hull.ac.uk", PostedByEmail, "", "", EmailTitle, EmailDetails);
-            }
-        }
-
-        public static DataSet loadDataset(ClassUserInfo User, int View)
-        {
-            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
-
-            string Query = "";
-
-            if (User.InGroup(ClassAppDetails.admingroup))
-            {
-                //Admin therefore show all
-                if (View == 1)
-                {
-                    //Show Valid
-                    Query = "SELECT * FROM CommsBase WHERE CommsBase_Deleted = 0 AND CommsBase_Valid = 1 AND CommsBase_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' ORDER BY CommsBase_DisplayFrom";
-                }
-                else
-                {
-                    //Show Invalid
-                    Query = "SELECT * FROM CommsBase WHERE CommsBase_Deleted = 0 AND CommsBase_Valid = 0 AND CommsBase_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' ORDER BY CommsBase_DisplayFrom";
-                }
-
-            }
-            else
-            {
-                Query = "SELECT * FROM CommsBase WHERE CommsBase_Deleted = 0 AND CommsBase_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' AND CommsBase_PostedByID = '" + User.StudentID + "' ORDER BY CommsBase_DisplayFrom";
-            }
-
-            RQ.RunQuery(Query);
-
-            return RQ.dataset;
-        }
-
-        public static string loadNoticesList()
-        {
-            string ReturnStr = "";
-
-            //ReturnStr += "<div id=\"noticesarea\">";
-
-            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
-
-            ReturnStr += "<ul>";
-
-            if (ClassAppDetails.openday == "1")
-            {
-                //Open Day
-
-                RQ.RunQuery("SELECT TOP 6 * FROM CommsBase WHERE CommsBase_Deleted = 0 AND CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 11 AND CommsBase_DisplayFrom <= '" + DateTime.Now.ToShortDateString() + "' AND CommsBase_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' ORDER BY CommsBase_Urgent DESC, CommsBase_DisplayFrom;");
-            }
-            else
-            {
-
-                RQ.RunQuery("SELECT TOP 6 * FROM CommsBase WHERE CommsBase_Deleted = 0 AND CommsBase_CategoryIDLNK != 11 AND CommsBase_Valid = 1 AND CommsBase_DisplayFrom <= '" + DateTime.Now.ToShortDateString() + "' AND CommsBase_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' ORDER BY CommsBase_Urgent DESC, CommsBase_DisplayFrom;");
-
-            }
-
-            foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
-            {
-                ClassCommsBase Notice = new ClassCommsBase(DR);
-                ReturnStr += "<li><a href=\"http://campusinfo.scar.hull.ac.uk/notices-feed?id=" + Notice.ID + "\">" + Notice.Title + "</a></li>";
-                RQ.connection.connection.Close();
-            }
-
-            ReturnStr += "</ul>";
-
-            ReturnStr += "<p><a href=\"http://communications.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fNotices.aspx&amp;aid=1&amp;nid=-1\">Add New Notice</a></p>";
-
-            //ReturnStr += "</div>";
-
-            return ReturnStr;
-        }
-
-        public static string loadNoticesList(ClassCategory Category)
-        {
-            string ReturnStr = "";
-
-            int Counter = 0;
-
-            //ReturnStr += "<div id=\"noticesarea\">";
-
-            ReturnStr += "<h2>Notices</h2>";
-
-            ReturnStr += "Listed below are the current " + Category.Title + " messages. Click the title to view the message.<br/>";
-
-            //Get List
-            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
-
-            ReturnStr += "<ul>";
-
-            RQ.RunQuery("SELECT TOP 4 * FROM CommsBase WHERE CommsBase_Deleted = 0 AND CommsBase_Valid = 1 AND CommsBase_DisplayFrom <= '" + DateTime.Now.ToShortDateString() + "' AND CommsBase_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' AND CommsBase_CategoryIDLNK = " + Category.ID + " ORDER BY CommsBase_DisplayFrom, CommsBase_Urgent;");
-
-            foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
-            {
-                ClassCommsBase Notice = new ClassCommsBase(DR);
-                ReturnStr += "<li><a href=\"http://pocketcampus.scar.hull.ac.uk/notices.aspx#notice" + Notice.ID + "\">" + Notice.Title + "</a></li>";
-                Counter++;
-            }
-
-            if (Counter == 0)
-            {
-                ReturnStr += "<li>No Notices</li>";
-            }
-
-            ReturnStr += "</ul>";
-
-            ReturnStr += "<p><a href=\"http://comms.scar.hull.ac.uk/login.aspx?ReturnUrl=%2fnotices.aspx?aid=1&amp;nid=-1\">Add New Notice</a></p>";
-
-            //ReturnStr += "</div>";
-
-            return ReturnStr;
-        }
-
-        public static string showAll()
-        {
-            string ReturnStr = "";
-
-            //Get List
-            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
-
-            ReturnStr += "<dl id=\"fullnotices\">";
-
-            RQ.RunQuery("SELECT * FROM CommsBase WHERE CommsBase_Deleted = 0 AND CommsBase_Valid = 1 AND CommsBase_DisplayFrom <= '" + DateTime.Now.ToShortDateString() + "' AND CommsBase_DisplayTo >= '" + DateTime.Now.ToShortDateString() + "' ORDER BY CommsBase_DisplayFrom, CommsBase_Urgent;");
-
-            foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
-            {
-                ClassCommsBase Notice = new ClassCommsBase(DR);
-
-                ReturnStr += "<dt><a name=\"Notice" + Notice.ID + "\">" + Notice.Title + "</a></dt>";
-
-                ReturnStr += "<dd>" + Notice.Notice + "<br/>" + Notice.GetAttachment;
-            }
-
-            ReturnStr += "</dl>";
-
-            return ReturnStr;
-        }
-
        
     }
 }

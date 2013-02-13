@@ -15,46 +15,11 @@ using StandardClasses;
 
 namespace PocketCampusClasses
 {
-    public class ClassEvent : ClassBase
+    public class ClassEventOld : ClassCommsBase
     {
-        private int c_CategoryID;
-        private string c_Title, c_Event, c_Location, c_PostedBy, c_PostedByID, c_PostedByEmail, c_Duration, c_Attachment, c_ValidatedBy, c_InvalidReason;
-        private DateTime c_EventDateTime, c_PostedDate, c_ValidatedDate;
-        private Boolean c_Valid;
-
-        public string Title
-        {
-            get { return c_Title.Trim(); }
-            set { c_Title = value.Trim(); }
-        }
-
-        public string Event
-        {
-            get { return c_Event.Trim(); }
-            set { c_Event = value.Trim(); }
-        }
-
-        public string Attachment
-        {
-            get { return c_Attachment.Trim(); }
-            set { c_Attachment = value.Trim(); }
-        }
-
-        public string GetAttachment
-        {
-            get
-            {
-                string returnStr = "";
-
-                if (Attachment != "")
-                {
-                    returnStr += "<a href=\"http://communications.scar.hull.ac.uk/" + Attachment + "\"><img src=\"http://pocketcampusimages.scar.hull.ac.uk/PaperClip.png\" alt=\"" + Title + " Attachment\"/> Attachment</a>";
-                }
-
-                return returnStr;
-            }
-        }
-
+        private string c_Location, c_Duration;
+        private DateTime c_EventDateTime;
+        
         public string Location
         {
             get { return c_Location.Trim(); }
@@ -73,69 +38,12 @@ namespace PocketCampusClasses
             set { c_Duration = value; }
         }
 
-        public string PostedBy
-        {
-            get { return c_PostedBy.Trim(); }
-            set { c_PostedBy = value.Trim(); }
-        }
-
-        public string PostedByID
-        {
-            get { return c_PostedByID.Trim(); }
-            set { c_PostedByID = value.Trim(); }
-        }
-
-        public string PostedByEmail
-        {
-            get { return c_PostedByEmail.Trim(); }
-            set { c_PostedByEmail = value.Trim(); }
-        }
-
-        public DateTime PostedDate
-        {
-            get { return c_PostedDate; }
-            set { c_PostedDate = value; }
-        }
-
-        public ClassCategory Category
-        {
-            get { return new ClassCategory(c_CategoryID); }
-            set { c_CategoryID = value.ID; }
-        }
-
-        public Boolean Valid
-        {
-            get { return c_Valid; }
-            set { c_Valid = value; }
-        }
-
-        public string ValidatedBy
-        {
-            get { return c_ValidatedBy; }
-            set { c_ValidatedBy = value; }
-        }
-
-        public DateTime ValidatedDate
-        {
-            get { return c_ValidatedDate; }
-            set { c_ValidatedDate = value; }
-        }
-
-        public string InvalidReason
-        {
-            get { return c_InvalidReason; }
-            set { c_InvalidReason = value; }
-        }
-
-        public ClassEvent()
+        public ClassEventOld()
         {
             //Initialise New Class
-            ValidatedDate = DateTime.Now;
-            Deleted = false;
-            Attachment = "";
         }
 
-        public ClassEvent(int ID)
+        public ClassEventOld(int ID)
         {
             //Initialise New Class
             string Query = "SELECT * From Events WHERE Event_ID_LNK = " + ID;
@@ -144,18 +52,19 @@ namespace PocketCampusClasses
             RQ.connection.connection.Close();
 
             LoadFromDR(RQ.dataset.Tables[0].Rows[0]);
+         
         }
 
-        public ClassEvent(DataRow DR)
+        public ClassEventOld(DataRow DR)
         {
             LoadFromDR(DR);
         }
 
         private void LoadFromDR(DataRow DR)
         {
-            c_ID = Convert.ToInt32(DR["Event_ID_LNK"].ToString());
+            //c_ID = Convert.ToInt32(DR["Event_ID_LNK"].ToString());
             Title = ClassUseful.FormatString(DR["Event_Title"].ToString());
-            Event = ClassUseful.FormatString(DR["Event_Event"].ToString());
+            //Content = ClassUseful.FormatString(DR["Event_Event"].ToString());
             Attachment = DR["Event_Attachment"].ToString();
             Location = ClassUseful.FormatString(DR["Event_Location"].ToString());
             EventDateTime = Convert.ToDateTime(DR["Event_DateTime"].ToString());
@@ -164,7 +73,7 @@ namespace PocketCampusClasses
             PostedByID = DR["Event_PostedByID"].ToString();
             PostedByEmail = DR["Event_PostedByEmail"].ToString();
             PostedDate = Convert.ToDateTime(DR["Event_Posted"].ToString());
-            c_CategoryID = Convert.ToInt16(DR["Event_CategoryIDLNK"].ToString());
+            //c_CategoryID = Convert.ToInt16(DR["Event_CategoryIDLNK"].ToString());
             Valid = Convert.ToBoolean(DR["Event_Valid"].ToString());
             ValidatedBy = DR["Event_ValidatedBy"].ToString();
             try
@@ -184,12 +93,12 @@ namespace PocketCampusClasses
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             bool Result;
 
-            string Query = "INSERT INTO Events (Event_Title, Event_Event, Event_Attachment, Event_Location, Event_DateTime, Event_Duration, Event_PostedBy, Event_PostedByID, Event_PostedByEmail, Event_Posted, Event_CategoryIDLNK, Event_Valid, Event_ValidatedBy, Event_ValidatedDate, Event_InvalidReason, Event_Deleted) VALUES ('" + ClassUseful.FormatStringForDB(Title) + "','" + ClassUseful.FormatStringForDB(Event) + "','" + Attachment + "','" + ClassUseful.FormatStringForDB(Location) + "','" + EventDateTime.ToString() + "','" + EventDuration + "','" + PostedBy + "','" + PostedByID + "','" + PostedByEmail + "','" + PostedDate.ToShortDateString() + "'," + c_CategoryID + "," + Valid.GetHashCode() + ",'" + ValidatedBy + "','" + ValidatedDate.ToString() + "','" + InvalidReason + "',0) SELECT @@IDENTITY;";
+            string Query = "INSERT INTO Events (Event_Title, Event_Event, Event_Attachment, Event_Location, Event_DateTime, Event_Duration, Event_PostedBy, Event_PostedByID, Event_PostedByEmail, Event_Posted, Event_CategoryIDLNK, Event_Valid, Event_ValidatedBy, Event_ValidatedDate, Event_InvalidReason, Event_Deleted) VALUES ('" + ClassUseful.FormatStringForDB(Title) + "','" + ClassUseful.FormatStringForDB(Content) + "','" + Attachment + "','" + ClassUseful.FormatStringForDB(Location) + "','" + EventDateTime.ToString() + "','" + EventDuration + "','" + PostedBy + "','" + PostedByID + "','" + PostedByEmail + "','" + PostedDate.ToShortDateString() + "'," + "," + Valid.GetHashCode() + ",'" + ValidatedBy + "','" + ValidatedDate.ToString() + "','" + InvalidReason + "',0) SELECT @@IDENTITY;";
 
             try
             {
                 RQ.RunQuery(Query);
-                c_ID = Convert.ToInt16(RQ.dataset.Tables[0].Rows[0].ItemArray[0]);
+                //c_ = Convert.ToInt16(RQ.dataset.Tables[0].Rows[0].ItemArray[0]);
                 Result = true;
             }
             catch (Exception ex)
@@ -204,7 +113,7 @@ namespace PocketCampusClasses
             ClassWriteQuery WQ = new ClassWriteQuery(ClassAppDetails.commscurrentconnection);
             bool Result;
 
-            string Query = "UPDATE Events SET Event_Title = '" + ClassUseful.FormatStringForDB(Title) + "', Event_Event = '" + ClassUseful.FormatStringForDB(Event) + "', Event_Attachment = '" + Attachment + "', Event_Location = '" + ClassUseful.FormatStringForDB(Location) + "', Event_DateTime = '" + EventDateTime + "', Event_Duration = '" + EventDuration + "', Event_PostedBy = '" + PostedBy + "', Event_PostedByID = '" + PostedByID + "', Event_PostedByEmail = '" + PostedByEmail + "', Event_Posted = '" + PostedDate + "', Event_CategoryIDLNK = " + c_CategoryID + ", Event_Valid = " + Valid.GetHashCode() + ", Event_ValidatedBy = '" + ValidatedBy + "', Event_ValidatedDate = '" + ValidatedDate.ToString() + "', Event_InvalidReason = '" + InvalidReason + "', Event_Deleted = " + Deleted.GetHashCode() + " WHERE Event_ID_LNK = " + ID + ";";
+            string Query = "UPDATE Events SET Event_Title = '" + ClassUseful.FormatStringForDB(Title) + "', Event_Event = '" + ClassUseful.FormatStringForDB(Content) + "', Event_Attachment = '" + Attachment + "', Event_Location = '" + ClassUseful.FormatStringForDB(Location) + "', Event_DateTime = '" + EventDateTime + "', Event_Duration = '" + EventDuration + "', Event_PostedBy = '" + PostedBy + "', Event_PostedByID = '" + PostedByID + "', Event_PostedByEmail = '" + PostedByEmail + "', Event_Posted = '" + PostedDate + "', Event_CategoryIDLNK =  , Event_Valid = " + Valid.GetHashCode() + ", Event_ValidatedBy = '" + ValidatedBy + "', Event_ValidatedDate = '" + ValidatedDate.ToString() + "', Event_InvalidReason = '" + InvalidReason + "', Event_Deleted = " + Deleted.GetHashCode() + " WHERE Event_ID_LNK = " + BaseID + ";";
             try
             {
                 WQ.RunQuery(Query);
@@ -224,7 +133,7 @@ namespace PocketCampusClasses
             string EmailDetails = "<html><head><title>New Event Added -" + Title + "</title></head><body>";
             EmailDetails += "<p>Dear Comms Admin,</p>";
             EmailDetails += "<p>A new event entited " + Title + " has not been added to the system and is awaiting validation.</p>";
-            EmailDetails += "<p>You can view the event at <a href=\"comms.scar.hull.ac.uk/events.aspx?aid=1&amp;eid=" + ID + "\">comms.scar.hull.ac.uk/events.aspx?aid=1&amp;eid=" + ID + "</a></p>";
+            EmailDetails += "<p>You can view the event at <a href=\"comms.scar.hull.ac.uk/events.aspx?aid=1&amp;eid=" + BaseID + "\">comms.scar.hull.ac.uk/events.aspx?aid=1&amp;eid=" + BaseID + "</a></p>";
             EmailDetails += "<p>&nbsp;</p>";
             EmailDetails += "<p>Scarborough Communications<br/>Scarborough Campus<br/>01723 362392<br/>comms-scar@hull.ac.uk</p>";
 
@@ -246,7 +155,7 @@ namespace PocketCampusClasses
                     EmailDetails += "<p>The reason given was, " + InvalidReason + "</p>";
                 }
 
-                EmailDetails += "<p>You can review the event at <a href=\"comms.scar.hull.ac.uk/events.aspx?aid=1&amp;eid=" + ID + "\">comms.scar.hull.ac.uk/events.aspx?aid=1&amp;eid=" + ID + "</a></p>";
+                EmailDetails += "<p>You can review the event at <a href=\"comms.scar.hull.ac.uk/events.aspx?aid=1&amp;eid=" + BaseID + "\">comms.scar.hull.ac.uk/events.aspx?aid=1&amp;eid=" + BaseID + "</a></p>";
                 EmailDetails += "<p>&nbsp;</p>";
                 EmailDetails += "<p>Scarborough Communications<br/>Scarborough Campus<br/>01723 362392<br/>comms-scar@hull.ac.uk</p>";
 
@@ -324,11 +233,11 @@ namespace PocketCampusClasses
                 foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
                 {
 
-                    ClassEvent Event = new ClassEvent(DR);
+                    ClassEventOld Event = new ClassEventOld(DR);
     
                     //ReturnStr += "<dt><a href=\"events.aspx#event" + Event.ID + "\">" + Event.Title + "</a></dt>";
 
-                    ReturnStr += "<li><a href=\"http://campusinfo.scar.hull.ac.uk/events-feed?id=" + Event.ID + "\">" + Event.Title + "</a>";
+                    ReturnStr += "<li><a href=\"http://campusinfo.scar.hull.ac.uk/events-feed?id=" + Event.BaseID + "\">" + Event.Title + "</a>";
 
                     DateTime WeeksTime = DateTime.Now.AddDays(7);
 
@@ -378,8 +287,8 @@ namespace PocketCampusClasses
 
             foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
             {
-                ClassEvent Event = new ClassEvent(DR);
-                ReturnStr += "<dt><a href=\"http://pocketcampus.scar.hull.ac.uk/events.aspx#event" + Event.ID + "\">" + Event.Title + "</a></dt>";
+                ClassEventOld Event = new ClassEventOld(DR);
+                ReturnStr += "<dt><a href=\"http://pocketcampus.scar.hull.ac.uk/events.aspx#event" + Event.BaseID + "\">" + Event.Title + "</a></dt>";
                 ReturnStr += "<dd>" + Event.EventDateTime.ToShortDateString() + " " + Event.EventDateTime.ToShortTimeString() + " " + Event.Location + "</dd>";
 
                 Counter++;
@@ -413,11 +322,11 @@ namespace PocketCampusClasses
 
             foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
             {
-                ClassEvent Event = new ClassEvent(DR);
+                ClassEventOld Event = new ClassEventOld(DR);
 
-                ReturnStr += "<dt><a name=\"Event" + Event.ID + "\">" + Event.Title + "</a></dt>";
+                ReturnStr += "<dt><a name=\"Event" + Event.BaseID + "\">" + Event.Title + "</a></dt>";
 
-                ReturnStr += "<dd>" + Event.Event + "<br/>" + Event.Location + " at " + Event.EventDateTime.ToString() + " for " + Event.EventDuration + "<br/>" + Event.GetAttachment;
+                ReturnStr += "<dd>" + Event.Content + "<br/>" + Event.Location + " at " + Event.EventDateTime.ToString() + " for " + Event.EventDuration + "<br/>" + Event.GetAttachment;
             }
 
             ReturnStr += "</dl>";

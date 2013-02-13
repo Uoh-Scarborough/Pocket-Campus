@@ -49,6 +49,11 @@ namespace PocketCampusClasses
             }
         }
 
+        public static string CreateTimeStamp()
+        {
+            return DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Minute.ToString();
+        }
+
    
 
 

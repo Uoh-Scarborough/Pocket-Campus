@@ -14,20 +14,20 @@
     	<meta name="author" content="">
     
     	<meta name="viewport" content="width=device-width">
-    
-    	<link rel="stylesheet" href="css/style.css">
-    	<link rel="stylesheet" href="css/pocketcampus-mobile.css">
-    	<link rel="stylesheet" href="css/pocketcampus.css">
-    	
-    	    	<script src="js/vendor/modernizr-2.6.1.min.js"></script>
-    	<script src="js/vendor/modernizr-2.5.3-respond-1.1.0.min.js"></script>
-        <script>
 
-            function followLink(url) {
-                window.location = url;
-            }
+        <link rel="stylesheet" href="css/pocketcampus-comms-mobile.css">
+
+        <link rel="stylesheet" href="css/pocketcampus-mobile.css">
+
+        <link rel="stylesheet" href="css/pocketcampus-comms.css">
+
+    	<link rel="stylesheet" href="css/pocketcampus.css">
+        
+    	<link rel="stylesheet" href="css/style.css">
     	
-    	</script>
+    	<script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    	<script src="js/vendor/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+        <script src="Scripts/jquery-1.4.1.js"></script>
 
     </head>
     
@@ -43,7 +43,7 @@
         
         	    <div id="uohheader"></div>
         	
-        	    <div id="pcheader"><span id="pcheaderleft"></span><span id="pcheaderright"></span></div>
+        	    <a href="http://pocketcampus.scar.hull.ac.uk"><div id="pcheader"><span id="pcheaderleft"></span><span id="pcheaderright"></span></div></a>
 
                 <div id="mainbodyarea">
 
@@ -62,9 +62,9 @@
             </div>
 
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-            <script>            window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-            <script src="js/plugins.js"></script>
-            <script src="js/main.js"></script>
+            <script>                window.jQuery || document.write('<script src="http://timetables.scar.hull.ac.uk/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+            <script src="http://timetables.scar.hull.ac.uk/js/plugins.js"></script>
+            <script src="http://timetables.scar.hull.ac.uk/js/main.js"></script>
 
             <script type="text/javascript">
                 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

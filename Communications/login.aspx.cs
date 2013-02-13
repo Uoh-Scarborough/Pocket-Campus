@@ -26,6 +26,7 @@ namespace KDLBooking
             CNC = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.commsconnectionname);
 
             ClassAppDetails.commscurrentconnection = CNC;
+            ClassAppDetails.bookingcurrentconnection = CNC;
             
             // Path to you LDAP directory server.
             // Contact your network administrator to obtain a valid path.

@@ -12,20 +12,42 @@ namespace Communications.Controls
     public partial class Control_CategoryDropDown : System.Web.UI.UserControl
     {
 
-        public Int32 CategoryID()
+        public int CategoryID()
         {
-            return Convert.ToInt32(dd_Category.SelectedValue);
+            return Convert.ToInt16(dd_Category.SelectedValue);
         }
 
-        protected void Page_Load(object sender, EventArgs e)
+        public void SetCategoryID(int ID)
         {
-            dd_Category.DataSource = PocketCampusClasses.ClassCategory.loadDataset().Tables[0];
+            try
+            {
+                dd_Category.Items.FindByValue(ID.ToString()).Selected = true;
+            }
+            catch
+            {
 
-            dd_Category.DataTextField = "Category_Title";
+            }
+             
 
-            dd_Category.DataValueField = "Category_ID_LNK";
-
-            dd_Category.DataBind();
         }
+
+
+        public void Load()
+        {
+            if (dd_Category.Items.Count == 0)
+            {
+
+                dd_Category.DataSource = PocketCampusClasses.ClassCategory.loadDataset().Tables[0];
+
+                dd_Category.DataTextField = "Category_Title";
+
+                dd_Category.DataValueField = "Category_ID_LNK";
+
+                dd_Category.DataBind();
+            }
+        }
+
+        
+
     }
 }

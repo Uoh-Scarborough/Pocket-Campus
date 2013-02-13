@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PoS>
+  <NoticeEvent Title="Advanced Notices" Attachement="" AttachementisImage="False" Category="11" PostedDate="23/01/2013 00:00:00" Display-From="31/01/2013" Display-To="08/02/2013" High-Priority="False">This is and advanced notice</NoticeEvent>
+  <NoticeEvent Title="Blahsafaf" Attachement="" AttachementisImage="False" Category="4" PostedDate="23/01/2013 00:00:00" Display-From="22/01/2013" Display-To="31/01/2013" High-Priority="False">This is an event</NoticeEvent>
+  <NoticeEvent Title="Event of the Week" Attachement="" AttachementisImage="False" Category="13" PostedDate="23/01/2013 00:00:00" Display-From="23/01/2013" Display-To="31/01/2013" High-Priority="False">afsdf</NoticeEvent>
+</PoS>

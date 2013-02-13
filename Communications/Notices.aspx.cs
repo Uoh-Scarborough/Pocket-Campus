@@ -18,6 +18,8 @@ namespace Communications
             NC = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
 
             ClassAppDetails.commscurrentconnection = NC;
+
+            //Control_Notice1.Mode = Communications.Controls.Control_Notice.ModeType.Add;
         }
     }
 }

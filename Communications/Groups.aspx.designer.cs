@@ -13,6 +13,15 @@ namespace KDLBooking {
     public partial class Groups {
         
         /// <summary>
+        /// ControlAdminMenu1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Communications.Controls.Control_Menu ControlAdminMenu1;
+        
+        /// <summary>
         /// MultiView control.
         /// </summary>
         /// <remarks>
@@ -218,77 +227,5 @@ namespace KDLBooking {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton GroupManagement3btn;
-        
-        /// <summary>
-        /// ViewGroupConstraints control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.View ViewGroupConstraints;
-        
-        /// <summary>
-        /// GroupNamelbl1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label GroupNamelbl1;
-        
-        /// <summary>
-        /// StudioClosureList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList StudioClosureList;
-        
-        /// <summary>
-        /// DurationList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList DurationList;
-        
-        /// <summary>
-        /// WeeklyAllowanceList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList WeeklyAllowanceList;
-        
-        /// <summary>
-        /// BookingRangeList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList BookingRangeList;
-        
-        /// <summary>
-        /// SaveConstraintsbtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveConstraintsbtn;
-        
-        /// <summary>
-        /// HomeButton1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton HomeButton1;
     }
 }

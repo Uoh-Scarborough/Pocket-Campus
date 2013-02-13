@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;application/json charset=UTF-8" />
+<title>Pocket Campus Notice Events Images</title>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $.ajaxSetup({ cache: false });
+        loadXML();
+
+    });
+
+    function loadXML() {
+
+
+        $.ajax({
+            type: "GET",
+            url: "communications.xml",
+            dataType: "xml",
+            success: xmlParser
+        });
+    }
+
+    function xmlParser(xml) {
+
+        $('#load').fadeOut();
+
+        $(".mainlist").empty();
+
+        $(xml).find("NoticeEvents").each(function () {
+
+            var $displayfrom = new Date($(this).attr("Display-From-Feed")).getTime();
+            var $displayto = new Date($(this).attr("Display-To-Feed")).getTime();
+
+            var $today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()).getTime();
+
+            if ($displayfrom <= $today && $today <= $displayto) {
+
+                var $categorystodisplay = ",1,2,3,4,5,6,7,8,9,10,11,12,13,14,";
+                var $thiscat = "," + $(this).attr("Category") + ",";
+
+                if ($categorystodisplay.indexOf($thiscat) != -1) {
+
+                    if($(this).attr("AttachementisImage") == "True"){
+
+                    $(".mainlist").append('<li class="img" id="' + $(this).attr("Title") + '"><img src="' + $(this).attr("Attachement") + '" title="' + $(this).attr("Title") + '" width="627px"/></li>');
+
+
+
+                }
+
+            }
+
+        });
+
+
+        InOut($('.mainlist li:first'));
+
+
+
+
+
+
+
+    }
+
+
+    function InOut(elem) {
+        elem.delay(12000)
+     .fadeIn(1000)
+     .delay(12000)
+     .fadeOut(1000, function () {
+         if (elem.next().length > 0) // if there is a next element
+         { InOut(elem.next()); } // use it
+         else
+         { loadXML(); } // if not, then use go back to the first sibling
+
+     }
+             );
+
+    }
+
+
+</script>
+
+<style>
+    
+body
+{
+	background:#FFFFCC;
+	margin:0px;
+	border:0px;
+	padding:0px;
+}    
+     
+.main{
+    margin: 0px;
+    background:#FFFFCC;
+    padding:0px;
+    border:0px;
+    position:relative;
+    top:0px;
+    height: 896px;
+    display:block;
+    width:627px;
+}
+
+.img{
+    margin:0px;
+    padding:0px;
+    display:none;
+}
+
+
+.mainlist
+{
+	margin: auto 0px auto 0px;
+	display:block;
+	background:#ffffcc;
+	padding:0px;
+	width: 627px;
+}
+
+li{
+    list-style:none;
+    padding:0px;
+    margin:auto 0px auto 0px;
+    border:0px;
+}
+
+</style> 
+
+
+
+</head>
+<body>
+
+
+<div class="main">
+
+    <ul class="mainlist"
+
+    </ul>
+
+</div>
+
+<div class="clear"></div>
+
+
+
+</body>
+</html>

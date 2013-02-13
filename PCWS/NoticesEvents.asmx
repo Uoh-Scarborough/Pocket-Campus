@@ -1,1 +1,0 @@
-﻿<%@ WebService Language="C#" CodeBehind="NoticesEvents.asmx.cs" Class="PCWS.Service1" %>

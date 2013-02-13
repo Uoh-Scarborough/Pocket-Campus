@@ -20,6 +20,7 @@ namespace PocketCampusClasses
             private static ClassConnection c_CommsCurrentConnection;
             private static ClassConnection c_StudentServicesConnection;
             private static ClassConnection c_ManagementCurrentConnection;
+            private static ClassConnection c_CurrentConnection;
             
             /// <summary>
             // Global Varibles
@@ -40,7 +41,7 @@ namespace PocketCampusClasses
             public static ClassConnection commscurrentconnection
             {
                 get { return c_CommsCurrentConnection; }
-                set { c_CommsCurrentConnection = value; }
+                set { c_CommsCurrentConnection = value;}
             }
 
             public static ClassConnection studentservicesconnection
@@ -211,6 +212,22 @@ namespace PocketCampusClasses
                 get
                 {
                     return ConfigurationSettings.AppSettings["EmailDir"];
+                }
+            }
+
+            public static string feedsdir
+            {
+                get
+                {
+                    return ConfigurationSettings.AppSettings["FeedsDir"];
+                }
+            }
+
+            public static string attachementurl
+            {
+                get
+                {
+                    return ConfigurationSettings.AppSettings["AttachementURL"];
                 }
             }
         

@@ -61,7 +61,7 @@ namespace PocketCampusClasses
         {
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            RQ.RunQuery("SELECT * FROM Categories WHERE Category_Deleted = 0 ORDER BY Category_Title");
+            RQ.RunQuery("SELECT * FROM Categories WHERE Category_Selectable = 1 AND  Category_Deleted = 0 ORDER BY Category_Title");
 
             ListItem[] List = new ListItem[RQ.numberofresults];
 
@@ -88,7 +88,7 @@ namespace PocketCampusClasses
 
             string Query = "";
 
-            Query = "SELECT * FROM Categories WHERE Category_Deleted = 0 ORDER BY Category_Title";
+            Query = "SELECT * FROM Categories WHERE Category_Selectable = 1 AND Category_Deleted = 0 ORDER BY Category_Title";
 
             RQ.RunQuery(Query);
 

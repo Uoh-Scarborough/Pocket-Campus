@@ -49,28 +49,27 @@
     <Compile Include="ClassBooking.cs" />
     <Compile Include="ClassCategory.cs" />
     <Compile Include="ClassCourse.cs" />
-    <Compile Include="ClassEvent.cs" />
+    <Compile Include="ClassEventOld.cs" />
     <Compile Include="ClassKDLBookings.cs" />
+    <Compile Include="ClassNotice.cs" />
     <Compile Include="ClassRequestForms.cs" />
     <Compile Include="ClassRequests.cs" />
     <Compile Include="ClassRestrict.cs" />
     <Compile Include="ClassSigns.cs" />
     <Compile Include="ClassSignType.cs" />
-    <Compile Include="ClassSlide.cs" />
     <Compile Include="ClassStudioBookings.cs" />
     <Compile Include="ClassTimetableImport.cs" />
-    <Compile Include="ClassNotice.cs" />
-    <Compile Include="ClassPages.cs" />
+    <Compile Include="ClassCommsBase.cs" />
     <Compile Include="ClassScreens.cs" />
     <Compile Include="ClassUseful.cs" />
     <Compile Include="ClassUserInfo.cs" />
-    <Compile Include="ClassVideos.cs" />
-    <Compile Include="ClassWelcome.cs" />
-    <Compile Include="ClassSlideshow.cs" />
     <Compile Include="ClassGroup.cs" />
     <Compile Include="ClassGroupMembers.cs" />
     <Compile Include="ClassConstraint.cs" />
     <Compile Include="ClassProductionBookings.cs" />
+    <Compile Include="ClassEvents.cs" />
+    <Compile Include="ClassMenu.cs" />
+    <Compile Include="ClassTicker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

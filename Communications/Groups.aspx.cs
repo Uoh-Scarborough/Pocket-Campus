@@ -14,12 +14,15 @@ namespace KDLBooking
     public partial class Groups : System.Web.UI.Page
     {
 
-        ClassConnection PBNC;
+        ClassConnection CNC;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            PBNC = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.bookingconnectionname);
-            ClassAppDetails.bookingcurrentconnection = PBNC;
+            CNC = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.commsconnectionname);
+
+            ClassAppDetails.commscurrentconnection = CNC;
+            //Becuase we use Groups we need to initialise the Booking Connection too.
+            ClassAppDetails.bookingcurrentconnection = CNC;
 
             ClassUserInfo UI = new ClassUserInfo(Context.User.Identity.Name);
 
@@ -167,31 +170,13 @@ namespace KDLBooking
                 ViewGroupList_Load(sender,e);
                 
             }
-            else if (e.CommandName == "GroupConstraints")
-            {
-                //Show Group Constraints
-
-                ViewState["GroupID"] = GID;
-
-                MultiView.SetActiveView(ViewGroupConstraints);
-
-                LoadConstraints(GID);
-
-            }
 
         }
 
         private void LoadConstraints(int GID)
         {
       
-            ClassGroup Group = new ClassGroup(GID);
 
-            GroupNamelbl1.Text = Group.Name;
-
-            LoadList(Group, StudioClosureList, ClassConstraint.loadDataset(0));
-            LoadList(Group, WeeklyAllowanceList, ClassConstraint.loadDataset(1));
-            LoadList(Group, DurationList, ClassConstraint.loadDataset(2));
-            LoadList(Group, BookingRangeList, ClassConstraint.loadDataset(3));
 
         }
 
@@ -231,29 +216,7 @@ namespace KDLBooking
             }
         }
 
-        protected void SaveConstraintsbtn_Click(object sender, EventArgs e)
-        {
-            //Save Constraints
-
-            int GID = Convert.ToInt16(ViewState["GroupID"]);
-
-            ClassGroup Group = new ClassGroup(GID);
-
-            Group.Constraints = new ArrayList();
-
-            CombineItems(StudioClosureList, Group);
-            CombineItems(WeeklyAllowanceList, Group);
-            CombineItems(DurationList, Group);
-            CombineItems(BookingRangeList, Group);
-
-            Group.Save();
-
-            MultiView.SetActiveView(ViewSuccess);
-
-            SuccessHeaderlbl.Text = "Constraints Saved";
-
-            SuccessMainlbl.Text = "The selected constraints have been added to the group, and will be instantly active.";
-        }
+       
 
 
         private void CombineItems(CheckBoxList CBL, ClassGroup Group)
