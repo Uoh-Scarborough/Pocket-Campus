@@ -164,9 +164,9 @@ namespace Comms
                 TC[3] = new TableCell();
                 TC[3].Text = Event.Valid.ToString();
                 TC[4] = new TableCell();
-                TC[4].Text = "<a href='?aid=1&eid=" + Event.ID + "'>Edit</a>";
+                //TC[4].Text = "<a href='?aid=1&eid=" + Event.ID + "'>Edit</a>";
                 TC[5] = new TableCell();
-                TC[5].Text = "<a href='?aid=2&eid=" + Event.ID + "' onclick=\"return confirm('Are you sure you want to delete?');\" >Delete</a>";
+                //TC[5].Text = "<a href='?aid=2&eid=" + Event.ID + "' onclick=\"return confirm('Are you sure you want to delete?');\" >Delete</a>";
                
                 foreach (TableCell TabCel in TC)
                 {

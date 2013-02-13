@@ -175,47 +175,17 @@
     <Content Include="Editor_data\ed_styles\style.css" />
     <Content Include="Editor_data\ed_templates\example.xml" />
     <Content Include="Editor_data\ed_templates\full.xml" />
-    <Content Include="Slideshow.aspx" />
-    <Content Include="Videos.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PageManager.aspx.cs">
-      <DependentUpon>PageManager.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PageManager.aspx.designer.cs">
-      <DependentUpon>PageManager.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Red.Master.cs">
       <DependentUpon>Red.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Red.Master.designer.cs">
       <DependentUpon>Red.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Slideshow.aspx.cs">
-      <DependentUpon>Slideshow.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Slideshow.aspx.designer.cs">
-      <DependentUpon>Slideshow.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Videos.aspx.cs">
-      <DependentUpon>Videos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Videos.aspx.designer.cs">
-      <DependentUpon>Videos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Welcomes.aspx.cs">
-      <DependentUpon>Welcomes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Welcomes.aspx.designer.cs">
-      <DependentUpon>Welcomes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Events.aspx.cs">
       <DependentUpon>Events.aspx</DependentUpon>
@@ -265,8 +235,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PageManager.aspx" />
-    <Content Include="Welcomes.aspx" />
     <Content Include="Events.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="kioskstyle.css" />

@@ -58,7 +58,7 @@ namespace Comms
                         AddEditlbl.Text = "Edit Notice";
                         AddEditInstructionlbl.Text = "Make any changes to the notice below and click the Save Notice button. <b>N.B.</b> Editing the notice will instantly invalidate it, and it will need re-validating.";
 
-                        ClassNotice NewNotice = new ClassNotice(NID);
+                        ClassCommsBase NewNotice = new ClassCommsBase(NID);
 
                         if (CurrentUser.InGroup(ClassAppDetails.admingroup))
                         {
@@ -103,7 +103,7 @@ namespace Comms
                     
                         //Delete
 
-                        ClassNotice Notice = new ClassNotice(NID);
+                        ClassCommsBase Notice = new ClassCommsBase(NID);
 
                         Notice.Deleted = true;
 
@@ -128,13 +128,13 @@ namespace Comms
                 {
                     Noticelbl.Text = "Validated Notices";
                     NoticesInstructionslbl.Text = "The list below shows the notices that are validated on the system.</p><p><a href=\"?vid=0\">View Unvalidated Notices</a>";
-                    DS = ClassNotice.loadDataset(CurrentUser, 1);
+                    DS = ClassCommsBase.loadDataset(CurrentUser, 1);
                 }
                 else
                 {
                     Noticelbl.Text = "Notices to Validate";
                     NoticesInstructionslbl.Text = "The list below shows the notices that currently require validation in the system.</p><p><a href=\"?vid=1\">View Validated Notices</a>";
-                    DS = ClassNotice.loadDataset(CurrentUser, 0);
+                    DS = ClassCommsBase.loadDataset(CurrentUser, 0);
                 }
                 
             }
@@ -142,7 +142,7 @@ namespace Comms
             {
                 Noticelbl.Text = "Your Notices";
                 NoticesInstructionslbl.Text = "The list below shows the notices that you currently have in the system. From this screen you can add a notice, or edit one you currently have.";
-                DS = ClassNotice.loadDataset(CurrentUser,2);
+                DS = ClassCommsBase.loadDataset(CurrentUser,2);
             }
 
             
@@ -151,7 +151,7 @@ namespace Comms
             {
                 TableRow TR = new TableRow();
 
-                ClassNotice Notice = new ClassNotice(DR);
+                ClassCommsBase Notice = new ClassCommsBase(DR);
 
                 TableCell[] TC = new TableCell[6];
                 TC[0] = new TableCell();
@@ -183,7 +183,7 @@ namespace Comms
             if (NID == -1)
             {
                 //New Notice
-                ClassNotice Notice = new ClassNotice();
+                ClassCommsBase Notice = new ClassCommsBase();
 
                 Notice.Title = Titletxt.Text;
                 Notice.Notice = Noticetxt.Text;
@@ -223,7 +223,7 @@ namespace Comms
             else
             {
                 //Edit Notice
-                ClassNotice Notice = new ClassNotice(NID);
+                ClassCommsBase Notice = new ClassCommsBase(NID);
 
                 Notice.Title = Titletxt.Text;
                 Notice.Notice = Noticetxt.Text;
@@ -261,7 +261,7 @@ namespace Comms
 
         protected void AdminSavecmd_Click(object sender, EventArgs e)
         {
-            ClassNotice CN = new ClassNotice(NID);
+            ClassCommsBase CN = new ClassCommsBase(NID);
 
             ClassUserInfo UI = new ClassUserInfo(Context.User.Identity.Name);
 

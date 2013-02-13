@@ -97,7 +97,7 @@ namespace Comms
                     foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
                     {
 
-                        ClassNotice Notice = new ClassNotice(DR);
+                        ClassCommsBase Notice = new ClassCommsBase(DR);
 
                         writer.WriteStartElement("notice");
                         writer.WriteAttributeString("title", Notice.Title);
@@ -165,12 +165,12 @@ namespace Comms
                     foreach (DataRow DR in RQ.dataset.Tables[0].Rows)
                     {
 
-                        ClassWelcome Welcome = new ClassWelcome(DR);
+                        //ClassWelcome Welcome = new ClassWelcome(DR);
 
-                        writer.WriteStartElement("welcome");
-                        writer.WriteAttributeString("title", Welcome.Title);
-                        writer.WriteElementString("cont", Welcome.Message);
-                        writer.WriteEndElement();
+                        //writer.WriteStartElement("welcome");
+                        //writer.WriteAttributeString("title", Welcome.Title);
+                        //writer.WriteElementString("cont", Welcome.Message);
+                        //writer.WriteEndElement();
 
                     }
 
