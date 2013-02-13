@@ -111,13 +111,14 @@ namespace PocketCampus
 
                             foreach (DataRow DR0 in RQ0.dataset.Tables[0].Rows)
                             {
-                                ClassNotice Notice = new ClassNotice(DR0);
+                                ClassCommsBase Notice = new ClassCommsBase();
+                                
 
                                 writer.WriteStartElement("notice");
                                 writer.WriteAttributeString("title", ClassUseful.FormatString(Notice.Title));
-                                writer.WriteAttributeString("noticeid", ClassUseful.FormatString(Notice.ID.ToString()));
+                                //writer.WriteAttributeString("noticeid", ClassUseful.FormatString(Notice.ID.ToString()));
                                 writer.WriteAttributeString("attachementurl", ClassUseful.FormatString("http://communications.scar.hull.ac.uk/" + Notice.Attachment));
-                                writer.WriteElementString("cont", ClassUseful.FormatString(Notice.Notice));
+                                //writer.WriteElementString("cont", ClassUseful.FormatString(Notice.Notice));
                                 writer.WriteEndElement();
                             }
 
@@ -172,17 +173,17 @@ namespace PocketCampus
                             foreach (DataRow DR1 in RQ1.dataset.Tables[0].Rows)
                             {
 
-                                ClassEvent Event = new ClassEvent(DR1);
+                                ClassEventOld Event = new ClassEventOld(DR1);
 
                                 writer.WriteStartElement("eventa");
                                 writer.WriteAttributeString("attachementurl", ClassUseful.FormatString("http://communications.scar.hull.ac.uk/" + Event.Attachment));
                                 writer.WriteAttributeString("title", ClassUseful.FormatString(Event.Title));
-                                writer.WriteAttributeString("eventid", ClassUseful.FormatString(Event.ID.ToString()));
+                                //writer.WriteAttributeString("eventid", ClassUseful.FormatString(Event.ID.ToString()));
                                 DateTime DF = Convert.ToDateTime(DR1["Event_DateTime"].ToString());
                                 writer.WriteAttributeString("datetime", DF.ToShortDateString() + " " + DF.ToShortTimeString());
                                 writer.WriteAttributeString("location", ClassUseful.FormatString(Event.Location));
                                 writer.WriteAttributeString("duration", DR1["Event_Duration"].ToString());
-                                writer.WriteElementString("cont", ClassUseful.FormatString(Event.Event));
+                                //writer.WriteElementString("cont", ClassUseful.FormatString(Event.Event));
                                 writer.WriteEndElement();
 
                             }

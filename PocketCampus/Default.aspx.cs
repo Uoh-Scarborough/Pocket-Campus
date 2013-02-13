@@ -28,9 +28,9 @@ namespace PocketCampus
 
         public void loadNoticesandEvents()
         {
-            Noticeslbl.Text = ClassNotice.loadNoticesList();
+            //oticeslbl.Text = ClassCommsBase.loadNoticesList();
 
-            Eventslbl.Text = ClassEvent.loadEventsList();
+            Eventslbl.Text = ClassEventOld.loadEventsList();
 
         }
 
