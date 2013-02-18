@@ -337,7 +337,8 @@ namespace PocketCampusClasses
 
             ClassReadQuery RQ2 = new ClassReadQuery(ClassAppDetails.bookingcurrentconnection);
 
-            string Query2 = string.Format("SELECT * FROM Studio_Closure_View WHERE (GroupMembers_UserID = '{0}' AND Constraint_room = '{1}') AND ((Constraint_StartDate >= '{2}' AND Constraint_EndDate <= '{3}') OR (Constraint_StartDate <= '{2}' AND Constraint_EndDate >= '{3}') OR (Constraint_StartDate >= '{2}' AND Constraint_StartDate <= '{3}') OR (Constraint_EndDate >= '{2}' AND Constraint_EndDate <= '{3}')) ORDER BY Constraint_BookableStart;", UserID, Room, ClassGeneral.getAcademicDate(Week, 0), ClassGeneral.getAcademicDate(Week, 6));
+            //string Query2 = string.Format("SELECT * FROM Studio_Closure_View WHERE (GroupMembers_UserID = '{0}' AND Constraint_room = '{1}') AND ((Constraint_StartDate >= '{2}' AND Constraint_EndDate <= '{3}') OR (Constraint_StartDate <= '{2}' AND Constraint_EndDate >= '{3}') OR (Constraint_StartDate >= '{2}' AND Constraint_StartDate <= '{3}') OR (Constraint_EndDate >= '{2}' AND Constraint_EndDate <= '{3}')) ORDER BY Constraint_BookableStart;", UserID, Room, ClassGeneral.getAcademicDate(Week, 0), ClassGeneral.getAcademicDate(Week, 6));
+            string Query2 = string.Format("SELECT * FROM Studio_Closure_View WHERE (GroupMembers_UserID = '{0}' AND Constraint_room = '{1}') AND ((Constraint_StartDate >= '{2}' AND Constraint_EndDate <= '{3}') OR (Constraint_StartDate <= '{2}' AND Constraint_EndDate >= '{3}') OR (Constraint_StartDate >= '{2}' AND Constraint_StartDate <= '{3}') OR (Constraint_EndDate >= '{2}' AND Constraint_EndDate <= '{3}')) ORDER BY Constraint_BookableStart;", UserID, Room, ClassGeneral.getAcademicDate(Week, d), ClassGeneral.getAcademicDate(Week, d));
 
             RQ2.RunQuery(Query2);
 
@@ -371,7 +372,7 @@ namespace PocketCampusClasses
             int DayStartBooking = 24;
             int DayEndBooking = 96;
 
-            DataRow[] dayRestricts = RQ2.dataset.Tables[0].Select("Constraint_StartDate <= '" + ClassGeneral.getAcademicDate(Week, 0) + "' AND Constraint_EndDate >= '" + ClassGeneral.getAcademicDate(Week, d) + "'");
+            DataRow[] dayRestricts = RQ2.dataset.Tables[0].Select("Constraint_StartDate <= '" + ClassGeneral.getAcademicDate(Week, d) + "' AND Constraint_EndDate >= '" + ClassGeneral.getAcademicDate(Week, d) + "'");
 
             //Merge Together
 

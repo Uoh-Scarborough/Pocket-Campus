@@ -109,11 +109,19 @@ namespace PocketCampusClasses
 
         public Boolean InGroup(string Group)
         {
-            if (Groups.Contains(Group))
+            try
             {
-                return true;
+
+                if (Groups.Contains(Group))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch
             {
                 return false;
             }

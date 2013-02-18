@@ -105,7 +105,8 @@ namespace PocketCampusClasses
             ClassGroupMembers otherMember = (ClassGroupMembers)obj;
 
             if (otherMember != null)
-                return this.UserInfo.DisplayName.CompareTo(otherMember.UserInfo.DisplayName);
+                return this.UserID.ToString().CompareTo(otherMember.UserID.ToString());
+            //return this.UserInfo.DisplayName.CompareTo(otherMember.UserInfo.DisplayName);
             else
                 throw new ArgumentException("Object not comparible");
         }
@@ -125,7 +126,7 @@ namespace PocketCampusClasses
 
             DS.Tables.Add();
 
-            DS.Tables[0].Columns.Add(new DataColumn("Name"));
+            //DS.Tables[0].Columns.Add(new DataColumn("Name"));
             DS.Tables[0].Columns.Add(new DataColumn("UserID"));
             DS.Tables[0].Columns.Add(new DataColumn("ID"));
 
@@ -135,9 +136,9 @@ namespace PocketCampusClasses
             foreach(ClassGroupMembers Member in Grp.Members){
                 DataRow DR = DS.Tables[0].NewRow();
 
-                DR[0] = Member.UserInfo.DisplayName;
-                DR[1] = Member.UserID;
-                DR[2] = Member.ID;
+                //DR[0] = Member.UserInfo.DisplayName;
+                DR[0] = Member.UserID;
+                DR[1] = Member.ID;
 
                 DS.Tables[0].Rows.Add(DR);
             }

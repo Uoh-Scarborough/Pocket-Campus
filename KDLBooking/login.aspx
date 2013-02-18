@@ -6,6 +6,8 @@
 
             <p>To view KDL Bookings you must first log into the Booking System using your campus username and password.</p>
 
+            <p><b>Please note:</b> KDL rooms are for student use only. Staff should use Campus Roombookings. Bookings are checked daily and any made by staff will be cancelled.</p>
+
             <table id="logindetailstable">
                 <tr>
                     <td class="formtitle">Username:</td>
