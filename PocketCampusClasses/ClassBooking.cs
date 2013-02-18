@@ -369,7 +369,8 @@ namespace PocketCampusClasses
 
             Boolean FullDayClosure = false;
 
-            int DayStartBooking = 24;
+            //int DayStartBooking = 24;
+            int DayStartBooking = 29;
             int DayEndBooking = 96;
 
             DataRow[] dayRestricts = RQ2.dataset.Tables[0].Select("Constraint_StartDate <= '" + ClassGeneral.getAcademicDate(Week, d) + "' AND Constraint_EndDate >= '" + ClassGeneral.getAcademicDate(Week, d) + "'");
