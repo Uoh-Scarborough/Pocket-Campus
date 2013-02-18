@@ -78,6 +78,21 @@ namespace Communications.Controls
 
             ClassMenu Menu = new ClassMenu();
 
+            switch (Menu.Type)
+            {
+                case ClassMenu.menuTypes.Breakfast:
+                    Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Breakfast)";
+                    break;
+                case ClassMenu.menuTypes.Lunch:
+                    Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Lunch)";
+                    break;
+                case ClassMenu.menuTypes.Dinner:
+                    Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Dinner)";
+                    break;
+                default:
+                    break;
+            }
+
             if(MID == 0){
 
                 Menu.SetBase(Control_Base.UpdateClass(new ClassCommsBase()));
@@ -85,21 +100,6 @@ namespace Communications.Controls
                 Menu.Valid = true;
                 Menu.ValidatedBy = UI.DisplayName;
                 Menu.ValidatedDate = DateTime.Now;
-
-                switch (Menu.Type)
-	            {
-		            case ClassMenu.menuTypes.Breakfast:
-                        Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Breakfast)";
-                        break;
-                    case ClassMenu.menuTypes.Lunch:
-                        Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Lunch)";
-                        break;
-                    case ClassMenu.menuTypes.Dinner:
-                        Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Dinner)";
-                        break;
-                    default:
-                        break;
-	           }
 
                 //Menu.Title = Menu.DisplayTo.ToShortDateString() + " " + Menu.Type;
                 Menu.DisplayFrom = Menu.DisplayTo;

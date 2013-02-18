@@ -48,6 +48,8 @@
   <ItemGroup>
     <Content Include="Communications.asmx" />
     <Content Include="Default.htm" />
+    <Content Include="Feeds\Images\InfoHeader.jpg" />
+    <Content Include="Feeds\noticeseventstext.html" />
     <Content Include="Feeds\Images\CCHeader.jpg" />
     <Content Include="Feeds\librarytext.html" />
     <Content Include="Feeds\noticeeventsimages.html" />

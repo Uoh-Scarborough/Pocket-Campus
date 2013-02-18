@@ -19,7 +19,7 @@
 
         $.ajax({
             type: "GET",
-            url: "librarytext.xml",
+            url: "noticeeventstext.xml",
             dataType: "xml",
             success: xmlParser
         });
@@ -36,6 +36,7 @@
                         $(".mainlist").append('<li class="text" id="' + $(this).attr("Title") + '"><h1>' + $(this).attr("Title") + '</h1><div id="content">' + $(this).text() + '</div></li>');
 
         })
+
 
         InOut($('.mainlist li:first'));
 
@@ -135,7 +136,7 @@ h1
 
 
 <div class="main">
-    <img src="Images/CCHeader.jpg" />
+    <img src="Images/InfoHeader.jpg" />
     <ul class="mainlist"
 
     </ul>

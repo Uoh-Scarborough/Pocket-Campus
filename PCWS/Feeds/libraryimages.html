@@ -20,7 +20,7 @@ function loadXML()
 
 $.ajax({
         type: "GET",
-        url: "communications.xml",
+        url: "libraryimages.xml",
         dataType: "xml",
         success: xmlParser
     });
@@ -34,38 +34,20 @@ function xmlParser(xml) {
 
     $(xml).find("NoticeEvents").each(function () {
 
-        var $displayfrom = new Date($(this).attr("Display-From-Feed")).getTime();
-        var $displayto = new Date($(this).attr("Display-To-Feed")).getTime();
-
-        var $today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()).getTime();
-
-        if ($displayfrom <= $today && $today <= $displayto) {
-
-            if ($(this).attr("Category") == "15") {
-
                 $(".mainlist").append('<li class="img" id="' + $(this).attr("Title") + '"><img src="' + $(this).attr("Attachement") + '" title="' + $(this).attr("Title") + '" width="627px"/></li>');
 
-            }
-
-        }
-
-    });
-    
-    
-	InOut( $('.mainlist li:first') );
-	
-    
-    
-    
+          })
 
 
+        InOut($('.mainlist li:first'));
 
-}
+
+    }
 
 
 function InOut( elem )
 {
-    elem.delay(12000)
+    elem.delay(1)
      .fadeIn(1000)
      .delay(12000)
      .fadeOut(1000,function(){
