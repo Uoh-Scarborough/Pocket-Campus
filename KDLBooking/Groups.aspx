@@ -88,7 +88,6 @@
             <asp:GridView ID="MembersGrid" runat="server" AutoGenerateColumns="False" 
                 EnableModelValidation="True" onrowcommand="MembersGrid_RowCommand">
                 <Columns>
-                    <asp:BoundField DataField="Name" HeaderText="Name" />
                     <asp:BoundField DataField="UserID" HeaderText="User ID" />
                     <asp:ButtonField CommandName="DeleteUser" Text="Delete User" />
                 </Columns>
