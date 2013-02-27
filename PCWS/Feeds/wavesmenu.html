@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;application/json charset=UTF-8" />
-<title>Pocket Campus Notice Events Images</title>
+<title>Pocket Campus Waves Menu</title>
 <link href="../style.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.js"></script>
@@ -19,7 +19,7 @@
 
         $.ajax({
             type: "GET",
-            url: "noticeeventsimages.xml",
+            url: "menus.xml",
             dataType: "xml",
             success: xmlParser
         });
@@ -29,21 +29,19 @@
 
         $('#load').fadeOut();
 
-         $(".mainlist").empty();
+        $(".mainlist").empty();
 
-        $(xml).find("NoticeEvents").each(function () {
+        $(xml).find("Menu").each(function () {
 
-            $(".mainlist").append('<li class="img" id="' + $(this).attr('Title') + '"><img src="' + $(this).attr("Attachement") + '" title="' + $(this).attr('Title') + '" width="896px"/></li>');
- })
+                        $(".mainlist").append('<li class="text" id="' + $(this).attr("Title") + '"><h1>' + $(this).attr("Title") + '</h1><div id="content">' + $(this).text() + '</div></li>');
 
+        })
 
         InOut($('.mainlist li:first'));
 
 
     }
 
-
-      
 
     function InOut(elem) {
         elem.delay(1)
@@ -67,22 +65,23 @@
     
 body
 {
-	background:#FFFFCC;
+	background:#E7E7E8;
 	margin:0px;
 	border:0px;
 	padding:0px;
+	font-family: Helvetica;
 }    
      
 .main{
     margin: 0px;
-    background:#FFFFCC;
+    background-image: url('Images/Waves-TV-2_05.jpg');
     padding:0px;
     border:0px;
     position:relative;
     top:0px;
-    height: 896px;
+    height: 880px;
     display:block;
-    width:627px;
+    width:628px;
 }
 
 .img{
@@ -91,8 +90,10 @@ body
     display:none;
 }
 
-.img img{
-    width: 627px;
+.text{
+    margin:0px;
+    padding:0px;
+    display:none;
 }
 
 
@@ -100,16 +101,46 @@ body
 {
 	margin: auto 0px auto 0px;
 	display:block;
-	background:#ffffcc;
-	padding:0px;
-	width: 627px;
+	padding:130px 40px 0px 40px;
+	border:0px
 }
 
 li{
     list-style:none;
-    padding:0px;
-    margin:auto 0px auto 0px;
+    margin:0px;
     border:0px;
+    padding:0px;
+    text-align:center;
+    
+}
+
+li h1
+{
+	font-size:40px;
+	color: #9C1A25;
+}
+
+li i
+{
+	font-size:18px;
+	font-weight:normal;
+	padding-bottom:30px;
+}
+
+div#content
+{
+	padding:20px 0 20px;
+	line-height: 40px;
+	height:240px;
+	font-size:30px;
+	font-weight:bold;
+}
+
+h1
+{
+	font-size:40px;
+	padding:10px 0px 0px 0px;
+	line-height:10px;
 }
 
 </style> 
@@ -122,9 +153,9 @@ li{
 
 <div class="main">
 
-    <ul class="mainlist"
+<ul class="mainlist">
 
-    </ul>
+</ul>
 
 </div>
 

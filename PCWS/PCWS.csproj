@@ -14,6 +14,7 @@
     <AssemblyName>PCWS</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +49,13 @@
   <ItemGroup>
     <Content Include="Communications.asmx" />
     <Content Include="Default.htm" />
+    <Content Include="Feeds\calvinostext.html" />
+    <Content Include="Feeds\Images\CalvinosBackground.jpg" />
+    <Content Include="Feeds\Images\WavesBackground.jpg" />
+    <Content Include="Feeds\wavestext.html" />
+    <Content Include="Feeds\wavesimages.html" />
+    <Content Include="Feeds\Images\Waves-TV-2_05.jpg" />
+    <Content Include="Feeds\wavesmenu.html" />
     <Content Include="Feeds\Images\InfoHeader.jpg" />
     <Content Include="Feeds\noticeseventstext.html" />
     <Content Include="Feeds\Images\CCHeader.jpg" />

@@ -29,6 +29,9 @@ namespace PCWS
             TextNoticeandEvents();
             LibraryImages();
             LibraryText();
+            WavesImages();
+            WavesText();
+            CalvinosText();
             Menus();
             Tickers();
         }
@@ -59,8 +62,7 @@ namespace PCWS
             ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
 
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
-            ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
-
+            
             string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
             
             RQ.RunQuery(Query);
@@ -74,14 +76,13 @@ namespace PCWS
         {
             ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
 
-            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
         
             string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
 
             RQ1.RunQuery(Query1);
 
-            XML(RQ).Save(ClassAppDetails.feedsdir + "/eventtextonly.xml");
+            XML(RQ1).Save(ClassAppDetails.feedsdir + "/eventtextonly.xml");
 
         }
 
@@ -153,6 +154,54 @@ namespace PCWS
             RQ.RunQuery(Query);
 
             XML(RQ).Save(ClassAppDetails.feedsdir + "/librarytext.xml");
+
+        }
+
+        [WebMethod(CacheDuration = 30, Description = "Creates XML Feed for Waves Images")]
+        private void WavesImages()
+        {
+            ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
+
+            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+            ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 19 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+
+            RQ.RunQuery(Query);
+
+            XML(RQ).Save(ClassAppDetails.feedsdir + "/wavesimages.xml");
+
+        }
+
+        [WebMethod(CacheDuration = 30, Description = "Creates XML Feed for Waves Text")]
+        private void WavesText()
+        {
+            ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
+
+            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+            ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 20 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+
+            RQ.RunQuery(Query);
+
+            XML(RQ).Save(ClassAppDetails.feedsdir + "/wavestext.xml");
+
+        }
+
+        [WebMethod(CacheDuration = 30, Description = "Creates XML Feed for Calvinos Text")]
+        private void CalvinosText()
+        {
+            ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
+
+            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+            ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 21 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+
+            RQ.RunQuery(Query);
+
+            XML(RQ).Save(ClassAppDetails.feedsdir + "/calvinostext.xml");
 
         }
 

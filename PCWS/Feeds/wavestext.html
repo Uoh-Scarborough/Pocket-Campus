@@ -19,7 +19,7 @@
 
         $.ajax({
             type: "GET",
-            url: "noticeeventsimages.xml",
+            url: "wavestext.xml",
             dataType: "xml",
             success: xmlParser
         });
@@ -29,21 +29,19 @@
 
         $('#load').fadeOut();
 
-         $(".mainlist").empty();
+        $(".mainlist").empty();
 
         $(xml).find("NoticeEvents").each(function () {
 
-            $(".mainlist").append('<li class="img" id="' + $(this).attr('Title') + '"><img src="' + $(this).attr("Attachement") + '" title="' + $(this).attr('Title') + '" width="896px"/></li>');
- })
+                        $(".mainlist").append('<li class="text" id="' + $(this).attr("Title") + '"><h1>' + $(this).attr("Title") + '</h1><div id="content">' + $(this).text() + '</div></li>');
 
+        })
 
         InOut($('.mainlist li:first'));
 
 
     }
 
-
-      
 
     function InOut(elem) {
         elem.delay(1)
@@ -67,22 +65,23 @@
     
 body
 {
-	background:#FFFFCC;
+	background:#E7E7E8;
 	margin:0px;
 	border:0px;
 	padding:0px;
+	font-family: Helvetica;
 }    
      
 .main{
     margin: 0px;
-    background:#FFFFCC;
+    background: white;
     padding:0px;
     border:0px;
     position:relative;
     top:0px;
-    height: 896px;
+    height: 425px;
     display:block;
-    width:627px;
+    width:441px;
 }
 
 .img{
@@ -91,8 +90,10 @@ body
     display:none;
 }
 
-.img img{
-    width: 627px;
+.text{
+    margin:0px;
+    padding:0px;
+    display:none;
 }
 
 
@@ -100,16 +101,30 @@ body
 {
 	margin: auto 0px auto 0px;
 	display:block;
-	background:#ffffcc;
-	padding:0px;
-	width: 627px;
+	background:white;
+	padding:0px 20px 0px 20px;
+	border:0px
 }
 
 li{
     list-style:none;
-    padding:0px;
-    margin:auto 0px auto 0px;
+    margin:0px;
     border:0px;
+    padding:0px;
+}
+
+div#content
+{
+	padding:0px;
+	font-size:20px;
+	height:240px;
+}
+
+h1
+{
+	padding:10px 0px 0px 0px;
+	line-height:10px;
+	color: #9C1A25;
 }
 
 </style> 
@@ -121,8 +136,8 @@ li{
 
 
 <div class="main">
-
-    <ul class="mainlist"
+    <img src="Images/WavesBackground.jpg" />
+    <ul class="mainlist">
 
     </ul>
 

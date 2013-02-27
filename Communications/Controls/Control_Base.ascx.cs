@@ -245,7 +245,7 @@ namespace Communications
                 if (Base.Attachment != "")
                 {
                     hdAttachement.Value = Base.Attachment;
-                    Attachementlbl.Text = "<a href='" + Base.Attachment + "'>Attachement</a>";
+                    Attachementlbl.Text = "<a href='Uploads/" + Base.Attachment + "'>Attachement</a>";
                 }
                 else
                 {

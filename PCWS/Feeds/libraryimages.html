@@ -34,7 +34,7 @@ function xmlParser(xml) {
 
     $(xml).find("NoticeEvents").each(function () {
 
-                $(".mainlist").append('<li class="img" id="' + $(this).attr("Title") + '"><img src="' + $(this).attr("Attachement") + '" title="' + $(this).attr("Title") + '" width="627px"/></li>');
+                $(".mainlist").append('<li class="img" id="' + $(this).attr("Title") + '"><img src="' + $(this).attr("Attachement") + '" title="' + $(this).attr("Title") + '"/></li>');
 
           })
 
@@ -90,6 +90,12 @@ body
     margin:0px;
     padding:0px;
     display:none;
+    width:627px;
+}
+
+.img img
+{
+	width:627px;
 }
 
 

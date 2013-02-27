@@ -2,39 +2,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;application/json charset=UTF-8" />
-<title>Pocket Campus Notice Events Images</title>
+<title>Pocket Campus Library Images</title>
 <link href="../style.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.js"></script>
 <script>
-    $(document).ready(function () {
+$(document).ready(function () {
 
-        $.ajaxSetup({ cache: false });
-        loadXML();
+$.ajaxSetup({ cache: false });
+    loadXML();
+  
+});
 
+function loadXML()
+{
+
+
+$.ajax({
+        type: "GET",
+        url: "wavesimages.xml",
+        dataType: "xml",
+        success: xmlParser
     });
+}
 
-    function loadXML() {
+function xmlParser(xml) {
 
+    $('#load').fadeOut(); 
+    
+    $(".mainlist").empty();
 
-        $.ajax({
-            type: "GET",
-            url: "noticeeventsimages.xml",
-            dataType: "xml",
-            success: xmlParser
-        });
-    }
+    $(xml).find("NoticeEvents").each(function () {
 
-    function xmlParser(xml) {
+                $(".mainlist").append('<li class="img" id="' + $(this).attr("Title") + '"><img src="' + $(this).attr("Attachement") + '" title="' + $(this).attr("Title") + '"/></li>');
 
-        $('#load').fadeOut();
-
-         $(".mainlist").empty();
-
-        $(xml).find("NoticeEvents").each(function () {
-
-            $(".mainlist").append('<li class="img" id="' + $(this).attr('Title') + '"><img src="' + $(this).attr("Attachement") + '" title="' + $(this).attr('Title') + '" width="896px"/></li>');
- })
+          })
 
 
         InOut($('.mainlist li:first'));
@@ -43,22 +45,21 @@
     }
 
 
-      
-
-    function InOut(elem) {
-        elem.delay(1)
+function InOut( elem )
+{
+    elem.delay(1)
      .fadeIn(1000)
      .delay(12000)
-     .fadeOut(1000, function () {
-         if (elem.next().length > 0) // if there is a next element
-         { InOut(elem.next()); } // use it
-         else
-         { loadXML(); } // if not, then use go back to the first sibling
+     .fadeOut(1000,function(){
+             if(elem.next().length > 0) // if there is a next element
+               {InOut( elem.next() );} // use it
+             else
+               {loadXML();} // if not, then use go back to the first sibling
 
-     }
+           }
              );
 
-    }
+}
 
 
 </script>
@@ -67,7 +68,7 @@
     
 body
 {
-	background:#FFFFCC;
+	background:#E7E8E9;
 	margin:0px;
 	border:0px;
 	padding:0px;
@@ -75,7 +76,7 @@ body
      
 .main{
     margin: 0px;
-    background:#FFFFCC;
+    background:#E7E8E9;
     padding:0px;
     border:0px;
     position:relative;
@@ -89,10 +90,12 @@ body
     margin:0px;
     padding:0px;
     display:none;
+    width:627px;
 }
 
-.img img{
-    width: 627px;
+.img img
+{
+	width:627px;
 }
 
 
@@ -100,7 +103,7 @@ body
 {
 	margin: auto 0px auto 0px;
 	display:block;
-	background:#ffffcc;
+	background:#E7E8E9;
 	padding:0px;
 	width: 627px;
 }
@@ -122,7 +125,7 @@ li{
 
 <div class="main">
 
-    <ul class="mainlist"
+    <ul class="mainlist">
 
     </ul>
 

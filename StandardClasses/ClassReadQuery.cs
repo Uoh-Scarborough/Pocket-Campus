@@ -69,7 +69,23 @@ namespace StandardClasses
 			{
 				//this.c_Connection.Connect("/StudentServices","SSConn");
 
-                this.c_Connection.Connect();
+                //if (c_Connection.ConnectionStatus() != ConnectionState.Open)
+                //{
+
+                try
+                {
+                    if (this.c_Connection.ConnectionStatus() != ConnectionState.Open)
+                    {
+                        this.c_Connection.Connect();
+                    }
+                }
+                catch
+                {
+                    this.c_Connection.Connect();
+                }
+
+                
+                //}
 
 				this.c_DataSet = new DataSet();
 
@@ -79,7 +95,7 @@ namespace StandardClasses
 
 				this.c_NumberOfResults = this.c_DataSet.Tables[0].Rows.Count;
 
-				this.c_Connection.Disconnect();
+				//this.c_Connection.Disconnect();
 			}
 		}
 
@@ -96,7 +112,9 @@ namespace StandardClasses
             {
                 //this.c_Connection.Connect("/StudentServices","SSConn");
 
-                this.c_Connection.Connect();
+                    this.c_Connection.Connect();
+
+                //this.c_Connection.Connect();
 
                 this.c_DataSet = new DataSet();
 
@@ -107,7 +125,7 @@ namespace StandardClasses
 
                 this.c_NumberOfResults = this.c_DataSet.Tables[0].Rows.Count;
 
-                this.c_Connection.Disconnect();
+                //this.c_Connection.Disconnect();
             }
         }
 

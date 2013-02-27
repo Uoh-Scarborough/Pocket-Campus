@@ -81,13 +81,13 @@ namespace Communications.Controls
             switch (Menu.Type)
             {
                 case ClassMenu.menuTypes.Breakfast:
-                    Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Breakfast)";
+                    Menu.Title = "Breakfast - " + Menu.DisplayTo.ToShortDateString();
                     break;
                 case ClassMenu.menuTypes.Lunch:
-                    Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Lunch)";
+                    Menu.Title = "Lunch - " + Menu.DisplayTo.ToShortDateString();
                     break;
                 case ClassMenu.menuTypes.Dinner:
-                    Menu.Title = Menu.DisplayTo.ToShortDateString() + " (Dinner)";
+                    Menu.Title = "Dinner - " + Menu.DisplayTo.ToShortDateString();
                     break;
                 default:
                     break;
@@ -127,7 +127,7 @@ namespace Communications.Controls
                 Menu.ValidatedBy = UI.DisplayName;
                 Menu.ValidatedDate = DateTime.Now;
 
-                Menu.Title = Menu.DisplayTo.ToShortDateString() + " " + Menu.Type;
+                //Menu.Title = Menu.DisplayTo.ToShortDateString() + " " + Menu.Type;
                 Menu.DisplayFrom = Menu.DisplayTo;
                 Menu.Type = (ClassMenu.menuTypes)Control_Base.MenuType;
                 Menu.Recurrence = Control_Base.Recurrence;
