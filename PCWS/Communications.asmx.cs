@@ -29,6 +29,8 @@ namespace PCWS
             TextNoticeandEvents();
             LibraryImages();
             LibraryText();
+            CampusConnectImages();
+            CampusConnectText();
             WavesImages();
             WavesText();
             CalvinosText();
@@ -154,6 +156,38 @@ namespace PCWS
             RQ.RunQuery(Query);
 
             XML(RQ).Save(ClassAppDetails.feedsdir + "/librarytext.xml");
+
+        }
+
+        [WebMethod(CacheDuration = 30, Description = "Creates XML Feed for Campus Connect Images")]
+        private void CampusConnectImages()
+        {
+            ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
+
+            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+            ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 22 DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+
+            RQ.RunQuery(Query);
+
+            XML(RQ).Save(ClassAppDetails.feedsdir + "/campusconnectimages.xml");
+
+        }
+
+        [WebMethod(CacheDuration = 30, Description = "Creates XML Feed for Campus Connect Text")]
+        private void CampusConnectText()
+        {
+            ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
+
+            ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+            ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 23 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+
+            RQ.RunQuery(Query);
+
+            XML(RQ).Save(ClassAppDetails.feedsdir + "/campusconnecttext.xml");
 
         }
 
