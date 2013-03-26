@@ -153,7 +153,7 @@ namespace PocketCampusClasses
 
             string Query0 = "";
 
-            Query0 = "UPDATE vw_Menus SET CommsBase_DisplayFrom = DateAdd(d, (Menu_Recurrence * 7), CommsBase_DisplayFrom), CommsBase_DisplayTo = DateAdd(d, (Menu_Recurrence * 7), CommsBase_DisplayFrom) WHERE CommsBase_DisplayFrom < '" + DateTime.Now.ToShortDateString() + "';";
+            Query0 = "UPDATE vw_Menus SET CommsBase_Title = Convert(varchar,DateAdd(d,(Menu_Recurrence * 7), CommsBase_DisplayFrom),103) + SubString(CommsBase_Title, 11,Len(CommsBase_Title) - 10) , CommsBase_DisplayFrom = DateAdd(d, (Menu_Recurrence * 7), CommsBase_DisplayFrom), CommsBase_DisplayTo = DateAdd(d, (Menu_Recurrence * 7), CommsBase_DisplayFrom) WHERE CommsBase_DisplayFrom < '" + DateTime.Now.ToShortDateString() + "';";
 
             RQ0.RunQuery(Query0);
 

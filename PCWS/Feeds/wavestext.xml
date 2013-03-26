@@ -1,2 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Communications />
+<Communications>
+  <NoticeEvents Title="Waves Opening Times" Attachement="http://localhost/Communications/Uploads" AttachementisImage="False" Category="20" PostedDate="26/02/2013" High-Priority="False">&lt;p&gt;Waves is open&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Breakfast: 8:30 - 9:30&lt;/p&gt;&lt;p&gt;Lunch: 11:45 - 14:00&lt;/p&gt;&lt;p&gt;Dinner: 17:00 - 18:30&lt;/p&gt;</NoticeEvents>
+</Communications>

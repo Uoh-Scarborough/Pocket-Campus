@@ -220,18 +220,32 @@ namespace Communications
                 txt_Title.Text = Base.Title;
                 if (ModuleBaseType == BaseType.Menu)
                 {
+
+                    Base.Content = ClassUseful.FormatString(Base.Content);
+
                     string[] Item = Regex.Split(Base.Content, "</br>");
-                    
-                    txt_Item1.Text = Item[0];
-                    txt_Desc1.Text = Item[1].Substring(3,Item[1].Length - 7);
-                    txt_Item2.Text = Item[2];
-                    txt_Decs2.Text = Item[3].Substring(3, Item[3].Length - 7);
-                    txt_Item3.Text = Item[4];
-                    txt_Desc3.Text = Item[5].Substring(3, Item[5].Length - 7);
-                    txt_Item4.Text = Item[6];
-                    txt_Desc4.Text = Item[7].Substring(3, Item[7].Length - 7);
-                    txt_Item5.Text = Item[8];
-                    txt_Desc5.Text = Item[9].Substring(3, Item[9].Length - 7);
+
+                    try
+                    {
+
+                        txt_Item1.Text = Item[0];
+                        txt_Desc1.Text = Item[1].Substring(3, Item[1].Length - 7);
+                        txt_Item2.Text = Item[2];
+                        txt_Decs2.Text = Item[3].Substring(3, Item[3].Length - 7);
+                        txt_Item3.Text = Item[4];
+                        txt_Desc3.Text = Item[5].Substring(3, Item[5].Length - 7);
+                        txt_Item4.Text = Item[6];
+                        txt_Desc4.Text = Item[7].Substring(3, Item[7].Length - 7);
+                        txt_Item5.Text = Item[8];
+                        txt_Desc5.Text = Item[9].Substring(3, Item[9].Length - 7);
+
+                    }
+                    catch (Exception ex)
+                    {
+
+
+
+                    }
                 }
                 else
                 {

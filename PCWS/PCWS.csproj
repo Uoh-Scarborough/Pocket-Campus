@@ -50,6 +50,8 @@
     <Content Include="Communications.asmx" />
     <Content Include="Default.htm" />
     <Content Include="Feeds\calvinostext.html" />
+    <Content Include="Feeds\campusconnectimages.html" />
+    <Content Include="Feeds\campusconnecttext.html" />
     <Content Include="Feeds\Images\CalvinosBackground.jpg" />
     <Content Include="Feeds\Images\WavesBackground.jpg" />
     <Content Include="Feeds\wavestext.html" />

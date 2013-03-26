@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
+using System.Net;
+using System.Web;
 
 namespace PocketCampusClasses
 {
@@ -13,6 +15,7 @@ namespace PocketCampusClasses
         {
             inputStr = inputStr.Replace("&#39;", "'");
             inputStr = inputStr.Replace("&#34;", "'");
+            inputStr = HttpContext.Current.Server.HtmlDecode(inputStr);
 
             return inputStr;
         }
@@ -21,6 +24,7 @@ namespace PocketCampusClasses
         {
             inputStr = inputStr.Replace("'","&#39;");
             inputStr = inputStr.Replace("'", "&#34;");
+            inputStr = HttpContext.Current.Server.HtmlEncode(inputStr);
 
             return inputStr;
         }

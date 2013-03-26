@@ -2,8 +2,5 @@
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Pocket Campus Ticker Feed</title>
-    <item>
-      <title>Welcome to the University of Hull Scarborough Campus</title>
-    </item>
   </channel>
 </rss>

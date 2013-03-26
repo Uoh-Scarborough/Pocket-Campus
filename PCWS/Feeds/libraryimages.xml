@@ -1,2 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Communications />
+<Communications>
+  <NoticeEvents Title="Confidential Conversations" Attachement="http://localhost/Communications/Uploads/Attachements/confidential conversation 22132013115858.jpg" AttachementisImage="False" Category="15" PostedDate="21/03/2013" High-Priority="False">&lt;p&gt;&lt;/p&gt;</NoticeEvents>
+</Communications>

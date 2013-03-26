@@ -1,2 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Communications />
+<Communications>
+  <NoticeEvents Title="Flexible Learning Space" Attachement="http://localhost/Communications/Uploads/Attachements/Worsley IT PC sign2032013174343.jpg" AttachementisImage="True" Category="3" PostedDate="20/03/2013" High-Priority="False">&lt;p&gt;The Flexible Learning Space in the Worsley building will be open Monday to Friday 8:30am until 6:00pm during the Easter vacation.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;It will be closed for the Bank Holiday weekend.&lt;/p&gt;</NoticeEvents>
+  <NoticeEvents Title="Chaplains On Campus" Attachement="http://localhost/Communications/Uploads/Attachements/Chaplains2032013174343.jpg" AttachementisImage="True" Category="3" PostedDate="20/03/2013" High-Priority="True">&lt;p&gt;Dr Win Jones will be available each Monday between 12 noon and 2:00pm, based in Waves.&lt;/p&gt;&lt;p&gt;Revd Jean Payne will be available each Tuesday between 12 noon and 2:00pm, based in Waves or Calvino’s.&lt;/p&gt;&lt;p&gt;Revd Jason McCullagh will be available each Wednesday between 11:00am and 1:00pm in the Keith Donaldson Library.&lt;/p&gt;</NoticeEvents>
+  <NoticeEvents Title="Test" Attachement="http://localhost/Communications/Uploads/Attachements/ShhA4forTVs2632013114646.jpg" AttachementisImage="True" Category="13" PostedDate="26/03/2013" High-Priority="False">&lt;p&gt;This is a test&lt;/p&gt;</NoticeEvents>
+</Communications>

@@ -1,2 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Communications />
+<Communications>
+  <NoticeEvents Title="Mentoring Scheme" Attachement="http://localhost/Communications/Uploads/Attachements/Scarborough Employability Mentoring Scheme1932013183535.pdf" AttachementisImage="False" Category="3" PostedDate="19/03/2013" High-Priority="False">&lt;p&gt;The scheme prepares students for graduate recruitment and selection processes; and develops interpersonal/employability skills. that employers expect.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Your mentor will offer constructive, developmental support on applications for graduate level employment, work experience, volunteering and networking opportunities.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Final years please email: J.MacNaught@hull.ac.uk&lt;/p&gt;</NoticeEvents>
+  <NoticeEvents Title="Exam Timetable" Attachement="http://localhost/Communications/Uploads/Attachements/Semester 2 Examinsations May 20131932013183737.pdf" AttachementisImage="False" Category="3" PostedDate="26/03/2013" High-Priority="False">&lt;p&gt;The exam timetable for Semester 2 exams is now available from Pocket Campus&lt;/p&gt;</NoticeEvents>
+</Communications>

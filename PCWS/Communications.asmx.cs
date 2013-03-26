@@ -46,8 +46,8 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
-            string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
+            string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
             RQ1.RunQuery(Query1);
@@ -65,7 +65,7 @@ namespace PCWS
 
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
             
             RQ.RunQuery(Query);
 
@@ -80,7 +80,7 @@ namespace PCWS
 
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
         
-            string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ1.RunQuery(Query1);
 
@@ -96,8 +96,8 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND CommsBase_UseAttachement = 1 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
-            string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND CommsBase_UseAttachement = 1 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND CommsBase_UseAttachement = 1 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';", DateTime.Now.ToShortDateString());
+            string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND CommsBase_UseAttachement = 1 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
             RQ1.RunQuery(Query1);
@@ -115,8 +115,8 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND CommsBase_UseAttachement = 0 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
-            string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND CommsBase_UseAttachement = 0 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND CommsBase_UseAttachement = 0 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
+            string Query1 = string.Format("SELECT * FROM vw_Events WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14) AND CommsBase_UseAttachement = 0 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
             RQ1.RunQuery(Query1);
@@ -135,7 +135,7 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 15 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 15 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
         
@@ -151,7 +151,7 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 16 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 16 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
 
@@ -167,7 +167,7 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 22 DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 22 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
 
@@ -183,7 +183,7 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 23 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 23 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
 
@@ -199,7 +199,7 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 19 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 19 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
 
@@ -215,7 +215,7 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 20 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 20 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
 
@@ -231,7 +231,7 @@ namespace PCWS
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ1 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
-            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 21 AND DisplayFrom >= {0} AND DisplayTo >= {0};", DateTime.Now.ToShortDateString());
+            string Query = string.Format("SELECT * FROM vw_Notices WHERE CommsBase_Valid = 1 AND CommsBase_CategoryIDLNK = 21 AND DisplayFrom <= '{0}' AND DisplayTo >= '{0}';;", DateTime.Now.ToShortDateString());
 
             RQ.RunQuery(Query);
 
@@ -245,6 +245,7 @@ namespace PCWS
         {
             ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
 
+            ClassReadQuery RQ0 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
             XmlDocument OutputAll = new XmlDocument();
@@ -254,6 +255,8 @@ namespace PCWS
 
             XmlElement root = OutputAll.CreateElement("Menus");
             OutputAll.AppendChild(root);
+
+            RQ0.RunQuery("UPDATE vw_Menus SET CommsBase_Title = Convert(varchar,DateAdd(d,(Menu_Recurrence * 7), CommsBase_DisplayFrom),103) + SubString(CommsBase_Title, 11,Len(CommsBase_Title) - 10) , CommsBase_DisplayFrom = DateAdd(d, (Menu_Recurrence * 7), CommsBase_DisplayFrom), CommsBase_DisplayTo = DateAdd(d, (Menu_Recurrence * 7), CommsBase_DisplayFrom) WHERE CommsBase_DisplayFrom < '" + DateTime.Now.ToShortDateString() + "';");
 
             string Query = string.Format("SELECT * FROM vw_Menus WHERE CommsBase_Valid = 1;");
 
@@ -350,12 +353,12 @@ namespace PCWS
                 element.SetAttribute("Category", DR["CommsBase_CategoryIDLNK"].ToString().Trim());
                 DateTime Posted = Convert.ToDateTime(DR["CommsBase_PostedDate"]);
                 element.SetAttribute("PostedDate", Posted.ToShortDateString());
-                element.SetAttribute("Display-From", Convert.ToDateTime(DR["CommsBase_DisplayFrom"]).ToShortDateString().Trim());
-                element.SetAttribute("Display-To", Convert.ToDateTime(DR["CommsBase_DisplayTo"]).ToShortDateString().Trim());
-                DateTime DisplayFrom = Convert.ToDateTime(DR["CommsBase_DisplayFrom"]);
-                element.SetAttribute("Display-From-Feed", DisplayFrom.ToString("MM/dd/yyyy"));
-                DateTime DisplayTo = Convert.ToDateTime(DR["CommsBase_DisplayTo"]);
-                element.SetAttribute("Display-To-Feed", DisplayTo.ToString("MM/dd/yyyy"));
+                //element.SetAttribute("Display-From", Convert.ToDateTime(DR["CommsBase_DisplayFrom"]).ToShortDateString().Trim());
+                //element.SetAttribute("Display-To", Convert.ToDateTime(DR["CommsBase_DisplayTo"]).ToShortDateString().Trim());
+                //DateTime DisplayFrom = Convert.ToDateTime(DR["CommsBase_DisplayFrom"]);
+                //element.SetAttribute("Display-From-Feed", DisplayFrom.ToString("MM/dd/yyyy"));
+                //DateTime DisplayTo = Convert.ToDateTime(DR["CommsBase_DisplayTo"]);
+                //element.SetAttribute("Display-To-Feed", DisplayTo.ToString("MM/dd/yyyy"));
                 element.SetAttribute("High-Priority", DR["CommsBase_Urgent"].ToString().Trim());
 
                 string Content = "";
