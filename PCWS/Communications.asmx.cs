@@ -245,7 +245,7 @@ namespace PCWS
         {
             ClassAppDetails.commscurrentconnection = new ClassConnection(ClassAppDetails.configname, ClassAppDetails.noticesconnectionname);
 
-            ClassReadQuery RQ0 = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
+            ClassWriteQuery RQ0 = new ClassWriteQuery(ClassAppDetails.commscurrentconnection);
             ClassReadQuery RQ = new ClassReadQuery(ClassAppDetails.commscurrentconnection);
 
             XmlDocument OutputAll = new XmlDocument();
