@@ -140,6 +140,26 @@ namespace PocketCampusClasses
             return StartTime.ToString();
         }
 
+        public Boolean BookingExpired(){
+
+            String[] Times = ClassGeneral.getTime(this.StartTime).Split(':');
+
+            int iWeek = Convert.ToInt16(this.Week);
+
+            DateTime BookingDT = ClassGeneral.getAcademicDateDate(iWeek,this.Day);
+            BookingDT = BookingDT.AddHours(Convert.ToDouble(Times[0]));
+            BookingDT = BookingDT.AddMinutes(Convert.ToDouble(Times[1]));
+
+            if (DateTime.Now >= BookingDT)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static ArrayList GenerateDaySet(int d, int Week, string Room)
         {
             string sWeek;

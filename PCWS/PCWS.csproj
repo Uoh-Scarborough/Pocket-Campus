@@ -53,6 +53,7 @@
     <Content Include="Feeds\campusconnectimages.html" />
     <Content Include="Feeds\campusconnecttext.html" />
     <Content Include="Feeds\Images\CalvinosBackground.jpg" />
+    <Content Include="Feeds\Images\KDLHeader.jpg" />
     <Content Include="Feeds\Images\WavesBackground.jpg" />
     <Content Include="Feeds\wavestext.html" />
     <Content Include="Feeds\wavesimages.html" />

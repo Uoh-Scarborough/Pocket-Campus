@@ -152,7 +152,16 @@ namespace PocketCampusClasses
             {
                 ClassKDLBookings Booking = new ClassKDLBookings(DR);
 
-                returnStr += "<tr><td>" + Booking.Location + "</td><td>" + ClassGeneral.getAcademicDate(Convert.ToInt32(Booking.Week), Booking.Day) + " " + Booking.StartTimeOut + "</td><td><a href=\"?bid=" + Booking.ID + "\">Edit</a></td><td><a href=\"?bid=" + Booking.ID + "&amp;delid=1\">Delete</a></td></tr>";
+                String EditButton = "<a href=\"?bid=" + Booking.ID + "\">Edit</a>";
+                String DeleteButton = "<a href=\"?bid=" + Booking.ID + "&amp;delid=1\">Delete</a>";
+
+                if (Booking.BookingExpired())
+                {
+                    EditButton = "";
+                    DeleteButton = "";
+                }
+
+                returnStr += "<tr><td>" + Booking.Location + "</td><td>" + ClassGeneral.getAcademicDate(Convert.ToInt32(Booking.Week), Booking.Day) + " " + Booking.StartTimeOut + "</td><td>" + EditButton + "</td><td>" + DeleteButton + "</td></tr>";
             }
 
             returnStr += "</table>";

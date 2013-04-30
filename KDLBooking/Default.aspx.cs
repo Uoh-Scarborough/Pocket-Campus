@@ -347,21 +347,41 @@ namespace KDLBooking
                             EndTime = Booking.EndTime;
 
                             //ClassUserInfo UI = new ClassUserInfo(Context.User.Identity.Name);
+                            Boolean IsAdmin = ClassGroupMembers.IsAdmin(UI.Username);
+                            Boolean IsCampusConnect = ClassGroupMembers.IsMember(UI.Username, "CampusConnect");
 
-                            if (ClassGroupMembers.IsAdmin(UI.Username) || ClassGroupMembers.IsMember(UI.Username,"CampusConnect"))
+                            if (IsAdmin || IsCampusConnect )
                             { 
-                                //Always Edit
-                                OutText = ClassBooking.ActivityTable(EditButton, DeleteButton, Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
-                                lastActivityEnd = Booking.EndTime;
+                                
+                                    //Always Edit
+                                    OutText = ClassBooking.ActivityTable(EditButton, DeleteButton, Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
+                                    lastActivityEnd = Booking.EndTime;
+                                
                             }
                             else
                             {
                                 //Not in Group
                                 if (Booking.Number.ToString() == UI.StudentID)
                                 {
-                                    //Editable
-                                    OutText = ClassBooking.ActivityTable(EditButton, DeleteButton, Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
-                                    lastActivityEnd = Booking.EndTime;
+                                    //Dont let Users Edit
+
+                                    String[] Times = ClassGeneral.getTime(Booking.StartTime).Split(':');
+
+                                    int iWeek = Convert.ToInt16(Booking.Week);
+
+                                    DateTime BookingDT = ClassGeneral.getAcademicDateDate(iWeek,Booking.Day);
+                                    BookingDT = BookingDT.AddHours(Convert.ToDouble(Times[0]));
+                                    BookingDT = BookingDT.AddMinutes(Convert.ToDouble(Times[1]));
+
+                                    if (DateTime.Now >= BookingDT)
+                                    {
+                                        OutText = ClassBooking.ActivityTable("", "", Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
+                                        lastActivityEnd = Booking.EndTime;
+                                    } else {
+                                        //Editable
+                                        OutText = ClassBooking.ActivityTable(EditButton, DeleteButton, Booking.Title, Booking.StartTime, Booking.EndTime, "", lastActivityEnd, Booking.Location, Booking.Week, Booking.Day);
+                                        lastActivityEnd = Booking.EndTime;
+                                    }
                                 }
                                 else
                                 {

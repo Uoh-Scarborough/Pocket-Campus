@@ -91,6 +91,17 @@ namespace StandardClasses
             return WeekStart.ToShortDateString();
         }
 
+        public static DateTime getAcademicDateDate(int Week, int Day)
+        {
+            int Days = ((Week - 1) * 7) + Day;
+
+            DateTime MOWO = new DateTime(2012, 7, 30);
+
+            DateTime WeekStart = MOWO.AddDays(Days);
+
+            return WeekStart;
+        }
+
         public static string getTime(int Time)
         {
             int Hours = Time / 4;
